@@ -1,7 +1,5 @@
 
 /**
- * Created by yaodh on 2014/12/5.
- * MaxCounters
  * Calculate the values of counters after applying all alternating operations: increase counter by 1;
  * set value of all counters to current maximum.
  * Task description
