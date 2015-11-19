@@ -5,7 +5,7 @@
  * Task description
  * You are given N counters, initially set to 0, and you have two possible operations on them:
  * increase(X) - counter X is increased by 1,
- * max counter - all counters are set to the maximum value of any counter.
+ * max counter - all counters are set to the maximum value of any counter. 
  * A non-empty zero-indexed array A of M integers is given. This array represents consecutive operations:
  * if A[K] = X, such that 1 = X = N, then operation K is increase(X),
  * if A[K] = N + 1 then operation K is max counter. 
