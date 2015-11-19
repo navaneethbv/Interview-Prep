@@ -2,7 +2,7 @@
 /**
  * Calculate the values of counters after applying all alternating operations: increase counter by 1;
  * set value of all counters to current maximum.
- * Task description
+ * Task description 
  * You are given N counters, initially set to 0, and you have two possible operations on them:
  * increase(X) - counter X is increased by 1,
  * max counter - all counters are set to the maximum value of any counter. 
