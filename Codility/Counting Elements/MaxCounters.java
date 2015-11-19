@@ -8,7 +8,7 @@
  * max counter - all counters are set to the maximum value of any counter.
  * A non-empty zero-indexed array A of M integers is given. This array represents consecutive operations:
  * if A[K] = X, such that 1 = X = N, then operation K is increase(X),
- * if A[K] = N + 1 then operation K is max counter.
+ * if A[K] = N + 1 then operation K is max counter. 
  * For example, given integer N = 5 and array A such that:
  * A[0] = 3
  * A[1] = 4
