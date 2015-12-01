@@ -9,7 +9,7 @@ public class UniqueString {
 			return false; //Assuming the user wants to check unique characters in ASCII. Else we can use 256 for Extended ASCII.
 		boolean char_set [] = new boolean[128];
 		for(int i=0;i<str.length();i++)
-		{
+		{ 
 			int val = str.charAt(i);
 			 if(char_set[val])
 			 {
