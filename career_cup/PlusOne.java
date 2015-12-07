@@ -23,7 +23,7 @@ public class PlusOne {
 		            } else {
 		                carry = 0;
 		                digit = num;
-		            }
+		            } 
 		            result.set(i, digit);
 		            System.out.println("Set"+result);
 		        }
