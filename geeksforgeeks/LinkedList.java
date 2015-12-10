@@ -28,7 +28,7 @@ class LinkedList
 		}
 		new_node.next = prev_node.next;
 		prev_node.next = new_node;
-	}
+	} 
 	void append(int new_data)
 	{
 		Node new_node = new Node(new_data);
