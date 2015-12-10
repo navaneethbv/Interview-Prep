@@ -20,7 +20,7 @@ class LinkedList
 	}
 	void insertAfter(Node prev_node, int new_data)
 	{
-		Node new_node = new Node(new_data);
+		Node new_node = new Node(new_data); 
 		if(prev_node == null)
 		{	
 			System.out.println("Previous node cannot be null");
