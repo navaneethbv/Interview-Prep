@@ -5,7 +5,7 @@ class LinkedList
 	Node head; 
 	static class Node 
 	{
-		int data;
+		int data; 
 		Node next;
 		Node(int d)
 		{ 
