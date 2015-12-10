@@ -2,7 +2,7 @@ package geeksforgeeks;
 
 class LinkedList
 {
-	Node head;
+	Node head; 
 	static class Node 
 	{
 		int data;
