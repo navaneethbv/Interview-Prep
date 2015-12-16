@@ -5,7 +5,7 @@ public class TicTacToe {
     private char[][] board; 
     private char currentPlayerMark;
 			
-    public TicTacToe() {
+    public TicTacToe() { 
         board = new char[3][3];
         currentPlayerMark = 'x';
         initializeBoard();
