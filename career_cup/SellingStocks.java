@@ -13,7 +13,7 @@ public class SellingStocks {
 				System.out.println(buy);
 				prev_sell = sell;
 				System.out.println(prev_sell);
-				sell = Math.max(prev_buy + price, prev_sell);
+				sell = Math.max(prev_buy + price, prev_sell); 
 				System.out.println(sell);
 			}
 			return sell;
