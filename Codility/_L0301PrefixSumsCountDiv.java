@@ -1,7 +1,7 @@
 package Codility;
 
 /*
- * Author : Navaneeth Rao.
+ * Author : Navaneeth Rao
  * Link : https://codility.com/programmers/task/count_div
  */
 

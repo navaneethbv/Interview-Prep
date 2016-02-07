@@ -3,7 +3,7 @@ package Codility;
 import java.util.Arrays;
 
 /*
- * Author : Navaneeth Rao.
+ * Author : Navaneeth Rao
  * Link : https://codility.com/programmers/task/min_avg_two_slice
  */
 

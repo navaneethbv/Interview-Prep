@@ -3,7 +3,7 @@ package Codility;
 import java.util.ArrayList;
 
 /*
- * Author : Navaneeth Rao.
+ * Author : Navaneeth Rao
  * Link : https://codility.com/programmers/task/flags
  * To be checked later
  */
