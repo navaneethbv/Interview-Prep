@@ -1,7 +1,7 @@
 package Codility;
 
 /*
- * Author : Haridarshan H.S.
+ * Author : Navaneeth Rao.
  * Link : https://codility.com/programmers/task/number_solitaire
  * To be done later
  */

@@ -3,7 +3,7 @@ package Codility;
 import java.util.HashMap;
 
 /*
- * Author : Haridarshan H.S.
+ * Author : Navaneeth Rao.
  * Link : https://codility.com/programmers/task/distinct
  */
 

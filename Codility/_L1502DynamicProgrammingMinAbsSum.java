@@ -1,7 +1,7 @@
 package Codility;
 
 /*
- * Author : Haridarshan H.S.
+ * Author : Navaneeth Rao.
  * Link : https://codility.com/programmers/task/min_abs_sum
  * To be done later
  */

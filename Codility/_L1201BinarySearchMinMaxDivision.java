@@ -1,7 +1,7 @@
 package Codility;
 
 /*
- * Author : Haridarshan H.S.
+ * Author : Navaneeth Rao.
  * Link : https://codility.com/programmers/task/min_max_division
  */
 

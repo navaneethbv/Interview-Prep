@@ -3,7 +3,7 @@ package Codility;
 import java.util.Stack;
 
 /*
- * Author : Haridarshan H.S.
+ * Author : Navaneeth Rao.
  * Link : https://codility.com/programmers/task/brackets
  */
 
