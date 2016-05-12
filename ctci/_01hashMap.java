@@ -2,7 +2,11 @@ package ctci;
 
 import java.util.Arrays;
 
-/*Implementation of Hash Map Data Structure*/
+/*Implementation of Hash Map Data Structure
+ * 
+ * BY - Navaneeth Rao
+ * 
+ * */
 public class _01hashMap {
 	private String[] list=new String[20];
 	private int totalElements=0;
