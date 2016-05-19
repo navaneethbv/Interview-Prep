@@ -15,6 +15,8 @@ public class ReverseEachWordInString {
 		return sb.toString();
 	}*/
 	
+	
+	//Reverse words and characters
 	public static String printSentence(String str){
 		String[] array = str.split(" "); StringBuilder sb = new StringBuilder();
 		for(int i = array.length - 1; i >= 0; i--){
