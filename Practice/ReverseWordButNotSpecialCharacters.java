@@ -24,7 +24,7 @@ public class ReverseWordButNotSpecialCharacters {
 				flag=0;
 				word="";
 			}
-			if(flag==0){System.out.println("final else");
+			if(flag==0){ // System.out.println("final else");
 				finalString=finalString+charArray[i];
 			}
 		}
