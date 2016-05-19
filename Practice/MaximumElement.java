@@ -11,7 +11,7 @@ class MaximumElement {
                         if(!map.containsKey(array[i])) {
                                 map.put(array[i],count);
                         } else {
-                                map.put(array[i], map.get(array[i]) +1);
+                                map.put(array[i], map.get(array[i]) + 1);
                         }
                 }
                 int maxValue = (Collections.max(map.values()));
