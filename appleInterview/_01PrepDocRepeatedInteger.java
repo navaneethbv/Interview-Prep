@@ -3,7 +3,7 @@ package appleInterview;
 import java.util.HashSet;
 
 public class _01PrepDocRepeatedInteger {  
-	public static void main(String[] args) { 
+	public static void main(String[] args) {
 		int[] arr=new int[]{1,4,0,4,6,3}; 
 		System.out.println(repeatedInteger(arr));
 	}
