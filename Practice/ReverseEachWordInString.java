@@ -13,7 +13,10 @@ public class ReverseEachWordInString {
 			sb.append(reverseChars(array[i])+ " ");
 		}
 		return sb.toString();
-	}	
+	}
+	
+	
+	
 	
 	public static String reverseChars(String string) {
 		char[] array = string.toCharArray(); StringBuilder sb = new StringBuilder();
