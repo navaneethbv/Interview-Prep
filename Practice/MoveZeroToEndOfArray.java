@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MoveZeroToEndOfArray {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		int[] array = {3,0,2,5,0,3,0,0,7,9};		
+		int[] array = {3,0,2,5,0,3,0,0,7,9};	
 		
 		System.out.println("The new array is "+createNewArray(array));
 		System.out.println("The number of non-zero elements in the array is "+countNonZeroElements(array));
