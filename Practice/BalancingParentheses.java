@@ -2,7 +2,7 @@ package Practice;
 
 public class BalancingParentheses {
 	public static void main(String[] args) {
-		String expression = "(}{)";
+		String expression = ")(";
 		if(isBalanced(expression)) {
 			System.out.println("The parentheses are balanced");
 		} else {
