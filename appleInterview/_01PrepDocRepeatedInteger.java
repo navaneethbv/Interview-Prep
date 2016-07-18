@@ -5,7 +5,11 @@ import java.util.HashSet;
 public class _01PrepDocRepeatedInteger {
 	public static void main(String[] args) {
 		int[] arr=new int[]{1,4,0,4,6,3}; 
-		System.out.println(repeatedInteger(arr));
+		if(repeatedInteger(arr) == -1) {
+			System.out.println("No duplicates found");
+		} else {
+			System.out.println(repeatedInteger(arr));
+		}
 	}
 
 	private static int repeatedInteger(int[] arr) {
