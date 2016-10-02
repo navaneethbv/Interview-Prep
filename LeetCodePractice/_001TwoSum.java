@@ -1,6 +1,6 @@
 package LeetCodePractice;
 
-import java.util.Arrays; 
+import java.util.Arrays;
 
 public class _001TwoSum {
 	public static void main(String[] args) {
