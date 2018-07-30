@@ -3,7 +3,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 /*
- * Author : Haridarshan H.S.
  * Class  : WickiMeterImageGrid
  * Description:This Class is used to instantiate a WickiMeter Image and convert it to a 2-dimensional character array.
  */
@@ -56,7 +55,7 @@ public class WickiMeterImageGrid {
 		}
 		br.close();
 
-	}		
+	}
 	public  String getWickiMeterFilePath() {
 		return wickiMeterFilePath;
 	}

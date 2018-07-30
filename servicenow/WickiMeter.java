@@ -6,7 +6,6 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /*
- * Author : Haridarshan H.S.
  * Class  : WickiMeter
  * Description:This Class is used to test the wickimeter image against the photonbomb and
  * 			   starship images and list the top 10 possible targets based on the confidence level.

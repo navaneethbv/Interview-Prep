@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.TreeMap;
 /*
- * Author : Haridarshan H.S.
  * Class  : ImageComparer
  * Description:This Class is used to compare the wickimeter image against the photonbomb and
  * 			   starship images and populate the possible targets sorted by the confidence.
@@ -19,7 +18,7 @@ public class ImageComparer {
 		this.starShip=starShip;
 	}
 	/**
-	 * This method is used to compare the testdata image against the target images. 
+	 * This method is used to compare the testdata image against the target images.
 	 *
 	 * @return         the list of possible targets found sorted by the confidence level
 	 */
@@ -58,7 +57,7 @@ public class ImageComparer {
 		}
 	}
 	/**
-	 * This method is used to check the target mask in the main image starting at the given x and y co-ordinates. 
+	 * This method is used to check the target mask in the main image starting at the given x and y co-ordinates.
 	 *
 	 * @param  mainImage   the wicki image or the testdata image
 	 * @param  x   		   the x co-ordinate in the testdata from where the scan needs to be started

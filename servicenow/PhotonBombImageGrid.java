@@ -3,7 +3,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 /*
- * Author : Haridarshan H.S.
  * Class  : PhotonBombImageGrid
  * Description:This Class is used to instantiate a PhotonBomb Image and convert it to a 2-dimensional character array.
  */
@@ -34,7 +33,7 @@ public class PhotonBombImageGrid {
 					lineCounter++;
 				}
 			}
-			br.close();		
+			br.close();
 		} catch (Exception e) {
 			throw new IOException("Invalid File Path - Photon bomb");
 		};
@@ -67,5 +66,5 @@ public class PhotonBombImageGrid {
 	}
 	public  void setImageGrid(char[][] imageGrid) {
 		this.imageGrid = imageGrid;
-	}	
+	}
 }

@@ -12,7 +12,7 @@ public class _03PrepDocReverseListOfLists {
 			l.add(i+1);
 			listOfLists.add(l);
 		}
-		System.out.println(reverseLists(listOfLists));
+		reverseLists(listOfLists);
 	}
 	private static LinkedList<LinkedList<Integer>> reverseLists(LinkedList<LinkedList<Integer>> listOfLists) {
 		Stack<LinkedList<Integer>> listStack=new Stack<>();
