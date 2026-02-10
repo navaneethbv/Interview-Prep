@@ -21,6 +21,7 @@ Interview-Prep/
 │   ├── ctci/
 │   ├── geeksforgeeks/
 │   ├── yelpInterview/
+│   ├── misc/
 │   └── ... (other topic/company folders)
 └── README.md
 ```
