@@ -88,7 +88,7 @@ class Trie {
 
 }
 
-public class _71TrieSnapChat {
+public class TrieSnapchatPrefixMatcher {
 	public static void main(String[] args) {
 		Trie dict = new Trie();
 		//String[] str=new String[]{"chat","ever","snapchat","snap","salesperson","per","person","sales","son","whatsoever","what","so"};
