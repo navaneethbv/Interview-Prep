@@ -1,36 +1,28 @@
 # Interview-Prep
 
-A cleaned and reorganized collection of interview-preparation solutions in Java.
+A collection of interview-preparation solutions in Java.
 
-## What changed
+## Structure
 
-- The repository was reorganized so all problem folders now live under `src/`.
-- This keeps the project root clean and makes navigation simpler.
-- Standalone Java files that were in the repository root were moved to `src/misc/` to keep all source files under `src/`.
-- Eclipse project metadata files (`.classpath`, `.project`, `.settings/`) were removed from version control.
-- All files have been renamed to use descriptive names (e.g., `TwoSum.java`, `ArrayCheckPair.java`) instead of numeric prefixes (e.g., `_001TwoSum.java`, `_Array01CheckPair.java`).
-- Class names have been updated to match the new filenames.
-
-## New structure
+All Java source files are organized under `src/` in topic-based and company-based folders:
 
 ```text
 Interview-Prep/
 ├── src/
-│   ├── Warmup/
+│   ├── Codility/
+│   ├── GeeksforGeeksPractice/
 │   ├── LeetCodePractice/
+│   ├── TopCoder/
+│   ├── Warmup/
 │   ├── ctci/
 │   ├── geeksforgeeks/
+│   ├── hackerRank/
+│   ├── leetCode/
+│   ├── misc/
 │   ├── yelpInterview/
-│   └── ... (other topic/company folders)
+│   └── ... (and more)
 └── README.md
 ```
-
-## Notes
-
-- Existing Java package names and source contents were preserved.
-- Only folder/file paths were reorganized.
-- The previously fixed Snapchat simple words solution is now at:
-  - `src/Warmup/SimpleWordsSnapchatAssessment.java`
 
 ## Running a file
 
