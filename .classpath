@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry excluding="geeksforgeeks/|Codility/Counting Elements/" kind="src" path=""/>
-	<classpathentry kind="src" path="Codility/Counting Elements"/>
-	<classpathentry kind="src" path="geeksforgeeks"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>

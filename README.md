@@ -6,6 +6,8 @@ A cleaned and reorganized collection of interview-preparation solutions in Java.
 
 - The repository was reorganized so all problem folders now live under `src/`.
 - This keeps the project root clean and makes navigation simpler.
+- Standalone Java files that were in the repository root were moved to `src/misc/` to keep all source files under `src/`.
+- Eclipse project metadata files (`.classpath`, `.project`, `.settings/`) were removed from version control.
 - All files have been renamed to use descriptive names (e.g., `TwoSum.java`, `ArrayCheckPair.java`) instead of numeric prefixes (e.g., `_001TwoSum.java`, `_Array01CheckPair.java`).
 - Class names have been updated to match the new filenames.
 
