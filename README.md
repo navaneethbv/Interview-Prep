@@ -30,9 +30,10 @@ Interview-Prep/
 
 ## Running a file
 
-From the repo root, compile and run by path, for example:
+From the repo root, compile into a dedicated output directory and then run, for example:
 
 ```bash
-javac src/Warmup/SimpleWordsSnapchatAssessment.java
-java -cp src Warmup.SimpleWordsSnapchatAssessment
+mkdir -p out
+javac -d out src/Warmup/SimpleWordsSnapchatAssessment.java
+java -cp out Warmup.SimpleWordsSnapchatAssessment
 ```
