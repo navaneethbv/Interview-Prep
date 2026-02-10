@@ -28,7 +28,7 @@ public class ExcelSheetColumnNumber {
 		int value=0;
 		// Iterate through all elements
 		for (int i = 0; i < s.length(); i++) {
-			value+=Math.pow(26,s.length()-1-i)*(s.charAt(i)-'A'+1);
+			value = value * 26 + (s.charAt(i) - 'A' + 1);
 		}
 		return value;
 		
