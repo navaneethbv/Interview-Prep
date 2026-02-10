@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of Stack Data Structure Tester*/
 /**
  * Implementation of stack Test algorithm/data structure.

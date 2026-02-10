@@ -3,10 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-16/
  * Given an array of strings, you need to find the longest running sequence of a character

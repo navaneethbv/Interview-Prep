@@ -14,7 +14,6 @@ public class ReplaceSpacesInURI {
 	 * @return the resulting string
 	 */
 	public static String replaceURI(String str)
-	public static String replaceURI(String str)
 	{
 		return str.replaceAll(" ", "%20");
 	}

@@ -83,7 +83,6 @@ public class GoogleCareerCup16 {
 			this.val=val;
 		}
 
-
 	}
 
 }

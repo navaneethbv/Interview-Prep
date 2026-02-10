@@ -60,6 +60,4 @@ public class DiameterOfBT
 		return left==null?0:1+Math.max(getHeight(left.left), getHeight(left.right));
 	}
 
-
-
 }

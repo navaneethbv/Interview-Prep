@@ -22,7 +22,6 @@ public class QueueUsingStack {
 		 * @param value the value value
 		 */
 		public void enqueue(int value)
-		public void enqueue(int value)
 		{
 			stack1.push(value);
 		}
@@ -31,7 +30,6 @@ public class QueueUsingStack {
 		 *
 		 * @return the computed integer result
 		 */
-		public int dequeue()
 		public int dequeue()
 		{
 			while(!stack1.isEmpty())
@@ -57,7 +55,6 @@ public class QueueUsingStack {
 		m.enqueue(1);
 		m.enqueue(2);
 		m.enqueue(3);
-		System.out.println(m.dequeue());
 		System.out.println(m.dequeue());
 		
 	}

@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-3/	
  * Question was that a a matrix is given with its rows
@@ -49,7 +47,6 @@ package geeksforgeeks;
 				return true;
 			}
 		}
-		
 		
 		return false;
 	}

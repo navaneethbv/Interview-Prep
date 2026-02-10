@@ -60,7 +60,5 @@ public class DSBTHeightBalanceCheck {
 		return 0;
 	}
 
-
-
 }
 

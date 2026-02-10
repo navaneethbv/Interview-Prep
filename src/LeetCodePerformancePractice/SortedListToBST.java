@@ -74,5 +74,4 @@ public class SortedListToBST {
 		return head==null?0:1+getLength(head.next);
 	}
 
-
 }

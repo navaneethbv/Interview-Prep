@@ -35,12 +35,6 @@ public class BSTCountBSTSubTrees{
 		System.out.println(findSubTreeCount(n,1,45));
 	}
 
-
-
-
-
-
-
 	/**
 	 * Finds sub tree count in the data structure.
 	 *
@@ -58,12 +52,6 @@ public class BSTCountBSTSubTrees{
 		}
 		return 0;
 	}
-
-
-
-
-
-
 
 	/**
 	 * Finds sub tree count util in the data structure.
@@ -101,7 +89,6 @@ public class BSTCountBSTSubTrees{
 		return 0;
 	}
 
-
 	/**
 	 * Retrieves nodes from the data structure.
 	 *
@@ -128,12 +115,6 @@ public class BSTCountBSTSubTrees{
 		}
 		return 0;
 	}
-
-
-
-
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

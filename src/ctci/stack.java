@@ -1,7 +1,5 @@
 package ctci;
 
-
-
 /*Implementation of Hash Map Data Structure*/
 /**
  * Implementation of stack algorithm/data structure.
@@ -71,10 +69,6 @@ public class stack {
 		// Recursively process left and right subtrees
 		return outputStringBuilder.toString();
 	}
-
-
-
-
 
 	class Node{
 		int data;

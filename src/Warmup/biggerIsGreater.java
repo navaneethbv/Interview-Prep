@@ -77,7 +77,6 @@ public class biggerIsGreater {
 	 */
 	private static void sortSuffix() {
 
-
 	}
 
 	/**
@@ -85,7 +84,6 @@ public class biggerIsGreater {
 	 *
 	 */
 	private static void swapElement() {
-
 
 	}
 
@@ -95,9 +93,7 @@ public class biggerIsGreater {
 	 */
 	private static void getMaxIndex() {
 
-
 	}
-
 
 }
 //find longest decreasing sequence

@@ -34,8 +34,6 @@ public class RootToLeafConstantSum
 		System.out.println(rootSum(tn,114));
 	}
 
-
-
 	/**
 	 * Performs rootSum operation.
 	 *
@@ -55,8 +53,6 @@ public class RootToLeafConstantSum
 		return rootSum(tn.left, sum)||rootSum(tn.right, sum);
 	}
 
-
-
 	/**
 	 * Retrieves height from the data structure.
 	 *
@@ -67,7 +63,5 @@ public class RootToLeafConstantSum
 		// Recursively process left and right subtrees
 		return left==null?0:1+Math.max(getHeight(left.left), getHeight(left.right));
 	}
-
-
 
 }

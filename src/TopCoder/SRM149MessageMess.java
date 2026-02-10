@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1331&rd=4550
  */
 
-
-
 /**
  * Implementation of SRM149 Message Mess algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -32,9 +30,6 @@ public class SRM149MessageMess {
 	 */
 	public static String restore(String[] dictionary, String message){
 		StringBuilder outputString=new StringBuilder("");
-
-
-
 
 		return outputString.toString();
 	}

@@ -57,5 +57,4 @@ public class FloorCeilArray {
 			System.out.println("Floor:"+arr[right]+"Ceil:"+arr[left]);
 	}
 
-
 }

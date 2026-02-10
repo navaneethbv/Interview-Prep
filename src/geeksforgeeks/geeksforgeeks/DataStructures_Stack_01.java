@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
 /*
  * http://geeksquiz.com/stack-set-3-reverse-string-using-stack/
  * Reverse a string using stack

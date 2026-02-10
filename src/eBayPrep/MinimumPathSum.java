@@ -8,7 +8,6 @@ package eBayPrep;
  */
 public class MinimumPathSum {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -19,7 +18,6 @@ public class MinimumPathSum {
 		System.out.println("Test 1: Basic test");
 	}
 
-
 	/**
 	 * Performs minPathSum operation.
 	 *
@@ -29,7 +27,6 @@ public class MinimumPathSum {
 	public static int minPathSum(int[][] obstacleGrid) {
 		return dfs(0,0,obstacleGrid,0);
 	}
-
 
 	/**
 	 * Performs dfs operation.
@@ -49,7 +46,6 @@ public class MinimumPathSum {
 		// Recursively process left and right subtrees
 		return Math.min(dfs(i+1, j, obstacleGrid, sum+obstacleGrid[i][j]), dfs(i, j+1, obstacleGrid, sum+obstacleGrid[i][j]));
 	}
-
 
 }
 

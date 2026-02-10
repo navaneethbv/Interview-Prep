@@ -40,7 +40,6 @@ public class BalancedBST {
 		return tn==null?0:1+Math.max(getHeight(tn.left), getHeight(tn.right));
 	}
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

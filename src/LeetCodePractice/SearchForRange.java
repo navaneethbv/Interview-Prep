@@ -33,8 +33,6 @@ public class SearchForRange {
 		return new int[]{startPos,endPos};
 	}
 
-
-
 	/**
 	 * Finds start in the data structure.
 	 *

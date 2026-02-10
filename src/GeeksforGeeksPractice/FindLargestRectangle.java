@@ -57,8 +57,6 @@ public class FindLargestRectangle {
 			}
 		}
 		
-		
-		
 		int curr_area, max_area = 0;
 	    for (int i=0; i<rows; i++)
 	    {
@@ -73,8 +71,6 @@ public class FindLargestRectangle {
 	    return (max_area);
 	}
 
-
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -87,6 +83,5 @@ public class FindLargestRectangle {
 		}
 
 	}
-
 
 }

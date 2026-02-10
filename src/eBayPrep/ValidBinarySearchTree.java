@@ -62,7 +62,6 @@ public class ValidBinarySearchTree {
 			return isValidBSTree(tn.left,-2147483649l,tn.val) && isValidBSTree(tn.right,tn.val,2147483648l);
 	}
 
-
 	/**
 	 * Checks if valid bs tree.
 	 *
@@ -78,7 +77,6 @@ public class ValidBinarySearchTree {
 		// Recursively process left and right subtrees
 		return tn.val>minValue && tn.val<maxValue && isValidBSTree(tn.left, minValue, tn.val) && isValidBSTree(tn.right, tn.val, maxValue);
 	}
-
 
 }
 

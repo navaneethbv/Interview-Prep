@@ -19,10 +19,8 @@ public class ContainerWithMostWater {
 	 */
 	public int maxArea(int[] height) {
 		
-		
 		return 0;
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

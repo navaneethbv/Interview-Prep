@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1610&rd=4700
  */
 
-
-
 /**
  * Implementation of TCO2003 Missing Letters algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

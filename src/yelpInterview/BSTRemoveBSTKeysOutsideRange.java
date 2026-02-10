@@ -116,7 +116,6 @@ public class BSTRemoveBSTKeysOutsideRange {
 		return n;
 	}
 
-
 	/**
 	 * Performs insert operation.
 	 *

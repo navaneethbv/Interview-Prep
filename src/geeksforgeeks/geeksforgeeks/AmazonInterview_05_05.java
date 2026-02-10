@@ -4,11 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-4-2/
  * Given life time of different elephants find period when maximum number of elephants lived.

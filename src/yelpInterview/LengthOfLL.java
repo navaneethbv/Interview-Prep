@@ -62,11 +62,5 @@ public class LengthOfLL {
 		return 1+findRecursiveLength(n.next);
 	}
 
-
 }
-
-
-
-
-
 

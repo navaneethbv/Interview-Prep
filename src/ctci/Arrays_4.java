@@ -3,7 +3,6 @@ package ctci;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*Implementation of CTCI 1.5*/
 /**
  * Implementation of Arrays_4 algorithm/data structure.
@@ -51,6 +50,5 @@ public class Arrays_4 {
 			return inputString;
 		return outputString;
 	}
-
 
 }

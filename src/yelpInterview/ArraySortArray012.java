@@ -45,11 +45,6 @@ public class ArraySortArray012 {
 		return inputArray;
 	}
 
-
-
-
-
-
 	/**
 	 * Performs sortArray operation.
 	 *

@@ -3,9 +3,6 @@ package geeksforgeeks;
 import ctci._02linkedList;
 import ctci._02linkedList.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview/
  *  Clone a singly link list whose nodes contain, apart from next pointers, an extra pointer to any random node. 

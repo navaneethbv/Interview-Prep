@@ -4,10 +4,6 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion/
  * Inorder Tree Traversal without Recursion
@@ -71,8 +67,5 @@ import java.util.Stack;
 			 }
 		 }
 	 }
-
-
-
 
  }

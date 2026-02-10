@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-11/
  * Program to implement atoi function

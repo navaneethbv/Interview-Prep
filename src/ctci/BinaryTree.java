@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of Binary Tree */
 /**
  * Implementation of Binary Tree algorithm/data structure.

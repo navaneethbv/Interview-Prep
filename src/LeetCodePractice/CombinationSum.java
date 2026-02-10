@@ -33,13 +33,6 @@ public class CombinationSum {
 		List<List<Integer>> outputList=new ArrayList<List<Integer>>();
 		Arrays.sort(candidates);
 		
-		
-		
-		
-		
-		
-		
-		
 		return outputList;
 	}
 }

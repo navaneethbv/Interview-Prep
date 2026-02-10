@@ -12,7 +12,6 @@ import java.util.List;
  */
 public class GenerateParentheses {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

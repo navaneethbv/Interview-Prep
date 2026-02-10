@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1648&rd=4550
  */
 
-
-
 /**
  * Implementation of SRM149 Big Burger algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

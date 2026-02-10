@@ -5,8 +5,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-18/
  * Given an array of numbers if we start deleting numbers from end of array,

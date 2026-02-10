@@ -2,12 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/difference-between-sums-of-odd-and-even-levels/
  * Difference between sums of odd level and even level nodes of a Binary Tree

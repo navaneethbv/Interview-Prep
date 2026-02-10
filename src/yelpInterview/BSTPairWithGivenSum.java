@@ -38,8 +38,6 @@ public class BSTPairWithGivenSum {
 		System.out.println(hasTargetNodes(n,33));
 	}
 
-
-
 	static ArrayList<Integer> aList;
 
 	/**
@@ -61,10 +59,6 @@ public class BSTPairWithGivenSum {
 		}
 		return false;
 	}
-
-
-
-
 
 	/**
 	 * Performs checkSum operation.
@@ -88,10 +82,6 @@ public class BSTPairWithGivenSum {
 		return false;
 	}
 
-
-
-
-
 	/**
 	 * Performs populateList operation.
 	 *
@@ -106,10 +96,6 @@ public class BSTPairWithGivenSum {
 			populateList(n.right);
 		}
 	}
-
-
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

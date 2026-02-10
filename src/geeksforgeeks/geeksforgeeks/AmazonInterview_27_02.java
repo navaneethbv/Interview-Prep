@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-27/
  * http://www.geeksforgeeks.org/counting-inversions/
@@ -50,7 +49,6 @@ import java.util.Scanner;
 		 ArrayList<String> outputList=new ArrayList<String>();
 		 //merge sort here
 		 
-		 
 		 return null;
 	 }
 
@@ -87,8 +85,5 @@ import java.util.Scanner;
 		 }
 		 return inputArray;
 	 }
-
-
-
 
  }

@@ -4,7 +4,6 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/print-ancestors-of-a-given-binary-tree-node-without-recursion/
  * Print ancestors of a given binary tree node without recursion

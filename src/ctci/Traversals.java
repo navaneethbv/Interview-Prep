@@ -1,7 +1,5 @@
 package ctci;
 
-
-
 /*Implementation of CTCI */
 /**
  * Implementation of Traversals algorithm/data structure.

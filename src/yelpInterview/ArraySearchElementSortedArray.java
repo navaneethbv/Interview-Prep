@@ -47,7 +47,4 @@ public class ArraySearchElementSortedArray {
 		return -1;
 	}
 
-
-
-
 }

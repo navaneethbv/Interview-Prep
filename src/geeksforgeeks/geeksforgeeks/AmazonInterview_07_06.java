@@ -3,7 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-2/
  * Given a Binary Tree, check if every node is sum of all of its children.

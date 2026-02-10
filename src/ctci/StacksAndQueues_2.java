@@ -2,7 +2,6 @@ package ctci;
 
 import java.util.ArrayList;
 
-
 /*Implementation of CTCI 3.2*/
 class _8Stacks {
 	private Node presentNode;
@@ -87,9 +86,6 @@ class _8Stacks {
 		// Recursively process left and right subtrees
 		return minList.get(minList.size()-1);
 	}
-
-
-
 
 	class Node{
 		int data;

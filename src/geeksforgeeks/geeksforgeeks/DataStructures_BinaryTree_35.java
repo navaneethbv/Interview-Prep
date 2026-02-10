@@ -2,8 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
 /*
  * http://www.geeksforgeeks.org/check-if-a-given-binary-tree-is-full-tree-or-not/	
  * Check whether a given Binary Tree is Full or not

@@ -1,13 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-24/
  * http://www.geeksforgeeks.org/find-two-rectangles-overlap/
@@ -55,7 +47,6 @@ package geeksforgeeks;
 				 return true;
 			 }
 		 }
-
 
 		 if((rBX2)>=lTX1 && (rBX2)<=(rBX1))
 		 {

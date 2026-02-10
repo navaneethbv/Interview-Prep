@@ -10,8 +10,6 @@ import java.util.Stack;
  */
 public class ValidParentheses {
 
-
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -21,8 +19,6 @@ public class ValidParentheses {
 		// Test Case 1: Basic functionality test
 		System.out.println("Test 1: Basic test");
 	}
-
-
 
 	/**
 	 * Checks if valid.
@@ -49,5 +45,4 @@ public class ValidParentheses {
 			}
 		}
 		return charStack.isEmpty()?true:false;
-	}
 	}

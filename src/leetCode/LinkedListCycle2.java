@@ -41,7 +41,6 @@ public class LinkedListCycle2 {
 		return fastPointer;
 	}
 
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */

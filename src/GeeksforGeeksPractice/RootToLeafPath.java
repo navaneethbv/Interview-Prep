@@ -61,7 +61,6 @@ public class RootToLeafPath {
 				printNodes(tn.right, path, pathLen);
 			}
 			
-			
 		}	
 	}
 
@@ -74,6 +73,5 @@ public class RootToLeafPath {
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
-
 
 }

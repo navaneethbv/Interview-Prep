@@ -3,9 +3,6 @@ package ctci;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
 /*Implementation of CTCI 2.4*/
 /**
  * Implementation of Linked List_3 algorithm/data structure.

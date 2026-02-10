@@ -62,7 +62,4 @@ public class MatrixFindCommonElement {
 		return -1;
 	}
 
-
-
-
 }

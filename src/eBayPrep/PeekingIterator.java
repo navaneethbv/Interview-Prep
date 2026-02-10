@@ -21,7 +21,6 @@ public class PeekingIterator{
 			}
 		}
 
-
 		/**
 		 * Performs peek operation.
 		 *
@@ -30,7 +29,6 @@ public class PeekingIterator{
 		public Integer peek() {
 			return next;
 		}
-
 
 		// Override them if needed.
 		@Override

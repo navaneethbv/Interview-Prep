@@ -29,7 +29,6 @@ import java.util.BitSet;
   * @return the computed integer result
   */
  * class Solution { public int solution(int X, int[] A); }
- * class Solution { public int solution(int X, int[] A); }
  * that, given a non-empty zero-indexed array A consisting of N integers and integer X,
  * returns the earliest time when the frog can jump to the other side of the river.
  * If the frog is never able to jump to the other side of the river, the function should return ?1.

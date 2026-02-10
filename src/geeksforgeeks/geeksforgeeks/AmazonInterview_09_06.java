@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8-2/
  *  Given a Singly Linked List which contains integers,
@@ -72,6 +71,5 @@ import java.util.Scanner;
 		 }
 		 System.out.println();
 	}
-
 
  }

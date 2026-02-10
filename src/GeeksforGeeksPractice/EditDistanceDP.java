@@ -47,9 +47,6 @@ public class EditDistanceDP {
 
 		System.out.println(dp[m][n]);
 
-
 	}
-
-
 
 }

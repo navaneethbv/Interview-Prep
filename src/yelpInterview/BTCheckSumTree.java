@@ -60,6 +60,5 @@ public class BTCheckSumTree {
 		return 0;
 	}
 
-
 }
 

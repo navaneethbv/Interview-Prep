@@ -21,8 +21,6 @@ public class GoDaddyAssessment {
 
 	}
 
-
-
 	/**
 	 * Performs sortIntersect operation.
 	 *

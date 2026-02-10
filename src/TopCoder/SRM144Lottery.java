@@ -10,8 +10,6 @@ import java.util.TreeMap;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1659&rd=4515
  */
 
-
-
 /**
  * Implementation of SRM144 Lottery algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

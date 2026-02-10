@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=927&rd=4700
  */
 
-
-
 /**
  * Implementation of TCO2003 Inserter algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -43,10 +41,6 @@ public class TCO2003Inserter {
 			System.out.println("findString-"+findString);
 			int counter=0;
 			while(true){
-				
-				
-				
-				
 				
 			}
 		}

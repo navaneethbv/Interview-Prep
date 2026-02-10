@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1765&rd=4565
  */
 
-
-
 /**
  * Implementation of SRM152 Fixed Point Theorem algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

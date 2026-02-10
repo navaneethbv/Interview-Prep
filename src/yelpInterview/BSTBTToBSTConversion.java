@@ -37,8 +37,6 @@ public class BSTBTToBSTConversion{
 		inOrderTraversal(n);
 	}
 
-
-
 	static ArrayList<Integer> aList;
 	/**
 	 * Performs convertTree operation.
@@ -56,10 +54,6 @@ public class BSTBTToBSTConversion{
 			changeNodeVal(n,arr);
 		}
 	}
-
-
-
-
 
 	static int counter=0;
 	/**
@@ -79,11 +73,6 @@ public class BSTBTToBSTConversion{
 		}
 	}
 
-
-
-
-
-
 	/**
 	 * Performs populateList operation.
 	 *
@@ -98,10 +87,6 @@ public class BSTBTToBSTConversion{
 			populateList(n.right);
 		}
 	}
-
-
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

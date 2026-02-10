@@ -39,8 +39,6 @@ public class AlgoMergeSort{
 	 */
 	private static int[] mergeSort(int[] inputArray) {
 
-
-
 		return null;
 	}
 }

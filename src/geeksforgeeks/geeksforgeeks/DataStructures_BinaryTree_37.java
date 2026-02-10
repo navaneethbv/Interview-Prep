@@ -4,7 +4,6 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
  * Boundary Traversal of binary tree
@@ -104,7 +103,5 @@ import java.util.Stack;
 		 }
 
 	 }
-
-
 
  }

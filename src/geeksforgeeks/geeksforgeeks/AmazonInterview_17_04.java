@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-17/
  * Given two trees , find whether they are from same set of dataset or not.

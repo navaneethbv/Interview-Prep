@@ -86,7 +86,6 @@ public class PopulatingNextRightPointers {
 	 * @return the computed integer result
 	 */
 	public static int getHeight(TreeLinkNode n)
-	public static int getHeight(TreeLinkNode n)
 	{
 		if(n!=null)
 		{
@@ -139,13 +138,5 @@ public class PopulatingNextRightPointers {
 			preOrder(tn.right);	
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

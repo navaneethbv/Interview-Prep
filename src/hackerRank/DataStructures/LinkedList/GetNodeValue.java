@@ -34,5 +34,4 @@ public class GetNodeValue {
 		int data;
 	}
 
-
 }

@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1346&rd=4555
  */
 
-
-
 /**
  * Implementation of SRM150 Widget Repairs algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

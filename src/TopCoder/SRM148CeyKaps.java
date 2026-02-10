@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1740&rd=4545
  */
 
-
-
 /**
  * Implementation of SRM148 Cey Kaps algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

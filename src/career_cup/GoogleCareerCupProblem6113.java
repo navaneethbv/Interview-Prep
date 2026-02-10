@@ -33,7 +33,6 @@ public class GoogleCareerCupProblem6113 {
 		System.out.println(findInOrderSuccessor(tn.left.right.right));
 	}
 
-
 	/**
 	 * Finds in order successor in the data structure.
 	 *
@@ -41,7 +40,6 @@ public class GoogleCareerCupProblem6113 {
 	 * @return the TreeNode result
 	 */
 	private static TreeNode findInOrderSuccessor(TreeNode tn) {
-
 
 		// Check for null/base case
 		if(tn.right!=null)
@@ -66,7 +64,6 @@ public class GoogleCareerCupProblem6113 {
 		return null;
 	}
 
-
 	/**
 	 * Performs inOrder operation.
 	 *
@@ -82,7 +79,6 @@ public class GoogleCareerCupProblem6113 {
 		}
 
 	}
-
 
 	/**
 	 * Inner class representing a node in the data structure.

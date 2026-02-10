@@ -1,10 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-22/
  * Given a matrix mxn containing integers.

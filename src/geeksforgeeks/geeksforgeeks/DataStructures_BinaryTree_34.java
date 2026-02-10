@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/construct-a-special-tree-from-given-preorder-traversal/
  * Construct a special tree from given preorder traversal

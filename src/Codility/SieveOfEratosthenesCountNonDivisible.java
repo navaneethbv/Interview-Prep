@@ -60,6 +60,4 @@ public class SieveOfEratosthenesCountNonDivisible {
 		return outputArr;
 	}
 
-
-
 }

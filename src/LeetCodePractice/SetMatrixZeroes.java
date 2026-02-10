@@ -10,7 +10,6 @@ import java.util.Arrays;
  */
 public class SetMatrixZeroes {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -23,7 +22,6 @@ public class SetMatrixZeroes {
 			{1,2,1,3},
 			{0,0,1,1}});				//1213
 	}									//0011
-
 
 	/**
 	 * Sets zeroes in the data structure.
@@ -89,7 +87,6 @@ public class SetMatrixZeroes {
 		}
 		printMatrix(matrix);
 
-
 	}
 	/**
 	 * Performs printMatrix operation.
@@ -103,7 +100,6 @@ public class SetMatrixZeroes {
 			System.out.println(Arrays.toString(matrix[i]));
 		}
 	}
-
 
 	/**
 	 * Sets zeroes extra space in the data structure.

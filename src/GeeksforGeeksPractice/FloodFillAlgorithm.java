@@ -36,8 +36,6 @@ public class FloodFillAlgorithm {
 		printMatrix(screen);
 	}
 
-
-
 	/**
 	 * Performs floodFill operation.
 	 *
@@ -51,8 +49,6 @@ public class FloodFillAlgorithm {
 		floodFillUtil(screen, x, y, prevC, newC);
 
 	}
-
-
 
 	/**
 	 * Performs floodFillUtil operation.
@@ -78,10 +74,7 @@ public class FloodFillAlgorithm {
 			floodFillUtil(screen,x,y-1,prevC,newC);
 		}
 
-
 	}
-
-
 
 	/**
 	 * Performs printMatrix operation.
@@ -95,6 +88,5 @@ public class FloodFillAlgorithm {
 		}
 
 	}
-
 
 }

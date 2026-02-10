@@ -44,6 +44,4 @@ public class ArraySumElements {
 		return false;
 	}
 
-
-
 }

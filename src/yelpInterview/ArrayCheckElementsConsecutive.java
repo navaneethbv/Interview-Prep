@@ -51,5 +51,4 @@ public class ArrayCheckElementsConsecutive {
 		return true;
 	}
 
-
 }

@@ -13,8 +13,6 @@ package TopCoder;
  */
 public class SRM525RainyRoad {
 	
-	
-	
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -41,8 +39,6 @@ public class SRM525RainyRoad {
 		System.out.println(isReachable2(new String[]    	
 				{".............................................W."
 				,".............................................W."}));
-		
-		
 		
 	}
 	/**

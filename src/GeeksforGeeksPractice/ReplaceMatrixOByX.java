@@ -33,8 +33,6 @@ public class ReplaceMatrixOByX {
 		printMatrix(mat);
 	}
 
-
-
 	/**
 	 * Performs replaceMatrix operation.
 	 *
@@ -108,10 +106,7 @@ public class ReplaceMatrixOByX {
 			floodFillUtil(screen,x,y-1,prevC,newC);
 		}
 
-
 	}
-
-
 
 	/**
 	 * Performs printMatrix operation.
@@ -125,6 +120,5 @@ public class ReplaceMatrixOByX {
 		}
 
 	}
-
 
 }

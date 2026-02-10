@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 /*Implementation of CTCI 1.7*/
 /**
  * Implementation of Arrays_6 algorithm/data structure.
@@ -82,10 +81,7 @@ public class Arrays_6 {
 			}
 		}
 		
-		
-		
 		return inputArray;
 	}
-
 
 }

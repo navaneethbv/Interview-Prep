@@ -90,7 +90,5 @@ public class PathSum {
 		storePath(root.right, path, level+1,mainSum);
 	}
 
-
-
 }
 

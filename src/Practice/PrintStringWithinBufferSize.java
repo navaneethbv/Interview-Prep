@@ -1,8 +1,6 @@
 package Practice;
 
-
 // Program is Incomplete
-
 
 /**
  * Implementation of Print String Within Buffer Size algorithm/data structure.

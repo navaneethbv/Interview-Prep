@@ -34,8 +34,6 @@ public class RemoveDuplicatesSortedList2 {
 			System.out.println(ln.val);ln=ln.next;
 		}
 
-
-
 	}
 	/**
 	 * Performs deleteDuplicates operation.
@@ -76,8 +74,6 @@ public class RemoveDuplicatesSortedList2 {
 			output.next=null;
 		}
 		return pointer.next;
-
-
 
 	}
 }

@@ -5,10 +5,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-16/
  * Given 2 sorted arrays of size m and n+m(with n elements) , merge

@@ -113,9 +113,6 @@ public class BSTBSTTriplet {
 	}
 	static int counter=0;
 
-
-
-
 	/**
 	 * Performs inOrderTraversal operation.
 	 *

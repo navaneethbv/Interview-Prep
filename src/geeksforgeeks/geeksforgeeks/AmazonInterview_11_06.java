@@ -3,9 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-11/
  * Find the maximum length palindrome in a string

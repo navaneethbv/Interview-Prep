@@ -46,7 +46,6 @@ public class RotateArray {
 			j++;
 		}
 		// Copy result back to original array
-		// Copy result back to original array
 		System.arraycopy( result, 0, array, 0, array.length );
 		return result;
 

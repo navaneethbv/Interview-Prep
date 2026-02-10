@@ -3,7 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-37/
  * Given an array of n numbers with repetition of numbers.

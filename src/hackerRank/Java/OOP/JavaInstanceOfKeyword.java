@@ -15,7 +15,6 @@ import java.util.Scanner;
  */
 public class JavaInstanceOfKeyword {
 
-
 	/**
 	 * Inner class Student for supporting operations.
 	 */
@@ -29,15 +28,12 @@ public class JavaInstanceOfKeyword {
 	 */
 	static class Hacker{}
 
-
-
 	/**
 	 * Counts the number of .
 	 *
 	 * @param mylist the mylist parameter
 	 * @return the resulting string
 	 */
-	static String count(ArrayList mylist)
 	static String count(ArrayList mylist)
 	{
 		int a=0,b=0,c=0;

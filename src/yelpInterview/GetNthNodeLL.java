@@ -49,12 +49,5 @@ public class GetNthNodeLL {
 		return n;
 	}
 
-
-
 }
-
-
-
-
-
 

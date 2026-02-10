@@ -5,8 +5,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
-
 /*Implementation of Binary Search Tree */
 /**
  * Implementation of Binary Search Tree algorithm/data structure.
@@ -411,12 +409,6 @@ public class BinarySearchTree{
 	}
 
 	
-
-
-
-
-
-
 
 	class Node{
 		int data;

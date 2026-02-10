@@ -3,9 +3,6 @@ package geeksforgeeks;
 import ctci._02linkedList;
 import ctci._02linkedList.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-11/
  * Program to swap the kth node from end and kth node from front

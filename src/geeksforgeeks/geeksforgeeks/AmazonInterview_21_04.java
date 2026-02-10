@@ -1,9 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-21/
  * A robot is there in 2D space, which can move to its left direction.
@@ -63,6 +59,5 @@ package geeksforgeeks;
 		 }
 
 	 }
-
 
  }

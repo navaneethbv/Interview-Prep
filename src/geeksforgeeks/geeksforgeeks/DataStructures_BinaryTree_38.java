@@ -4,7 +4,6 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/iterative-preorder-traversal/
  * Iterative Preorder Traversal
@@ -60,6 +59,5 @@ import java.util.Stack;
 		 }
 
 	 }
-
 
  }

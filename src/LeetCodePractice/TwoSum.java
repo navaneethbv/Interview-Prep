@@ -48,9 +48,7 @@ public class TwoSum {
 	 */
 	public static int[] twoSum(int[] nums, int target) {
 		// Iterate through all elements
-		// Iterate through all elements
 		for (int i = 0; i < nums.length; i++) {
-			// Inner loop to check combinations
 			// Inner loop to check combinations
 			for (int j = 0; j < nums.length; j++) {
 				if(j!=i){

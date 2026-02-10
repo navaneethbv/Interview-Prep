@@ -17,7 +17,6 @@ public class ArrayTurnImage90Degrees {
 	public static void main(String a[]){
 		char [][]inputArray=new char[][]{{'*','*','*','^','*','*','*'},
 			{'*','*','*','|','*','*','*'},
-			{'*','*','*','|','*','*','*'},
 			{'*','*','*','|','*','*','*'}};
 			print(inputArray);
 			inputArray=rotate(inputArray);
@@ -38,7 +37,6 @@ public class ArrayTurnImage90Degrees {
 			}
 		}
 		
-		
 		return outputArray;
 	}
 
@@ -53,8 +51,5 @@ public class ArrayTurnImage90Degrees {
 			System.out.println(Arrays.toString(inputArray[i]));
 		}
 	}
-
-
-
 
 }

@@ -52,8 +52,6 @@ public class CommonChild {
 			return Math.max(lcs(inputString1,inputString2,length1,length2-1), lcs(inputString1,inputString2,length1-1,length2));
 	}
 
-
-
 	//Doesnt consider the ordering of the sequences
 	/**
 	 * Finds common child in the data structure.

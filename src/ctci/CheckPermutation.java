@@ -16,7 +16,6 @@ public class CheckPermutation {
 	 * @return the resulting string
 	 */
 	public static String sort(String str)
-	public static String sort(String str)
 	{
 		char[] content = str.toCharArray();
 		java.util.Arrays.sort(content);
@@ -29,7 +28,6 @@ public class CheckPermutation {
 	 * @param t the t parameter
 	 * @return true if condition is met, false otherwise
 	 */
-	public static boolean permutation(String s,String t)
 	public static boolean permutation(String s,String t)
 	{
 		if(s.length()!=t.length())

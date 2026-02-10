@@ -37,5 +37,4 @@ public class PrepDocFibonacciSeries {
 		System.out.println(Arrays.toString(fibo));
 	}
 
-
 }

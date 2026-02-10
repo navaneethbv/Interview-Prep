@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  * Two trees can be called isomorphic if they have similar structure and 

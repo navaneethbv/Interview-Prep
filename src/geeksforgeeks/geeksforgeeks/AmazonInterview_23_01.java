@@ -5,11 +5,6 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Set;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-23/
  * Given a file with many product name of an company.

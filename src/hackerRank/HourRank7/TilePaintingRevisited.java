@@ -11,8 +11,6 @@ import java.util.Scanner;
  */
 public class TilePaintingRevisited {
 
-
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -42,9 +40,5 @@ public class TilePaintingRevisited {
 		else
 			return elements*(elements-1)+1;
 	}
-
-
-
-
 
 }

@@ -63,5 +63,4 @@ public class FindLengthOfLL {
 		return 1+findLength(ln.next);
 	}
 
-
 }

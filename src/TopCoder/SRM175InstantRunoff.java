@@ -8,8 +8,6 @@ import java.util.TreeSet;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=2244&rd=4680
  */
 
-
-
 /**
  * Implementation of SRM175 Instant Runoff algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

@@ -14,7 +14,6 @@ import java.util.Scanner;
  */
 public class simpleArraySum {
 
-
 	    /**
 	     * Main method to test the functionality of the class with various test cases.
 	     *
@@ -32,7 +31,5 @@ public class simpleArraySum {
 	        }
 	        System.out.println(sum);
 	    }
-	
-	
 	
 }

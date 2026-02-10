@@ -41,7 +41,6 @@ public class LevelOrderTraversalSpiral {
 	 * @param tn the tree node to process
 	 */
 	public static void levelOrderTraversalSpiral(TreeNode tn)
-	public static void levelOrderTraversalSpiral(TreeNode tn)
 	{
 		int height=getHeight(tn);
 		boolean flag=false;

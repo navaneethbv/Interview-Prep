@@ -8,8 +8,6 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1914&rd=4640
  */
 
-
-
 /**
  * Implementation of SRM167 Animation algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

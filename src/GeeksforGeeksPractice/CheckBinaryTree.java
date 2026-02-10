@@ -52,13 +52,6 @@ public class CheckBinaryTree {
 		return false;
 	}
 
-
-
-
-
-
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -69,6 +62,5 @@ public class CheckBinaryTree {
 			this.value=value;
 		}		
 	}
-
 
 }

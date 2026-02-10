@@ -85,6 +85,4 @@ public class LevelOrderTraversalSpiral
 		return 1+Math.max(getHeight(tn.left), getHeight(tn.right));
 	}
 
-
-
 }

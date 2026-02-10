@@ -55,5 +55,4 @@ public class EvaluationOfPostfixExpression {
 		return stack.pop();
 	}
 
-
 }

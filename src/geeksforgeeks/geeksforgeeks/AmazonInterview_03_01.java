@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-2/
  * Given a linked list containing character in each node, segregate its nodes in such a way that all nodes containing a vowel
@@ -40,7 +38,6 @@ public class AmazonInterview_03_01 {
 		linkedList=reArrangeLinkedList(linkedList);
 		System.out.println(linkedList.toString());
 		
-		
 	}
 
 	private static _01AmazonInterview_03linkedList reArrangeLinkedList(
@@ -63,11 +60,6 @@ public class AmazonInterview_03_01 {
 		return newLinkedList;
 	}
 	
-	
-	
-	
-	
-
 
 }
 class _01AmazonInterview_03linkedList {

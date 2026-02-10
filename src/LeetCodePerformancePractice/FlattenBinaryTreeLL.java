@@ -60,7 +60,5 @@ public class FlattenBinaryTreeLL {
 			root=root.right;
 		}
 
-
-
 	}
 }

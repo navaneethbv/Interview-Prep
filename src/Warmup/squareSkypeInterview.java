@@ -4,15 +4,8 @@ import java.util.ArrayList;
 
 /* 
 
-
 HEY, I THINK I LOST YOU!
 I'm GOING TO TRY CALLING BACK ON SKYPE
-
-
-
-
-
-
 
 ABSOLUTE URL:
 CURRENT: http://a.com/b/c/d.html
@@ -85,7 +78,6 @@ public class squareSkypeInterview {
 		System.out.println("Output 7 "+getRelativeURL("http://a.com/b/c/d.html", "/e/f:///g.html"));
 		// http://a.com/e/f:///g.html
 
-
 	}
 	/**
 	 * Retrieves relative url from the data structure.
@@ -127,14 +119,6 @@ public class squareSkypeInterview {
 		{
 			//case 1 and 6
 		}
-
-
-
-
-
-
-
-
 
 		return "";
 	}
@@ -181,12 +165,6 @@ public class squareSkypeInterview {
 		}
 		return outputScheme;
 	}
-
-
-
-
-
-
 
 	/**
 	 * Performs whateverYouCallIt operation.

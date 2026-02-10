@@ -8,7 +8,6 @@ package LeetCodePractice;
  */
 public class ClimbingStairs {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -19,7 +18,6 @@ public class ClimbingStairs {
 		System.out.println("Test 1: Basic test");
 	}
 
-
 	/**
 	 * Performs climbStairs operation.
 	 *
@@ -29,7 +27,6 @@ public class ClimbingStairs {
 	public static int climbStairs(int n) {
 		return fibo(n);
 	}
-
 
 	/**
 	 * Performs fibo operation.

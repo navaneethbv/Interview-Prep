@@ -33,6 +33,5 @@ public class MaximumSubArray {
 		return maxSoFar;
 	}
 
-
 }
 

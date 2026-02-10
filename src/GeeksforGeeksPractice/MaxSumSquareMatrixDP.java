@@ -63,8 +63,6 @@ public class MaxSumSquareMatrixDP {
 			}
 		}
 		
-		
-		
 		for (int i = max_i; i >max_i-maxSum; i--) {
 			for (int j = max_j; j >max_j-maxSum; j--) {
 				System.out.print(mat[i][j]+" ");
@@ -72,19 +70,8 @@ public class MaxSumSquareMatrixDP {
 			System.out.println();
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 	
-
-
 
 }

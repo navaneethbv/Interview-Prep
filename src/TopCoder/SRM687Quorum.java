@@ -7,8 +7,6 @@ import java.util.Arrays;
  * Link:
  */
 
-
-
 /**
  * Implementation of SRM687 Quorum algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

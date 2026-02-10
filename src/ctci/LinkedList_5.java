@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 import ctci._02linkedList.Node;
 
-
-
-
 /*Implementation of CTCI 2.6//Implementation only*/
 /**
  * Implementation of Linked List_5 algorithm/data structure.
@@ -52,6 +49,5 @@ public class LinkedList_5 {
 		System.out.println("Starting element is : "+slowPointerNode.data);
 		return true;	
 	}
-
 
 }

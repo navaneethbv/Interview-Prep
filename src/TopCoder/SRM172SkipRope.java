@@ -7,8 +7,6 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1968&rd=4665
  */
 
-
-
 /**
  * Implementation of SRM172 Skip Rope algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

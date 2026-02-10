@@ -7,8 +7,6 @@ import java.util.HashMap;
  * Link:
  */
 
-
-
 /**
  * Implementation of SRM686 Tree And Vertex algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -27,7 +25,6 @@ public class SRM686TreeAndVertex {
 		System.out.println(get(new int[]{0, 0, 2, 2}));
 		System.out.println(get(new int[]{0, 0, 0, 1, 1, 1}));
 		System.out.println(get(new int[]{0, 1, 2, 0, 1, 5, 6, 1, 7, 4, 2, 5, 5, 8, 6, 2, 14, 12, 18, 10, 0, 6, 18, 2, 20, 11, 0, 11, 7, 12, 17, 3, 18, 31, 14, 34, 30, 11, 9}));
-		
 		
 	}
 	/**

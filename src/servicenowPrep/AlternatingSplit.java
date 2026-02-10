@@ -69,5 +69,4 @@ public class AlternatingSplit {
 		return new ListNode[]{output1.next,output2.next};
 	}
 
-
 }

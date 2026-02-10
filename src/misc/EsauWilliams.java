@@ -24,7 +24,6 @@ public class EsauWilliams {
 	 * @param n the size or count parameter
 	 */
 	public static void recursiveCompareNum(int adjmat[][],int v,int n)
-	public static void recursiveCompareNum(int adjmat[][],int v,int n)
 	{
 
 		comparisonNum[v] = n;
@@ -39,7 +38,6 @@ public class EsauWilliams {
 	 *
 	 * @param matrix[][] the matrix[][] parameter
 	 */
-	public static void runMST(int matrix[][])
 	public static void runMST(int matrix[][])
 	{
 		graphStatus = new int[noOfVertices*noOfVertices];//status of the graph/Node
@@ -88,7 +86,6 @@ public class EsauWilliams {
 		}
 		//set the mintrade off values for each of the edges
 
-
 		//compare the costvalue recursively
 		for(i=0;i<noOfVertices;i++)
 			if(comparisonNum[i]==0)
@@ -107,8 +104,6 @@ public class EsauWilliams {
 		adjacencyMatrix[minIndex][0]=minimumWeight;
 
 		}
-
-
 
 		//print out the output
 
@@ -144,7 +139,6 @@ public class EsauWilliams {
 	 * @param adjmat[][] the adjmat[][] parameter
 	 */
 	public static void performTradeOff(int adjmat[][])
-	public static void performTradeOff(int adjmat[][])
 	{
 		int i,j,minTradeOffValue,minNodeValue=0;
 		for(i=1;i<noOfVertices;i++)
@@ -169,7 +163,6 @@ public class EsauWilliams {
 	 * @return the computed integer result
 	 */
 	public static int DFS_Path(int adjmat[][],int v1,int v2)
-	public static int DFS_Path(int adjmat[][],int v1,int v2)
 	{
 		int result=0;
 		graphStatus[v1]=1;
@@ -190,7 +183,6 @@ public class EsauWilliams {
 	 * @return the computed integer result
 	 */
 	public static int weight(int adj_matrix[][], int v)
-	public static int weight(int adj_matrix[][], int v)
 	{
 		int i,sum=0;
 		weightArray[v]=1;
@@ -201,8 +193,6 @@ public class EsauWilliams {
 		}
 		return sum;
 	}
-
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

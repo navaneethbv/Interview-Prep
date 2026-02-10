@@ -63,6 +63,5 @@ public class EvaluateReversePolishNotation {
 		}
 		return stack.pop();
 
-
 	}
 }

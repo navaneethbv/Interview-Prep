@@ -3,9 +3,6 @@ package geeksforgeeks;
 import java.util.Arrays;
 import java.util.HashMap;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-13-2/
  * Find the first subarray which has a zero sum in an array

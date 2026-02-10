@@ -7,8 +7,6 @@ import java.util.HashMap;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1333&rd=4605
  */
 
-
-
 /**
  * Implementation of SRM160 Substitute algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

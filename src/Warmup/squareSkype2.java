@@ -11,7 +11,6 @@ package Warmup;
  */
 public class squareSkype2 {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

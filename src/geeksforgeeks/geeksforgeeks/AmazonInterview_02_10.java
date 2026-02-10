@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview/
  * There is a N*N integer matrix Arr[N][N]. From the row r and column c, we can go to any of the following three indices:

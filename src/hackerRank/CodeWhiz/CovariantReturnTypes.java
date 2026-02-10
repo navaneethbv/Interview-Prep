@@ -35,7 +35,6 @@ public class CovariantReturnTypes {
 		}
 	}
 
-
 	class State{
 		Flower your_National_Flower(){
 			return new Flower();

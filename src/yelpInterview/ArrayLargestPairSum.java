@@ -46,6 +46,4 @@ public class ArrayLargestPairSum {
 		return firstMax+secondMax;
 	}
 
-
-
 }

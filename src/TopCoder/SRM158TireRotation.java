@@ -7,8 +7,6 @@ import java.util.HashMap;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1791&rd=4598
  */
 
-
-
 /**
  * Implementation of SRM158 Tire Rotation algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

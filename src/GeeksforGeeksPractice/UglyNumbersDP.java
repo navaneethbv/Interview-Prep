@@ -106,6 +106,4 @@ public class UglyNumbersDP {
 		return number;
 	}
 
-
-
 }

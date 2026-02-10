@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1790&rd=4590
  */
 
-
-
 /**
  * Implementation of SRM157 Salary algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

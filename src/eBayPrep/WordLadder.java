@@ -82,7 +82,6 @@ public class WordLadder {
 		return 0;
 	}
 
-
 	/*	 static int outputVal=Integer.MAX_VALUE;
 		/**
 		 * Performs ladderLengthNew operation.

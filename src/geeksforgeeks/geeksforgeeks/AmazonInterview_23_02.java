@@ -2,11 +2,6 @@ package geeksforgeeks;
 
 import java.util.Arrays;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-23/
  * Given a Sorted array with one missing number.

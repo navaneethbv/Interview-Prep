@@ -22,11 +22,6 @@ public class CreateAlternatingRectangle {
 
 	}
 
-
-
-
-
-
 	/**
 	 * Performs createAlternatingRectangles operation.
 	 *
@@ -50,14 +45,12 @@ public class CreateAlternatingRectangle {
 			}
 			n--;
 
-
 			//last row-under condition
 			if(m<n)
 				for (int i = n-1; i >=m; i--) {
 					mat[l-1][i]=x;
 				}
 			l--;
-
 
 			//first column-under condition
 			if(k<l)
@@ -68,18 +61,9 @@ public class CreateAlternatingRectangle {
 
 			x=x=='X'?'O':'X';
 
-
-
-
-
 		}
 		printMatrix(mat);
 	}
-
-
-
-
-
 
 	/**
 	 * Performs printMatrix operation.
@@ -93,6 +77,5 @@ public class CreateAlternatingRectangle {
 		}
 
 	}
-
 
 }

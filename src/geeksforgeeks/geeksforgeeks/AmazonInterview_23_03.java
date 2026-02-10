@@ -3,11 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-23/
  * Give a Building with n floor. A person can take 1 step or 2 step to climb.

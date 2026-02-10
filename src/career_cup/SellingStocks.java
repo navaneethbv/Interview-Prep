@@ -14,7 +14,6 @@ public class SellingStocks {
 		 * @return the computed integer result
 		 */
 		public static int maxProfit(int [] prices)
-		public static int maxProfit(int [] prices)
 		{
 			int sell = 0, prev_sell=0;
 			int buy = Integer.MIN_VALUE, prev_buy;

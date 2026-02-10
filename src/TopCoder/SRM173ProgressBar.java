@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1975&rd=4670
  */
 
-
-
 /**
  * Implementation of SRM173 Progress Bar algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

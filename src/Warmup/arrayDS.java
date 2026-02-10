@@ -14,7 +14,6 @@ import java.util.Scanner;
  */
 public class arrayDS {
 
-
 	  /**
 	   * Main method to test the functionality of the class with various test cases.
 	   *

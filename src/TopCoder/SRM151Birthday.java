@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1739&rd=4560
  */
 
-
-
 /**
  * Implementation of SRM151 Birthday algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

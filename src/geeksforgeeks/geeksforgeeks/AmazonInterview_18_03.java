@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-18/
  * Permutation of a string with and without repetition of characters.

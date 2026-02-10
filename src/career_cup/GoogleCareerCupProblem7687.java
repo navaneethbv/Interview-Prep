@@ -46,5 +46,4 @@ public class GoogleCareerCupProblem7687 {
 	    return table[0][n-1];
 	}
 
-
 }

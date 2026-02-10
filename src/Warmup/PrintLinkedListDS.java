@@ -11,7 +11,6 @@ package Warmup;
  */
 public class PrintLinkedListDS {
 
-
 	/*
 	  Print elements of a linked list on console 
 	  head pointer input could be NULL as well for empty list
@@ -36,6 +35,5 @@ public class PrintLinkedListDS {
 	  }
 	  
 	}
-
 
 }

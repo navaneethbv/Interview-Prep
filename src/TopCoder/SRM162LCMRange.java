@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1792&rd=4615
  */
 
-
-
 /**
  * Implementation of SRM162 LCM Range algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -45,7 +43,6 @@ public class SRM162LCMRange {
 	 * @return the computed integer result
 	 */
 	private static int findLcm(int a, int b)
-	private static int findLcm(int a, int b)
 	{
 		return a * (b / gcd(a, b));
 	}
@@ -56,7 +53,6 @@ public class SRM162LCMRange {
 	 * @param b the b parameter
 	 * @return the computed integer result
 	 */
-	private static int gcd(int a, int b)
 	private static int gcd(int a, int b)
 	{
 		while (b > 0)

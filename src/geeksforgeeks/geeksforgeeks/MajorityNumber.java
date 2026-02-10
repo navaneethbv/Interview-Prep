@@ -41,7 +41,6 @@ public class MajorityNumber {
 	 * @return true if condition is met, false otherwise
 	 */
 	/*public static boolean isMajority(int[] arr)
-	/*public static boolean isMajority(int[] arr)
 	{
 		int halfsize = arr.length/2;
 		Map<Integer, Integer> hash = new HashMap<>();

@@ -24,8 +24,6 @@ public class sherlockAndAnagrams {
 		for (int i = 0; i < noOfTestCases; i++) {
 			String firstLine=scanner.readLine();
 
-
-
 		}
 	}
 }

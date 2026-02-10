@@ -139,7 +139,6 @@ public class RBTreeHeightBalance {
 		return true;
 	}
 
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -150,6 +149,5 @@ public class RBTreeHeightBalance {
 			this.value=value;
 		}		
 	}
-
 
 }

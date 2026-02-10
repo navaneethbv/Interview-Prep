@@ -2,12 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/find-depth-of-the-deepest-odd-level-node/
  * Find depth of the deepest odd level leaf node
@@ -101,7 +95,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 // Recursively process left and right subtrees
 		 return getLevel(node.right,n,i+1);
 	 }
-
-
 
  }

@@ -44,5 +44,4 @@ public class PrepDocFactorial {
 			return i*findFactorial(i-1);
 	}
 
-
 }

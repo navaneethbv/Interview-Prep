@@ -38,5 +38,4 @@ public class ArrayEquilibriumIndex {
 		return index;
 	}
 
-
 }

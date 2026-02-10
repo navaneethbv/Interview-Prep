@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=2241&rd=4680
  */
 
-
-
 /**
  * Implementation of SRM175 Clock Walk algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

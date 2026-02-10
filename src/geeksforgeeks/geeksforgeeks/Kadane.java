@@ -9,7 +9,6 @@ class Kadane
 	 * @return the resulting array
 	 */
 	public static int[] getMaxSubArray(int[] arr)
-	public static int[] getMaxSubArray(int[] arr)
 	{
 		int startI=0,finalStart=0,endI=1,sumLocal=0,sumMax=Integer.MIN_VALUE;
 		for(int i=0;i<arr.length;++i) 

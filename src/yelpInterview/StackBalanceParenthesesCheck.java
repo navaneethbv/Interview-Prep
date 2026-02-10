@@ -61,8 +61,5 @@ public class StackBalanceParenthesesCheck {
 		return stack.isEmpty();
 	}
 
-
-
-
 	}
 

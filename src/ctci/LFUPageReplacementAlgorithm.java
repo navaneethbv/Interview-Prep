@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
 /*Implementation of LFU Page Replacement Algorithm*/
 /**
  * Implementation of LFU Page Replacement Algorithm algorithm/data structure.
@@ -109,7 +108,5 @@ public class LFUPageReplacementAlgorithm{
 		}
 		return -1;
 	}
-
-
 
 }

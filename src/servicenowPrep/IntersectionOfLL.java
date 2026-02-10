@@ -73,6 +73,4 @@ public class IntersectionOfLL {
 		return outputPointer.next;
 	}
 
-
-
 }

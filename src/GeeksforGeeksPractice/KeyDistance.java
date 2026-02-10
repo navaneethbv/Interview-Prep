@@ -31,7 +31,6 @@ public class KeyDistance {
 		System.out.println(dist(tn,2,4));
 	}
 	
-	
 	/**
 	 * Performs dist operation.
 	 *
@@ -47,7 +46,6 @@ public class KeyDistance {
 		int midDist=getHeight(tn,lca,0);
 		return l1Dist+l2Dist-2*midDist;
 	}
-
 
 	/**
 	 * Retrieves height from the data structure.
@@ -75,7 +73,6 @@ public class KeyDistance {
 		return -1;
 	}
 
-
 	static int[] path,pathFirst,pathSecond;
 	/**
 	 * Performs lca operation.
@@ -96,8 +93,6 @@ public class KeyDistance {
 		System.out.println(Arrays.toString(pathSecond));
 		return findIntersection(pathFirst,pathSecond);
 	}
-
-
 
 	/**
 	 * Finds intersection in the data structure.
@@ -123,8 +118,6 @@ public class KeyDistance {
 		return pathFirst[length-1];
 	}
 
-
-
 	/**
 	 * Retrieves path from the data structure.
 	 *
@@ -148,13 +141,7 @@ public class KeyDistance {
 			getPath(tn.right, firstNodeValue, path, pathLen);
 		}
 		
-		
-		
-		
-		
 	}
-
-
 
 	/**
 	 * Inner class representing a node in the data structure.
@@ -166,6 +153,5 @@ public class KeyDistance {
 			this.value=value;
 		}		
 	}
-
 
 }

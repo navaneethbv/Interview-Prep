@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1810&rd=4620
  */
 
-
-
 /**
  * Implementation of SRM163 Rochambo algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

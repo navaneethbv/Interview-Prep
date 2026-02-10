@@ -53,11 +53,6 @@ public class SpecificLevelOrderTraversal {
 		levelOrderTraversal(tn);
 	}
 
-
-
-
-
-
 	/**
 	 * Performs levelOrderTraversal operation.
 	 *
@@ -108,11 +103,6 @@ public class SpecificLevelOrderTraversal {
 		}
 	}
 
-
-
-
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -123,6 +113,5 @@ public class SpecificLevelOrderTraversal {
 			this.value=value;
 		}		
 	}
-
 
 }

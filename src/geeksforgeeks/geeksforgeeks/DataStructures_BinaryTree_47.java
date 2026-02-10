@@ -2,10 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/deepest-left-leaf-node-in-a-binary-tree/
  * Deepest left leaf node in a binary tree

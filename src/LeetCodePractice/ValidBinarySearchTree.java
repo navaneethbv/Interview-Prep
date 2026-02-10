@@ -46,7 +46,6 @@ public class ValidBinarySearchTree {
 		System.out.println("Null tree: " + isValidBST(root3));
 	}
 
-
 	/**
 	 * Checks if valid bst.
 	 *
@@ -73,7 +72,6 @@ public class ValidBinarySearchTree {
 		// Recursively process left and right subtrees
 		return root.val>min && root.val<max && isValidBSTTree(root.left,min,root.val) && isValidBSTTree(root.right,root.val,max);
 	}
-
 
 }
 

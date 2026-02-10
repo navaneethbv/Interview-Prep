@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-13-2/
  * http://www.geeksforgeeks.org/largest-sum-contiguous-subarray/

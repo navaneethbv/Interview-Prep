@@ -28,7 +28,6 @@ public class CaterpillarMethodDistinctSlices {
 	 * @return the computed integer result
 	 */
 	public static int solution(int M, int[] A)
-	public static int solution(int M, int[] A)
 	{
 		int N = A.length;
 		int[] counters = new int[M+1];

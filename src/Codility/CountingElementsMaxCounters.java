@@ -33,7 +33,6 @@ public class CountingElementsMaxCounters {
 	 * @return the resulting array
 	 */
 	public static int[] solution(int N, int[] A)
-	public static int[] solution(int N, int[] A)
 	{	
 		int outputArray[][]=new int[A.length][N];
 		for (int i = 0; i < A.length; i++) {

@@ -47,8 +47,6 @@ public class MaximumValueBinaryTree {
 		return Integer.MAX_VALUE;
 	}
 
-
-
 	/**
 	 * Finds max in the data structure.
 	 *
@@ -65,8 +63,6 @@ public class MaximumValueBinaryTree {
 		return Integer.MIN_VALUE;
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -77,6 +73,5 @@ public class MaximumValueBinaryTree {
 			this.value=value;
 		}		
 	}
-
 
 }

@@ -97,6 +97,4 @@ public class ArrayNumberOfOccurences {
 		return -1;
 	}
 
-
-
 }

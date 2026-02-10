@@ -59,6 +59,4 @@ public class TreeIdentical
 		return tn.value==tn1.value && isIdentical(tn.left, tn1.left) && isIdentical(tn.right, tn1.right);
 	}
 	
-	
-	
 }

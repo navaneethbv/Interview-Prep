@@ -51,7 +51,6 @@ public class DetectAndRemoveLoop {
 		while(fastPointer!=null && fastPointer!=slowPointer)
 		{
 			fastPointer=fastPointer.next;
-			fastPointer=fastPointer.next;
 			slowPointer=slowPointer.next;
 			prev=fastPointer;
 		}

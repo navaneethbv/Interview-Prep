@@ -7,7 +7,6 @@ import java.util.Stack;
 import ctci._02linkedList;
 import ctci._02linkedList.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-2/
  *  You are given a linked list and an integer k. Reverse every consecutive k nodes of the given linked list.

@@ -19,13 +19,11 @@ public class StacksAndQueues_7{
 	public static void main(String[] args) {
 		Shelter shelter=new Shelter();
 		shelter.enQueue("Dog");
-		shelter.enQueue("Dog");
 		shelter.enQueue("Cat");
 		shelter.enQueue("Dog");
 		shelter.enQueue("Cat");
 		shelter.enQueue("Dog");
 		shelter.enQueue("Cat");
-		System.out.println(shelter.deQueueDog());
 		System.out.println(shelter.deQueueDog());
 		System.out.println(shelter.deQueueAny());
 		System.out.println(shelter.deQueueDog());

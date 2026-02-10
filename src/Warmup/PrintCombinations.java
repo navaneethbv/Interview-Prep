@@ -11,7 +11,6 @@ package Warmup;
  */
 public class PrintCombinations {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -42,9 +41,4 @@ public class PrintCombinations {
 			printComb(prefix+str.substring(0,1),str.substring(1));
 	}
 }
-
-
-
-
-
 

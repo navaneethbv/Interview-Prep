@@ -11,7 +11,6 @@ import java.util.HashSet;
  */
 public class ThreeSumClosest {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -21,7 +20,6 @@ public class ThreeSumClosest {
 		// Test Case 1: Basic functionality test
 		System.out.println("Test 1: Basic test");
 	}
-
 
 	/**
 	 * Performs threeSumClosest operation.

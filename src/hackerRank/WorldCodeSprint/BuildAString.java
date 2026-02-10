@@ -1,6 +1,5 @@
 package hackerRank.WorldCodeSprint;
 
-
 import java.io.InputStreamReader;
 import java.util.Scanner;
 

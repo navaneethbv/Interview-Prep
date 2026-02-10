@@ -42,7 +42,6 @@ public class FindMedianFromDataStream{
 		}
 	};
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -54,7 +53,6 @@ public class FindMedianFromDataStream{
 		System.out.println(m.findMedian());
 		m.addNum(3);
 		System.out.println(m.findMedian());
-
 
 	}
 }

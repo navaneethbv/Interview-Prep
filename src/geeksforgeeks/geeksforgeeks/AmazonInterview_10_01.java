@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-10/
  * Equilibrium point in array, equiPoint = ith index where Sum(Left array) = Sum(right Array).

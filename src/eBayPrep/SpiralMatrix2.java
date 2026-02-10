@@ -10,7 +10,6 @@ import java.util.Arrays;
  */
 public class SpiralMatrix2 {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

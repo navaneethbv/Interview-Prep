@@ -54,7 +54,6 @@ public class ArraySortElementsByFrequency {
 		Map sortedMap = sortByValue(map);
 		System.out.println(sortedMap);
 
-
 	}
 	/**
 	 * Performs sortByValue operation.
@@ -97,6 +96,5 @@ public class ArraySortElementsByFrequency {
 			}
 		}
 	}
-
 
 }

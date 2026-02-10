@@ -49,7 +49,6 @@ public class googleCareerCup {
 		ln=sortedMerge(a,b);
 	}
 
-
 	/**
 	 * Performs sortedMerge operation.
 	 *
@@ -77,7 +76,6 @@ public class googleCareerCup {
 		}
 		return result;
 	}
-
 
 	/**
 	 * Performs split operation.
@@ -110,7 +108,6 @@ public class googleCareerCup {
 		if(slowPointer!=null)
 			slowPointer.next=null;
 	}
-
 
 	/**
 	 * Inner class representing a node in the data structure.

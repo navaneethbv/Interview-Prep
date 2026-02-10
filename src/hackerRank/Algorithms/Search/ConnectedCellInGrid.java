@@ -44,9 +44,6 @@ public class ConnectedCellInGrid {
 		//printArray(inputArray);
 	}
 
-
-
-
 	/**
 	 * Retrieves max grid count from the data structure.
 	 *
@@ -86,10 +83,5 @@ public class ConnectedCellInGrid {
 			System.out.println(Arrays.toString(inputArray[i]));
 		}
 	}
-
-
-
-
-
 
 }

@@ -6,10 +6,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8-2/
  * Given an array. Iterate it for the given number of times. And then return the summation of the resultant elements.

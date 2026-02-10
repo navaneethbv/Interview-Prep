@@ -31,7 +31,6 @@ public class SieveOfEratosthenesCountSemiprimes {
 	 * @return the resulting array
 	 */
 	public static int[] solution(int N, int[] P, int[] Q)
-	public static int[] solution(int N, int[] P, int[] Q)
 	{
 		boolean prime[]=new boolean[N+1];
 		boolean semi[]=new boolean[N+1];
@@ -70,8 +69,5 @@ public class SieveOfEratosthenesCountSemiprimes {
 		}
 		return P;
 	}
-
-
-
 
 }

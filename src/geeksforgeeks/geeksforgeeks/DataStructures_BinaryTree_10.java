@@ -2,8 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
 /*
  * http://www.geeksforgeeks.org/check-for-children-sum-property-in-a-binary-tree/
  * Check for Children Sum Property in a Binary Tree.

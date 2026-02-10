@@ -22,7 +22,6 @@ class TrieNode {
 	 * @return the HashMap<Character,TrieNode> result
 	 */
 	public HashMap<Character,TrieNode> getChildren() 
-	public HashMap<Character,TrieNode> getChildren() 
 	{ 
 		return children; 
 	}
@@ -31,7 +30,6 @@ class TrieNode {
 	 *
 	 * @return the char result
 	 */
-	public char getCharValue()						 
 	public char getCharValue()						 
 	{
 		return charValue;	
@@ -42,7 +40,6 @@ class TrieNode {
 	 * @param val the val parameter
 	 */
 	public void setEnded(boolean val)			
-	public void setEnded(boolean val)			
 	{
 		ended = val;	
 	}
@@ -52,12 +49,10 @@ class TrieNode {
 	 * @return true if condition is met, false otherwise
 	 */
 	public boolean ended()						 
-	public boolean ended()						 
 	{
 		return ended; 
 	}
 }
-
 
 class Trie {
 	private TrieNode root;
@@ -120,7 +115,6 @@ class Trie {
 			return resultantString.substring(0, prevMatch);	 
 		else return resultantString;
 	}
-
 
 }
 
@@ -320,7 +314,6 @@ public class TrieSnapchatPrefixMatcher {
 				"babaababbb",
 				"aaababbbaaaabbbaaabbbaab",
 				"aaababbbbaabbbab"};
-		
 		
 		HashMap<Integer, String> pointerMap=new HashMap<>();
 		for (int i = 0; i < str.length; i++) {

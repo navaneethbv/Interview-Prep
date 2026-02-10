@@ -65,8 +65,6 @@ public class RemoveDuplicates {
 			}
 		}
 		
-		
-		
 		return pointer;
 	}
 	

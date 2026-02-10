@@ -32,7 +32,6 @@ public class BinaryTreePreOrderTraversal {
 	 * @param root the tree node to process
 	 */
 	public void preOrder(TreeNode root)
-	public void preOrder(TreeNode root)
 	{
 		if(root!=null)
 		{

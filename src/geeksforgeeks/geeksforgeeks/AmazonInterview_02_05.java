@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview/
  *  There is a big file of words which is dynamically changing.

@@ -32,7 +32,6 @@ public class ArrayCountTriangles {
 			int k=i+2;
 			for (int j = i+1; j < inputArray.length; j++) {
 
-
 				while(k<inputArray.length && inputArray[i] + inputArray[j] > inputArray[k])
 					k++;
 				count+=k-j-1;
@@ -40,6 +39,5 @@ public class ArrayCountTriangles {
 		}
 		return count;
 	}
-
 
 }

@@ -58,7 +58,4 @@ public class MoveLastElement {
 		return curr;
 	}
 
-
-
-
 }

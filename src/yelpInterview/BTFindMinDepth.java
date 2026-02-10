@@ -50,6 +50,5 @@ public class BTFindMinDepth {
 		return Integer.MAX_VALUE;
 	}
 
-
 }
 

@@ -37,5 +37,4 @@ public class PrepDocMeanValueOfArrays {
 		return total/count;
 	}
 
-
 }

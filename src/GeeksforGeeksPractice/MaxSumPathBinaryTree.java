@@ -58,11 +58,6 @@ public class MaxSumPathBinaryTree {
 		return 0;
 	}
 
-
-
-
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -73,6 +68,5 @@ public class MaxSumPathBinaryTree {
 			this.value=value;
 		}		
 	}
-
 
 }

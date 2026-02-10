@@ -20,7 +20,6 @@ public class LongestSubstringWORepeat {
 		System.out.println(lengthOfLongestSubstring("dvdf"));
 		System.out.println(lengthOfLongestSubstring("bpfbhmipx"));
 
-
 	}
 
 	/**

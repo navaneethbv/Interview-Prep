@@ -8,7 +8,6 @@ package eBayPrep;
  */
 public class PermutationSequence {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -58,7 +57,6 @@ public class PermutationSequence {
 			printPermutation(prefix+str.charAt(i),str.substring(0,i)+str.substring(i+1),k);
 		}
 	}
-
 
 }
 

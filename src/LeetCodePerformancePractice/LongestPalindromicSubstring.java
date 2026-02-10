@@ -57,7 +57,4 @@ public class LongestPalindromicSubstring {
 		return string.substring(start+1,end);
 	}
 
-
-
-
 }

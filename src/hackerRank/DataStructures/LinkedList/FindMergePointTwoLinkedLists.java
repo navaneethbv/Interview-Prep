@@ -12,7 +12,6 @@ package hackerRank.DataStructures.LinkedList;
  */
 public class FindMergePointTwoLinkedLists {
 
-
 	int FindMergeNode(Node headA, Node headB) {
 		int lengthA=0,lengthB=0;
 		Node headNodeA=headA;

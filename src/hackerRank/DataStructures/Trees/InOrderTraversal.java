@@ -21,7 +21,6 @@ public class InOrderTraversal {
 		}
 	}
 
-
 	class Node {
 		int data;
 		Node left;

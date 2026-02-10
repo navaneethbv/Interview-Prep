@@ -5,10 +5,6 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-3/
  * An array of n integers is there in which the range of elements is n,

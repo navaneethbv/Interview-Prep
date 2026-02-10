@@ -66,11 +66,5 @@ public class SearchElementinLL {
 		return searchRecursive(n.next,value);
 	}
 
-
 }
-
-
-
-
-
 

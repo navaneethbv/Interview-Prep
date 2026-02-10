@@ -37,8 +37,6 @@ public class RemoveNodesSumPath {
 
 	}
 
-
-
 	/**
 	 * Performs pruneTree operation.
 	 *
@@ -76,7 +74,6 @@ public class RemoveNodesSumPath {
 		return tn;
 	}
 
-
 	/**
 	 * Performs preOrder operation.
 	 *
@@ -103,6 +100,5 @@ public class RemoveNodesSumPath {
 			this.value=value;
 		}		
 	}
-
 
 }

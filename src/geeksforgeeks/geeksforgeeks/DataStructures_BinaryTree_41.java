@@ -4,7 +4,6 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/reverse-level-order-traversal/
  * Reverse Level Order Traversal
@@ -75,7 +74,5 @@ import java.util.Stack;
 		 }
 		 return 0;
 	 }
-
-
 
  }

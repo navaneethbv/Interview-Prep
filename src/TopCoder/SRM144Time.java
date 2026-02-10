@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1708&rd=4515
  */
 
-
-
 /**
  * Implementation of SRM144 Time algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

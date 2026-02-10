@@ -101,6 +101,5 @@ public class BinaryTreeZigzagLevelOrderTraversal {
 		return 0;
 	}
 
-
 }
 

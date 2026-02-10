@@ -3,7 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-34/
  * Given a string, find the longest sinusoidal sequence in it.

@@ -14,7 +14,6 @@ import java.util.TreeSet;
  */
 public class googleCoaching {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

@@ -7,8 +7,6 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1862&rd=4630
  */
 
-
-
 /**
  * Implementation of SRM165 British Coins algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

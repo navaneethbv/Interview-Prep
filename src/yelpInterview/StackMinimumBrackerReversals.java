@@ -56,9 +56,6 @@ public class StackMinimumBrackerReversals {
 		return size/2+openingBraceCount%2;
 	}
 
-
-
 }
-
 
 	}

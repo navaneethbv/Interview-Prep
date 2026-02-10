@@ -13,7 +13,6 @@ import java.util.List;
  */
 public class ThreeSum {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -29,7 +28,6 @@ public class ThreeSum {
 			System.out.println();
 		}
 	}
-
 
 	/**
 	 * Performs threeSum operation.

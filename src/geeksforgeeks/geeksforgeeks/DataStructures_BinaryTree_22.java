@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/foldable-binary-trees/
  * Foldable Binary Trees
@@ -88,6 +87,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 			 node.right=temp;
 		 }
 	 }
-
 
  }

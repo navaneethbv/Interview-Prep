@@ -21,7 +21,6 @@ public class LongestPathMatrix {
 
 	}
 
-
 	/**
 	 * Finds longest path in the data structure.
 	 *
@@ -46,13 +45,6 @@ public class LongestPathMatrix {
 		}
 		return result;
 	}
-
-
-
-
-
-
-
 
 	/**
 	 * Finds longest cell in the data structure.
@@ -93,7 +85,6 @@ public class LongestPathMatrix {
 		
 	}
 
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -106,6 +97,5 @@ public class LongestPathMatrix {
 		}
 
 	}
-
 
 }

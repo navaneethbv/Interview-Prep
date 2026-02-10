@@ -52,7 +52,6 @@ class LinkedList
 	 *
 	 */
 	public void removeFirst()
-	public void removeFirst()
 	{
 		if(head==null)
 		{
@@ -105,7 +104,6 @@ class LinkedList
 	 * Performs printlist operation.
 	 *
 	 */
-	public void printlist()
 	public void printlist()
 	{
 		Node n = head;

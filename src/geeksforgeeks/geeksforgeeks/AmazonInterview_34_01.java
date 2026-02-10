@@ -1,9 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-34/
  * Given an array and two numbers x and y, find minimum distance

@@ -3,8 +3,6 @@ package ctci;
 import java.util.ArrayList;
 import java.util.Stack;
 
-
-
 /*Implementation of CTCI 3.3*/
 /**
  * Implementation of Stacks And Queues_3 algorithm/data structure.
@@ -29,13 +27,10 @@ public class StacksAndQueues_3{
 		setOfStacks.push(60);
 		System.out.println("Size is"+setOfStacks.getCurrentStackIndex());
 		System.out.println("Popped value is"+setOfStacks.pop());
-		System.out.println("Popped value is"+setOfStacks.pop());
 		setOfStacks.push(50);
 		setOfStacks.push(60);
 		setOfStacks.push(70);
 		setOfStacks.push(80);
-		System.out.println(setOfStacks.popAt(1));
-		System.out.println(setOfStacks.popAt(1));
 		System.out.println(setOfStacks.popAt(1));
 		System.out.println(setOfStacks.popAt(0));
 		System.out.println("Size is"+setOfStacks.getCurrentStackIndex());

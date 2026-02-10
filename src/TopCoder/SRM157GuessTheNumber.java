@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1790&rd=4590
  */
 
-
-
 /**
  * Implementation of SRM157 Guess The Number algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

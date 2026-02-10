@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8-2/
  * Given a point P and other N points in two dimensional space, 
@@ -40,9 +39,6 @@ import java.util.Scanner;
 		 }
 		 System.out.println();
 
-
-
 	 }
-
 
  }

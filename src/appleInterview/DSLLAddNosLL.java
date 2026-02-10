@@ -45,7 +45,6 @@ public class DSLLAddNosLL {
 		print(head);
 	}
 
-
 	/**
 	 * Adds nos to the data structure.
 	 *
@@ -69,7 +68,6 @@ public class DSLLAddNosLL {
 		return n.next;
 	}
 
-
 	/**
 	 * Performs generateNumber operation.
 	 *
@@ -85,7 +83,6 @@ public class DSLLAddNosLL {
 		}
 		return new BigInteger(sb1.reverse().toString());
 	}
-
 
 	/**
 	 * Performs print operation.

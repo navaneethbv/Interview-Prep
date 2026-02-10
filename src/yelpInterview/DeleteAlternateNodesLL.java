@@ -40,9 +40,6 @@ public class DeleteAlternateNodesLL {
 		print(n);
 	}
 
-
-
-
 	/**
 	 * Performs deleteNodes operation.
 	 *
@@ -61,9 +58,6 @@ public class DeleteAlternateNodesLL {
 		return outputNode;
 	}
 
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -78,9 +72,4 @@ public class DeleteAlternateNodesLL {
 	}
 
 }
-
-
-
-
-
 

@@ -46,7 +46,6 @@ public class BottomViewOfTree {
 		}
 	}
 	
-	
 	private static HashMap<Integer,Integer> elementMap=new HashMap<>();
 	/**
 	 * Performs printBottomView operation.
@@ -82,8 +81,6 @@ public class BottomViewOfTree {
 		}
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -94,6 +91,5 @@ public class BottomViewOfTree {
 			this.value=value;
 		}		
 	}
-
 
 }

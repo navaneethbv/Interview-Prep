@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-20/
  * Print these elements in a zig zag order, 

@@ -51,7 +51,6 @@ public class TopViewBinary {
 		}
 	}
 	
-	
 	private static HashMap<Integer,Integer> elementMap=new HashMap<>();
 	/**
 	 * Performs printTopView operation.
@@ -88,8 +87,6 @@ public class TopViewBinary {
 		}
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -100,6 +97,5 @@ public class TopViewBinary {
 			this.value=value;
 		}		
 	}
-
 
 }

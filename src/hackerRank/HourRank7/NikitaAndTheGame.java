@@ -11,8 +11,6 @@ import java.util.Scanner;
  */
 	public class NikitaAndTheGame {
 	
-	
-	
 		/**
 		 * Main method to test the functionality of the class with various test cases.
 		 *
@@ -67,13 +65,10 @@ import java.util.Scanner;
 			if(rightSum%2!=0)
 				return 1;
 			
-			
 			// Recursively process left and right subtrees
 			return 1+Math.max(findMaxDivideCount(Arrays.copyOfRange(inputArray, 0, i+1)), findMaxDivideCount(Arrays.copyOfRange(inputArray, i+1, inputArray.length)));
 		}
 	
 		
-	
-	
 	
 	}

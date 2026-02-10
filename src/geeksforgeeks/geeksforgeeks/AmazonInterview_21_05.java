@@ -1,9 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-21/
  *  Find n-th digit in the continues sorted stream of data.

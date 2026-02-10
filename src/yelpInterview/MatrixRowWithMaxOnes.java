@@ -69,8 +69,4 @@ public class MatrixRowWithMaxOnes {
 		return -1;
 	}
 
-
-
-
-
 }

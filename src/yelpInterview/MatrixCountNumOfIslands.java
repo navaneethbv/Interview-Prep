@@ -15,8 +15,6 @@ public class MatrixCountNumOfIslands {
 	public static void main(String a[]){
 		char mat[][]={{'O', 'O', 'O'},
 				{'X', 'X', 'O'},
-				{'X', 'X', 'O'},
-				{'O', 'O', 'X'},
 				{'O', 'O', 'X'},
 				{'X', 'X', 'O'}
 		};
@@ -24,7 +22,6 @@ public class MatrixCountNumOfIslands {
 		mat= new char[][]{{'X', 'O', 'O', 'O', 'O', 'O'},
 			{'X', 'O', 'X', 'X', 'X', 'X'},
 			{'O', 'O', 'O', 'O', 'O', 'O'},
-			{'X', 'X', 'X', 'O', 'X', 'X'},
 			{'X', 'X', 'X', 'O', 'X', 'X'},
 			{'O', 'O', 'O', 'O', 'X', 'X'},
 		};
@@ -69,8 +66,5 @@ public class MatrixCountNumOfIslands {
 			+hasIsland(mat, i, j-1)+hasIsland(mat, i, j+1);
 		return 0;
 	}
-
-
-
 
 }

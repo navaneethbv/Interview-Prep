@@ -44,8 +44,6 @@ public class BSTCommonBSTNodes {
 		findCommonNodes(n,n2);
 	}
 
-
-
 	/**
 	 * Finds common nodes in the data structure.
 	 *
@@ -61,8 +59,6 @@ public class BSTCommonBSTNodes {
 		Object arr2[]=aList.toArray();
 		printIntersection(arr1,arr2);
 	}
-
-
 
 	/**
 	 * Performs printIntersection operation.
@@ -86,8 +82,6 @@ public class BSTCommonBSTNodes {
 		}
 	}
 
-
-
 	static ArrayList<Integer> aList;
 	/**
 	 * Performs populateList operation.
@@ -103,10 +97,6 @@ public class BSTCommonBSTNodes {
 			populateList(n.right);
 		}
 	}
-
-
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

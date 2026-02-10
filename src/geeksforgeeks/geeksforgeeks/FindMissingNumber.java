@@ -14,7 +14,6 @@ public class FindMissingNumber {
 		 * @return the computed integer result
 		 */
 		public static int FindMissingNum(int[] A)
-		public static int FindMissingNum(int[] A)
 		{
 			int num = 0, sum =0, arraysum = 0;
 			sum = ((A.length+1)*(A.length+2))/2;

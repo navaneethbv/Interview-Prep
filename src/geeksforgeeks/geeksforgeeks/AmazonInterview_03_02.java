@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-2/
  * Parenthesis checker.
@@ -52,6 +50,5 @@ public class AmazonInterview_03_02 {
 		}
 		return true;
 	}
-
 
 }

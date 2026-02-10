@@ -52,6 +52,4 @@ public class ArrayFindfourElements {
 		return false;
 	}
 
-
-
 }

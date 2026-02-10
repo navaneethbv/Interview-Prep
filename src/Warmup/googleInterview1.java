@@ -24,6 +24,5 @@ public class googleInterview1 {
 	 */
 	private static void checkInput(Byte[] inputByteArray) {
 		
-		
 	}
 }

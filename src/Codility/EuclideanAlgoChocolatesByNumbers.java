@@ -49,5 +49,4 @@ public class EuclideanAlgoChocolatesByNumbers {
 		return 0;
 	}
 
-
 }

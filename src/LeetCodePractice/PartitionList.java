@@ -32,7 +32,6 @@ public class PartitionList {
 		while(ln!=null){System.out.print(ln.val+"/");ln=ln.next;}System.out.println();
 	}									
 
-
 	/**
 	 * Performs partition operation.
 	 *

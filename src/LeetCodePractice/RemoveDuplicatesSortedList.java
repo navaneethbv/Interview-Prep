@@ -40,7 +40,6 @@ public class RemoveDuplicatesSortedList {
 		while(ln!=null){System.out.print(ln.val+"/");ln=ln.next;}System.out.println();
 	}									
 
-
 	/**
 	 * Performs deleteDuplicates operation.
 	 *

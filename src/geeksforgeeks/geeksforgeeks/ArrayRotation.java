@@ -15,7 +15,6 @@ public class ArrayRotation {
 	 * @return the resulting array
 	 */
 	public  static  int[]  rev(int  arr1[],  int  rotation)
-	public  static  int[]  rev(int  arr1[],  int  rotation)
 	{  
 		int  len= arr1.length;  
 		int  start= len-rotation;  
@@ -50,5 +49,4 @@ public class ArrayRotation {
 		} 
 	}
 }
-
 

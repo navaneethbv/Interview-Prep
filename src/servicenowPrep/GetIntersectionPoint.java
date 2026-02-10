@@ -90,7 +90,4 @@ public class GetIntersectionPoint {
 		return 0;
 	}
 
-
-
-
 }

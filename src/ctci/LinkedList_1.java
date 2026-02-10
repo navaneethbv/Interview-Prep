@@ -4,9 +4,6 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
-
-
 /*Implementation of CTCI 2.1*/
 /**
  * Implementation of Linked List_1 algorithm/data structure.

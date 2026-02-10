@@ -30,7 +30,6 @@ public class CaterpillarMethodAbsDistinct {
 	 * @return the computed integer result
 	 */
 	public static int solution(int[] A)
-	public static int solution(int[] A)
 	{
 		int count=0;
 		HashMap<Integer, Integer> elementMap=new HashMap<Integer,Integer>();

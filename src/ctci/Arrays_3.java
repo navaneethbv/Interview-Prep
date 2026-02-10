@@ -3,7 +3,6 @@ package ctci;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*Implementation of CTCI 1.4*/
 /**
  * Implementation of Arrays_3 algorithm/data structure.

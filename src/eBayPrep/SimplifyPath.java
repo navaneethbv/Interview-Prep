@@ -10,7 +10,6 @@ import java.util.Stack;
  */
 public class SimplifyPath {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -26,7 +25,6 @@ public class SimplifyPath {
 		System.out.println(simplifyPath("/../"));//-/
 		System.out.println("*******");
 	}
-
 
 	/**
 	 * Performs simplifyPath operation.
@@ -64,8 +62,6 @@ public class SimplifyPath {
 		}
 		return str.length()==1?"/":str.substring(0, str.length()-1);
 	}
-
-
 
 }
 

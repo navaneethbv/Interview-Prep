@@ -50,7 +50,6 @@ public class BinaryTreeTODLL2 {
 			headPtr=headPtr.next;
 		}
 		
-		
 	}
 	static ArrayList<Integer> list;
 	/**
@@ -68,7 +67,6 @@ public class BinaryTreeTODLL2 {
 		}
 	}
 
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -80,8 +78,6 @@ public class BinaryTreeTODLL2 {
 		}
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -92,6 +88,5 @@ public class BinaryTreeTODLL2 {
 			this.value=value;
 		}		
 	}
-
 
 }

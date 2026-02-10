@@ -33,8 +33,6 @@ public class BSTBSTSummedUp {
 		inOrderTraversal(n);
 	}
 
-
-
 	static int sum=0;
 	/**
 	 * Performs changeNodes operation.
@@ -66,8 +64,6 @@ public class BSTBSTSummedUp {
 			getSum(n.right);
 		}
 	}
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

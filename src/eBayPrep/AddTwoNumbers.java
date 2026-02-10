@@ -16,7 +16,6 @@ public class AddTwoNumbers {
 		ListNode(int x) { val = x; }
 	}
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -62,7 +61,6 @@ public class AddTwoNumbers {
 			output=output.next;
 			l1=l1.next;l2=l2.next;
 		}
-		
 		
 		// Check for null/base case
 		if(l1!=null)

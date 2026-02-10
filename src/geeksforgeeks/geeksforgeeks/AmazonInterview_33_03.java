@@ -1,9 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-33-2/
  * http://yougeeks.blogspot.com/2014/08/gold-box-problem.html

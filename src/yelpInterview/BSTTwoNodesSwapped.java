@@ -37,7 +37,6 @@ public class BSTTwoNodesSwapped {
 		inOrderTraversal(n);
 	}
 
-
 	static ArrayList<Integer> aList;
 	/**
 	 * Performs correctBST operation.
@@ -66,8 +65,6 @@ public class BSTTwoNodesSwapped {
 		changeNodeVal(n,first,second);
 	}
 
-
-
 	/**
 	 * Performs changeNodeVal operation.
 	 *
@@ -88,8 +85,6 @@ public class BSTTwoNodesSwapped {
 		}
 	}
 
-
-
 	/**
 	 * Adds to list to the data structure.
 	 *
@@ -104,8 +99,6 @@ public class BSTTwoNodesSwapped {
 			addToList(n.right);
 		}
 	}
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

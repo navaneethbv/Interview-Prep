@@ -28,7 +28,6 @@ public class UglyNosAlgoDP {
 	 * @return the computed integer result
 	 */
 	private static int findUglyNumber(int number)
-	private static int findUglyNumber(int number)
 	{
 		int[] ugly=new int[number];
 		ugly[0]=1;
@@ -58,7 +57,5 @@ public class UglyNosAlgoDP {
 		
 		return ugly[number-1];
 	}
-
-
 
 }

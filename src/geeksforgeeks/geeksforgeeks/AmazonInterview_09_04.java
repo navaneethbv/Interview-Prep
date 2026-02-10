@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8-2/
  * Given an array of size N, move the first d elements to its last.
@@ -81,6 +80,5 @@ import java.util.Scanner;
 		 }
 		 return inputArray;
 	 }
-
 
  }

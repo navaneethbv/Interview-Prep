@@ -18,7 +18,6 @@ public class Interview2{
 	server3->row3
 	server4->row4
 
-
 	sid1, US, Electronics, Low Volume seller
 	sid2, UK, Electronics, High volume seller
 	sid3, DE, Clothes, Low volume seller
@@ -34,7 +33,6 @@ public class Interview2{
 	    3241
 	if we find inversion
 
-
 	//no inversion and sorted
 	->1234
 	    1243
@@ -42,7 +40,6 @@ public class Interview2{
 	    132
 	//1324
 	    1342
-
 
 	213
 	-> 123, 132, 132, 231, 312, 321
@@ -55,14 +52,12 @@ public class Interview2{
 	 * @return the computed integer result
 	 */
 	public static int getHigherPermutation(int a)
-	public static int getHigherPermutation(int a)
 	{
 	    String str=a+"";
 	    set=new TreeSet<Integer>();
 	    generatePermutations("",str);
 	    return getHigherValue(a,set);
 	}
-
 
 	/**
 	 * Performs generatePermutations operation.
@@ -87,7 +82,6 @@ public class Interview2{
 	 * @return the computed integer result
 	 */
 	public static int getHigherValue(int value,Set<Integer> set)
-	public static int getHigherValue(int value,Set<Integer> set)
 	{
 	    Iterator<Integer> iter=set.iterator();
 	    while(iter.hasNext())
@@ -98,11 +92,6 @@ public class Interview2{
 	    }
 	    return -1;
 	}*/
-
-
-
-
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

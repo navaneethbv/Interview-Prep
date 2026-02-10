@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
 /*
  * http://www.geeksforgeeks.org/reverse-a-stack-using-recursion/
  * Reverse a stack using recursion
@@ -77,6 +75,5 @@ import java.util.Stack;
 		 }
 		 return stack;
 	}
-
 
  }

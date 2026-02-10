@@ -85,6 +85,4 @@ public class DepthOfDeepestOddLevelLeafNode {
 		return 0;
 	}
 
-
-
 }

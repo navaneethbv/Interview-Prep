@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1772&rd=4570
  */
 
-
-
 /**
  * Implementation of SRM153 Inventory algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

@@ -2,10 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/
  * How to determine if a binary tree is height-balanced
@@ -87,6 +83,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 else
 			 return 0;
 	 }
-
 
  }

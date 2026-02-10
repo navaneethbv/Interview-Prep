@@ -28,7 +28,6 @@ public class FindCommonElementMatrix {
 		System.out.println(findCommonElement(mat));
 	}
 
-
 	/**
 	 * Finds common element in the data structure.
 	 *
@@ -56,7 +55,6 @@ public class FindCommonElementMatrix {
 		return -1;
 		
 	}
-
 
 	/**
 	 * Rotates the .
@@ -113,7 +111,6 @@ public class FindCommonElementMatrix {
 		    }
 	}
 
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -126,6 +123,5 @@ public class FindCommonElementMatrix {
 		}
 
 	}
-
 
 }

@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-13-2/
  * http://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/

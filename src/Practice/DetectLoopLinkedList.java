@@ -90,13 +90,11 @@ public class DetectLoopLinkedList {
 		 * @return the resulting string
 		 */
 		public String data() { return data; }
-		public String data() { return data; }
 		/**
 		 * Sets data in the data structure.
 		 *
 		 * @param data the data parameter
 		 */
-		public void setData(String data) { this.data = data; }
 		public void setData(String data) { this.data = data; }
 		
 		/**
@@ -141,7 +139,6 @@ public class DetectLoopLinkedList {
         linkedList.appendToTail(new DetectLoopLinkedList.Node("401"));
         System.out.println("Linked List : " + linkedList); */
         
-        
         DetectLoopLinkedList linkedList = new DetectLoopLinkedList();
         linkedList.appendToTail(new DetectLoopLinkedList.Node("101"));
         DetectLoopLinkedList.Node cycle = new DetectLoopLinkedList.Node("201");
@@ -158,5 +155,4 @@ public class DetectLoopLinkedList {
         }
     } 
 }
-
 

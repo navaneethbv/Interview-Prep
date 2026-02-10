@@ -31,7 +31,6 @@ public class LCA {
 		System.out.println(lca(tn,2,4));
 	}
 	
-	
 	static int[] path,pathFirst,pathSecond;
 	/**
 	 * Performs lca operation.
@@ -52,8 +51,6 @@ public class LCA {
 		System.out.println(Arrays.toString(pathSecond));
 		return findIntersection(pathFirst,pathSecond);
 	}
-
-
 
 	/**
 	 * Finds intersection in the data structure.
@@ -79,8 +76,6 @@ public class LCA {
 		return pathFirst[length-1];
 	}
 
-
-
 	/**
 	 * Retrieves path from the data structure.
 	 *
@@ -104,13 +99,7 @@ public class LCA {
 			getPath(tn.right, firstNodeValue, path, pathLen);
 		}
 		
-		
-		
-		
-		
 	}
-
-
 
 	/**
 	 * Inner class representing a node in the data structure.
@@ -122,6 +111,5 @@ public class LCA {
 			this.value=value;
 		}		
 	}
-
 
 }

@@ -38,9 +38,6 @@ public class PrintReverseLL {
 		print(n);
 	}
 
-
-
-
 	/**
 	 * Performs recursivePrint operation.
 	 *
@@ -56,9 +53,6 @@ public class PrintReverseLL {
 
 	}
 
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -73,9 +67,4 @@ public class PrintReverseLL {
 	}
 
 }
-
-
-
-
-
 

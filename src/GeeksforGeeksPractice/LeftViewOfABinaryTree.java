@@ -24,7 +24,6 @@ public class LeftViewOfABinaryTree {
 		printLeftView(tn);
 	}
 
-
 	static boolean flag=true;
 	/**
 	 * Performs printLeftView operation.
@@ -38,8 +37,6 @@ public class LeftViewOfABinaryTree {
 			printNodes(tn,i);
 		}
 	}
-
-
 
 	/**
 	 * Performs printNodes operation.
@@ -60,8 +57,6 @@ public class LeftViewOfABinaryTree {
 		}
 	}
 
-
-
 	/**
 	 * Retrieves height from the data structure.
 	 *
@@ -73,8 +68,6 @@ public class LeftViewOfABinaryTree {
 		return tn!=null?1+Math.max(getHeight(tn.left), getHeight(tn.right)):0;
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -85,6 +78,5 @@ public class LeftViewOfABinaryTree {
 			this.value=value;
 		}		
 	}
-
 
 }

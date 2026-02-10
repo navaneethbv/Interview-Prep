@@ -1,6 +1,5 @@
 package leetCode;
 
-
 /*
  * Link : https://codility.com/programmers/task/frog_jmp
  */
@@ -31,7 +30,6 @@ public class TimeComplexityFrogJump {
 	 * @param D the D parameter
 	 * @return the computed integer result
 	 */
-	public static int solution(int X, int Y, int D)
 	public static int solution(int X, int Y, int D)
 	{
 		 if(Y-X%D==0)

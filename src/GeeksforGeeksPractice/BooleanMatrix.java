@@ -73,12 +73,7 @@ public class BooleanMatrix {
 			System.out.println(Arrays.toString(mat[i]));
 		}
 		
-		
-		
 
 	}
-
-
-
 
 }

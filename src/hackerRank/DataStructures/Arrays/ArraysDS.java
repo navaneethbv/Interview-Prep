@@ -7,7 +7,6 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/arrays-ds
  */
 
-
 /**
  * Implementation of Arrays DS algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

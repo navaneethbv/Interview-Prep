@@ -1,8 +1,5 @@
 package geeksforgeeks;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-18/
  * Determine if a matrix is a cross-matrix.

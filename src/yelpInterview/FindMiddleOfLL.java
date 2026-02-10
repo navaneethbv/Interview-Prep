@@ -52,12 +52,5 @@ public class FindMiddleOfLL {
 		return slowPointer;
 	}
 
-
-
 }
-
-
-
-
-
 

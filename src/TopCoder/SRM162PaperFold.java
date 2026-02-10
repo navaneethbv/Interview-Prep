@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1792&rd=4615
  */
 
-
-
 /**
  * Implementation of SRM162 Paper Fold algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

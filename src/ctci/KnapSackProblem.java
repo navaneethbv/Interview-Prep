@@ -1,7 +1,5 @@
 package ctci;
 
-
-
 /*Implementation of Knap Sack Problem*/
 /**
  * Implementation of Knap Sack Problem algorithm/data structure.

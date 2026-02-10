@@ -71,7 +71,4 @@ public class RemoveDuplicatesUnsorted {
 		return pointer;
 	}
 
-
-
-
 }

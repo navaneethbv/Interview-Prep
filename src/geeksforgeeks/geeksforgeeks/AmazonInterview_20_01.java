@@ -3,7 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-20/
  * In matrix A[m][n] each row is sorted and each column is sorted,

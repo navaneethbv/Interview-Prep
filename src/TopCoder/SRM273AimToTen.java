@@ -22,8 +22,6 @@ public class SRM273AimToTen {
 		System.out.println(need(new int[]{8,9}));
 		System.out.println(need(new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 				0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-				0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 				0, 0, 0, 0, 0, 0, 0, 0, 0, 0}));
 		System.out.println(need(new int[]{10, 10, 10, 10}));
 	}

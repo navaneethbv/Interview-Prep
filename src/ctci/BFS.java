@@ -7,7 +7,6 @@ import java.util.Queue;
 
 import ctci._10BinarySearchTree.Node;
 
-
 /*Implementation of Breadth First Search*/
 /**
  * Implementation of BFS algorithm/data structure.
@@ -154,7 +153,6 @@ public class BFS{
 			}
 		}
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

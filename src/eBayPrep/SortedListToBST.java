@@ -125,6 +125,5 @@ public class SortedListToBST {
 		return 1+getLength(ln.next);
 	}
 
-
 }
 

@@ -57,7 +57,6 @@ public class RotateImage {
 			}
 			top++;
 
-
 			//right column
 			for (int i = top; i <=bottom; i++) {
 				int newTemp=matrix[right][i];
@@ -66,7 +65,6 @@ public class RotateImage {
 			}
 			right--;
 
-
 			//bottom row
 			for (int i = right; i >=left; i--) {
 				int newTemp=matrix[bottom][i];
@@ -74,7 +72,6 @@ public class RotateImage {
 				temp=newTemp;
 			}
 			bottom--;
-
 
 			//left column
 			for (int i = bottom; i >=top; i--) {
@@ -94,8 +91,6 @@ public class RotateImage {
 
 	}*/
 	}
-
-
 
 	/**
 	 * Rotates the .
@@ -119,7 +114,6 @@ public class RotateImage {
 		for (int i = 0; i < matrix.length; i++) {
 			System.out.println(Arrays.toString(matrix[i]));
 		}
-
 
 	}
 }

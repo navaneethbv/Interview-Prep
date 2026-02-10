@@ -2,9 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/write-a-c-program-to-calculate-size-of-a-tree/
  * Write a C program to Calculate Size of a tree
@@ -58,6 +55,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 }
 		 return 0;
 	 }
-
 
  }

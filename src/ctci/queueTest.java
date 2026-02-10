@@ -1,8 +1,5 @@
 package ctci;
 
-
-
-
 /*Implementation of Queue Data Structure Tester*/
 /**
  * Implementation of queue Test algorithm/data structure.

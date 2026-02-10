@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1768&rd=4575
  */
 
-
-
 /**
  * Implementation of SRM154 Super Rot algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

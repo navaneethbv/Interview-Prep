@@ -59,6 +59,5 @@ public class BTIdenticalTrees {
 		return true;
 	}
 
-
 }
 

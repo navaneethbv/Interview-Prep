@@ -52,7 +52,6 @@ public class PopulateNextRightPointers {
 	 * @return the computed integer result
 	 */
 	public static int getHeight(TreeLinkNode root)
-	public static int getHeight(TreeLinkNode root)
 	{
 		return root==null?0:1+Math.max(getHeight(root.left),getHeight(root.right));
 	}
@@ -76,6 +75,5 @@ public class PopulateNextRightPointers {
 		levelOrder(tn.right,level-1);
 		levelOrder(tn.left,level-1);
 	}
-
 
 }

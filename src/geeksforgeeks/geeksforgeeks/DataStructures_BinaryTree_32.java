@@ -2,10 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/find-the-maximum-sum-path-in-a-binary-tree/
  * Find the maximum sum leaf to root path in a Binary Tree

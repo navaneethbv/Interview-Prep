@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-18/
  * Given a binary tree print the sum of elements on same axis (for all axis).

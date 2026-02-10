@@ -25,7 +25,6 @@ public class PrepDocIteratorLLOfLL {
 		}
 		iterate(listOfLists);
 		
-		
 	}
 
 	/**
@@ -46,6 +45,5 @@ public class PrepDocIteratorLLOfLL {
 		}
 		
 	}
-
 
 }

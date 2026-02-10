@@ -23,7 +23,6 @@ public class JavaIterator {
 	 * @return the Iterator result
 	 */
 	static Iterator func(ArrayList mylist)
-	static Iterator func(ArrayList mylist)
 	{
 		Iterator it=mylist.iterator();
 		while(it.hasNext())
@@ -56,7 +55,6 @@ public class JavaIterator {
 		{
 			mylist.add(sc.next());
 		}
-
 
 		Iterator it=func(mylist);
 		while(it.hasNext())

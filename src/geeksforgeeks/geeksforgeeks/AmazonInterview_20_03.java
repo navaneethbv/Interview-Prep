@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-20/
  * Convert a BT into SUM BT(each node values = sum of left and right node)

@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1930&rd=4655
  */
 
-
-
 /**
  * Implementation of SRM170 Level Up algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

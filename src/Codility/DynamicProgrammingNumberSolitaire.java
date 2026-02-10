@@ -31,8 +31,6 @@ public class DynamicProgrammingNumberSolitaire {
 	public static int solution(int[] A){
 		int count=0;
 		
-		
-		
 		return count;
 	}
 }

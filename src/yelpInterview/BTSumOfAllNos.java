@@ -65,6 +65,5 @@ public class BTSumOfAllNos {
 	}
 	static int[] path=new int[100];
 
-
 }
 

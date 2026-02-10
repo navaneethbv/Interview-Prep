@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-36/
  * Given an array of positive numbers, find the maximum sum

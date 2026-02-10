@@ -35,7 +35,6 @@ public class ImplementStackUsingQueues {
 		 * @param x the x parameter
 		 */
 		public void push(int x)
-		public void push(int x)
 		{
 			queue1.add(x);
 		}
@@ -44,7 +43,6 @@ public class ImplementStackUsingQueues {
 		 *
 		 * @return the computed integer result
 		 */
-		public int pop()
 		public int pop()
 		{
 			while(!queue1.isEmpty())
@@ -59,9 +57,5 @@ public class ImplementStackUsingQueues {
 			return value;
 		}
 	}
-
-
-
-
 
 }

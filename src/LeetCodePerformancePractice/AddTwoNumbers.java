@@ -1,6 +1,5 @@
 package LeetCodePerformancePractice;
 
-
 /**
  * Implementation of Add Two Numbers algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -16,7 +15,6 @@ public class AddTwoNumbers {
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

@@ -8,7 +8,6 @@ package eBayPrep;
  */
 public class Search2DMatrix {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -39,8 +38,6 @@ public class Search2DMatrix {
 		}
 		return false;
 	}
-
-
 
 }
 

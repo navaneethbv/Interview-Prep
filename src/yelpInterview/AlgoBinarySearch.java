@@ -44,7 +44,5 @@ public class AlgoBinarySearch {
 		return -1;
 	}
 
-
-
 }
 

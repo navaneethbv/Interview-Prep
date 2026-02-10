@@ -1,11 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-24/
  * http://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/

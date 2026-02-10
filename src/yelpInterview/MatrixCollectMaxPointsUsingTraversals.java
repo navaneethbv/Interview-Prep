@@ -19,15 +19,12 @@ public class MatrixCollectMaxPointsUsingTraversals {
 		int mat[][]={{3, 6, 8, 2},
 				{5, 2, 4, 3},
 				{1, 1, 20, 10},
-				{1, 1, 20, 10},
-				{1, 1, 20, 10},
 		};
 		printMatrix(mat);
 		System.out.println(collectMaxPoints(mat));
 
 	}
 	static boolean visited[][];
-
 
 	/**
 	 * Performs collectMaxPoints operation.
@@ -83,7 +80,6 @@ public class MatrixCollectMaxPointsUsingTraversals {
 		return mat[i][j]+Math.max(maxEndPoints(mat, i+1, j), Math.max(maxEndPoints(mat, i+1, j-1),maxEndPoints(mat, i+1, j+1)));
 	}
 
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -96,9 +92,5 @@ public class MatrixCollectMaxPointsUsingTraversals {
 		}	
 		System.out.println();
 	}
-
-
-
-
 
 }

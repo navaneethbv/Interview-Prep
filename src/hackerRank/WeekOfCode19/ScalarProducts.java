@@ -1,6 +1,5 @@
 package hackerRank.WeekOfCode19;
 
-
 import java.util.Scanner;
 import java.util.TreeSet;
 

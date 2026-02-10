@@ -8,8 +8,6 @@ import java.util.TreeMap;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1753&rd=4600
  */
 
-
-
 /**
  * Implementation of SRM159 Sets algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -117,7 +115,6 @@ public class SRM159Sets {
 			break;
 		}			
 		return output;
-
 
 	}
 }

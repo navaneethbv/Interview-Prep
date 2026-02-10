@@ -10,8 +10,6 @@
  */
 	public class PaintTheTiles {
 	
-	
-	
 		/**
 		 * Main method to test the functionality of the class with various test cases.
 		 *
@@ -42,7 +40,5 @@
 			}
 			return count;
 		}
-	
-	
 	
 	}

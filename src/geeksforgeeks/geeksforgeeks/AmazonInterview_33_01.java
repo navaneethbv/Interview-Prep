@@ -3,9 +3,6 @@ package geeksforgeeks;
 import ctci._02linkedList;
 import ctci._02linkedList.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-33-2/
  * Given a singly linked list, swap every 2 nodes,
@@ -62,6 +59,5 @@ import ctci._02linkedList.Node;
 		}
 		return linkedList;
 	}
-
 
  }

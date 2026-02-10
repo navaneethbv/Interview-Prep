@@ -20,7 +20,6 @@ public class PascalsTriangle {
 		System.out.println("Test 1: Basic test");
 	}
 	
-	
 	/**
 	 * Performs generate operation.
 	 *

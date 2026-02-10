@@ -45,6 +45,4 @@ public class MatrixRowWiseSearch {
 		return false;
 	}
 
-
-
 }

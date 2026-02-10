@@ -52,9 +52,4 @@ public class ArrayMedianOfTwoSortedArrays {
 		}
 	}
 
-
-
-
-
-
 }

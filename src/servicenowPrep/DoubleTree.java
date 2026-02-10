@@ -67,9 +67,4 @@ public class DoubleTree
 		return tn;
 	}
 
-
-
-
-
-
 }

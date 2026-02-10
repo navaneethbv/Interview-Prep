@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/get-level-of-a-node-in-a-binary-tree/
  * Get Level of a node in a Binary Tree

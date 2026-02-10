@@ -98,7 +98,4 @@ public class SwapNodesInLinkedList {
 		return ln;
 	}
 
-
-
-
 }

@@ -59,7 +59,6 @@ public class PascalsTriangle2 {
 	    return ans;
 	}
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

@@ -13,7 +13,6 @@ import java.util.Arrays;
  */
 public class SumPossible {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -23,8 +22,6 @@ public class SumPossible {
 		// Test Case 1: Basic functionality test
 		System.out.println("Test 1: Basic test");
 	}
-
-
 
 	/**
 	 * Checks if score possible.
@@ -45,9 +42,4 @@ public class SumPossible {
 		return status[value]>0;
 	}
 }
-
-
-
-
-
 

@@ -29,7 +29,6 @@ public class LeaderDominator {
 	 * @return the computed integer result
 	 */
 	public static int solution(int[] A)
-	public static int solution(int[] A)
 	{
 		HashMap<Integer, Integer> elementMap=new HashMap<>();
 		elementMap.put(A[0], 1);

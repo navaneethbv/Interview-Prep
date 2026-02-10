@@ -77,7 +77,6 @@ public class squareChallenge {
 
 		
 
-
 	}
 
 	private static Map<String, Integer> sortByComparator(

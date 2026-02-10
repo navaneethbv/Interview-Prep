@@ -34,7 +34,6 @@ public class BTBalanced
 		System.out.println(isbalanced(tn));
 	}
 
-
 	/**
 	 * Checks if .
 	 *
@@ -51,7 +50,6 @@ public class BTBalanced
 		return Math.abs(lh-rh)<=1 && isbalanced(tn.left) && isbalanced(tn.right);
 	}
 
-
 	/**
 	 * Retrieves height from the data structure.
 	 *
@@ -62,7 +60,5 @@ public class BTBalanced
 		// Recursively process left and right subtrees
 		return left==null?0:1+Math.max(getHeight(left.left), getHeight(left.right));
 	}
-
-
 
 }

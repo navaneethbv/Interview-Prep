@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/print-nodes-at-k-distance-from-root/
  * Print nodes at k distance from root

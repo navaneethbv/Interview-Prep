@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-17/
  * Given a matrix, find whether you can form the given number
@@ -67,7 +66,6 @@ import java.util.Scanner;
 			}
 		}
 		
-		
 		for (int i = 0; i < 9; i++) {
 			// Check for null/base case
 			if((matrixMap.get(i)==null && numberMap.get(i)==null)||(matrixMap.get(i)!=null && numberMap.get(i)==null)){
@@ -85,7 +83,6 @@ import java.util.Scanner;
 			}
 		}
 		return true;
-		
 		
 	}
 

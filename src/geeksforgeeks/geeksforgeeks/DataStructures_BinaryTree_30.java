@@ -2,9 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/convert-a-given-tree-to-sum-tree/
  * Convert a given tree to its Sum Tree

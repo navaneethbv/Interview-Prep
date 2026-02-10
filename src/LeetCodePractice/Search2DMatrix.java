@@ -8,7 +8,6 @@ package LeetCodePractice;
  */
 public class Search2DMatrix {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -18,7 +17,6 @@ public class Search2DMatrix {
 		// Test Case 1: Basic functionality test
 		System.out.println("Test 1: Basic test");
 	}
-
 
 	/**
 	 * Searches for matrix.

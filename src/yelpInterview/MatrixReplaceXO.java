@@ -43,7 +43,6 @@ public class MatrixReplaceXO {
 			}
 		}
 
-
 		//first row
 		// Iterate through all elements
 		for (int i = 0; i < mat[0].length; i++) {
@@ -117,9 +116,5 @@ public class MatrixReplaceXO {
 		}	
 		System.out.println();
 	}
-
-
-
-
 
 }

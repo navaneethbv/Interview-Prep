@@ -47,7 +47,6 @@ public class TopColor {
 		return list;
 	}
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -58,7 +57,6 @@ public class TopColor {
 		List<String> list1 = new ArrayList<String>();
 		List<String> list2 = new ArrayList<String>();
 		List<String> list3 = new ArrayList<String>();
-		list1.add("red");
 		list1.add("red");
 		list1.add("blue");
 		image.add(list1);

@@ -34,9 +34,6 @@ public class BinaryTreeLevelOrderTraversal2 {
 		return 0;
 	}
 
-
-
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

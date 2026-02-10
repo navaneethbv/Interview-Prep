@@ -43,5 +43,4 @@ public class FirstAndSecondSmallestElementsArray {
 		return firstMin+"/"+secondMin;
 	}
 
-
 }

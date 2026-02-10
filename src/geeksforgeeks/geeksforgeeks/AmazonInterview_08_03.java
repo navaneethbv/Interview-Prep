@@ -5,8 +5,6 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  *  Given an array of positive integers, find the max no that can be formed by any permutation of the arrangement

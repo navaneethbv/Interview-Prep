@@ -4,10 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-22/
  * Code for converting floating point decimal number to binary numbers.

@@ -44,9 +44,6 @@ public class PrimeNosFlags {
 	        return array.size();  
 	   }  
 	   
-	   
-	   
-	   
 	    int sf = 1;  
 	    int ef = array.size();  
 	    int result = 1;  

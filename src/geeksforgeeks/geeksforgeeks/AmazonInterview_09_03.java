@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8-2/
  * http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/
@@ -39,6 +38,5 @@ package geeksforgeeks;
 	 public static void main(String[] args) {
 
 	 }
-
 
  }

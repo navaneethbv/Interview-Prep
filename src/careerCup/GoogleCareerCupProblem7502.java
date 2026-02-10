@@ -21,7 +21,6 @@ public class GoogleCareerCupProblem7502 {
 
 	}
 
-
 	
 
 }

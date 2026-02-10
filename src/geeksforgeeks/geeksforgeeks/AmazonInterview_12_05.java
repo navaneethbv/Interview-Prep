@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-12/
  * http://www.geeksforgeeks.org/merge-k-sorted-arrays/

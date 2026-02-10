@@ -31,5 +31,4 @@ public class PrepDocFindMissingElement {
 		return -sum+(arr.length+1)*(arr.length+2)/2;
 	}
 
-
 }

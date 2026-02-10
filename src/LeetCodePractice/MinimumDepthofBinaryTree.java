@@ -32,7 +32,6 @@ public class MinimumDepthofBinaryTree {
 		System.out.println(minDepth(tn));
 	}
 	
-	
 	/**
 	 * Performs minDepth operation.
 	 *
@@ -46,7 +45,6 @@ public class MinimumDepthofBinaryTree {
 		return getMinDepth(root);
 		
 	}
-
 
 	/**
 	 * Retrieves min depth from the data structure.
@@ -70,8 +68,6 @@ public class MinimumDepthofBinaryTree {
 		else 
 			return 1;
 	}
-
-
 
 }
 

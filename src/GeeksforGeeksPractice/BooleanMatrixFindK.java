@@ -28,8 +28,6 @@ public class BooleanMatrixFindK {
 		System.out.println(findK(mat));
 	}
 
-
-
 	/**
 	 * Finds k in the data structure.
 	 *
@@ -84,8 +82,6 @@ public class BooleanMatrixFindK {
 		return res;
 	}
 
-
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -98,6 +94,5 @@ public class BooleanMatrixFindK {
 		}
 
 	}
-
 
 }

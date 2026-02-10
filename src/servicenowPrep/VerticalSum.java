@@ -68,7 +68,4 @@ public class VerticalSum
 		getVerticalSum(tn.right, currLevel+1);		
 	}
 
-
-
-
 }

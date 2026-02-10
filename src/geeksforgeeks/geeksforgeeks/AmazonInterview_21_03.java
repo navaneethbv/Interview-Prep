@@ -1,9 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-21/
  *  N-Petrol bunk problem: There are n petrol bunks located in a circle.
@@ -76,7 +72,6 @@ package geeksforgeeks;
 			}
 		}
 		System.out.println("No Path");
-		
 		
 	}
  }

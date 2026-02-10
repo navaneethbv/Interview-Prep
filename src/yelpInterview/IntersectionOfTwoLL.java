@@ -43,8 +43,6 @@ public class IntersectionOfTwoLL {
 		print(n);
 	}
 
-
-
 	/**
 	 * Finds intersection in the data structure.
 	 *
@@ -72,10 +70,6 @@ public class IntersectionOfTwoLL {
 		return nOut.next;
 	}
 
-
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -90,9 +84,4 @@ public class IntersectionOfTwoLL {
 	}
 
 }
-
-
-
-
-
 

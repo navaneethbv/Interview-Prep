@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of CTCI */
 /**
  * Implementation of Trie Test algorithm/data structure.

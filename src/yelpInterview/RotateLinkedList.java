@@ -80,11 +80,5 @@ public class RotateLinkedList {
 		System.out.println();
 	}
 
-
 }
-
-
-
-
-
 

@@ -39,8 +39,5 @@ public class RemoveDuplicatesFromSortedArray {
 		return index;
 	}
 
-
-
-
 }
 

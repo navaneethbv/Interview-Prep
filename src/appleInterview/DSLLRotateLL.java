@@ -35,7 +35,6 @@ public class DSLLRotateLL {
 		print(head);
 	}
 
-
 	/**
 	 * Rotates the ll.
 	 *
@@ -60,7 +59,6 @@ public class DSLLRotateLL {
 		return mainHead;
 	}
 
-
 	/**
 	 * Finds length in the data structure.
 	 *
@@ -75,7 +73,6 @@ public class DSLLRotateLL {
 		}
 		return length;
 	}
-
 
 	/**
 	 * Performs print operation.

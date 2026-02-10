@@ -88,5 +88,4 @@ public class PrepDocWordCharSearch {
 		return true;
 	}
 
-
 }

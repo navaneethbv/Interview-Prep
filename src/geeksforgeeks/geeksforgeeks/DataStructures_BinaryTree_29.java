@@ -2,8 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
 /*
  * http://www.geeksforgeeks.org/populate-inorder-successor-for-all-nodes/
  * Populate Inorder Successor for all nodes

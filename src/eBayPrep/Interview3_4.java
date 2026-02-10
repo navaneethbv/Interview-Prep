@@ -30,16 +30,12 @@ public class Interview3_4{
 
 	}
 
-
-
 	Employee e1 = new Employee(1,null,200L);
 	Employee e2 = new Employee(1,"Hello", 200L);
 
 	e1.equals(e2)
 
-
 	e1.equals(e2)
-
 
 	-----------------------------------------------------------------------
 
@@ -56,7 +52,6 @@ public class Interview3_4{
 	 * @param str the str parameter
 	 * @return the list of results
 	 */
-	public static List<String> getPermutations(String str)
 	public static List<String> getPermutations(String str)
 	{
 	    outputList=new ArrayList<String>();
@@ -78,7 +73,6 @@ public class Interview3_4{
 	 * @param str the str parameter
 	 */
 	public static void permute(String prefix,String str)
-	public static void permute(String prefix,String str)
 	{
 	    if(str.length()==0 && !set.contains(prefix))
 	    {
@@ -90,7 +84,6 @@ public class Interview3_4{
 	        permute(prefix+str.charAt(i),str.substring(0,i)+str.substring(i+1);
 	    }
 	}
-
 
 	--------------------
 	Q2. map: [(empId1, empId2), (empId7, empId100), (empId2, empId99)]
@@ -125,8 +118,6 @@ public class Interview3_4{
 	    return false;
 	}
 	 */
-
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

@@ -2,10 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/diameter-of-a-binary-tree/
  * Diameter of a Binary Tree
@@ -86,6 +82,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 else
 			 return 0;
 	 }
-
 
  }

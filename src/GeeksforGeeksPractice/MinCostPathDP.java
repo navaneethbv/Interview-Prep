@@ -69,6 +69,4 @@ public class MinCostPathDP {
 			return cost[m][n]+Math.min(minCost(cost,m-1,n),Math.min(minCost(cost, m, n-1),minCost(cost, m-1, n-1)));
 	}
 
-
-
 }

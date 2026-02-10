@@ -4,10 +4,6 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-16/
  * Given a character array find the first element that repeats itself.
@@ -46,6 +42,5 @@ import java.util.Scanner;
 		 }
 		 return "No Element is repeating";
 	 }
-
 
  }

@@ -1,10 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-22/
  * Given N buckets each of capacity 1L numbered from 1 to N. Buckets are arranged in a form of a 2D Pyramid shown below.

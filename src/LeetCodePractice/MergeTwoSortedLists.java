@@ -39,7 +39,6 @@ public class MergeTwoSortedLists {
 		}
 	}
 
-
 	/**
 	 * Performs mergeTwoLists operation.
 	 *

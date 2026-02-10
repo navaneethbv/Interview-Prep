@@ -8,7 +8,6 @@ package eBayPrep;
  */
 public class WordSearch {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -83,7 +82,6 @@ public class WordSearch {
 		board[i][j]=temp;
 		return false;
 	}
-
 
 }
 

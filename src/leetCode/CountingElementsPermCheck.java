@@ -32,7 +32,6 @@ public class CountingElementsPermCheck {
 	 * @return the computed integer result
 	 */
 	public static int solution(int[] inputArray,int N)
-	public static int solution(int[] inputArray,int N)
 	{	
 		HashMap<Integer,Integer> elementMap=new HashMap<>();
 		int elementCount=0;

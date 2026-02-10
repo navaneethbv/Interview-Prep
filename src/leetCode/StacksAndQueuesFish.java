@@ -62,7 +62,6 @@ public class StacksAndQueuesFish {
 		return stack.size();
 	}
 
-
 }
 class StackObj{
 	int value;

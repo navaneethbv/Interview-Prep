@@ -22,7 +22,6 @@ public class ZigZagConversion {
 		if(numRows==1)
 			return s;
 		
-		
 		char[][] elementArray=new char[numRows][s.length()];
 		boolean backFlag=false;
 		int rowIndex=0,colIndex=0;
@@ -30,7 +29,6 @@ public class ZigZagConversion {
 		for (int i = 0; i < s.length(); i++) {
 
 			if(rowIndex>numRows-1){
-				rowIndex--;
 				rowIndex--;
 				backFlag=true;
 				colIndex++;
@@ -42,7 +40,6 @@ public class ZigZagConversion {
 			}
 			if(rowIndex<0)
 			{
-				rowIndex++;
 				rowIndex++;
 				backFlag=false;
 				colIndex--;

@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import java.util.Arrays;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-26/
  * http://www.geeksforgeeks.org/find-the-maximum-element-in-an-array-which-is-first-increasing-and-then-decreasing/

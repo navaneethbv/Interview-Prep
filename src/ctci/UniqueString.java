@@ -16,7 +16,6 @@ public class UniqueString {
 	 * @return true if condition is met, false otherwise
 	 */
 	public static boolean isUnique(String str)
-	public static boolean isUnique(String str)
 	{
 		if(str.length()>128)
 			return false; //Assuming the user wants to check unique characters in ASCII. Else we can use 256 for Extended ASCII.

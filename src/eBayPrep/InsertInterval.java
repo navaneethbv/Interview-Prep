@@ -65,7 +65,6 @@ public class InsertInterval {
 			}
 		});
 
-
 		for (int i = 0; i < intervals.size(); i++) {
 			Interval currInterval=intervals.get(i);
 			if(stack.isEmpty())

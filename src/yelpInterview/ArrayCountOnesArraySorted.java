@@ -58,6 +58,4 @@ public class ArrayCountOnesArraySorted {
 		return -1;
 	}
 
-
-
 }

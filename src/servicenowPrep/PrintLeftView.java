@@ -78,6 +78,4 @@ public class PrintLeftView
 		return tn==null?0:1+Math.max(getHeight(tn.left), getHeight(tn.right));
 	}
 
-
-
 }

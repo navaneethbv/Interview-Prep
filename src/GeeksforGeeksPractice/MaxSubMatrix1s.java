@@ -84,10 +84,6 @@ public class MaxSubMatrix1s {
 		   System.out.println();
 		  }  
 		
-		
-		
-		
-		
 		//printMatrix(s);
 	}
 
@@ -103,6 +99,5 @@ public class MaxSubMatrix1s {
 		}
 		
 	}
-
 
 }

@@ -52,5 +52,4 @@ public class ArrayPrintCombinationsOfRElements {
 		printCombinationUtil(arr, n, r, index, data, i+1);
 	}
 
-
 }

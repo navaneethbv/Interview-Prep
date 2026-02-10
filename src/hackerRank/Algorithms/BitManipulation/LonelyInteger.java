@@ -50,8 +50,5 @@ public class LonelyInteger {
 		res=ht.entrySet().iterator().next().getKey();
 		System.out.println(res);
 
-
-
-
 	}
 }

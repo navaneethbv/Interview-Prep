@@ -81,7 +81,6 @@ public class ImplementQueueusingStacks{
 		m.push(1);
 		m.push(2);
 		System.out.println(m.peek());
-		System.out.println(m.peek());
 	}
 }
 

@@ -35,8 +35,6 @@ public class BSTMinimumValueNode {
 
 	}
 
-
-
 	/**
 	 * Finds min value node in the data structure.
 	 *
@@ -51,8 +49,6 @@ public class BSTMinimumValueNode {
 			n=n.left;
 		return n;
 	}
-
-
 
 	/**
 	 * Performs insert operation.
@@ -88,9 +84,5 @@ public class BSTMinimumValueNode {
 			inOrder(n.right);			
 		}
 	}
-
-
-
-
 
 }

@@ -11,7 +11,6 @@ import java.util.Scanner;
  */
 public class LetterCombinations {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -22,13 +21,6 @@ public class LetterCombinations {
 		System.out.println("Test 1: Basic test");
 	}
 
-
-
-
-
-
-
-
 	/**
 	 * Performs letterCombinations operation.
 	 *
@@ -38,11 +30,7 @@ public class LetterCombinations {
 	public static List<String> letterCombinations(String digits) {
 		return null;
 
-
-
-
 	}
-
 
 }
 

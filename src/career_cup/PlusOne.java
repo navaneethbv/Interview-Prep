@@ -66,9 +66,6 @@ public class PlusOne {
 	{
 		ArrayList<Integer> array = new ArrayList<>();
 		array.add(9);
-		array.add(9);
-		array.add(9);
-		array.add(9);
 		System.out.println(array);
 		System.out.println(plusOne(array));
 	}

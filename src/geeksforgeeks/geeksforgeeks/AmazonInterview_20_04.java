@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-20/
  *  Find jth element in ith row of a pascal triangle
@@ -85,7 +83,6 @@ import java.util.Scanner;
 		}
 		return numerator;
 	}
-	
 	
 
  }

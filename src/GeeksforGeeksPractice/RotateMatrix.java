@@ -33,7 +33,6 @@ public class RotateMatrix {
 		//rotatematrix(a);
 	}
 
-
 	/**
 	 * Rotates the .
 	 *
@@ -89,7 +88,6 @@ public class RotateMatrix {
 		    }
 	}
 
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -102,6 +100,5 @@ public class RotateMatrix {
 		}
 
 	}
-
 
 }

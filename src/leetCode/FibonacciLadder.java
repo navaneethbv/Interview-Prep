@@ -51,6 +51,4 @@ public class FibonacciLadder {
 			return fibo(i-1)+fibo(i-2);
 	}
 
-
-
 }

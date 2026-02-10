@@ -26,5 +26,4 @@ public class BulbSwitcher {
 		return (int)Math.sqrt(n);
 	}
 
-
 }

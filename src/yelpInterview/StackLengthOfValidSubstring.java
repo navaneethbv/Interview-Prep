@@ -48,6 +48,5 @@ public class StackLengthOfValidSubstring {
 		return result;
 	}
 
-
 }
 

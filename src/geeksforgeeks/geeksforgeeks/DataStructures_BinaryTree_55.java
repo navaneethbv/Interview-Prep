@@ -45,7 +45,6 @@ import java.util.Arrays;
 		 printDistanceNodes(binaryTree1.rootNode,path,visited,0,k);
 	 }
 
-
 	 /**
 	  * Performs printDistanceNodes operation.
 	  *

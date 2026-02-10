@@ -4,10 +4,6 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.HashMap;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/vertical-sum-in-a-given-binary-tree/
  * Vertical Sum in a given Binary Tree
@@ -78,6 +74,5 @@ import java.util.HashMap;
 		 }
 
 	 }
-
 
  }

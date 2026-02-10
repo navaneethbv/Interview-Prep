@@ -56,12 +56,5 @@ public class CheckPalindromeLL {
 		return true;
 	}
 
-
-
 }
-
-
-
-
-
 

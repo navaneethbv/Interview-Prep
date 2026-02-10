@@ -44,9 +44,4 @@ public class MinCostProblemDP {
 		System.out.println(Arrays.toString(newCost[newCost.length-1]));
 	}
 
-
-
-
-
-
 }

@@ -11,9 +11,6 @@ public class CountLeafNodes
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
-	/**
-	 * Inner class representing a node in the data structure.
-	 */
 	static class TreeNode{
 		int value;
 		TreeNode left,right;
@@ -45,14 +42,11 @@ public class CountLeafNodes
 	 */
 	private static int countLeafNodes(TreeNode tn) {
 		// Check for null/base case
-		// Check for null/base case
 		if(tn==null)
 			return 0;
 		// Check if node is a leaf (no children)
-		// Check if node is a leaf (no children)
 		if(tn.left==null && tn.right==null)
 			return 1;
-		// Recursively process left and right subtrees
 		// Recursively process left and right subtrees
 		return countLeafNodes(tn.left)+countLeafNodes(tn.right);
 	}

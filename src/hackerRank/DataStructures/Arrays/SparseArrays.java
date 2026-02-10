@@ -8,7 +8,6 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/sparse-arrays
  */
 
-
 /**
  * Implementation of Sparse Arrays algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

@@ -11,7 +11,6 @@ import java.util.Arrays;
 public class MergeSortedArray {
 					
 
-
 	/**
 	 * Performs merge operation.
 	 *
@@ -52,7 +51,6 @@ public class MergeSortedArray {
 		System.out.println(Arrays.toString(nums1));
 		
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

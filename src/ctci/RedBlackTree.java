@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of CTCI */
 /**
  * Implementation of Red Black Tree algorithm/data structure.

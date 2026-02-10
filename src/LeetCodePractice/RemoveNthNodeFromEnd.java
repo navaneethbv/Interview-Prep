@@ -34,8 +34,6 @@ public class RemoveNthNodeFromEnd {
 		}
 	}
 
-
-
 	/**
 	 * Removes nth from end from the data structure.
 	 *

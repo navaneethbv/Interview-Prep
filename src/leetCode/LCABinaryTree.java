@@ -33,7 +33,6 @@ public class LCABinaryTree {
 		return leftNode!=null?leftNode:rightNode;
 	}
 
-
 	public class TreeNode {
 		int val;
 		TreeNode left;

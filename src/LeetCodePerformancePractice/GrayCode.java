@@ -63,8 +63,6 @@ public class GrayCode {
 		}
 		return outputList;
 
-
-
 	}
 
 }

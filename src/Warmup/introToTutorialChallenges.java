@@ -3,7 +3,6 @@ package Warmup;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-
 /**
  * Implementation of intro To Tutorial Challenges algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

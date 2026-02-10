@@ -1,10 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-22/
  * Given an mxn matrix. Each entry is a room. Rooms containing L are locked.

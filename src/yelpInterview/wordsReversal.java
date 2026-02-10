@@ -11,7 +11,6 @@ import java.util.Scanner;
  */
 public class wordsReversal {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -51,9 +50,4 @@ public class wordsReversal {
 		return str + " ";
 	}
 }
-
-
-
-
-
 

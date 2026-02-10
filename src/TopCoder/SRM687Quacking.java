@@ -5,8 +5,6 @@ package TopCoder;
  * Link:
  */
 
-
-
 /**
  * Implementation of SRM687 Quacking algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

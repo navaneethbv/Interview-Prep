@@ -1,9 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
 /*
  *  http://www.geeksforgeeks.org/amazon-interview-set-3//
  *  Two nodes of a BST are given. Print the path from 1st node to the 2nd node.

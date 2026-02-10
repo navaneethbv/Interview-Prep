@@ -59,5 +59,4 @@ public class ArrayFindFixedpoint {
 		return -1;
 	}
 
-
 }

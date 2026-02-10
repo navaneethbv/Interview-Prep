@@ -2,7 +2,6 @@ package ctci;
 
 import java.util.Stack;
 
-
 /*Implementation of String Buffer Data Structure*/
 /**
  * Implementation of string Buffer algorithm/data structure.
@@ -102,7 +101,6 @@ public class stringBuffer {
 	public String toString(){
 		return mainString;
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

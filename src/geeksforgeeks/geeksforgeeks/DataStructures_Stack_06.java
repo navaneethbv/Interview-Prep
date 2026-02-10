@@ -2,8 +2,6 @@ package geeksforgeeks;
 
 import ctci._05queue;
 
-
-
 /*
  * http://www.geeksforgeeks.org/implement-stack-using-queue/
  * Implement Stack using Queues
@@ -33,15 +31,12 @@ import ctci._05queue;
 		 myStack.push(70);
 		 System.out.println(myStack.pop());
 
-
-
 	 }
 
  }
  class MyStack{
 	 _05queue queue1=new _05queue();
 	 _05queue queue2=new _05queue();
-
 
 	 /**
 	  * Performs push operation.

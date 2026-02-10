@@ -8,7 +8,6 @@ package eBayPrep;
  */
 public class UniquePaths {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -19,7 +18,6 @@ public class UniquePaths {
 		System.out.println("Test 1: Basic test");
 	}
 
-
 	/**
 	 * Performs uniquePathsWithObstacles operation.
 	 *
@@ -29,7 +27,6 @@ public class UniquePaths {
 	public static int uniquePathsWithObstacles(int[][] obstacleGrid) {
 		return dfs(0,0,obstacleGrid);
 	}
-
 
 	/**
 	 * Performs dfs operation.

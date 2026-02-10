@@ -33,8 +33,6 @@ public class hackerCup2015 {
 			System.out.println("Case #"+(i+1)+" "+smallNumber+" "+largeNumber);
 		}
 
-
-
 	}
 
 	/**

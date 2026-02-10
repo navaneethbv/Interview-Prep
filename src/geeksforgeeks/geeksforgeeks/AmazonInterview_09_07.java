@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8-2/
  * Given an array of strings, find the string which is made up of maximum number of other strings contained in the same array.
@@ -67,6 +66,5 @@ import java.util.Scanner;
 		}
 		return outputString;
 	}
-
 
  }

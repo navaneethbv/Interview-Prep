@@ -33,7 +33,6 @@ public class BinaryTreeLevelOrderTraversal {
 	 * @param root the tree node to process
 	 */
 	public static void levelOrderTraversal(TreeNode root)
-	public static void levelOrderTraversal(TreeNode root)
 	{
 		for (int i = 1; i <=height(root); i++) {
 			innerList=new ArrayList<Integer>();
@@ -100,7 +99,6 @@ public class BinaryTreeLevelOrderTraversal {
 		tn.left.left=new TreeNode(15);
 		tn.left.right=new TreeNode(7);*/
 		System.out.println(levelOrder(tn).size());
-
 
 	}
 }

@@ -69,11 +69,5 @@ public class SwapNodesLL {
 		}
 	}
 
-
 }
-
-
-
-
-
 

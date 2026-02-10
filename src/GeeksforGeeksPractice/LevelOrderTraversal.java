@@ -32,7 +32,6 @@ public class LevelOrderTraversal {
 	 * @param tn the tree node to process
 	 */
 	public static void levelOrderTraversal(TreeNode tn)
-	public static void levelOrderTraversal(TreeNode tn)
 	{	
 		Queue<TreeNode> q=new LinkedList<TreeNode>();
 		if(tn!=null)
@@ -59,6 +58,5 @@ public class LevelOrderTraversal {
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
-
 
 }

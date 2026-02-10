@@ -6,10 +6,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-3/
  * There are n frames of m data element each. The data element in each frame is arranged in increasing order.

@@ -53,7 +53,6 @@ public class Encryption {
 			}
 		}
 
-
 		for (int i = 0; i < cols; i++) {
 			StringBuilder sb=new StringBuilder("");
 			for (int j = 0; j < rows; j++) {

@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/maximum-width-of-a-binary-tree/
  * Maximum width of a binary tree

@@ -27,7 +27,6 @@ public class ReverseArray {
 	 * @param arr the array to process
 	 */
 	public static void reverseArray(int[] arr)
-	public static void reverseArray(int[] arr)
 	{
 		int i=0,j=arr.length-1;
 		while(i<j)

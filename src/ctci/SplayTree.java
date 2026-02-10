@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of CTCI */
 /**
  * Implementation of Splay Tree algorithm/data structure.

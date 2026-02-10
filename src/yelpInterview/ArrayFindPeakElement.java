@@ -31,5 +31,4 @@ public class ArrayFindPeakElement {
 		return output;
 	}
 
-
 }

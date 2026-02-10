@@ -55,7 +55,6 @@ import java.util.Arrays;
 		 return true;
 	 }
 
-
 	 /**
 	  * Performs checkBalance operation.
 	  *

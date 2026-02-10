@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of CTCI 4.1*/
 /**
  * Implementation of Doubly Linked List algorithm/data structure.

@@ -3,9 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-32/
  * http://www.careercup.com/question?id=12998667

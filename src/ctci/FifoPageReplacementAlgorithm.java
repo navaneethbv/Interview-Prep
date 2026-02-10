@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 /*Implementation of FIFO Page Replacement Algorithm*/
 /**
  * Implementation of Fifo Page Replacement Algorithm algorithm/data structure.

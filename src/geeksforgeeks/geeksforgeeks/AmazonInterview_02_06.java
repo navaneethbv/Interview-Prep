@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 import ctci._02linkedList.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview/
  *  Design a data structure for the following operations:

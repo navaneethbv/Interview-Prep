@@ -85,12 +85,10 @@ public class ValidSudoku {
 			{'.','.','.','.','8','.','.','7','9'},
 				};
 
-
 				/*for (int i = 0; i < sudokuArray.length; i++) {
 					System.out.println(Arrays.toString(sudokuArray[i]));
 				}*/
 				System.out.println(isValidSudoku(sudokuArray));
-
 
 	}
 }

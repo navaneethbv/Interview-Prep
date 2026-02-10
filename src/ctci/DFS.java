@@ -2,7 +2,6 @@ package ctci;
 
 import ctci._10BinarySearchTree.Node;
 
-
 /*Implementation of Depth First Search */
 /**
  * Implementation of DFS algorithm/data structure.

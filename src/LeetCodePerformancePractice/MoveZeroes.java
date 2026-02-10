@@ -81,8 +81,6 @@ public class MoveZeroes {
 		}
 		System.out.println(Arrays.toString(nums));
 
-
 	}
-
 
 }

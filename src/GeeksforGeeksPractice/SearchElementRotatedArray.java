@@ -38,6 +38,4 @@ public class SearchElementRotatedArray {
 			return Arrays.binarySearch(Arrays.copyOfRange(inputArray, pivot+1, inputArray.length), element)==-1?false:true;
 	}
 
-
-
 }

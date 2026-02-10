@@ -77,18 +77,6 @@ public class EmployeesCount {
 			System.out.println(arr[i]+"->"+countMap.get(arr[i]));
 		}
 
-
-
-
-
-
-
-
-
 	}
-
-
-
-
 
 }

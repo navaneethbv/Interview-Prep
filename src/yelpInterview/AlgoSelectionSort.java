@@ -42,6 +42,5 @@ public class AlgoSelectionSort {
 		return inputArray;
 	}
 
-
 }
 

@@ -42,7 +42,6 @@ public class PalindromeLinkedList {
 			slowPointer=slowPointer.next;
 		}
 
-
 		ListNode newHead=slowPointer.next;
 		slowPointer.next=null;
 		ListNode p1=newHead;

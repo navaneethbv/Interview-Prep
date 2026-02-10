@@ -45,5 +45,4 @@ public class ArraySegregate01 {
 		return inputArray;
 	}
 
-
 }

@@ -30,8 +30,6 @@ public class FindSubSquareSum {
 		printSumSimple(mat, k);
 	}
 
-
-
 	/**
 	 * Performs printSumSimple operation.
 	 *
@@ -54,18 +52,10 @@ public class FindSubSquareSum {
 					System.out.print(sum+"/");
 				}
 
-
-
-
 			}
 		}
 
-
-
-
 	}
-
-
 
 	/**
 	 * Performs printMatrix operation.
@@ -79,6 +69,5 @@ public class FindSubSquareSum {
 		}
 
 	}
-
 
 }

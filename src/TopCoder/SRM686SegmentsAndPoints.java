@@ -7,8 +7,6 @@ import java.util.HashMap;
  * Link:
  */
 
-
-
 /**
  * Implementation of SRM686 Segments And Points algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

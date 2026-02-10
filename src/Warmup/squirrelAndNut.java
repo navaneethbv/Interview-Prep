@@ -51,7 +51,6 @@ public class squirrelAndNut {
 			totalSteps+=getNutWithMindistance();
 			totalSteps+=getTreeDistance();
 			
-			
 		}
 		System.out.println(totalSteps);
 		//		for (int i = 0; i < mat.length; i++) {
@@ -62,7 +61,6 @@ public class squirrelAndNut {
 		//					System.out.println("B");
 		//			}
 		//		}
-
 
 	}
 	/**
@@ -81,7 +79,6 @@ public class squirrelAndNut {
 	 * @return the computed integer result
 	 */
 	public static int getTreeDistance(){
-		
 		
 		return 0;
 	}

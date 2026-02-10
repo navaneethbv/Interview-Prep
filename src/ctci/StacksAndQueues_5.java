@@ -3,9 +3,6 @@ package ctci;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-
-
-
 /*Implementation of CTCI 3.5*/
 /**
  * Implementation of Stacks And Queues_5 algorithm/data structure.
@@ -31,14 +28,7 @@ public class StacksAndQueues_5{
 		myQueue.add(80);
 		myQueue.add(90);
 		System.out.println(myQueue.remove());
-		System.out.println(myQueue.remove());
-		System.out.println(myQueue.remove());
 		myQueue.add(120);
-		System.out.println(myQueue.remove());
-		System.out.println(myQueue.remove());
-		System.out.println(myQueue.remove());
-		System.out.println(myQueue.remove());
-		System.out.println(myQueue.remove());
 		System.out.println(myQueue.remove());
 		System.out.println(myQueue.remove());		
 	}

@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-10/
  * http://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/

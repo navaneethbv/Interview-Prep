@@ -13,7 +13,6 @@ import java.util.Stack;
  */
 public class DirectoryChange {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -58,8 +57,6 @@ public class DirectoryChange {
 		return sb.toString();
 	}
 
-
-
 	/*
 	/**
 	 * Retrieves directory from the data structure.
@@ -98,9 +95,4 @@ public class DirectoryChange {
 	}*/
 	}
 }
-
-
-
-
-
 

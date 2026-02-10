@@ -44,7 +44,5 @@ public class GoogleCareerCupProblem1796 {
 		return outputArray;
 	}
 	
-	
-
 
 }

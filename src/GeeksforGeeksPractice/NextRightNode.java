@@ -29,7 +29,6 @@ public class NextRightNode {
 		System.out.println(findNextRightNode(tn,5));
 	}
 
-
 	static boolean flag;
 	static Integer nextNode=null;
 	static TreeNode temp=null;
@@ -53,7 +52,6 @@ public class NextRightNode {
 		}
 		return nextNode;
 	}
-
 
 	/**
 	 * Retrieves node from the data structure.
@@ -90,8 +88,6 @@ public class NextRightNode {
 		}
 	}
 
-
-
 	/**
 	 * Retrieves height from the data structure.
 	 *
@@ -103,8 +99,6 @@ public class NextRightNode {
 		return tn!=null?1+Math.max(getHeight(tn.left), getHeight(tn.right)):0;
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -115,6 +109,5 @@ public class NextRightNode {
 			this.value=value;
 		}		
 	}
-
 
 }

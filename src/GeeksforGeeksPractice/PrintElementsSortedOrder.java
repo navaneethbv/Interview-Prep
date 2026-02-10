@@ -30,11 +30,6 @@ public class PrintElementsSortedOrder {
 		}
 	}
 
-
-
-
-
-
 	/**
 	 * Performs printSortedElements operation.
 	 *
@@ -47,11 +42,6 @@ public class PrintElementsSortedOrder {
 		youngify(mat,0,0);
 		return ret;
 	}
-
-
-
-
-
 
 	/**
 	 * Performs youngify operation.
@@ -80,11 +70,6 @@ public class PrintElementsSortedOrder {
 		}
 	}
 
-
-
-
-
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -97,6 +82,5 @@ public class PrintElementsSortedOrder {
 		}
 
 	}
-
 
 }

@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1331&rd=4550
  */
 
-
-
 /**
  * Implementation of SRM168 Stair Climb algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -21,7 +19,6 @@ public class SRM168StairClimb {
 	 * @param stairsPerStride the stairsPerStride parameter
 	 * @return the computed integer result
 	 */
-	public static int stridesTaken(int[] flights, int stairsPerStride)
 	public static int stridesTaken(int[] flights, int stairsPerStride)
 	{
 		int count=0;

@@ -83,8 +83,3 @@ class IntervalComparator implements Comparator<Interval> {
 	}
 }
 
-
-
-
-
-

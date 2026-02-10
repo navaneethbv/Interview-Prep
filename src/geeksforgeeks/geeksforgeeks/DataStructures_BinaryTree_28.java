@@ -3,8 +3,6 @@ package geeksforgeeks;
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 import ctci._05queue;
 
-
-
 /*
  * http://www.geeksforgeeks.org/connect-nodes-at-same-level/
  * Connect nodes at same level
@@ -125,7 +123,6 @@ import ctci._05queue;
 		 return downLevel;
 
 	 }
-
 
  }
  class tempQueue1 {
@@ -251,9 +248,6 @@ import ctci._05queue;
 		 // Recursively process left and right subtrees
 		 return outputStringBuilder.toString();
 	 }
-
-
-
 
 	 class Node{
 		 _01DataStructures_BinaryTree_00.Node data;

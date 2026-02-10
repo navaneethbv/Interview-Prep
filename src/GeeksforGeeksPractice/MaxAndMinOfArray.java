@@ -35,6 +35,4 @@ public class MaxAndMinOfArray {
 		System.out.println(min+"/"+max);
 	}
 
-
-
 }

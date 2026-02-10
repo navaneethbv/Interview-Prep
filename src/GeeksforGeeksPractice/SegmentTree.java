@@ -49,14 +49,12 @@ public class SegmentTree {
 			this.value=value;
 		}
 		
-		
 		/**
 		 * Performs insert operation.
 		 *
 		 * @param tn the tree node to process
 		 * @param value the value value
 		 */
-		public void insert(TreeNode tn,char value)
 		public void insert(TreeNode tn,char value)
 		{
 			if(tn==null)
@@ -74,14 +72,9 @@ public class SegmentTree {
 			}
 			else{
 				
-				
-				
 			}
 			
-			
-			
 		}
-		
 		
 	}
 

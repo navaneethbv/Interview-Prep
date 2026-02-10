@@ -41,14 +41,6 @@ public class IdenticalLL {
 		print(n);
 	}
 
-
-
-
-
-
-
-
-
 	/**
 	 * Finds identical recursive in the data structure.
 	 *
@@ -68,7 +60,6 @@ public class IdenticalLL {
 		// Recursively process left and right subtrees
 		return n1.value==n2.value && findIdenticalRecursive(n1.next, n2.next);
 	}
-
 
 	/**
 	 * Finds identical in the data structure.
@@ -91,12 +82,6 @@ public class IdenticalLL {
 		return true;
 	}
 
-
-
-
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -111,9 +96,4 @@ public class IdenticalLL {
 	}
 
 }
-
-
-
-
-
 

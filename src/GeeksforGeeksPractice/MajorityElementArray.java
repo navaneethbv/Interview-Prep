@@ -58,7 +58,4 @@ public class MajorityElementArray {
 		return Integer.MIN_VALUE;
 	}
 
-
-
-
 }

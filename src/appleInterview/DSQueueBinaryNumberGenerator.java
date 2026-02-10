@@ -11,7 +11,6 @@ import java.util.PriorityQueue;
  */
 public class DSQueueBinaryNumberGenerator {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

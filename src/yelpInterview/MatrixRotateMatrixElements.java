@@ -86,10 +86,6 @@ public class MatrixRotateMatrixElements {
 
 		}
 
-
-
-
-
 		return mat;
 	}
 
@@ -105,9 +101,5 @@ public class MatrixRotateMatrixElements {
 		}	
 		System.out.println();
 	}
-
-
-
-
 
 }

@@ -28,7 +28,6 @@ public class LeftRightToDownRight {
 		downRightTraversal(tn);
 	}
 
-
 	/**
 	 * Performs downRightTraversal operation.
 	 *
@@ -43,7 +42,6 @@ public class LeftRightToDownRight {
 			downRightTraversal(tn.left);
 		}
 	}
-
 
 	/**
 	 * Performs convertRepresentation operation.
@@ -66,7 +64,6 @@ public class LeftRightToDownRight {
 
 	}
 
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -77,6 +74,5 @@ public class LeftRightToDownRight {
 			this.value=value;
 		}		
 	}
-
 
 }

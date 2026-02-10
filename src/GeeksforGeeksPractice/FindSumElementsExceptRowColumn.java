@@ -56,8 +56,6 @@ public class FindSumElementsExceptRowColumn {
 		
 	}
 
-
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -70,6 +68,5 @@ public class FindSumElementsExceptRowColumn {
 		}
 
 	}
-
 
 }

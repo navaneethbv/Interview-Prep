@@ -3,9 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-12/
  * http://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/

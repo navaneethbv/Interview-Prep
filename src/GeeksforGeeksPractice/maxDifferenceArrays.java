@@ -39,10 +39,4 @@ public class maxDifferenceArrays {
 		return maxDifference;
 	}
 
-
-
-
-
-
-
 }

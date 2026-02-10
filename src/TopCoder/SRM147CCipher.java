@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1667&rd=4540
  */
 
-
-
 /**
  * Implementation of SRM147 C Cipher algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

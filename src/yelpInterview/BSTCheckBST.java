@@ -65,10 +65,4 @@ public class BSTCheckBST {
 		return true;
 	}
 
-
-
-
-
-
-
 }

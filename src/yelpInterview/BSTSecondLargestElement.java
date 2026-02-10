@@ -32,14 +32,6 @@ public class BSTSecondLargestElement{
 		findSecondLargestElement(n);
 	}
 
-
-
-
-
-
-
-
-
 	static int c=0;
 	/**
 	 * Finds second largest element in the data structure.
@@ -56,15 +48,6 @@ public class BSTSecondLargestElement{
 			findSecondLargestElement(n.right);
 		}
 	}
-
-
-
-
-
-
-
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

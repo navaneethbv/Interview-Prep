@@ -34,7 +34,6 @@ public class UnionIntersectionLists {
 		intersection(ln1,ln2);
 	}
 
-
 	/**
 	 * Performs intersection operation.
 	 *
@@ -65,7 +64,6 @@ public class UnionIntersectionLists {
 		
 	}
 
-
 	/**
 	 * Performs union operation.
 	 *
@@ -93,7 +91,6 @@ public class UnionIntersectionLists {
 			ln2=ln2.next;
 		}		
 	}
-
 
 	/**
 	 * Inner class representing a node in the data structure.

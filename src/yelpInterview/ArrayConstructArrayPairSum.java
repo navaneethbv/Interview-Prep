@@ -33,7 +33,4 @@ public class ArrayConstructArrayPairSum {
 		return arr;
 	}
 
-
-
-
 }

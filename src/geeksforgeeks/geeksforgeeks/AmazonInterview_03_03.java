@@ -6,9 +6,6 @@ import java.util.Scanner;
 import ctci._02linkedList;
 import ctci._02linkedList.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-2/
  * You are given a linked list and a parameter k. You will have to swap values in a certain fashion, 
@@ -79,8 +76,5 @@ public class AmazonInterview_03_03 {
 		}
 		return fastPointerNode;
 	}
-
-
-
 
 }

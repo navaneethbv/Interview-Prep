@@ -27,7 +27,6 @@ public class CustomTreeproblem {
         printForest(links2);      
 	}
 
-
 	/**
 	 * Performs printForest operation.
 	 *
@@ -35,11 +34,7 @@ public class CustomTreeproblem {
 	 */
 	private static void printForest(String[] links1) {
 		
-		
-		
-		
 	}
-
 
 	
 
@@ -53,6 +48,5 @@ public class CustomTreeproblem {
 			this.value=value;
 		}		
 	}
-
 
 }

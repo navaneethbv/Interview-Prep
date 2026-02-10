@@ -3,7 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-2/
  * Write your own power function
@@ -37,8 +36,6 @@ public class AmazonInterview_07_02 {
 	 * @return the computed integer result
 	 */
 	private static int myPower(int number, int power) {
-		
-		
 		
 		return 0;
 	}

@@ -47,5 +47,4 @@ public class GoogleCareerCupProblem2221 {
 		return true;
 	}
 	
-	
 }

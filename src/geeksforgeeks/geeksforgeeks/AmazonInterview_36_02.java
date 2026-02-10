@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import java.util.HashMap;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-36/
  * check the validity of sudoku.

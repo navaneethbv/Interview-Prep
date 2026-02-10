@@ -2,9 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/convert-an-arbitrary-binary-tree-to-a-tree-that-holds-children-sum-property/
  * Convert an arbitrary Binary Tree to a tree that holds Children Sum Property
@@ -96,6 +93,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		}
 		
 	}
-
 
  }

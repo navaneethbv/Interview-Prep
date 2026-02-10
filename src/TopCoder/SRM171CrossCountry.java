@@ -16,8 +16,6 @@ import java.util.Map.Entry;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1950&rd=4660
  */
 
-
-
 /**
  * Implementation of SRM171 Cross Country algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

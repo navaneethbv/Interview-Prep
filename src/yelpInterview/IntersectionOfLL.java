@@ -87,12 +87,5 @@ public class IntersectionOfLL {
 		}
 	}
 
-
-
 }
-
-
-
-
-
 

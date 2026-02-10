@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of Queue Data Structure*/
 /**
  * Implementation of queue algorithm/data structure.
@@ -131,9 +130,6 @@ public class queue {
 		// Recursively process left and right subtrees
 		return outputStringBuilder.toString();
 	}
-
-
-
 
 	class Node{
 		int data;

@@ -4,9 +4,6 @@ import java.math.BigInteger;
 
 import ctci._02linkedList;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-21/
  * Two numbers represented as linked lists. (Bigger than integers). Return a linked list which is the product of the given two linked lists.
@@ -69,7 +66,5 @@ import ctci._02linkedList;
 		 }
 		 System.out.println(outputNumber.toString());
 	 }
-
-
 
  }

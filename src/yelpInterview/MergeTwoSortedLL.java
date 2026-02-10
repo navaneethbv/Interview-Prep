@@ -76,11 +76,5 @@ public class MergeTwoSortedLL {
 		return pointer.next;
 	}
 
-
 }
-
-
-
-
-
 

@@ -8,8 +8,6 @@ import java.util.TreeMap;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1589
  */
 
-
-
 /**
  * Implementation of SRM146 Yahtzee Score algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

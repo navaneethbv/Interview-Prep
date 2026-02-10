@@ -32,7 +32,6 @@ public class CorrectnessAndLoopInvariant {
 		printArray(A);
 	}
 
-
 	/**
 	 * Performs printArray operation.
 	 *

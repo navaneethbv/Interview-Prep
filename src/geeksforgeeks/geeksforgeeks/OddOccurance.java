@@ -17,7 +17,6 @@ public class OddOccurance {
 	 * @param array the array to process
 	 */
 	public static void oddOccurance(int[] array)
-	public static void oddOccurance(int[] array)
 	{
 		Set<Integer> set = new HashSet<>();
 		
@@ -47,7 +46,6 @@ public class OddOccurance {
  * @param array the array to process
  * @return the computed integer result
  */
-/*	public static int oddOccurance(int[] array)
 /*	public static int oddOccurance(int[] array)
 	{
 		int i, res = 0;

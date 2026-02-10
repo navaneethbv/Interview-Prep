@@ -2,11 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/print-left-view-binary-tree/
  * Print Left View of a Binary Tree
@@ -95,8 +90,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 }
 		 return 0;
 	 }
-
-
-
 
  }

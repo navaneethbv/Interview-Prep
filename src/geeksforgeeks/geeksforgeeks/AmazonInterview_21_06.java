@@ -6,10 +6,6 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-21/
  * Print matrix spirally.

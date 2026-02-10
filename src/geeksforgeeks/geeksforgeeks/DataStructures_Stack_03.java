@@ -4,8 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
 /*
  * http://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
  * Check for balanced parentheses in an expression
@@ -52,5 +50,4 @@ import java.util.Stack;
 			 }
 		 }
 		 return true;
-	 }
 	 }

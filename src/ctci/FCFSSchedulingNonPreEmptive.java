@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.Scanner;
 
-
 /*	Implementation of FCFS Scheduling Algorithm
  *	Assuming the arrays are sorted	*/
 /**
@@ -39,7 +38,6 @@ public class FCFSSchedulingNonPreEmptive{
 		serviceArray=new int[] {6,5,2,4,3};
 		outputList=fcfsScheduleNonSorted(arrivalArray,serviceArray);
 		System.out.println(Arrays.toString(outputList));
-
 
 	}
 
@@ -118,6 +116,5 @@ public class FCFSSchedulingNonPreEmptive{
 		}
 		return outputArray;
 	}
-
 
 }

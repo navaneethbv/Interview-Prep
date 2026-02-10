@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-27/
  * There is a 2d array. Write code to find the path with maximum sum.

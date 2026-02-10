@@ -59,7 +59,6 @@ public class CountPrimes {
 	 * @return true if condition is met, false otherwise
 	 */
 	public static boolean isPrime(int number)
-	public static boolean isPrime(int number)
 	{
 		if(number<=1)
 			return false;

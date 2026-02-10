@@ -24,8 +24,6 @@ public class FourSum {
 		System.out.println("Test 1: Basic test");
 	}
 
-
-
 	/**
 	 * Performs fourSum operation.
 	 *

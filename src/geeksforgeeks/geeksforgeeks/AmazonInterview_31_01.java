@@ -1,8 +1,5 @@
 package geeksforgeeks;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-31/
  * a[] = {a,b,c,d,e} b[]={f,g,h} result should be = af+bg+ch+df+eg

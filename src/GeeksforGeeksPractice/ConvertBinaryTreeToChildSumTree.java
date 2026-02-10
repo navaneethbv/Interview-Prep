@@ -58,7 +58,6 @@ public class ConvertBinaryTreeToChildSumTree {
 	 * @param tn the tree node to process
 	 */
 	private static void modifyChildSumProperty(TreeNode tn) 
-	private static void modifyChildSumProperty(TreeNode tn) 
 	{
 		if(tn!=null)
 		{

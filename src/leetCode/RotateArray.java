@@ -74,6 +74,5 @@ public class RotateArray {
 		}
 		System.out.println(Arrays.toString(nums));
 		
-		
 	}
 }

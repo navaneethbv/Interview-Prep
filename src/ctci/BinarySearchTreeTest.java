@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of Binary Search Tree Tester */
 /**
  * Implementation of Binary Search Tree Test algorithm/data structure.

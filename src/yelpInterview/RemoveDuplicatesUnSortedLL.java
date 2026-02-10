@@ -70,14 +70,6 @@ public class RemoveDuplicatesUnSortedLL {
 		return outputNode;
 	}
 
-
-
-
-
-
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -92,9 +84,4 @@ public class RemoveDuplicatesUnSortedLL {
 	}
 
 }
-
-
-
-
-
 

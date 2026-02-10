@@ -30,7 +30,6 @@ public class LarrysArray {
 		}
 		scanner.close();
 
-
 	}
 
 	/**
@@ -99,6 +98,5 @@ public class LarrysArray {
 		inputArray[i+2]=inputArray[i]^inputArray[i+2];
 		inputArray[i]=inputArray[i]^inputArray[i+2];
 	}
-
 
 }

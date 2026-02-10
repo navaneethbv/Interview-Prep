@@ -11,7 +11,6 @@ import java.util.Scanner;
  */
 public class anagramChecker {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -41,9 +40,4 @@ public class anagramChecker {
 			System.out.println("true");
 	}
 }
-
-
-
-
-
 

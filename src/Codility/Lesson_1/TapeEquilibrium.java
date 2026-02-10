@@ -25,13 +25,6 @@ P = 3, difference = |6 - 7| = 1
 P = 4, difference = |10 - 3| = 7 
 Write a function:
 
-/**
- * Performs solution operation.
- *
- * @param A the array to process
- * @return the computed integer result
- */
-class Solution { public int solution(int[] A); }
 class Solution { public int solution(int[] A); }
 
 that, given a non-empty zero-indexed array A of N integers, returns the minimal difference that can be achieved.
@@ -58,13 +51,6 @@ Elements of input arrays can be modified.
  */
 
 class TapeEquilibrium {
-	/**
-	 * Performs solution operation.
-	 *
-	 * @param A the array to process
-	 * @return the computed integer result
-	 */
-	public int solution(int[] A) 
 	public int solution(int[] A) 
 	{
 		int answer = Integer.MAX_VALUE, sum = 0;
@@ -82,11 +68,6 @@ class TapeEquilibrium {
 		return answer;
 	}
 
-	/**
-	 * Main method to test the functionality of the class with various test cases.
-	 *
-	 * @param args the array to process
-	 */
 	public static void main(String[] args) 
 	{
 		int answer = new TapeEquilibrium().solution(new int[]{3, 1, 2, 4, 3});

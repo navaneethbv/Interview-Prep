@@ -37,7 +37,6 @@ public class CountLeafNodes {
 	 * @return the computed integer result
 	 */
 	public static int countLeafNodes(TreeNode tn)
-	public static int countLeafNodes(TreeNode tn)
 	{	
 		if(tn!=null)
 		{

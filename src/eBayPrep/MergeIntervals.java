@@ -31,8 +31,6 @@ public class MergeIntervals {
 	 */
 	public static void main(String[] args) {
 
-
-
 		ArrayList<Interval> aList=new ArrayList<>();
 		aList.add(new Interval(1, 4));
 		aList.add(new Interval(0,4));
@@ -64,7 +62,6 @@ public class MergeIntervals {
 					return a.end-b.end;
 			}
 		});
-
 
 		for (int i = 0; i < intervals.size(); i++) {
 			Interval currInterval=intervals.get(i);

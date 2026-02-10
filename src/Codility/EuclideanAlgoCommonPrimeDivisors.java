@@ -88,6 +88,4 @@ public class EuclideanAlgoCommonPrimeDivisors {
 		return list;
 	}
 
-
-
 }

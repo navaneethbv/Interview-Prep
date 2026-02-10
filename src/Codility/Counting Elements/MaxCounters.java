@@ -35,7 +35,6 @@
   * @return the resulting array
   */
  * class Solution { public int[] solution(int N, int[] A); }
- * class Solution { public int[] solution(int N, int[] A); }
  * that, given an integer N and a non-empty zero-indexed array A consisting of M integers, returns a sequence of integers representing the values of the counters.
  * The sequence should be returned as:
  * a structure Results (in C), or

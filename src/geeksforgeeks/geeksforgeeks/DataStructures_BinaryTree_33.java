@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/construct-binary-tree-from-inorder-traversal/
  * Construct Special Binary Tree from given Inorder traversal
@@ -76,7 +75,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 }
 		 return index;
 	 }
-
-
 
  }

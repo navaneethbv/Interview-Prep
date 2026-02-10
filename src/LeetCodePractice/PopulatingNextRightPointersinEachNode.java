@@ -33,8 +33,6 @@ public class PopulatingNextRightPointersinEachNode {
 		connect(tn);
 	}
 
-
-
 	/**
 	 * Performs connect operation.
 	 *
@@ -44,8 +42,6 @@ public class PopulatingNextRightPointersinEachNode {
 		reverseLevelOrderTraversal(root);
 		preOrder(root);
 	}
-
-
 
 	/**
 	 * Performs preOrder operation.
@@ -68,8 +64,6 @@ public class PopulatingNextRightPointersinEachNode {
 			preOrder(root.right);
 		}
 	}
-
-
 
 	/**
 	 * Performs reverseLevelOrderTraversal operation.
@@ -111,8 +105,6 @@ public class PopulatingNextRightPointersinEachNode {
 		printNodes(root.right, i-1);
 		printNodes(root.left, i-1);
 	}
-
-
 
 	/**
 	 * Retrieves height from the data structure.

@@ -35,7 +35,6 @@ class SumThreeNumbers {
     }*/
    }
     
-    
    // Complexity is O(n)
     /**
      * Performs sumThreeNumbers operation.

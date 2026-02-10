@@ -32,7 +32,6 @@ public class CountingElementsFrogRiverOne {
 	 * @return the computed integer result
 	 */
 	public static int solution(int X, int[] inputArray)
-	public static int solution(int X, int[] inputArray)
 	{	
 		HashMap<Integer,Integer> elementMap=new HashMap<Integer,Integer>();
 		int elementCount=0;

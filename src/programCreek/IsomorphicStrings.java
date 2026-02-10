@@ -9,7 +9,6 @@ if the characters in s can be replaced to get t.
 For example,"egg" and "add" are isomorphic, "foo" and "bar" are not.
  */
 
-
 /**
  * Implementation of Isomorphic Strings algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

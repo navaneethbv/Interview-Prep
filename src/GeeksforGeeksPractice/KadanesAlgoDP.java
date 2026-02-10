@@ -37,6 +37,4 @@ public class KadanesAlgoDP {
 		return maxSoFar;
 	}
 
-
-
 }

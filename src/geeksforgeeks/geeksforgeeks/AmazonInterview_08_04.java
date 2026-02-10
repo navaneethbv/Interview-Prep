@@ -1,8 +1,5 @@
 package geeksforgeeks;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  * A binary search tree is given with its two nodes interchanged

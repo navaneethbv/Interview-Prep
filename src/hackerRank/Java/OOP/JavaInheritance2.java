@@ -13,7 +13,6 @@ package hackerRank.Java.OOP;
 public class JavaInheritance2 {
 
 	//Write your code here
-	//Write your code here
 	class Arithmetic{
 	    /**
 	     * Retrieves name from the data structure.
@@ -38,7 +37,6 @@ public class JavaInheritance2 {
 	    }
 	    
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

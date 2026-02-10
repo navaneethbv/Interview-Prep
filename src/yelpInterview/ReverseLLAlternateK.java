@@ -38,7 +38,6 @@ public class ReverseLLAlternateK {
 		print(n);
 	}
 
-
 	/**
 	 * Performs reverseLL operation.
 	 *
@@ -69,15 +68,6 @@ public class ReverseLLAlternateK {
 		return ptr.next;
 	}
 
-
-
-
-
-
-
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -92,9 +82,4 @@ public class ReverseLLAlternateK {
 	}
 
 }
-
-
-
-
-
 

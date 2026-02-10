@@ -47,7 +47,6 @@ public class GoogleCareerCupProblem6692 {
 		//get main parent of path and add to hashmap
 		//if already present stop and check others added to list and check its leaf nodes
 		
-		
 	}
 
 	/**

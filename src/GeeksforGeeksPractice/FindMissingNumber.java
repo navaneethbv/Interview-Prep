@@ -40,5 +40,4 @@ public class FindMissingNumber {
 		return sum;
 	}
 
-
 }

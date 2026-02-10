@@ -4,9 +4,6 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  *  Find non-unique characters in a given string
@@ -44,8 +41,6 @@ import java.util.Scanner;
 				System.out.print(keyArray[i]+",");
 			}
 		}
-		 
-		 
 		 
 	 }
  }

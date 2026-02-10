@@ -37,7 +37,6 @@ public class SortLLWith012 {
 		print(n);
 	}
 
-
 	/**
 	 * Performs sort operation.
 	 *
@@ -83,7 +82,6 @@ public class SortLLWith012 {
 		return outputNode;
 	}
 
-
 	/**
 	 * Performs print operation.
 	 *
@@ -98,9 +96,4 @@ public class SortLLWith012 {
 	}
 
 }
-
-
-
-
-
 

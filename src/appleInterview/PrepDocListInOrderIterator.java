@@ -48,7 +48,6 @@ public class PrepDocListInOrderIterator {
 		 * @param n the size or count parameter
 		 */
 		public void addLeftNodes(Node n)
-		public void addLeftNodes(Node n)
 		{
 			while(n!=null)
 			{

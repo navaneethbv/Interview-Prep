@@ -39,8 +39,6 @@ public class AlgoInsertionSort{
 	 */
 	private static int[] insertionSort(int[] inputArray) {
 
-
-
 		return null;
 	}
 }

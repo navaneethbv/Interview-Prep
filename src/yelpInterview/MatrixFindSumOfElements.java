@@ -62,8 +62,4 @@ public class MatrixFindSumOfElements {
 		System.out.println();
 	}
 
-
-
-
-
 }

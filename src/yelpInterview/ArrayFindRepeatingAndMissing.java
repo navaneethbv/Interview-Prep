@@ -39,11 +39,7 @@ public class ArrayFindRepeatingAndMissing {
 				outputArr[1]=(i+1);
 		}
 		
-		
 		return outputArr;
 	}
-
-
-
 
 }

@@ -5,10 +5,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-4-2/
  * Given an array of infinite size containing 0/1 only and in sorted order, find position of first one. 
@@ -68,7 +64,6 @@ public class AmazonInterview_05_04 {
 				}
 			}
 		}
-
 
 	}
 

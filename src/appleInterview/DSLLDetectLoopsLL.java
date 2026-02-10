@@ -83,7 +83,6 @@ public class DSLLDetectLoopsLL {
 		return slowPointer;
 	}
 
-
 	/**
 	 * Performs detectLoop operation.
 	 *

@@ -35,7 +35,6 @@ public class squareSkypeInterview2 {
 			System.out.println(i);
 		}
 
-
 		//tree.print();
 		System.out.println("done");
 	}

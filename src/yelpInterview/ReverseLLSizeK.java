@@ -39,7 +39,6 @@ public class ReverseLLSizeK {
 		print(n);
 	}
 
-
 	/**
 	 * Performs reverseLL operation.
 	 *
@@ -87,17 +86,6 @@ public class ReverseLLSizeK {
 		return ptr.next;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -112,9 +100,4 @@ public class ReverseLLSizeK {
 	}
 
 }
-
-
-
-
-
 

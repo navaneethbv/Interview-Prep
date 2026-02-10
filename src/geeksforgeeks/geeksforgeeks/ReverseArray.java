@@ -15,7 +15,6 @@ public class ReverseArray {
 	 * @param end the end parameter
 	 */
 	public static void reverseArray(int[] arr, int start, int end)
-	public static void reverseArray(int[] arr, int start, int end)
 	{
 		 int temp;
 		    while (start < end)

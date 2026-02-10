@@ -54,7 +54,5 @@ public class StackStackUsingQueues {
 		q1.add(i);
 	}
 
-
-
 }
 

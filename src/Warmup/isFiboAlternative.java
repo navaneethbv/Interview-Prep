@@ -1,6 +1,5 @@
 package Warmup;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -44,7 +43,6 @@ public class isFiboAlternative {
 			catch(NumberFormatException e){
 				/**/System.out.println("IsNotFibo");
 			}
-			
 			
 		}
 	}

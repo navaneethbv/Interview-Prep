@@ -80,7 +80,5 @@ public class DSBTGetLevelOfBinaryNode {
 		return n==null?0:1+Math.max(getHeight(n.left), getHeight(n.right));
 	}
 
-
-
 }
 

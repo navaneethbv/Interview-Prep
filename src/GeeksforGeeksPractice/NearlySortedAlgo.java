@@ -11,8 +11,6 @@ package GeeksforGeeksPractice;
  */
 public class NearlySortedAlgo {
 	
-	
-	
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -21,6 +19,5 @@ public class NearlySortedAlgo {
 	public static void main(String[] args) {
 
 	}
-
 
 }

@@ -41,6 +41,4 @@ public class PrepDocFindTwoMissingElements {
 		System.out.println((int)(SUM/2 - Math.sqrt(SUM*SUM - 4*PRODUCT)/2));
 	}
 
-
-
 }

@@ -63,5 +63,4 @@ public class PrepDocLLDeleteNthnode {
 			n.next=null;
 	}
 
-
 }

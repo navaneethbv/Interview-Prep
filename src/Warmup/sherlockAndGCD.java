@@ -46,10 +46,8 @@ public class sherlockAndGCD {
 			else
 				System.out.println("YES");
 
-
 		}
 	}
-	
 	
 	/**
 	 * Performs gcd operation.

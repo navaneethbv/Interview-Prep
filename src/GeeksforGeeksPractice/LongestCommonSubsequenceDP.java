@@ -42,7 +42,4 @@ public class LongestCommonSubsequenceDP {
 		System.out.println(LCS[x.length()][y.length()]);
 	}
 
-
-
-
 }

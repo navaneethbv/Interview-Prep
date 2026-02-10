@@ -66,8 +66,5 @@ public class DSBTDiameterOfBinaryTree {
 		return 0;
 	}
 
-
-
-
 }
 

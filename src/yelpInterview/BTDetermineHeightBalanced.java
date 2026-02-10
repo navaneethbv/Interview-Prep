@@ -63,7 +63,5 @@ public class BTDetermineHeightBalanced {
 		return 0;
 	}
 
-
-
 }
 

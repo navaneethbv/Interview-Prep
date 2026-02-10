@@ -48,7 +48,6 @@ public class TreesAreIdentical {
 	 * @return true if condition is met, false otherwise
 	 */
 	public static boolean isIdentical(TreeNode tn,TreeNode tn1)
-	public static boolean isIdentical(TreeNode tn,TreeNode tn1)
 	{	
 		if(tn!=null || tn1!=null)
 		{

@@ -4,9 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
-
 /*Implementation of CTCI 2.7*/
 /**
  * Implementation of Linked List_6 algorithm/data structure.
@@ -65,6 +62,5 @@ public class LinkedList_6 {
 		}
 		return true;
 	}
-
 
 }

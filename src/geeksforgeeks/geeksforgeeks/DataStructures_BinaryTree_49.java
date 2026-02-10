@@ -2,12 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/check-leaves-level/
  * Check if all leaves are at same level
@@ -98,6 +92,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 downLevel=getDepth(node.right,n,i+1);
 		 return downLevel;
 	 }
-
 
  }

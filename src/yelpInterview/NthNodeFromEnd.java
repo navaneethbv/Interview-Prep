@@ -55,12 +55,5 @@ public class NthNodeFromEnd {
 		return slowPointer;
 	}
 
-
-
 }
-
-
-
-
-
 

@@ -51,6 +51,4 @@ public class LongestSubstringDP {
 		return cur_length>max_length?cur_length:max_length;
 	}
 
-
-
 }

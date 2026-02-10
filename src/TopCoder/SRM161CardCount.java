@@ -7,8 +7,6 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1800&rd=4610
  */
 
-
-
 /**
  * Implementation of SRM161 Card Count algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

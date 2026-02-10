@@ -17,7 +17,6 @@ public class MedianOfSortedArrays {
 	 * @return the Integer result
 	 */
 	public static Integer MedianOfArrays(int[] A, int[] B)
-	public static Integer MedianOfArrays(int[] A, int[] B)
 	{
 		ArrayList<Integer> list = new ArrayList<>();
 		int i=0, j=0;

@@ -55,6 +55,4 @@ public class IdenticalLL {
 		return ln.value==ln1.value && isIdentical(ln.next, ln1.next);
 	}
 
-
-
 }

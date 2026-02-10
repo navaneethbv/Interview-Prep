@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1348&rd=4580
  */
 
-
-
 /**
  * Implementation of SRM155 Benfords Law algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

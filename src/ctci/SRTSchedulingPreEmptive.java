@@ -71,7 +71,6 @@ public class SRTSchedulingPreEmptive{
 				if(remainingTimeArray[index]==0)
 					finishTimeArray[index]=i;
 
-
 				index=findMinimumArrayIndex(0,remainingTimeArray);
 				newProcess=false;
 			}

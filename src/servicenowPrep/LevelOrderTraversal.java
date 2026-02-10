@@ -76,6 +76,4 @@ public class LevelOrderTraversal
 		return 1+Math.max(getHeight(tn.left), getHeight(tn.right));
 	}
 
-
-
 }

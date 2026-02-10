@@ -2,8 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
 /*
  * http://www.geeksforgeeks.org/find-next-right-node-of-a-given-key/
  * Find next right node of a given key

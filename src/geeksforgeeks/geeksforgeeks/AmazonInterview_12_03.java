@@ -3,9 +3,6 @@ package geeksforgeeks;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-12/
  * Linked list is given as below (with elements as 1, 2 and 3), sort this in one pass.
@@ -26,7 +23,6 @@ import java.util.LinkedList;
 	 public static void main(String[] args) {
 		 LinkedList<Integer> linkedList=new LinkedList<Integer>();
 		 linkedList.add(3);
-		 linkedList.add(2);
 		 linkedList.add(2);
 		 linkedList.add(1);
 		 linkedList.add(2);

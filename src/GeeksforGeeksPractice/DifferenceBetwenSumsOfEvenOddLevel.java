@@ -89,6 +89,4 @@ public class DifferenceBetwenSumsOfEvenOddLevel {
 		return 0;
 	}
 
-
-
 }

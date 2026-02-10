@@ -37,7 +37,6 @@ public class BSTFloorAndCeilBST {
 		}
 	}
 
-
 	/**
 	 * Finds floor in the data structure.
 	 *
@@ -59,7 +58,6 @@ public class BSTFloorAndCeilBST {
 		}
 		return -1;
 	}
-
 
 	/**
 	 * Finds ceil in the data structure.
@@ -83,7 +81,6 @@ public class BSTFloorAndCeilBST {
 		}
 		return -1;
 	}
-
 
 	
 	/**

@@ -86,9 +86,5 @@ public class StackImplementTwoStackedArray {
 		}
 	}
 
-
-
-
-
 }
 

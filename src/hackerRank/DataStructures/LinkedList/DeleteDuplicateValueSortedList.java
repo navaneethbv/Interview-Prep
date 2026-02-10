@@ -48,5 +48,4 @@ public class DeleteDuplicateValueSortedList {
 		int data;
 	}
 
-
 }

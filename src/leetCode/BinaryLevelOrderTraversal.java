@@ -48,10 +48,6 @@ public class BinaryLevelOrderTraversal {
 		return ArrayListNew;
 	}
 
-
-
-
-
 	/**
 	 * Performs printNodes operation.
 	 *
@@ -70,10 +66,6 @@ public class BinaryLevelOrderTraversal {
 			printNodes(root.right, height-1);
 		}
 	}
-
-
-
-
 
 	/**
 	 * Retrieves height from the data structure.
@@ -97,10 +89,6 @@ public class BinaryLevelOrderTraversal {
 		else
 			return 1+rightHeight;
 	}
-
-
-
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

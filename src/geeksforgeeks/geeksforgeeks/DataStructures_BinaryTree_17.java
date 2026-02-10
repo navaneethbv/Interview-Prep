@@ -2,10 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/root-to-leaf-path-sum-equal-to-a-given-number/
  * Root to leaf path sum equal to a given number

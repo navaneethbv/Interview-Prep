@@ -38,11 +38,5 @@ public class ServiceNowPrep {
 		return arr;
 	}
 
-
 }
-
-
-
-
-
 

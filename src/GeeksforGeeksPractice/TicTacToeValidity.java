@@ -30,7 +30,6 @@ public class TicTacToeValidity {
 		{0, 4, 8}, // Check first Diagonal
 		{2, 4, 6}};
 
-
 		/**
 		 * Performs checkValidity operation.
 		 *
@@ -70,8 +69,6 @@ public class TicTacToeValidity {
 			return true;
 		}
 
-
-
 		/**
 		 * Performs checkWin operation.
 		 *
@@ -91,8 +88,6 @@ public class TicTacToeValidity {
 			return false;
 
 		}
-
-
 
 		/**
 		 * Performs printMatrix operation.

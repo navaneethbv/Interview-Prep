@@ -2,10 +2,6 @@ package ctci;
 
 import java.util.Stack;
 
-
-
-
-
 /*Implementation of CTCI 3.6*/
 /**
  * Implementation of Stacks And Queues_6 algorithm/data structure.
@@ -82,6 +78,5 @@ public class StacksAndQueues_6{
 			mainStack.push(tempStack.pop());
 		}
 	}
-
 
 }

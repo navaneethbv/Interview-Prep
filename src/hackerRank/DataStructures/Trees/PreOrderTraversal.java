@@ -21,7 +21,6 @@ public class PreOrderTraversal {
 		}
 	}
 
-
 	class Node {
 		int data;
 		Node left;

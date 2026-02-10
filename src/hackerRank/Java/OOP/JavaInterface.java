@@ -31,7 +31,6 @@ public class JavaInterface {
 	    }
 	}
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

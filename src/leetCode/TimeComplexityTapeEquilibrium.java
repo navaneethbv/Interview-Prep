@@ -1,6 +1,5 @@
 package leetCode;
 
-
 /*
  * Link : https://codility.com/programmers/task/tape_equilibrium
  */

@@ -25,7 +25,6 @@ public class KthLargestElement {
 		return nums[nums.length-k];
 	}
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

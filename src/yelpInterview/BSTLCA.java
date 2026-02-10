@@ -37,8 +37,6 @@ public class BSTLCA {
 		System.out.println(findLCA(root,10,22).value);
 	}
 
-
-
 	/**
 	 * Finds lca in the data structure.
 	 *
@@ -64,8 +62,6 @@ public class BSTLCA {
 		return n;
 	}
 
-
-
 	/**
 	 * Finds min value node in the data structure.
 	 *
@@ -80,8 +76,6 @@ public class BSTLCA {
 			n=n.left;
 		return n;
 	}
-
-
 
 	/**
 	 * Performs insert operation.
@@ -117,11 +111,5 @@ public class BSTLCA {
 			inOrder(n.right);			
 		}
 	}
-
-
-
-
-
-
 
 }

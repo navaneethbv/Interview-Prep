@@ -56,6 +56,5 @@ public class LargestNumber {
 			sb.deleteCharAt(0);
 		return sb.toString();
 
-
 	}
 }

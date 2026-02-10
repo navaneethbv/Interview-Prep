@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/write-a-c-program-to-get-count-of-leaf-nodes-in-a-binary-tree/
  * Program to count leaf nodes in a binary tree
@@ -61,6 +60,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		}
 		return 0;
 	}
-
 
  }

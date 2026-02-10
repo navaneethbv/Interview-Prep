@@ -69,5 +69,4 @@ public class MatrixPrintMatrixSpiral {
 		System.out.println();
 	}
 
-
 }

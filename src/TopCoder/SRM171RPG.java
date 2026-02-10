@@ -7,8 +7,6 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1944&rd=4660
  */
 
-
-
 /**
  * Implementation of SRM171 RPG algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

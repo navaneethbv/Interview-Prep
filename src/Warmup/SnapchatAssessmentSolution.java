@@ -15,7 +15,6 @@ import java.util.TreeMap;
  */
 public class SnapchatAssessmentSolution {
 
-
 	static ArrayList<String> dictionaryList;
 	static HashMap<String,Integer> pointerMap;
 	/**
@@ -159,8 +158,6 @@ public class SnapchatAssessmentSolution {
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(simpleWords(
 				new String[]{"chat","ever","snapchat","snap","salesperson","per","person","sales","son","whatsoever","what","so"})));
-		
-		
 		
 		/*System.out.println(Arrays.toString(simpleWords(
 				new String[]{"aaaaabababaaabbbababbbaaab",
@@ -344,8 +341,6 @@ public class SnapchatAssessmentSolution {
 						"babaababbb",
 						"aaababbbaaaabbbaaabbbaab",
 						"aaababbbbaabbbab"})));*/
-		
-		
 		
 		/*System.out.println(Arrays.toString(simpleWords(new String[]{"aaaaaaaaaaaaaaaaa",
 				"aaaaaaaaaaaaaaaa",

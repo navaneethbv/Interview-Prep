@@ -3,9 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-13/
  * You will be given the number of pairs of parenthesis.

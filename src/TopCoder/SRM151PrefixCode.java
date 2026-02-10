@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1700&rd=4560
  */
 
-
-
 /**
  * Implementation of SRM151 Prefix Code algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -32,7 +30,6 @@ public class SRM151PrefixCode {
 	 * @param words the array to process
 	 * @return the resulting string
 	 */
-	public static String isOne(String[] words)
 	public static String isOne(String[] words)
 	{
 		return "";

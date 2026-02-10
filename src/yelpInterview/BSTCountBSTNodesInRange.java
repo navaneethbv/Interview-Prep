@@ -37,12 +37,6 @@ public class BSTCountBSTNodesInRange{
 		System.out.println("value is "+findNodes(n,5,45));
 	}
 
-
-
-
-
-
-
 	/**
 	 * Finds nodes in the data structure.
 	 *
@@ -70,12 +64,6 @@ public class BSTCountBSTNodesInRange{
 		}
 		return 0;
 	}
-
-
-
-
-
-
 
 	/**
 	 * Performs inOrderTraversal operation.

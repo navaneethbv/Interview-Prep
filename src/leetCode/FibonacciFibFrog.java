@@ -106,5 +106,4 @@ public class FibonacciFibFrog {
 		    return min == 0x7FFFFFFF ? -1 : min;
 	}
 
-
 }

@@ -32,7 +32,6 @@ public class RunningTimeOfAlgorithms {
 		printArray(A);
 	}
 
-
 	/**
 	 * Performs printArray operation.
 	 *

@@ -40,13 +40,7 @@ public class PairedSumArray {
 				l++;
 		}
 		
-		
-		
-		
-		
 		return false;
 	}
-
-
 
 }

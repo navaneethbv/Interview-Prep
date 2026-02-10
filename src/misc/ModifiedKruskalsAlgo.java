@@ -24,7 +24,6 @@ public class ModifiedKruskalsAlgo
          * @return the computed integer result
          */
         public int compareTo(GraphEdge compareEdge)
-        public int compareTo(GraphEdge compareEdge)
         {
             return this.edgeWeight-compareEdge.edgeWeight;
         }
@@ -111,7 +110,6 @@ public class ModifiedKruskalsAlgo
             Node sourceRoot = findNode(subsets, newEdge.source);
             Node destinationRoot = findNode(subsets, newEdge.destination);
             int maxWeight=Math.max(weightCount.get(newEdge.source.nodeValue),weightCount.get(newEdge.destination.nodeValue));
-            
             
             //CMST weight evaluation condition
             // maxWeight<clusterCapacity || newEdge.source.nodeValue==0

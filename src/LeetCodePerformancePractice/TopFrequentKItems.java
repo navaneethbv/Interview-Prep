@@ -64,7 +64,6 @@ public class TopFrequentKItems {
 			}
 		});
 
-
 		for(Map.Entry<Integer, Integer> entry: map.entrySet()){
 			int key=entry.getKey();
 			int value=entry.getValue();
@@ -77,8 +76,6 @@ public class TopFrequentKItems {
 			outputList.add(queue.poll().value);
 		Collections.reverse(outputList);
 		return outputList;
-
-
 
 	}
 }

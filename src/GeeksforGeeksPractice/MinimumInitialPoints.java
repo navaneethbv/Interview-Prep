@@ -27,8 +27,6 @@ public class MinimumInitialPoints {
 
 	}
 
-
-
 	/**
 	 * Finds minimum initial points in the data structure.
 	 *
@@ -59,8 +57,6 @@ public class MinimumInitialPoints {
 	     return dp[0][0];
 	}
 
-
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -73,6 +69,5 @@ public class MinimumInitialPoints {
 		}
 
 	}
-
 
 }

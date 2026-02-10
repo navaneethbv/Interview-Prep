@@ -41,7 +41,6 @@ public class DSLLReverseLLGroupSubSize {
 		print(n1);
 	}
 
-
 	/**
 	 * Performs reverseLLSize operation.
 	 *
@@ -68,8 +67,6 @@ public class DSLLReverseLLGroupSubSize {
 			}
 		}
 	}
-
-
 
 	/**
 	 * Performs print operation.

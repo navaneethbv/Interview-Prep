@@ -34,7 +34,6 @@ public class BalancedBinaryTree {
 	 * @return the computed integer result
 	 */
 	public int getHeight(TreeNode node)
-	public int getHeight(TreeNode node)
 	{
 		if(node!=null)
 		{
@@ -78,6 +77,5 @@ public class BalancedBinaryTree {
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
-
 
 }

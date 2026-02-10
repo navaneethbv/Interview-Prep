@@ -10,8 +10,6 @@ import java.util.Iterator;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1757&rd=4625
  */
 
-
-
 /**
  * Implementation of SRM164 Party Seats algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

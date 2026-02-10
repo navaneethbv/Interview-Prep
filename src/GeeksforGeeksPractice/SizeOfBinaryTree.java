@@ -23,7 +23,6 @@ public class SizeOfBinaryTree {
 		System.out.println(findSize(tn));//should get 5 as output
 	}
 
-
 	/**
 	 * Finds size in the data structure.
 	 *

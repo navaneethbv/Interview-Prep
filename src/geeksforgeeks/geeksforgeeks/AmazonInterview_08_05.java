@@ -1,8 +1,5 @@
 package geeksforgeeks;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  * Identify all the pythagorian triplets in the given array.

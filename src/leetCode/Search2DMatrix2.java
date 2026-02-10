@@ -49,6 +49,5 @@ public class Search2DMatrix2 {
 			{18,21,23,26,30}	
 		}, 5));
 
-
 	}
 }

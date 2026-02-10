@@ -68,5 +68,4 @@ public class HeightBalanceCheck {
 		return 0;
 	}
 
-
 }

@@ -42,7 +42,6 @@ public class DSLLMergeTwoSortedLL {
 		print(pointer.next);
 	}
 
-
 	/**
 	 * Performs mergeRecursive operation.
 	 *
@@ -69,7 +68,6 @@ public class DSLLMergeTwoSortedLL {
 			head.next=(n1==null)?n2:n1;
 		}
 	}
-
 
 	/**
 	 * Performs mergeLocal operation.
@@ -101,7 +99,6 @@ public class DSLLMergeTwoSortedLL {
 			pointer.next=n1;
 		return n.next;
 	}
-
 
 	/**
 	 * Performs print operation.

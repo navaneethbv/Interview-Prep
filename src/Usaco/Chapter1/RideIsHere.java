@@ -1,6 +1,5 @@
 package Usaco.Chapter1;
 
-
 /*
 ID: navaneethbv2
 LANG: JAVA

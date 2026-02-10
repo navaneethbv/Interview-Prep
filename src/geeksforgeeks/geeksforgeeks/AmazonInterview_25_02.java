@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-25/
  * Given a sorted dictionary of an alien language, find order of characters
@@ -28,13 +27,6 @@ package geeksforgeeks;
 	 * @return the resulting string
 	 */
 	private static String findDictionaryOrder(String[] inputArray1) {
-		
-		
-		
-		
-		
-		
-		
 		
 		return "";
 	}

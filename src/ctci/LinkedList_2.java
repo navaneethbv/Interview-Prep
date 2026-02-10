@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 import ctci._02linkedList.Node;
 
-
-
-
 /*Implementation of CTCI 2.2*/
 /**
  * Implementation of Linked List_2 algorithm/data structure.

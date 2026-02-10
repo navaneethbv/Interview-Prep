@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import java.util.Arrays;
 
-
 /*
  * http://www.geeksforgeeks.org/implement-two-stacks-in-an-array/
  * Implement two stacks in an array
@@ -37,12 +36,6 @@ import java.util.Arrays;
 		 System.out.println(mainStack.push2(60));
 		 System.out.println(mainStack.stack2String());
 		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 
 		 
 		 BetterStack betterStack=new BetterStack();
 		 betterStack.push1(10);
@@ -60,21 +53,7 @@ import java.util.Arrays;
 		 betterStack.push1(110);
 		 betterStack.stackString();
 		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
 	 }
-
 
  }
  class MainStack{
@@ -168,7 +147,6 @@ import java.util.Arrays;
 		 stack1End++;
 		 return true;	
 	 }
-
 
 	 /**
 	  * Performs push2 operation.

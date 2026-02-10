@@ -30,8 +30,6 @@ public class RemoveAllHalfNodes {
 	}
 	
 
-
-
 	/**
 	 * Removes all half nodes from the data structure.
 	 *
@@ -81,9 +79,6 @@ public class RemoveAllHalfNodes {
 		}		
 	}
 
-
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -94,6 +89,5 @@ public class RemoveAllHalfNodes {
 			this.value=value;
 		}		
 	}
-
 
 }

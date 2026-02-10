@@ -10,7 +10,6 @@ package Warmup;
  */
 public class recursiveStringReverse {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -27,7 +26,6 @@ public class recursiveStringReverse {
 	 * @param inputstring the inputstring parameter
 	 * @return the resulting string
 	 */
-	public static String reverseString(String inputstring)
 	public static String reverseString(String inputstring)
 	{
 		if(inputstring.length()==1)

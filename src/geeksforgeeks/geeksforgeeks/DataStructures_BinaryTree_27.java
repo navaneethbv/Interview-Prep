@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/check-if-a-binary-tree-is-subtree-of-another-binary-tree/
  * Check if a binary tree is subtree of another binary tree 
@@ -96,6 +95,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 }
 		 return null;
 	}
-
 
  }

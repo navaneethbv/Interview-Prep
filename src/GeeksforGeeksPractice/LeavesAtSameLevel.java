@@ -37,7 +37,6 @@ public class LeavesAtSameLevel {
 
 	}
 
-
 	static int height=-1;
 	static boolean flag=true;
 	/**
@@ -56,8 +55,6 @@ public class LeavesAtSameLevel {
 		}
 		return true;
 	}
-
-
 
 	/**
 	 * Retrieves level from the data structure.
@@ -85,8 +82,6 @@ public class LeavesAtSameLevel {
 		}
 	}
 
-
-
 	/**
 	 * Retrieves height from the data structure.
 	 *
@@ -103,8 +98,6 @@ public class LeavesAtSameLevel {
 		return 0;
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -115,6 +108,5 @@ public class LeavesAtSameLevel {
 			this.value=value;
 		}		
 	}
-
 
 }

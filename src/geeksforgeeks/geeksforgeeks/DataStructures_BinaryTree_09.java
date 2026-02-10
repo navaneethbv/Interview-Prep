@@ -1,7 +1,5 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/level-order-traversal-in-spiral-form/
  * Level order traversal in spiral form
@@ -67,7 +65,5 @@ package geeksforgeeks;
 			}
 		
 	}
-
-
 
  }

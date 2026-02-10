@@ -33,9 +33,4 @@ public class ArrayMaxSumNoTwoElementsAdjacent {
 		return Math.max(incl, excl);
 	}
 
-
-
-
-
-
 }

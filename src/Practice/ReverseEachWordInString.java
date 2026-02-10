@@ -33,9 +33,6 @@ public class ReverseEachWordInString {
 		return sb.toString();
 	}
 	
-	
-	
-	
 	/**
 	 * Performs reverseChars operation.
 	 *

@@ -92,6 +92,5 @@ public class BinaryTreeLevelOrderTraversal {
 		return 0;
 	}
 
-
 }
 

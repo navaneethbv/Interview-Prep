@@ -29,8 +29,6 @@ public class LinkedListToBinaryTree {
 		ll.add(36);
 		convertTOBinaryTree(ll);
 
-
-
 	}
 
 	/**
@@ -90,8 +88,5 @@ public class LinkedListToBinaryTree {
 			this.value=value;
 		}	
 	}
-
-
-
 
 }

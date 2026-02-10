@@ -43,6 +43,4 @@ public class CheckMajorityElementArray {
 		return count>arr.length/2?true:false;
 	}
 
-
-
 }

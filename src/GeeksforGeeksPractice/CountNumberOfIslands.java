@@ -21,8 +21,6 @@ public class CountNumberOfIslands {
 	public static void main(String[] args) {
 		char mat[][] =  {{'O', 'O', 'O'},
 				{'X', 'X', 'O'},
-				{'X', 'X', 'O'},
-				{'O', 'O', 'X'},
 				{'O', 'O', 'X'},
 				{'X', 'X', 'O'}
 		};
@@ -30,8 +28,6 @@ public class CountNumberOfIslands {
 		System.out.println();
 		System.out.println(countNoOfIslands(mat));
 	}
-
-
 
 	/**
 	 * Counts the number of no of islands.
@@ -53,8 +49,6 @@ public class CountNumberOfIslands {
 		return count;
 	}
 
-
-
 	/**
 	 * Performs printMatrix operation.
 	 *
@@ -67,6 +61,5 @@ public class CountNumberOfIslands {
 		}
 
 	}
-
 
 }

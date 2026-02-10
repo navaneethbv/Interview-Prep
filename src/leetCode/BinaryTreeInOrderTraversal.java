@@ -38,7 +38,6 @@ public class BinaryTreeInOrderTraversal {
 	 * @param root the tree node to process
 	 */
 	public void inOrder(TreeNode root)
-	public void inOrder(TreeNode root)
 	{
 		if(root!=null)
 		{

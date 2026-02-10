@@ -16,8 +16,6 @@ import java.util.TreeMap;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1519&rd=4635
  */
 
-
-
 /**
  * Implementation of SRM166 Binary Cardinality algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

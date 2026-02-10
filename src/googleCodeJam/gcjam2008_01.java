@@ -8,8 +8,6 @@ import java.util.Scanner;
  * Problem Link:https://code.google.com/codejam/contest/32003/dashboard#s=p0	
  * Alien Numbers
  * 
- * 
- * 
  * TO  be done later
  */
 /**
@@ -19,7 +17,6 @@ import java.util.Scanner;
  * @author Navaneeth Rao
  */
 public class gcjam2008_01 {
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.
@@ -50,7 +47,6 @@ public class gcjam2008_01 {
 	 */
 	private static String translateInputIndex(int inputIndex, String outputLanguage) {
 
-
 		return null;
 	}
 
@@ -75,8 +71,6 @@ public class gcjam2008_01 {
 		else{
 
 		}
-
-
 
 		return 0;
 	}

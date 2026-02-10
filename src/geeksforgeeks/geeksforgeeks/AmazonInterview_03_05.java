@@ -1,9 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-2/
  * You are given pairs of numbers. In a pair the first number is smaller with respect to the second number. 

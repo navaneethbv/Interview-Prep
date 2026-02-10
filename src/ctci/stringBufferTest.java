@@ -1,6 +1,5 @@
 package ctci;
 
-
 /*Implementation of StringBuffer Data Structure Tester*/
 /**
  * Implementation of string Buffer Test algorithm/data structure.

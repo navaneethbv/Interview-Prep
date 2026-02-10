@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1801&rd=4610
  */
 
-
-
 /**
  * Implementation of SRM161 String Train algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -50,7 +48,6 @@ public class SRM161StringTrain {
 			if(outputString.toString().indexOf(op.charAt(i))==-1)
 				outputString.append(op.charAt(i));
 		}
-
 
 		return size+" "+outputString.reverse().toString();
 	}

@@ -1,6 +1,5 @@
 package geeksforgeeks;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-34/
  * http://www.geeksforgeeks.org/the-stock-span-problem/

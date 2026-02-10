@@ -47,14 +47,7 @@ public class ArrayDigitsToTree {
 		int[] arr7 = {1, 2, 2, 1};
 		printAllInterpretations(arr7);
 
-
-
-
-
 	}
-
-
-
 
 	/**
 	 * Performs printAllInterpretations operation.
@@ -63,11 +56,7 @@ public class ArrayDigitsToTree {
 	 */
 	private static void printAllInterpretations(int[] arr) {
 
-
 	}
-
-
-
 
 	/**
 	 * Inner class representing a node in the data structure.
@@ -79,6 +68,5 @@ public class ArrayDigitsToTree {
 			this.value=value;
 		}		
 	}
-
 
 }

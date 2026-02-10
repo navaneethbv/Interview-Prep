@@ -5,9 +5,6 @@ import java.math.BigInteger;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  * Given an array of integers,populate another array with the product 

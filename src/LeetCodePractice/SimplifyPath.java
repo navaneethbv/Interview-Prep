@@ -11,7 +11,6 @@ import java.util.Stack;
  */
 public class SimplifyPath {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -21,7 +20,6 @@ public class SimplifyPath {
 		// Test Case 1: Basic functionality test
 		System.out.println("Test 1: Basic test");
 	}
-
 
 	/**
 	 * Performs simplifyPath operation.
@@ -63,8 +61,6 @@ public class SimplifyPath {
 			output=path.replace("//", "/").replace("/./", "/");
 		return output.length()==1?"/":output.substring(0, output.length()-1);
 	}
-
-
 
 }
 

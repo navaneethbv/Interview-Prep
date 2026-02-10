@@ -8,9 +8,6 @@ import java.util.Stack;
 import ctci._02linkedList;
 import ctci._02linkedList.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-18/
  * Given a linked-list and 2 integers k & m. Reverse the linked-list till k elements

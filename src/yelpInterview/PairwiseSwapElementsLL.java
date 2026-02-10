@@ -39,8 +39,6 @@ public class PairwiseSwapElementsLL {
 		print(n);
 	}
 
-
-
 	/**
 	 * Performs pairwiseSwap operation.
 	 *
@@ -64,8 +62,6 @@ public class PairwiseSwapElementsLL {
 		return outputNode;
 	}
 
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -80,9 +76,4 @@ public class PairwiseSwapElementsLL {
 	}
 
 }
-
-
-
-
-
 

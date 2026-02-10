@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-2/
  * Given an array, find three numbers a, b and c such that a^2 + b^2 = c^2
@@ -42,7 +41,6 @@ import java.util.Scanner;
 		 }
 		 System.out.println();
 		 System.out.println(findTriplets(inputArray));
-
 
 	 }
 

@@ -55,7 +55,6 @@ public class BinarySearchMinMaxDivision {
 		return min;
 	}
 
-
 	/**
 	 * Performs check operation.
 	 *
@@ -65,7 +64,6 @@ public class BinarySearchMinMaxDivision {
 	 * @param N the size or count parameter
 	 * @return the computed integer result
 	 */
-	public static int check(int num, int K, int A[], int N)
 	public static int check(int num, int K, int A[], int N)
 	{
 		int i = 0;
@@ -88,6 +86,5 @@ public class BinarySearchMinMaxDivision {
 
 		return 1;
 	}
-
 
 }

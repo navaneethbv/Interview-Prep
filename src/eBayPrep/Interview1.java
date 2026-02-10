@@ -20,7 +20,6 @@ public class Interview1{
 	   
 	    1,2,3,4,5,7
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -41,7 +40,6 @@ public class Interview1{
 	 * @param rightIndex the rightIndex parameter
 	 * @return the resulting array
 	 */
-	public static int[] mergeSort(int[] arr,int leftIndex,int rightIndex)
 	public static int[] mergeSort(int[] arr,int leftIndex,int rightIndex)
 	{    
 	    if(leftIndex>rightIndex)
@@ -101,10 +99,6 @@ public class Interview1{
 	    return outputArray;
 	}
 
-
-
-
-
 	/**
 	 * Performs sort operation.
 	 *
@@ -121,12 +115,10 @@ public class Interview1{
 	    }
 	}
 
-
 	(a,10),(b,10),(b,20) ,(a,20),(c,10),(c,20)
 
 	//Map
 	    a,10  b,10  b,20   a,20   c,10   c,20
-
 
 	//combiner
 	    a,10  b,(10,20)     a,20   c,(10,20)
@@ -162,7 +154,6 @@ public class Interview1{
 	 * @return the resulting string
 	 */
 	public static String longest(String str)
-	public static String longest(String str)
 	{
 	if(str==null||str.length()==0)
 	    return str;
@@ -187,8 +178,6 @@ public class Interview1{
 	}
 	    return output;
 	}*/
-
-
 
 }
 

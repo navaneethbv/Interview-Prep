@@ -16,7 +16,6 @@ public class AddTwoNumbers {
 		ListNode(int x) { val = x; }
 	}
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *

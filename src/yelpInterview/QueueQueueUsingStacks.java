@@ -56,8 +56,5 @@ public class QueueQueueUsingStacks {
 		stack1.push(i);
 	}
 
-
-
-
 }
 

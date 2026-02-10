@@ -2,8 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
 /*
  * http://www.geeksforgeeks.org/write-c-code-to-determine-if-two-trees-are-identical/
  * Write C Code to Determine if Two Trees are Identical

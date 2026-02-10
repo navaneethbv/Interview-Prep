@@ -51,7 +51,5 @@ public class BTRootToLeafPathSum {
 		return false;
 	}
 
-
-
 }
 

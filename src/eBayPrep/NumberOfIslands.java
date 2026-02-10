@@ -20,7 +20,6 @@ public class NumberOfIslands {
 			{'0','0','0','0','0'}}));
 		System.out.println(numIslands(new char[][]{
 			{'1','1','0','0','0'},
-			{'1','1','0','0','0'},
 			{'0','0','1','0','0'},
 			{'0','0','0','1','1'}}));
 	}
@@ -62,8 +61,6 @@ public class NumberOfIslands {
 		// Recursively process left and right subtrees
 		return 1+findIslands(i+1, j, cs)+findIslands(i-1, j, cs)+findIslands(i, j+1, cs)+findIslands(i, j-1, cs);
 	}
-
-
 
 }
 

@@ -11,7 +11,6 @@ import java.util.List;
  */
 public class SubSets {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -21,7 +20,6 @@ public class SubSets {
 		// Test Case 1: Basic functionality test
 		System.out.println("Test 1: Basic test");
 	}
-
 
 	/**
 	 * Performs subsets operation.
@@ -46,7 +44,6 @@ public class SubSets {
 				List<Integer> a=temp.get(j);
 				a.add(nums[i]);
 			}
-			
 			
 			List<Integer> singleElement=new ArrayList<>();
 			singleElement.add(nums[i]);

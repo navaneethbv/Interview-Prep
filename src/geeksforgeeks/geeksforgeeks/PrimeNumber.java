@@ -16,7 +16,6 @@ public class PrimeNumber {
 	 * @return true if condition is met, false otherwise
 	 */
 	public static boolean isPrime(int number)
-	public static boolean isPrime(int number)
 	{
 		for(int i=2;i<=Math.sqrt(number);i++)
 		{

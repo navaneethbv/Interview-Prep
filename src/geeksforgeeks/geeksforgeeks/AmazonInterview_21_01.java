@@ -7,8 +7,6 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-21/
  * Find maximum frequent numbers in an array.
@@ -85,7 +83,6 @@ import java.util.Scanner;
 		}
 		return inputArray;
 	}
-	
 	
 
  }

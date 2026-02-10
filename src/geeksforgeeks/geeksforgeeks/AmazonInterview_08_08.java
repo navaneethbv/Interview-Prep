@@ -3,10 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  * We have a huge file with braces () [just one type..] Find if they are balanced 

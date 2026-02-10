@@ -59,7 +59,5 @@ public class AlgoRatInAMaze {
 		return isPathPresentUtil(matrix, i+1, j)|| isPathPresentUtil(matrix, i, j+1);
 	}
 
-
-
 }
 

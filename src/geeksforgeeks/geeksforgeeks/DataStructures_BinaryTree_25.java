@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/print-ancestors-of-a-given-node-in-binary-tree/
  * Print Ancestors of a given node in Binary Tree

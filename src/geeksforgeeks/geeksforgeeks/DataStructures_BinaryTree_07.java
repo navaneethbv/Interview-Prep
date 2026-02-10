@@ -2,7 +2,6 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/level-order-tree-traversal/
  * Level Order Tree Traversal
@@ -57,7 +56,6 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		}
 	}
 	
-
 
  }
 class tempQueue {
@@ -183,9 +181,6 @@ class tempQueue {
 			// Recursively process left and right subtrees
 			return outputStringBuilder.toString();
 		}
-
-
-
 
 		class Node{
 			_01DataStructures_BinaryTree_00.Node data;

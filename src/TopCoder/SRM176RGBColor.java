@@ -7,8 +7,6 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=2251&rd=4685
  */
 
-
-
 /**
  * Implementation of SRM176 RGB Color algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

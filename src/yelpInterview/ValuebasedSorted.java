@@ -18,7 +18,6 @@ import java.util.TreeMap;
  */
 public class ValuebasedSorted {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
@@ -43,7 +42,6 @@ public class ValuebasedSorted {
 			 * @param o2 the o2 parameter
 			 * @return the computed integer result
 			 */
-			public int compare( Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2 )
 			public int compare( Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2 )
 			{
 				return (o1.getValue()).compareTo( o2.getValue() );
@@ -102,9 +100,4 @@ public class ValuebasedSorted {
 		}
 	}
 }
-
-
-
-
-
 

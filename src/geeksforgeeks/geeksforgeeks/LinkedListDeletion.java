@@ -1,8 +1,6 @@
 package geeksforgeeks;
 /*package geeksforgeeks;
 
-
-
 /**
  * Implementation of Linked List Deletion algorithm/data structure.
  * This class provides methods to solve related problems efficiently.

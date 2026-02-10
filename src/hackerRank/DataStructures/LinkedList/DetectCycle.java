@@ -12,7 +12,6 @@ package hackerRank.DataStructures.LinkedList;
  */
 public class DetectCycle {
 
-
 	int HasCycle(Node head) {
 		Node slowPointer=head;
 		Node fastPointer=head;
@@ -34,6 +33,5 @@ public class DetectCycle {
 		Node next;
 		int data;
 	}
-
 
 }

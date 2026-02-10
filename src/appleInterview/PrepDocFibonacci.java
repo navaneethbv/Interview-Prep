@@ -48,7 +48,4 @@ public class PrepDocFibonacci {
 		return fib1;
 	}
 
-
-
-
 }

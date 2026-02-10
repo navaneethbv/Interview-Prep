@@ -3,8 +3,6 @@ package geeksforgeeks;
 import java.util.Arrays;
 import java.util.Random;
 
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview/
  *  A sorted array has been rotated r times to the left. Find r in least possible time.

@@ -5,8 +5,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
 /*
  * http://geeksquiz.com/stack-set-2-infix-to-postfix/
  * Infix to Postfix
@@ -90,20 +88,11 @@ import java.util.Stack;
 						 }
 					 }
 
-
-
-
-
 				 }
 
 			 }
 
-
-
 		 }
-
-
-
 
 		 return null;
 	 }

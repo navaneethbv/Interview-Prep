@@ -58,7 +58,6 @@ public class BoxAssessment {
 		System.out.println(stack.peek());
 	}
 
-
 	/**
 	 * Performs handleInput operation.
 	 *
@@ -83,7 +82,6 @@ public class BoxAssessment {
 		}
 		return output;
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

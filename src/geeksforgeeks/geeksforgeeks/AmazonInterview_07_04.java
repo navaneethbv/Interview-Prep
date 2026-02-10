@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-2/
  * Find the next greater element for every element in array.

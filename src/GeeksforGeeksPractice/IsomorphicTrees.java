@@ -60,9 +60,6 @@ public class IsomorphicTrees {
 		return true;
 	}
 
-
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -73,6 +70,5 @@ public class IsomorphicTrees {
 			this.value=value;
 		}		
 	}
-
 
 }

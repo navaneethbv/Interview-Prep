@@ -1,6 +1,5 @@
 package leetCode;
 
-
 /*
  * Link : https://leetcode.com/problems/count-primes/
  */
@@ -98,7 +97,6 @@ public class CountPrimes {
 		}
 		return count;
 	}
-
 
 	/**
 	 * Main method to test the functionality of the class with various test cases.

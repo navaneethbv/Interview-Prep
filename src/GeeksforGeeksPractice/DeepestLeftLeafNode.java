@@ -29,7 +29,6 @@ public class DeepestLeftLeafNode {
 		getDeepestLeftNode(tn);
 	}
 
-
 	static boolean flag=false;
 	/**
 	 * Retrieves deepest left node from the data structure.
@@ -44,8 +43,6 @@ public class DeepestLeftLeafNode {
 				break;
 		}
 	}
-
-
 
 	/**
 	 * Retrieves leaf node from the data structure.
@@ -68,8 +65,6 @@ public class DeepestLeftLeafNode {
 		}
 	}
 
-
-
 	/**
 	 * Retrieves height from the data structure.
 	 *
@@ -81,8 +76,6 @@ public class DeepestLeftLeafNode {
 		return tn!=null?1+Math.max(getHeight(tn.left), getHeight(tn.right)):0;
 	}
 
-
-
 	/**
 	 * Inner class representing a node in the data structure.
 	 */
@@ -93,6 +86,5 @@ public class DeepestLeftLeafNode {
 			this.value=value;
 		}		
 	}
-
 
 }

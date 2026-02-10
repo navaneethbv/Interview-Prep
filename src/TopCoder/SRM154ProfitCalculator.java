@@ -5,8 +5,6 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1768&rd=4575
  */
 
-
-
 /**
  * Implementation of SRM154 Profit Calculator algorithm/data structure.
  * This class provides methods to solve related problems efficiently.
@@ -35,7 +33,6 @@ public class SRM154ProfitCalculator {
 				"673.49 070.97","288.09 849.43","616.34 236.34","401.96 316.33","371.18 014.27",
 				"809.63 508.33","375.68 290.84","334.66 477.89","689.54 526.35","084.77 316.51",
 				"304.76 015.91","460.63 636.56","357.84 436.20","752.24 047.64","922.10 573.12"}));
-
 
 	}
 	/**

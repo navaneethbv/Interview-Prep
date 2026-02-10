@@ -1,6 +1,5 @@
 package ctci;
 
-
 /* 
  * Implementation of CTCI 
  * Link:http://geeksquiz.com/binary-heap/
@@ -59,9 +58,6 @@ public class Heap{
 			return 0;
 		}
 			
-
-
-
 
 	}
 }

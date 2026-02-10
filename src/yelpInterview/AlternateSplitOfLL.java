@@ -37,11 +37,6 @@ public class AlternateSplitOfLL {
 		//print(n);
 	}
 
-
-
-
-
-
 	/**
 	 * Performs alterNateSplit operation.
 	 *
@@ -74,11 +69,6 @@ public class AlternateSplitOfLL {
 		print(n2Ptr);
 	}
 
-
-
-
-
-
 	/**
 	 * Performs print operation.
 	 *
@@ -93,9 +83,4 @@ public class AlternateSplitOfLL {
 	}
 
 }
-
-
-
-
-
 

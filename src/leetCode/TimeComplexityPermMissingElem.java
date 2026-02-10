@@ -1,6 +1,5 @@
 package leetCode;
 
-
 /*
  * Link : https://codility.com/programmers/task/perm_missing_elem
  */
@@ -29,7 +28,6 @@ public class TimeComplexityPermMissingElem {
 	 * @param inputArray[] the array to process
 	 * @return the computed integer result
 	 */
-	public static int solution(int inputArray[])
 	public static int solution(int inputArray[])
 	{
 		int sum=0;

@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-35/
  * Convert a n-byte integer from little endian to big endian.
@@ -24,7 +23,6 @@ import java.util.Stack;
 	 public static void main(String[] args) {
 
 	 }
-
 
 	 /**
 	  * Performs convertToBigEndianStack operation.

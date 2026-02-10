@@ -3,7 +3,6 @@ package ctci;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*Implementation of CTCI 1.6*/
 /**
  * Implementation of Arrays_5 algorithm/data structure.
@@ -56,18 +55,7 @@ public class Arrays_5 {
 					//outputArray[][]
 				}
 				
-				
-				
-				
-				
-				
-				
-				
 			}
-		
-		
-		
-		
 		
 		return null;
 	}
@@ -83,22 +71,9 @@ public class Arrays_5 {
 		int outputArray[][]=new int[noOfRows][noOfRows];
 			for (int i = 0; i < layers; i++) {
 				
-				
-				
-				
-				
-				
-				
-				
-				
 			}
-		
-		
-		
-		
 		
 		return null;
 	}
-
 
 }

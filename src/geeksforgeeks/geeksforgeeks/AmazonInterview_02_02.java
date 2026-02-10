@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview/
  *  Check if a character link list is palindrome or not.

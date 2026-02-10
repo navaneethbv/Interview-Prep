@@ -5,9 +5,6 @@ import java.util.Scanner;
 
 import ctci._02linkedList.Node;
 
-
-
-
 /*Implementation of CTCI 2.5*/
 /**
  * Implementation of Linked List_4 algorithm/data structure.
@@ -89,6 +86,5 @@ public class LinkedList_4 {
 		}
 		return finalList;
 	}
-
 
 }

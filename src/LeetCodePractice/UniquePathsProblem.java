@@ -8,7 +8,6 @@ package LeetCodePractice;
  */
 public class UniquePaths {
 
-
 	/**
 	 * Main method to test the functionality of the class with various test cases.
 	 *
