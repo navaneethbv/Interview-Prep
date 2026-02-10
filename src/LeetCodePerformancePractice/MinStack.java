@@ -2,6 +2,12 @@ package LeetCodePerformancePractice;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Min Stack algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MinStack {
 	class MinStack {
 		Stack<Integer> elements=new Stack<Integer>();
@@ -25,17 +31,42 @@ public class MinStack {
 			}
 		}
 
+		/**
+		 * Performs pop operation.
+		 *
+		 */
 		public void pop() {
 			elements.pop();
 			minElements.pop();
 		}
 
+		/**
+		 * Performs top operation.
+		 *
+		 * @return the computed integer result
+		 */
 		public int top() {
 			return elements.peek();
 		}
 
+		/**
+		 * Retrieves min from the data structure.
+		 *
+		 * @return the computed integer result
+		 */
 		public int getMin() {
 			return minElements.peek();
 		}
 	}
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+
 }

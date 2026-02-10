@@ -1,6 +1,19 @@
 package geeksforgeeks;
 
+/**
+ * Implementation of Merge Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MergeArray {
+	/**
+	 * Performs mergeSortedArray operation.
+	 *
+	 * @param a[] the a[] parameter
+	 * @param b[] the b[] parameter
+	 * @return the resulting array
+	 */
 	public int[] mergeSortedArray(int a[], int b[]) {
 		int i = 0;
 		int j = 0;
@@ -15,6 +28,11 @@ public class MergeArray {
 		}
 		return a;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		MergeArray obj = new MergeArray();
 		int a[] = { 2, -1, -1, 6, -1, 10, -1 };

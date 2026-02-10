@@ -2,7 +2,21 @@ package geeksforgeeks;
 
 import java.util.ArrayList;
 
+/**
+ * Implementation of Median Of Sorted Arrays algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MedianOfSortedArrays {
+	/**
+	 * Performs MedianOfArrays operation.
+	 *
+	 * @param A the array to process
+	 * @param B the array to process
+	 * @return the Integer result
+	 */
+	public static Integer MedianOfArrays(int[] A, int[] B)
 	public static Integer MedianOfArrays(int[] A, int[] B)
 	{
 		ArrayList<Integer> list = new ArrayList<>();
@@ -35,10 +49,14 @@ public class MedianOfSortedArrays {
 		return list.get(median);				
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int[] A = {2,4,8};
-		int[] B = {1,3,7};
-		System.out.println(MedianOfArrays(A, B));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
 }

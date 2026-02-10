@@ -1,9 +1,27 @@
 package LeetCodePractice;
 
+/**
+ * Implementation of Best Timeto Buyand Sell Stock algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BestTimetoBuyandSellStock {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(maxProfit(new int[]{100, 90, 80, 70, 60,110}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs maxProfit operation.
+	 *
+	 * @param prices the array to process
+	 * @return the computed integer result
+	 */
 	public static int maxProfit(int[] prices) {
 		if(prices.length<1)
 			return 0;

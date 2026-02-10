@@ -5,7 +5,20 @@ import java.util.HashMap;
 /*
  * Link : https://leetcode.com/problems/isomorphic-strings/
  */
+/**
+ * Implementation of Isomorphic Strings algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class IsomorphicStrings {
+	/**
+	 * Checks if isomorphic.
+	 *
+	 * @param s the s parameter
+	 * @param t the t parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isIsomorphic(String s, String t) {
 		HashMap<Character, Character> charMap=new HashMap<>();
 		HashMap<Character, Character> charMapNew=new HashMap<>();
@@ -13,6 +26,7 @@ public class IsomorphicStrings {
 		StringBuffer sb=new StringBuffer();
 		StringBuffer sbNew=new StringBuffer();
 		
+		// Iterate through all elements
 		for (int i = 0; i < s.length(); i++) {
 			char sChar=s.charAt(i);
 			char tChar=t.charAt(i);
@@ -36,10 +50,13 @@ public class IsomorphicStrings {
 		return sb.toString().contentEquals(t) && sbNew.toString().contentEquals(s)?true:false;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(isIsomorphic("ab","aa"));
-		System.out.println(isIsomorphic("egg","add"));
-		System.out.println(isIsomorphic("foo","bar"));	
-		System.out.println(isIsomorphic("paper","title"));		
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

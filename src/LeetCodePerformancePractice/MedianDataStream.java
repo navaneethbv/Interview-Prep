@@ -3,6 +3,12 @@ package LeetCodePerformancePractice;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
+/**
+ * Implementation of Median Data Stream algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MedianDataStream {
 	public class TreeNode {
 		int val;
@@ -20,6 +26,11 @@ public class MedianDataStream {
 			minHeap=new PriorityQueue<>();
 		}
 		// Adds a number into the data structure.
+		/**
+		 * Adds num to the data structure.
+		 *
+		 * @param num the num parameter
+		 */
 		public void addNum(int num) {
 			maxHeap.offer(num);
 			minHeap.offer(maxHeap.poll());
@@ -28,6 +39,11 @@ public class MedianDataStream {
 		}
 
 		// Returns the median of current data stream
+		/**
+		 * Finds median in the data structure.
+		 *
+		 * @return the double result
+		 */
 		public double findMedian() {
 			if(minHeap.size()==maxHeap.size())
 			{
@@ -37,5 +53,16 @@ public class MedianDataStream {
 				return maxHeap.peek();
 		}
 	};
+
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
 
 }

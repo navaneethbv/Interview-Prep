@@ -29,6 +29,11 @@ class BinarySearch
     }
  
     // Driver method to test above
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args[] the args[] parameter
+     */
     public static void main(String args[])
     {
         BinarySearch ob = new BinarySearch();

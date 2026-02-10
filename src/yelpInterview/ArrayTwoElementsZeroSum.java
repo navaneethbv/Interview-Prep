@@ -2,13 +2,28 @@ package yelpInterview;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Array Two Elements Zero Sum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayTwoElementsZeroSum {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int inputArray[] ={1, 60, -10, 70, -80, 85};
-		findPair(inputArray);
+
 	}
 
+	/**
+	 * Finds pair in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 */
 	private static void findPair(int[] inputArray) {
 		Arrays.sort(inputArray);
 		int left=0;

@@ -6,7 +6,18 @@ import java.util.Scanner;
 
 
 /*Implementation of CTCI 1.3*/
+/**
+ * Implementation of Arrays_2 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Arrays_2 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		String inputString1=scanner.nextLine();
@@ -16,6 +27,13 @@ public class Arrays_2 {
 		System.out.println("String are in Permuted Order Sort: "+isPermutationSort(inputString1, inputString2));
 
 	}
+	/**
+	 * Checks if permutation count.
+	 *
+	 * @param inputString1 the inputString1 parameter
+	 * @param inputString2 the inputString2 parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isPermutationCount(String inputString1,String inputString2){
 		int inputArray1[]=new int[256];
 		int inputArray2[]=new int[256];
@@ -24,12 +42,15 @@ public class Arrays_2 {
 		if(inputString1.length()!=inputString2.length())
 			return false;
 		else{
+			// Iterate through all elements
 			for (int i = 0; i < inputString1.length(); i++) {
 				inputArray1[(int)inputString1.charAt(i)]++;
 			}
+			// Iterate through all elements
 			for (int i = 0; i < inputString2.length(); i++) {
 				inputArray2[(int)inputString2.charAt(i)]++;
 			}
+			// Iterate through all elements
 			for (int i = 0; i < inputArray1.length; i++) {
 				if(inputArray1[i]!=inputArray2[i])
 					return false;
@@ -37,6 +58,13 @@ public class Arrays_2 {
 		}
 		return true;
 	}
+	/**
+	 * Checks if permutation sort.
+	 *
+	 * @param inputString1 the inputString1 parameter
+	 * @param inputString2 the inputString2 parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isPermutationSort(String inputString1,String inputString2){
 		char[] inputArray1=inputString1.toCharArray();
 		char[] inputArray2=inputString2.toCharArray();
@@ -46,6 +74,7 @@ public class Arrays_2 {
 		if(inputArray1.length!=inputArray2.length)
 			return false;
 		else{
+			// Iterate through all elements
 			for (int i = 0; i < inputArray1.length; i++) {
 				if(inputArray1[i]!=inputArray2[i])
 				{

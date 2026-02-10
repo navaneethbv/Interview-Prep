@@ -3,13 +3,28 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://www.geeksforgeeks.org/ugly-numbers/
  */
+/**
+ * Implementation of Ugly Numbers DP algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class UglyNumbersDP {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(findUglyNumberNaive(150));
-		System.out.println(findUglyNumberDP(150));
-		
+
 	}
 
+	/**
+	 * Finds ugly number dp in the data structure.
+	 *
+	 * @param N the size or count parameter
+	 * @return the computed integer result
+	 */
 	private static int findUglyNumberDP(int N) {
 		int[] ugly=new int[N];
 		ugly[0]=1;
@@ -41,6 +56,12 @@ public class UglyNumbersDP {
 		return nextUglyNo;
 	}
 
+	/**
+	 * Finds ugly number naive in the data structure.
+	 *
+	 * @param i the i parameter
+	 * @return the computed integer result
+	 */
 	private static int findUglyNumberNaive(int i) {
 		int count=1;
 		int number=1;
@@ -59,6 +80,12 @@ public class UglyNumbersDP {
 		return number;
 	}
 
+	/**
+	 * Finds ugly in the data structure.
+	 *
+	 * @param number the number parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean findUgly(int number) {
 		number=maxDivide(number,2);
 		number=maxDivide(number,3);
@@ -66,6 +93,13 @@ public class UglyNumbersDP {
 		return number==1;
 	}
 
+	/**
+	 * Performs maxDivide operation.
+	 *
+	 * @param number the number parameter
+	 * @param i the i parameter
+	 * @return the computed integer result
+	 */
 	private static int maxDivide(int number, int i) {
 		while(number%i==0)
 			number=number/i;

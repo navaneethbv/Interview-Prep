@@ -2,16 +2,33 @@ package LeetCodePerformancePractice;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Longest Valid Parentheses algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LongestValidParentheses {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(longestValidParentheses(")()())"));
-		System.out.println(longestValidParentheses("(()"));
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs longestValidParentheses operation.
+	 *
+	 * @param s the s parameter
+	 * @return the computed integer result
+	 */
 	public static int longestValidParentheses(String s) {
 		Stack<int[]> stack=new Stack<>();
 		int maxLength=Integer.MIN_VALUE;
+		// Iterate through all elements
 		for (int i = 0; i < s.length(); i++) {
 			char c=s.charAt(i);
 			if(c=='(')

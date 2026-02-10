@@ -1,7 +1,16 @@
 package appleInterview;
 
+/**
+ * Implementation of DSLL Merge Two Sorted LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSLLMergeTwoSortedLL {
 	static Node head;
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node next;
 		int value;
@@ -9,6 +18,11 @@ public class DSLLMergeTwoSortedLL {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node n1=new Node(5);
 		n1.next=new Node(10);
@@ -29,7 +43,14 @@ public class DSLLMergeTwoSortedLL {
 	}
 
 
+	/**
+	 * Performs mergeRecursive operation.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param n2 the n2 parameter
+	 */
 	private static void mergeRecursive(Node n1, Node n2) {
+		// Check for null/base case
 		if(n1!=null && n2!=null)
 		{
 			if(n1.value>n2.value)
@@ -50,6 +71,13 @@ public class DSLLMergeTwoSortedLL {
 	}
 
 
+	/**
+	 * Performs mergeLocal operation.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param n2 the n2 parameter
+	 * @return the Node result
+	 */
 	private static Node mergeLocal(Node n1, Node n2) {
 		Node n=new Node(0);
 		Node pointer=n;
@@ -65,14 +93,21 @@ public class DSLLMergeTwoSortedLL {
 			}
 			pointer=pointer.next;
 		}
+		// Check for null/base case
 		if(n1==null)
 			pointer.next=n2;
+		// Check for null/base case
 		else if(n2==null)
 			pointer.next=n1;
 		return n.next;
 	}
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null){
 			System.out.print(n.value+"/");

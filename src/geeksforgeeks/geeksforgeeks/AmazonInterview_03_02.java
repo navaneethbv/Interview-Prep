@@ -10,17 +10,32 @@ import java.util.Stack;
  * http://www.geeksforgeeks.org/amazon-interview-set-2/
  * Parenthesis checker.
  */
+/**
+ * Implementation of Amazon Interview_03_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_03_02 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		String inputString=scanner.nextLine();
-		scanner.close();
-		System.out.println("Parenthesis check : "+checkParentheses(inputString));
+
 	}
 
+	/**
+	 * Performs checkParentheses operation.
+	 *
+	 * @param inputString the inputString parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkParentheses(String inputString) {
 		// TODO Auto-generated method stub
 		Stack<Character> stack=new Stack<Character>();
+		// Iterate through all elements
 		for (int i = 0; i < inputString.length(); i++) {
 			Character c= inputString.charAt(i);
 			if((c=='(')||(c=='{')||(c=='[')){

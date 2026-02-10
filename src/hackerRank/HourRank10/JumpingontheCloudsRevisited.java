@@ -2,7 +2,18 @@ package hackerRank.HourRank10;
 
 import java.util.Scanner;
 
+/**
+ * Implementation of Jumpingonthe Clouds Revisited algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JumpingontheCloudsRevisited {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();

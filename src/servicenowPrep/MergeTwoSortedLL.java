@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Merge Two Sorted LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MergeTwoSortedLL {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		public ListNode(int value) {
@@ -10,6 +19,11 @@ public class MergeTwoSortedLL {
 		ListNode next;
 
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln = new ListNode(2);
 		ln.next = new ListNode(4);
@@ -28,6 +42,13 @@ public class MergeTwoSortedLL {
 			System.out.println(ln.value);ln=ln.next;
 		}
 	}
+	/**
+	 * Performs merge operation.
+	 *
+	 * @param ln the ln parameter
+	 * @param ln1 the ln1 parameter
+	 * @return the list of results
+	 */
 	private static ListNode merge(ListNode ln,ListNode ln1) {
 		ListNode output=new ListNode(-1),pointer=output;
 		while(ln!=null && ln1!=null)
@@ -44,6 +65,7 @@ public class MergeTwoSortedLL {
 				ln1=ln1.next;
 			}
 		}
+		// Check for null/base case
 		if(ln!=null)
 		{
 			while(ln!=null)

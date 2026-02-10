@@ -3,7 +3,18 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://geeksquiz.com/find-maximum-or-minimum-in-binary-tree/
  */
+/**
+ * Implementation of Maximum Value Binary Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaximumValueBinaryTree {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(2);
 		tn.left=new TreeNode(7);
@@ -20,9 +31,17 @@ public class MaximumValueBinaryTree {
 
 	
 
+	/**
+	 * Finds min in the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int findMin(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
+			// Recursively process left and right subtrees
 			return Math.min(tn.value,Math.min(findMin(tn.left),findMin(tn.right)));
 		}
 		return Integer.MAX_VALUE;
@@ -30,9 +49,17 @@ public class MaximumValueBinaryTree {
 
 
 
+	/**
+	 * Finds max in the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int findMax(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
+			// Recursively process left and right subtrees
 			return Math.max(tn.value,Math.max(findMax(tn.left),findMax(tn.right)));
 		}
 		return Integer.MIN_VALUE;
@@ -40,6 +67,9 @@ public class MaximumValueBinaryTree {
 
 
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;

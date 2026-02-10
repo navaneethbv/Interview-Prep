@@ -7,7 +7,18 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM687 Quacking algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM687Quacking {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(quack("quqacukqauackck"));
 		System.out.println(quack("kcauq"));
@@ -18,6 +29,12 @@ public class SRM687Quacking {
 		System.out.println(quack("quackk"));
 		
 	}
+	/**
+	 * Performs quack operation.
+	 *
+	 * @param s the s parameter
+	 * @return the computed integer result
+	 */
 	public static int quack(String s){
 		if(s.length()%5!=0)
 			return -1;
@@ -26,6 +43,7 @@ public class SRM687Quacking {
 		int numOfQs=0;
 		String str=new String(s);
 		char cArr[]=s.toCharArray();
+		// Iterate through all elements
 		for (int i = 0; i < cArr.length; i++) {
 			if(cArr[i]=='q')
 				numOfQs++;
@@ -35,6 +53,7 @@ public class SRM687Quacking {
 		for (int i = 0; i < numOfQs; i++) {
 			prevChar='z';
 
+			// Inner loop to check combinations
 			for (int j = 0; j < s.length(); j++) {
 				if(!arr[j]){
 					if(prevChar=='z' && s.charAt(j)=='q')

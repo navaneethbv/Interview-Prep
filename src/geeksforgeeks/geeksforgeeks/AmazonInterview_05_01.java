@@ -13,7 +13,18 @@ import java.util.Scanner;
  *  Given a 2D array containing only 0/1s and each row is in sorted order.
  *  Find the row which contains maximum number of 1s.
  */
+/**
+ * Implementation of Amazon Interview_05_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_05_01 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int noOfRows=Integer.parseInt(scanner.nextLine());
@@ -37,10 +48,18 @@ public class AmazonInterview_05_01 {
 		System.out.println("Row with max 1's is :"+(rowNumber+1));
 	}
 
+	/**
+	 * Finds max row in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMaxRow(int[][] inputArray) {
 		int max=-1,row=-1;
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			int sum=0;
+			// Inner loop to check combinations
 			for (int j = 0; j < inputArray[0].length; j++) {
 				sum+=inputArray[i][j];
 			}

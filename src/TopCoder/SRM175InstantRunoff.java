@@ -10,7 +10,18 @@ import java.util.TreeSet;
 
 
 
+/**
+ * Implementation of SRM175 Instant Runoff algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM175InstantRunoff {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(outcome("ABC",new String[]{"ACB", "BCA", "ACB", "BCA", "CBA"}));
 		System.out.println(outcome("DCBA",new String[]{"ACBD", "ACBD", "ACBD", "BCAD", "BCAD", "DBCA", "CBDA"}));
@@ -20,9 +31,17 @@ public class SRM175InstantRunoff {
 	}
 	static HashMap<Character,Integer> voteCount=new HashMap<>();
 	static TreeSet<Character> invalidUsers=new TreeSet<>();
+	/**
+	 * Performs outcome operation.
+	 *
+	 * @param candidates the candidates parameter
+	 * @param ballots the array to process
+	 * @return the resulting string
+	 */
 	public static String outcome(String candidates, String[] ballots){
 		voteCount=new HashMap<>();
 		invalidUsers=new TreeSet<>();
+		// Iterate through all elements
 		for (int i = 0; i < candidates.length(); i++) {
 			for (int j = 0; j < ballots.length; j++) {
 				char c=ballots[j].charAt(i);
@@ -42,10 +61,16 @@ public class SRM175InstantRunoff {
 		}
 		return candidates;
 	}
+	/**
+	 * Finds user with least win in the data structure.
+	 *
+	 * @return the Character result
+	 */
 	private static Character findUserWithLeastWin() {
 		Object arr[]=voteCount.keySet().toArray();
 		int count=Integer.MAX_VALUE;
 		char output = 0;
+		// Iterate through all elements
 		for (int i = 0; i < arr.length; i++) {
 			char c=(char) arr[i];
 			if(!invalidUsers.contains(c)){

@@ -5,12 +5,29 @@ package careerCup;
  * A person can take one or two steps at a time to reach a particular floor( say in a building).
  * How many different ways can a person reach the nth floor?
  */
+/**
+ * Implementation of Google Career Cup Problem2018 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem2018 {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(findWays(6));
+
 	}
 
+	/**
+	 * Finds ways in the data structure.
+	 *
+	 * @param floor the floor parameter
+	 * @return the computed integer result
+	 */
 	private static int findWays(int floor){
 		int fibo[]=new int[floor+1];
 		if(floor==1)

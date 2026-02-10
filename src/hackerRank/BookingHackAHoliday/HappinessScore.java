@@ -11,15 +11,34 @@ import java.util.TreeSet;
 /*
  * Link:https://www.hackerrank.com/contests/booking-hack-a-holiday/challenges/happiness-score
 */
+/**
+ * Implementation of Happiness Score algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class HappinessScore{
 
+	/**
+	 * Checks if prime.
+	 *
+	 * @param num the num parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean isPrime(int num) {
         if (num == 2 ) return true;
+        // Check for null/base case
         if (num % 2 == 0) return false;
         for (int i = 3; i * i <= num; i += 2)
+            // Check for null/base case
             if (num % i == 0) return false;
         return true;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		int N=scanner.nextInt();
@@ -46,6 +65,12 @@ public class HappinessScore{
 		}
 		System.out.println(s.size());
 	}
+	/**
+	 * Performs powerSet operation.
+	 *
+	 * @param originalSet the originalSet parameter
+	 * @return the Set<Set<Integer>> result
+	 */
 	public static Set<Set<Integer>> powerSet(Set<Integer> originalSet) {
 		Set<Set<Integer>> sets = new HashSet<Set<Integer>>();
 		if (originalSet.isEmpty()) {

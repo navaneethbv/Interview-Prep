@@ -1,5 +1,11 @@
 package eBayPrep;
 
+/**
+ * Implementation of Interview1 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Interview1{
 	// implement merge sort. implement a method that takes in am array of integers and returns a sorted array
 
@@ -15,6 +21,11 @@ public class Interview1{
 	    1,2,3,4,5,7
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param ards[] the ards[] parameter
+	 */
 	public static void main(String ards[])
 	{
 	int inputArray[]=new int[]{1,4,3,5,2,7};
@@ -22,6 +33,15 @@ public class Interview1{
 
 	}
 
+	/**
+	 * Performs mergeSort operation.
+	 *
+	 * @param arr the array to process
+	 * @param leftIndex the leftIndex parameter
+	 * @param rightIndex the rightIndex parameter
+	 * @return the resulting array
+	 */
+	public static int[] mergeSort(int[] arr,int leftIndex,int rightIndex)
 	public static int[] mergeSort(int[] arr,int leftIndex,int rightIndex)
 	{    
 	    if(leftIndex>rightIndex)
@@ -46,6 +66,13 @@ public class Interview1{
 	    return merge(left,right);
 	}
 
+	/**
+	 * Performs merge operation.
+	 *
+	 * @param leftArray the array to process
+	 * @param rightArray the array to process
+	 * @return the resulting array
+	 */
 	public static int[] merge(int[] leftArray,int[] rightArray){
 	    int outputArray[]=new int[leftArray.length+rightArray.length];
 	    int leftPointer=0,rightPointer=0;
@@ -78,6 +105,12 @@ public class Interview1{
 
 
 
+	/**
+	 * Performs sort operation.
+	 *
+	 * @param arr the array to process
+	 * @return the resulting array
+	 */
 	public static int[] sort(int[] arr){
 	    if(arr.length<=1)
 	        return arr;
@@ -122,6 +155,13 @@ public class Interview1{
 	    // bpfbbyyy
 	    pfb
 	    ->byyyy
+	/**
+	 * Performs longest operation.
+	 *
+	 * @param str the str parameter
+	 * @return the resulting string
+	 */
+	public static String longest(String str)
 	public static String longest(String str)
 	{
 	if(str==null||str.length()==0)

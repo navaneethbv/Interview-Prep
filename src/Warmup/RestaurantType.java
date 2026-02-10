@@ -8,9 +8,20 @@ import java.util.Scanner;
 /*
  * Link:https://www.careercup.com/question?id=6213156200251392
  */
+/**
+ * Implementation of Restaurant Type algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RestaurantType {
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Scanner scanner=new Scanner(System.in);
 		int noOfRestaurant=Integer.parseInt(scanner.nextLine());

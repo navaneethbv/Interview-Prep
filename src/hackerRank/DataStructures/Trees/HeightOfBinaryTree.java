@@ -4,6 +4,12 @@ package hackerRank.DataStructures.Trees;
  * Link:https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree
  */
 
+/**
+ * Implementation of Height Of Binary Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class HeightOfBinaryTree {
 
 	int height(Node root)

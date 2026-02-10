@@ -11,7 +11,18 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
  * http://www.geeksforgeeks.org/print-left-view-binary-tree/
  * Print Left View of a Binary Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_48 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_48 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,12);
@@ -29,7 +40,13 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 printLeftViewRecursive(binaryTree1.rootNode);
 	 }
 
+	 /**
+	  * Performs printLeftViewRecursive operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void printLeftViewRecursive(Node node) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
 		 tempQueue queue=new tempQueue();
@@ -42,16 +59,27 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 				 System.out.print(n.data+",");
 				 depth=h;
 			 }
+			 // Check for null/base case
 			 if(n.left!=null)
 				 queue.add(n.left);
+			 // Check for null/base case
 			 if(n.right!=null)
 				 queue.add(n.right); 
 		 }
 
 	 }
 
+	 /**
+	  * Retrieves depth from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param n the size or count parameter
+	  * @param i the i parameter
+	  * @return the computed integer result
+	  */
 	 private static int getDepth(Node node, Node n, int i) {
 
+		 // Check for null/base case
 		 if(node!=null){
 			 if(node.data==n.data)
 				 return i;

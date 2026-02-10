@@ -7,7 +7,18 @@ import java.util.Queue;
 /*
  * Link : http://www.geeksforgeeks.org/bottom-view-binary-tree/
  */
+/**
+ * Implementation of Bottom View Of Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BottomViewOfTree {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(20);
 		tn.left=new TreeNode(8);
@@ -37,9 +48,16 @@ public class BottomViewOfTree {
 	
 	
 	private static HashMap<Integer,Integer> elementMap=new HashMap<>();
+	/**
+	 * Performs printBottomView operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param level the level parameter
+	 */
 	private static void printBottomView(TreeNode tn,int level) {
 		Queue<TreeNode> elementQueue=new LinkedList<>();
 		Queue<Integer> levelQueue=new LinkedList<>();
+		// Check for null/base case
 		if(tn!=null)
 		{	
 			elementQueue.add(tn);
@@ -48,11 +66,13 @@ public class BottomViewOfTree {
 				tn=elementQueue.poll();
 				level=levelQueue.poll();
 				elementMap.put(level,tn.value);
+				// Check for null/base case
 				if(tn.left!=null)
 				{
 					elementQueue.add(tn.left);
 					levelQueue.add(level-1);
 				}
+				// Check for null/base case
 				if(tn.right!=null)
 				{
 					elementQueue.add(tn.right);
@@ -64,6 +84,9 @@ public class BottomViewOfTree {
 
 
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;

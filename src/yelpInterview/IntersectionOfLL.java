@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of Intersection Of LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class IntersectionOfLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -9,6 +18,11 @@ public class IntersectionOfLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node head1=new Node(10);
 		Node head2=new Node(3);
@@ -25,6 +39,13 @@ public class IntersectionOfLL {
 		System.out.println(getIntersectionNode(head1, head2).value);;
 	}
 
+	/**
+	 * Retrieves intersection node from the data structure.
+	 *
+	 * @param head1 the head1 parameter
+	 * @param head2 the head2 parameter
+	 * @return the Node result
+	 */
 	private static Node getIntersectionNode(Node head1, Node head2) {
 		Node headPointer1=head1;
 		Node headPointer2=head2;

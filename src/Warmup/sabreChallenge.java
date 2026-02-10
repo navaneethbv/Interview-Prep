@@ -40,7 +40,18 @@ Explanation
 
 There are 3 pairs of integers in the set with a difference of 2.*/
 
+/**
+ * Implementation of sabre Challenge algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class sabreChallenge {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws Exception {
 		BufferedReader scanner=new BufferedReader(new InputStreamReader(System.in));
 		String firstLine=(scanner.readLine());

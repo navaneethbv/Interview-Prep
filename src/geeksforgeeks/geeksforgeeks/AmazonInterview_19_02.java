@@ -16,7 +16,18 @@ import ctci._02linkedList.Node;
  * Given a linked-list and 2 integers k & m. Reverse the linked-list till k elements
  * and then traverse till m elements and repeat.
  */;
+/**
+ * Implementation of Amazon Interview_19_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_19_02 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 Integer linkedListSize=Integer.parseInt(scanner.nextLine());

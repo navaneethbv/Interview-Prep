@@ -12,23 +12,46 @@ interface performOperation{
 	int check(int a);
 }
 class Math1{
+	/**
+	 * Performs checker operation.
+	 *
+	 * @param p the p parameter
+	 * @param num the num parameter
+	 * @return the computed integer result
+	 */
 	public static int checker(performOperation p ,int num){
 		return p.check(num);
 	}
+	/**
+	 * Performs checkEvenOdd operation.
+	 *
+	 * @return the performOperation result
+	 */
 	public performOperation checkEvenOdd() {
 		return (a) -> a%2 ;
 	}
+	/**
+	 * Performs checkPrime operation.
+	 *
+	 * @return the performOperation result
+	 */
 	public performOperation checkPrime() {
 		
 		return (a)->{
 			for(int i=2;i<a/2;i++)
 			{
+				// Check for null/base case
 				if(a%i==0)
 					return 1;
 			}
 			return 0;
 		};
 	}
+	/**
+	 * Performs checkPalindrome operation.
+	 *
+	 * @return the performOperation result
+	 */
 	public performOperation checkPalindrome() {
 		return (a)->{
 			String str=a+"";
@@ -40,8 +63,19 @@ class Math1{
 		};
 	}
 }
+/**
+ * Implementation of lambda Expressions algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 	public class lambdaExpressions {
 
+		/**
+		 * Main method to test the functionality of the class with various test cases.
+		 *
+		 * @param args the array to process
+		 */
 		public static void main(String[] args)throws IOException {
 			Math1 ob = new Math1();
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

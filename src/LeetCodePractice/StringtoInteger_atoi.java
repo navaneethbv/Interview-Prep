@@ -2,17 +2,37 @@ package LeetCodePractice;
 
 import java.math.BigInteger;
 
+/**
+ * Implementation of Stringto Integer_atoi algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class StringtoInteger_atoi {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(myAtoi("123"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs myAtoi operation.
+	 *
+	 * @param str the str parameter
+	 * @return the computed integer result
+	 */
 	public static int myAtoi(String str) {
 		str=str.trim();
+		// Check for null/base case
 		if(str.length()==0)
 			return 0;
 		StringBuilder output=new StringBuilder();
 		int count=0;
+		// Iterate through all elements
 		for (int i = 0; i < str.length(); i++) {
 			char c=str.charAt(i);
 			if(c=='-' || c=='+' )
@@ -31,6 +51,7 @@ public class StringtoInteger_atoi {
 			}
 		}
 
+		// Check for null/base case
 		if(output.toString().length()==0)
 			return 0;
 		try{

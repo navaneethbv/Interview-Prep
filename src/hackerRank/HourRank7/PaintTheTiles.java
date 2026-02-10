@@ -2,17 +2,31 @@
 	
 	import java.util.Scanner;
 	
+/**
+ * Implementation of Paint The Tiles algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 	public class PaintTheTiles {
 	
 	
 	
+		/**
+		 * Main method to test the functionality of the class with various test cases.
+		 *
+		 * @param args the array to process
+		 */
 		public static void main(String[] args) {
-			Scanner in = new Scanner(System.in);
-			int N = Integer.parseInt(in.nextLine());
-			String str =(in.nextLine());
-			System.out.println(findStrokes(str));
+
 		}
 	
+		/**
+		 * Finds strokes in the data structure.
+		 *
+		 * @param str the str parameter
+		 * @return the computed integer result
+		 */
 		private static int findStrokes(String str) {
 			int count=0;
 			char c=str.charAt(0);

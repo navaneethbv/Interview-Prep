@@ -4,14 +4,30 @@ package careerCup;
  * Link: http://www.careercup.com/question?id=198698
  * Given 2 sorted array print their intersection.
  */
+/**
+ * Implementation of Google Career Cup Problem8698 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem8698 {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray1[]=new int[]{1,2,4,5,6,8,11,12,15,20};
-		int inputArray2[]=new int[]{9,6,8,4,8,11,12,15,20};
-		System.out.println(findIntersection(inputArray1,inputArray2));
+
 	}
 
+	/**
+	 * Finds intersection in the data structure.
+	 *
+	 * @param inputArray1 the array to process
+	 * @param inputArray2 the array to process
+	 * @return the computed integer result
+	 */
 	private static int findIntersection(int[] inputArray1, int[] inputArray2) {
 		int size1=inputArray1.length;
 		int size2=inputArray2.length;

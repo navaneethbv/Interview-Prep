@@ -13,7 +13,18 @@ import java.util.Scanner;
  * find the next higher permutation of the number.
  * If such a number doesnt exist, return -1.
  */;
+/**
+ * Implementation of Amazon Interview_15_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_15_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 String number=(scanner.nextLine());
@@ -22,6 +33,12 @@ import java.util.Scanner;
 		 System.out.println("Next Higher permuatation is : "+findNextHighestNumber(number));
 	 }
 
+	 /**
+	  * Finds next highest number in the data structure.
+	  *
+	  * @param number the number parameter
+	  * @return the resulting string
+	  */
 	 private static String findNextHighestNumber(String number) {
 		 if(Integer.parseInt(number)<10 || Integer.parseInt(number)>50){
 			 return "Number not in range of 10-50";

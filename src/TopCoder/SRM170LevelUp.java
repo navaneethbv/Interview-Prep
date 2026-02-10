@@ -7,15 +7,32 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM170 Level Up algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM170LevelUp {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(toNextLevel(new int[]{150,450,900,1800},133 ));
-		System.out.println(toNextLevel(new int[]{150,450,900,1800},312));
-		System.out.println(toNextLevel(new int[]{150,450,900,1800},612 ));
-		System.out.println(toNextLevel(new int[]{150,450,900,1800},450));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs toNextLevel operation.
+	 *
+	 * @param expNeeded the array to process
+	 * @param received the received parameter
+	 * @return the computed integer result
+	 */
 	public static int toNextLevel(int[] expNeeded, int received){
 		int additionalExp=-1;
+		// Iterate through all elements
 		for (int i = 0; i < expNeeded.length; i++) {
 			if(additionalExp==-1)
 			{

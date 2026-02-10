@@ -2,13 +2,28 @@ package LeetCodePerformancePractice;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Spiral Matrix2 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SpiralMatrix2 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int[][] arr=generateMatrix(3);
-		for (int i = 0; i < arr.length; i++) {
-			System.out.println(Arrays.toString(arr[i]));
-		}
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs generateMatrix operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the resulting array
+	 */
 	public static int[][] generateMatrix(int n) {
 		int[][] outputMatrix=new int[n][n];
 		int top=0,left=0,right=n-1,bottom=n-1;

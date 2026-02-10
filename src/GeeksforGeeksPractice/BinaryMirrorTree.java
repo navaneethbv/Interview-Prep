@@ -1,6 +1,17 @@
 package GeeksforGeeksPractice;
 
+/**
+ * Implementation of Binary Mirror Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BinaryMirrorTree {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -16,7 +27,13 @@ public class BinaryMirrorTree {
 		//1/3/2/4/5/6/7/
 	}
 	
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			System.out.print(tn.val+"/");
@@ -25,7 +42,13 @@ public class BinaryMirrorTree {
 		}
 	}
 
+	/**
+	 * Performs mirrorTree operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void mirrorTree(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			mirrorTree(tn.left);
@@ -36,6 +59,9 @@ public class BinaryMirrorTree {
 		}
 	}
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;

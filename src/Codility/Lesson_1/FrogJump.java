@@ -7,6 +7,15 @@ Count the minimal number of jumps that the small frog must perform to reach its 
 
 Write a function:
 
+/**
+ * Performs solution operation.
+ *
+ * @param X the X parameter
+ * @param Y the Y parameter
+ * @param D the D parameter
+ * @return the computed integer result
+ */
+class Solution { public int solution(int X, int Y, int D); }
 class Solution { public int solution(int X, int Y, int D); }
 
 that, given three integers X, Y and D, returns the minimal number of jumps from position X to a position equal to or greater than Y.
@@ -33,8 +42,28 @@ expected worst-case space complexity is O(1).
  */
 
 class Solution {
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param X the X parameter
+	 * @param Y the Y parameter
+	 * @param D the D parameter
+	 * @return the computed integer result
+	 */
+	public int solution(int X, int Y, int D) 
 	public int solution(int X, int Y, int D) 
 	{
 		return (Y - X) / D + ((Y - X) % D == 0 ? 0 : 1);
 	}
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+
 }

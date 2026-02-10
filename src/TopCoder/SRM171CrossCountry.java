@@ -18,10 +18,21 @@ import java.util.Map.Entry;
 
 
 
+/**
+ * Implementation of SRM171 Cross Country algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM171CrossCountry {
 	static HashMap<String, Integer> sumMap=new HashMap<>();
 	static HashMap<String, Integer> countMap=new HashMap<>();
 	static HashMap<String, Integer> sixthMap=new HashMap<>();
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(scoreMeet(2,"AABBABBABBA"));
 		System.out.println(scoreMeet(3,"CCCBBBBBAAACC"));
@@ -30,9 +41,17 @@ public class SRM171CrossCountry {
 		System.out.println(scoreMeet(3,"BABCAABABAB"));
 	}
 
+	/**
+	 * Performs scoreMeet operation.
+	 *
+	 * @param numTeams the numTeams parameter
+	 * @param finishOrder the finishOrder parameter
+	 * @return the resulting string
+	 */
 	public static String scoreMeet(int numTeams, String finishOrder){
 		sumMap=new HashMap<>();
 		countMap=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < finishOrder.length(); i++) {
 			char c =finishOrder.charAt(i);
 			if(sumMap.containsKey(c+"")){
@@ -51,6 +70,7 @@ public class SRM171CrossCountry {
 		Map<String, Integer> m =sortByComparator();
 		StringBuilder sb=new StringBuilder();
 		Object []arr=m.keySet().toArray();
+		// Iterate through all elements
 		for (int i = 0; i < arr.length; i++) {
 			String st=(String) arr[i];
 			if(countMap.get(st)>=5)
@@ -64,6 +84,13 @@ public class SRM171CrossCountry {
 				sumMap.entrySet());
 		Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
 			@Override
+			/**
+			 * Performs compare operation.
+			 *
+			 * @param o1 the o1 parameter
+			 * @param o2 the o2 parameter
+			 * @return the computed integer result
+			 */
 			public int compare(Entry<String, Integer> o1, Entry<String, Integer> o2) {
 				if(o1.getValue()>o2.getValue())
 					return 1;
@@ -73,6 +100,7 @@ public class SRM171CrossCountry {
 					String key1=o1.getKey();
 					String key2=o2.getKey();
 					if(countMap.get(key1)==6 && countMap.get(key1)==6){
+						// Recursively process left and right subtrees
 						return (sixthMap.get(key1).compareTo(sixthMap.get(key2)));
 					}else
 						if((countMap.get(key1)==6 || countMap.get(key1)==6) && countMap.get(key1)>countMap.get(key2))
@@ -80,6 +108,7 @@ public class SRM171CrossCountry {
 						else if((countMap.get(key1)==6 || countMap.get(key1)==6) && countMap.get(key1)<countMap.get(key2))
 							return -1;
 						else{
+							// Recursively process left and right subtrees
 							return key1.compareTo(key2);
 						}
 				}

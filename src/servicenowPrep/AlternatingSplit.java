@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Alternating Split algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AlternatingSplit {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -10,6 +19,11 @@ public class AlternatingSplit {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(0);
 		ln.next=new ListNode(1);
@@ -29,6 +43,12 @@ public class AlternatingSplit {
 		}
 	}
 
+	/**
+	 * Performs alternateSplit operation.
+	 *
+	 * @param ln the ln parameter
+	 * @return the resulting array
+	 */
 	private static ListNode[] alternateSplit(ListNode ln) {
 		ListNode pointer1=new ListNode(-1);
 		ListNode pointer2=new ListNode(-1);

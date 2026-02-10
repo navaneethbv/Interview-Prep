@@ -9,7 +9,18 @@ import java.util.Stack;
  * Link:https://www.hackerrank.com/challenges/java-stack
  */
 
+/**
+ * Implementation of Java Stack algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JavaStack {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner((System.in));
 		while(scanner.hasNext()){
@@ -18,8 +29,15 @@ public class JavaStack {
 		}
 	}
 
+	/**
+	 * Performs validateParentheses operation.
+	 *
+	 * @param inputString the inputString parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean validateParentheses(String inputString) {
 		Stack<Character> charStack=new Stack<>();
+		// Iterate through all elements
 		for (int i = 0; i < inputString.length(); i++) {
 			char indexedChar=inputString.charAt(i);
 			if(indexedChar=='('||indexedChar=='['||indexedChar=='{')
@@ -43,4 +61,4 @@ public class JavaStack {
 		}
 		return charStack.isEmpty();
 	}
-}
+	}

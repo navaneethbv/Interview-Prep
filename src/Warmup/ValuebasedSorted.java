@@ -10,9 +10,20 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
+/**
+ * Implementation of Valuebased Sorted algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ValuebasedSorted {
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		map.put("java", 20);
@@ -25,6 +36,14 @@ public class ValuebasedSorted {
 		List<Entry<String, Integer>> list = new ArrayList<Entry<String, Integer>>(set);
 		Collections.sort( list, new Comparator<Map.Entry<String, Integer>>()
 		{
+			/**
+			 * Performs compare operation.
+			 *
+			 * @param o1 the o1 parameter
+			 * @param o2 the o2 parameter
+			 * @return the computed integer result
+			 */
+			public int compare( Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2 )
 			public int compare( Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2 )
 			{
 				return (o1.getValue()).compareTo( o2.getValue() );
@@ -55,6 +74,9 @@ public class ValuebasedSorted {
 		result.putAll(map);
 		return result;
 	}
+	/**
+	 * Inner class ValueComparator for supporting operations.
+	 */
 	static class ValueComparator implements Comparator<String>{
 
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
@@ -64,6 +86,13 @@ public class ValuebasedSorted {
 		}
 
 		@Override
+		/**
+		 * Performs compare operation.
+		 *
+		 * @param s1 the s1 parameter
+		 * @param s2 the s2 parameter
+		 * @return the computed integer result
+		 */
 		public int compare(String s1, String s2) {
 			if(map.get(s1) >= map.get(s2)){
 				return -1;

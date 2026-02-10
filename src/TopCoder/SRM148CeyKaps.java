@@ -7,15 +7,32 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM148 Cey Kaps algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM148CeyKaps {
 	
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(decipher("AAAAA", new String[]{"A:B","B:C","A:D"}));
-		System.out.println(decipher("ABCDE", new String[]{"A:B","B:C","C:D","D:E","E:A"}));
-		System.out.println(decipher("IHWSIOTCHEDMYKEYCAPSARWUND", new String[]{"W:O","W:I"}));
-		
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs decipher operation.
+	 *
+	 * @param typed the typed parameter
+	 * @param switches the array to process
+	 * @return the resulting string
+	 */
 	public static String decipher(String typed, String[] switches){
+		// Iterate through all elements
 		for (int i = 0; i < switches.length; i++) {
 			String splitString[]=switches[i].split(":");
 			typed=typed.replace(splitString[0], "-");

@@ -1,12 +1,29 @@
 package yelpInterview;
 
+/**
+ * Implementation of Algo Binary Search algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AlgoBinarySearch {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		System.out.println(binSearch(new int[]{2, 3, 4, 10, 40},10));
-		System.out.println(binSearch(new int[]{2, 3, 4, 10, 40},11));		
+
 	}
 
+	/**
+	 * Performs binSearch operation.
+	 *
+	 * @param inputArray the array to process
+	 * @param key the key value
+	 * @return the computed integer result
+	 */
 	private static int binSearch(int[] inputArray, int key) {
 		int low=0,high=inputArray.length-1;
 		while(low<high)

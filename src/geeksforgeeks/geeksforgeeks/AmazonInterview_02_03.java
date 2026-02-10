@@ -9,7 +9,18 @@ import java.util.Random;
  * http://www.geeksforgeeks.org/amazon-interview/
  *  A sorted array has been rotated r times to the left. Find r in least possible time.
  */
+/**
+ * Implementation of Amazon Interview_02_03 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_02_03 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int inputArray[]=new int[10];
 		for (int i = 0; i < inputArray.length; i++) {

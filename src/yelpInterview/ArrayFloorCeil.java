@@ -1,6 +1,17 @@
 package yelpInterview;
 
+/**
+ * Implementation of Array Floor Ceil algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayFloorCeil {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		int arr1[] = new int[]{1, 2, 8, 10, 10, 12, 19};
 		printFloorCeil(arr1,0);
@@ -9,6 +20,12 @@ public class ArrayFloorCeil {
 		printFloorCeil(arr1,20);
 	}
 
+	/**
+	 * Performs printFloorCeil operation.
+	 *
+	 * @param arr1 the array to process
+	 * @param i the i parameter
+	 */
 	private static void printFloorCeil(int[] arr1, int i) {
 		int left=0;
 		int right=arr1.length-1;

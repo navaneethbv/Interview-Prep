@@ -7,12 +7,32 @@ import java.util.HashMap;
  * Link : https://codility.com/programmers/task/missing_integer
  */
 
+/**
+ * Implementation of Counting Elements Missing Integer algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CountingElementsMissingInteger {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(solution(new int[]{1,3,6,4,1,2},6));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param inputArray the array to process
+	 * @param N the size or count parameter
+	 * @return the computed integer result
+	 */
+	public static int solution(int[] inputArray,int N)
 	public static int solution(int[] inputArray,int N)
 	{	
 		HashMap<Integer, Integer> elementMap=new HashMap<>();

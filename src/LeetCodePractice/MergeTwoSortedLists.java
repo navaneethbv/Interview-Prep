@@ -1,13 +1,27 @@
 package LeetCodePractice;
 
+/**
+ * Implementation of Merge Two Sorted Lists algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MergeTwoSortedLists {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode l1=new ListNode(1);
 		l1.next=new ListNode(4);
@@ -26,7 +40,15 @@ public class MergeTwoSortedLists {
 	}
 
 
+	/**
+	 * Performs mergeTwoLists operation.
+	 *
+	 * @param l1 the l1 parameter
+	 * @param l2 the l2 parameter
+	 * @return the list of results
+	 */
 	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+		// Check for null/base case
 		if(l1==null||l2==null)return l1==null?l2:l1;
 		ListNode ln=new ListNode(-1);
 		ListNode pointer =ln;
@@ -45,6 +67,7 @@ public class MergeTwoSortedLists {
 				l2=l2.next;
 			}
 		}
+		// Check for null/base case
 		if(l1==null)
 			pointer.next=l2;
 		else

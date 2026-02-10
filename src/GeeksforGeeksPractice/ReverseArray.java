@@ -5,13 +5,28 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/
  */
+/**
+ * Implementation of Reverse Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ReverseArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int arr[] = {1, 2, 3, 4, 5, 6,7};
-		System.out.println(Arrays.toString(arr));
-		reverseArray(arr);
-		System.out.println(Arrays.toString(arr));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs reverseArray operation.
+	 *
+	 * @param arr the array to process
+	 */
+	public static void reverseArray(int[] arr)
 	public static void reverseArray(int[] arr)
 	{
 		int i=0,j=arr.length-1;

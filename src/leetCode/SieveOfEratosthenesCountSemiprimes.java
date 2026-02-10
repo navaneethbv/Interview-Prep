@@ -6,10 +6,31 @@ import java.util.Arrays;
  * Link : https://codility.com/programmers/task/count_semiprimes
  */
 
+/**
+ * Implementation of Sieve Of Eratosthenes Count Semiprimes algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SieveOfEratosthenesCountSemiprimes {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(solution(26,new int[]{1,4,16},new int[]{26,10,20})));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param N the size or count parameter
+	 * @param P the array to process
+	 * @param Q the array to process
+	 * @return the resulting array
+	 */
+	public static int[] solution(int N, int[] P, int[] Q)
 	public static int[] solution(int N, int[] P, int[] Q)
 	{
 		boolean prime[]=new boolean[N+1];

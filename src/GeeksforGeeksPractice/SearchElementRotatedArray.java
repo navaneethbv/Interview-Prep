@@ -5,12 +5,29 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
  */
+/**
+ * Implementation of Search Element Rotated Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SearchElementRotatedArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray[] = {5, 6, 7, 8, 9, 10, 1, 2, 3};
-		System.out.println(search(inputArray,3));
+
 	}
 
+	/**
+	 * Searches for .
+	 *
+	 * @param inputArray the array to process
+	 * @param element the element parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean search(int[] inputArray, int element) {
 		int pivot=inputArray.length/2;
 		if(element==inputArray[pivot])

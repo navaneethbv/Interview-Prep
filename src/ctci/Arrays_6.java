@@ -6,7 +6,18 @@ import java.util.Scanner;
 
 
 /*Implementation of CTCI 1.7*/
+/**
+ * Implementation of Arrays_6 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Arrays_6 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int noOfRows=Integer.parseInt(scanner.nextLine());
@@ -37,6 +48,12 @@ public class Arrays_6 {
 		}
 	}
 
+	/**
+	 * Sets zero matrix in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @return the resulting array
+	 */
 	public static int[][] setZeroMatrix(int[][] inputArray) {
 		int noOfRows=inputArray.length;
 		int noOfColumns=inputArray[0].length;
@@ -45,7 +62,9 @@ public class Arrays_6 {
 		Arrays.fill(rowIndexChecker,false);
 		Arrays.fill(columnIndexChecker,false);
 		for (int i = 0; i < noOfRows; i++) {
+			// Inner loop to check combinations
 			for (int j = 0; j < noOfColumns; j++) {
+				// Check for null/base case
 				if(inputArray[i][j]==0)
 				{
 					rowIndexChecker[i]=true;
@@ -56,6 +75,7 @@ public class Arrays_6 {
 		for (int i = 0; i < noOfRows; i++) {
 			if(rowIndexChecker[i]==true)
 				Arrays.fill(inputArray[i],0);
+			// Inner loop to check combinations
 			for (int j = 0; j < noOfColumns; j++) {
 				if(columnIndexChecker[j]==true)
 					inputArray[i][j]=0;

@@ -9,9 +9,20 @@ import java.util.Arrays;
  * http://www.geeksforgeeks.org/find-distance-two-given-nodes/
  * Find distance between two given keys of a Binary Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_54 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_54 {
 	 static int path[];
 	 static ArrayList<int []> arrayList=new ArrayList<int []>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -35,6 +46,15 @@ import java.util.Arrays;
 		 return getDistance(arrayList.get(0),arrayList.get(1),i,j);
 	 }
 
+	 /**
+	  * Retrieves distance from the data structure.
+	  *
+	  * @param firstPath the array to process
+	  * @param secondPath the array to process
+	  * @param firstElement the firstElement parameter
+	  * @param secondElement the secondElement parameter
+	  * @return the computed integer result
+	  */
 	 private static int getDistance(int[] firstPath, int[] secondPath, int firstElement, int secondElement) {
 		 int size=(firstPath.length>secondPath.length)?secondPath.length:firstPath.length;
 		 int ancestorDistance=0;
@@ -47,10 +67,12 @@ import java.util.Arrays;
 		 if(ancestorDistance<0)
 			 ancestorDistance=0;
 		 int firstDistance=0,secondDistance=0;
+		 // Iterate through all elements
 		 for (int i = 0; i < firstPath.length; i++) {
 			 if(firstPath[i]==firstElement)
 				 firstDistance=i;
 		 }
+		 // Iterate through all elements
 		 for (int i = 0; i < secondPath.length; i++) {
 			 if(secondPath[i]==secondElement)
 				 secondDistance=i;
@@ -74,7 +96,14 @@ import java.util.Arrays;
 		 }
 
 	 }
+	 /**
+	  * Retrieves height from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int getHeight(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 int leftHeight=getHeight(node.left);

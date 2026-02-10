@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Swap Nodes In Linked List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SwapNodesInLinkedList {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -10,6 +19,11 @@ public class SwapNodesInLinkedList {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(10);
 		ln.next=new ListNode(15);
@@ -24,6 +38,11 @@ public class SwapNodesInLinkedList {
 		printNodes(ln);
 	}
 
+	/**
+	 * Performs printNodes operation.
+	 *
+	 * @param ln the ln parameter
+	 */
 	private static void printNodes(ListNode ln) {
 		while(ln!=null)
 		{
@@ -33,6 +52,14 @@ public class SwapNodesInLinkedList {
 		System.out.println();
 	}
 
+	/**
+	 * Performs swapNodes operation.
+	 *
+	 * @param ln the ln parameter
+	 * @param i the i parameter
+	 * @param j the j parameter
+	 * @return the list of results
+	 */
 	private static ListNode swapNodes(ListNode ln, int i, int j) {
 		ListNode pointer1=ln,pointer2=ln;
 		ListNode prevX=null,currX=pointer1;
@@ -48,6 +75,7 @@ public class SwapNodesInLinkedList {
 			pointer2=pointer2.next;
 		}
 
+		// Check for null/base case
 		if(prevX!=null)
 		{
 			prevX.next=currY;
@@ -56,6 +84,7 @@ public class SwapNodesInLinkedList {
 			ln=currY;
 		}
 
+		// Check for null/base case
 		if(prevY!=null)
 		{
 			prevY.next=currX;

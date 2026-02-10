@@ -7,7 +7,18 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM174 Cross Word algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM174CrossWord {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(countWords(new String[]{"X....X",
 				"X.XX.X",
@@ -44,11 +55,19 @@ public class SRM174CrossWord {
 		"...."},3));
 		System.out.println(countWords(new String[]{".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", ".......................................", "......................................."}, 39));
 	}
+	/**
+	 * Counts the number of words.
+	 *
+	 * @param board the array to process
+	 * @param size the size parameter
+	 * @return the computed integer result
+	 */
 	public static int countWords(String[] board, int size){
 		int count=0;
 		if(size>board[0].length())
 			return 0;
 		boolean equalflag=false;
+		// Check for null/base case
 		if(size==board[0].length())
 			equalflag=true;
 		StringBuilder sb=new StringBuilder();
@@ -56,6 +75,7 @@ public class SRM174CrossWord {
 			sb.append(".");
 		}
 		String pattern=sb.toString();
+		// Iterate through all elements
 		for (int i = 0; i < board.length; i++) {
 			String boardString=board[i];
 			if(equalflag){
@@ -68,6 +88,7 @@ public class SRM174CrossWord {
 			int index=boardString.indexOf(pattern);
 
 			while(index!=-1){
+				// Check for null/base case
 				if(index==0)
 				{	
 					if(boardString.substring(0,size+1).contentEquals(pattern+"X"))

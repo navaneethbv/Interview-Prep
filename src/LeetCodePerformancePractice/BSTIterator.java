@@ -2,13 +2,27 @@ package LeetCodePerformancePractice;
 
 import java.util.Stack;
 
+/**
+ * Implementation of BST Iterator algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTIterator {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(10);
 		tn.left=new TreeNode(5);
@@ -23,6 +37,9 @@ public class BSTIterator {
 			System.out.println(b.next());
 		}
 	}
+	/**
+	 * Inner class BSTIterator for supporting operations.
+	 */
 	public static class BSTIterator {
 		TreeNode node=null;
 		Stack<TreeNode> stack=new Stack<>();

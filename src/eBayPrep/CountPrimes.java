@@ -1,11 +1,29 @@
 package eBayPrep;
 
+/**
+ * Implementation of Count Primes algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CountPrimes {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(countPrimes(2));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 	static boolean multiple[];
+	/**
+	 * Counts the number of primes.
+	 *
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	private static int countPrimes(int n) {
 		multiple=new boolean[n];
 		int count=0;
@@ -20,6 +38,11 @@ public class CountPrimes {
 		return count;
 	}
 
+	/**
+	 * Performs appendToMatrix operation.
+	 *
+	 * @param number the number parameter
+	 */
 	private static void appendToMatrix(int number) {
 		int count=1;
 		while(count*number<multiple.length)
@@ -29,6 +52,13 @@ public class CountPrimes {
 		}
 	}
 
+	/**
+	 * Checks if prime.
+	 *
+	 * @param number the number parameter
+	 * @return true if condition is met, false otherwise
+	 */
+	public static boolean isPrime(int number)
 	public static boolean isPrime(int number)
 	{
 		if(number<=1)

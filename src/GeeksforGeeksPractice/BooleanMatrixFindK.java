@@ -5,8 +5,19 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/find-k-such-that-all-elements-in-kth-row-are-0-and-kth-column-are-1-in-a-boolean-matrix/
  */
+/**
+ * Implementation of Boolean Matrix Find K algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BooleanMatrixFindK {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int mat[][] = {{0, 0, 1, 1, 0},
                 {0, 0, 0, 1, 0},
@@ -19,6 +30,12 @@ public class BooleanMatrixFindK {
 
 
 
+	/**
+	 * Finds k in the data structure.
+	 *
+	 * @param mat the array to process
+	 * @return the computed integer result
+	 */
 	private static int findK(int[][] mat) {
 		int noOfRows=mat.length;
 		int noOfCols=mat[0].length;
@@ -26,6 +43,7 @@ public class BooleanMatrixFindK {
 		int res=-1;
 		while(i<noOfRows && noOfCols>-1)
 		{
+			// Check for null/base case
 			if(mat[i][j]==0)
 			{
 				
@@ -55,6 +73,7 @@ public class BooleanMatrixFindK {
 		       return res;
 		 
 		for (int k = 0; k < noOfRows; k++) {
+			// Check for null/base case
 			if((mat[k][res]==0 && k!=res))
 				return -1;
 		}
@@ -67,7 +86,13 @@ public class BooleanMatrixFindK {
 
 
 
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(int[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}

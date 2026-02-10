@@ -8,7 +8,18 @@ import java.util.Scanner;
  */
 
 
+/**
+ * Implementation of D Array DS algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DArrayDS {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
@@ -29,6 +40,14 @@ public class DArrayDS {
 		System.out.println(max);
 	}
 
+	/**
+	 * Performs checkScore operation.
+	 *
+	 * @param i the i parameter
+	 * @param j the j parameter
+	 * @param inputArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int checkScore(int i,int j,int[][] inputArray) {
 		return inputArray[i][j]+inputArray[i][j+1]+inputArray[i][j+2]+
 				inputArray[i+2][j]+inputArray[i+2][j+1]+inputArray[i+2][j+2]

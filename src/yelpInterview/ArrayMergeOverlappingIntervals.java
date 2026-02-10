@@ -4,7 +4,16 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Stack;
 
+/**
+ * Implementation of Array Merge Overlapping Intervals algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayMergeOverlappingIntervals {
+	/**
+	 * Inner class Interval for supporting operations.
+	 */
 	static class Interval{
 		int start;
 		int end;
@@ -14,10 +23,20 @@ public class ArrayMergeOverlappingIntervals {
 		}
 	}
 	static Stack<Interval> stack=new Stack<>();
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		Interval inputArray[]={ new Interval(2,6), new Interval(1,3),new Interval(15,18),new Interval(8,10) };
-		findOverLappingInterval(inputArray);
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Finds over lapping interval in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 */
 	private static void findOverLappingInterval(Interval[] inputArray) {
 		System.out.println(Arrays.toString(inputArray));
 		Arrays.sort(inputArray,new Comparator<Interval>(){

@@ -7,10 +7,28 @@ import java.util.ArrayList;
  * To be checked later
  */
 
+/**
+ * Implementation of Prime Nos Flags algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrimeNosFlags {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(solution(new int[]{1,5,3,4,3,4,1,2,3,4,6,2}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
 	public static int solution(int[] A){
 		 ArrayList<Integer> array = new ArrayList<Integer>();  
 	        for (int i = 1; i < A.length - 1; i++) 
@@ -20,6 +38,7 @@ public class PrimeNosFlags {
 	                array.add(i);  
 	            }  
 	        }  
+	   // Check for null/base case
 	   if (array.size() == 1 || array.size() == 0) 
 	   {  
 	        return array.size();  

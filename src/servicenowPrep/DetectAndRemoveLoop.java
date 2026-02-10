@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Detect And Remove Loop algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DetectAndRemoveLoop {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		public ListNode(int value) {
@@ -10,6 +19,11 @@ public class DetectAndRemoveLoop {
 		ListNode next;
 
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln = new ListNode(50);
         ln.next = new ListNode(20);
@@ -24,6 +38,12 @@ public class DetectAndRemoveLoop {
         	System.out.println(ln.value);ln=ln.next;
         }
 	}
+	/**
+	 * Removes loop from the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @return the list of results
+	 */
 	private static ListNode removeLoop(ListNode ln) {
 		ListNode fastPointer=ln.next.next;
 		ListNode slowPointer=ln;
@@ -38,12 +58,19 @@ public class DetectAndRemoveLoop {
 		prev.next=null;
 		return ln;
 	}
+	/**
+	 * Performs detectLoop operation.
+	 *
+	 * @param ln the ln parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean detectLoop(ListNode ln) {
 		ListNode fastPointer=ln.next.next;
 		ListNode slowPointer=ln;
 		while(fastPointer!=null && fastPointer!=slowPointer)
 		{
 			fastPointer=fastPointer.next;
+			// Check for null/base case
 			if(fastPointer!=null)
 				fastPointer=fastPointer.next;
 			else

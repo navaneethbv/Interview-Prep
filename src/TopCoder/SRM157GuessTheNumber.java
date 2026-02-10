@@ -7,7 +7,18 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM157 Guess The Number algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM157GuessTheNumber {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(noGuesses(9, 6));
 		System.out.println(noGuesses(1000, 750));
@@ -15,6 +26,13 @@ public class SRM157GuessTheNumber {
 		System.out.println(noGuesses(157, 157));
 		System.out.println(noGuesses(128, 64));
 	}
+	/**
+	 * Performs noGuesses operation.
+	 *
+	 * @param upper the upper parameter
+	 * @param answer the answer parameter
+	 * @return the computed integer result
+	 */
 	public static int noGuesses(int upper, int answer){
 		int count=1;
 		int lower=1;

@@ -10,7 +10,18 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
  * http://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/
  * How to determine if a binary tree is height-balanced
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_14 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_14 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,50);
@@ -26,11 +37,25 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 System.out.println(checkBalance(binaryTree1));
 	 }
 
+	 /**
+	  * Performs checkBalance operation.
+	  *
+	  * @param binaryTree1 the binaryTree1 parameter
+	  * @return true if condition is met, false otherwise
+	  */
 	 private static boolean checkBalance(_01DataStructures_BinaryTree_00 binaryTree1) {
+		 // Recursively process left and right subtrees
 		 return checkBalance(binaryTree1.rootNode);
 	 }
 
+	 /**
+	  * Performs checkBalance operation.
+	  *
+	  * @param node the tree node to process
+	  * @return true if condition is met, false otherwise
+	  */
 	 private static boolean checkBalance(Node node) {
+		 // Check for null/base case
 		 if(node==null)
 			 return true;
 		 else{
@@ -45,7 +70,14 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 }
 	 }
 
+	 /**
+	  * Performs height operation.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int height(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 int leftHeight=height(node.left);

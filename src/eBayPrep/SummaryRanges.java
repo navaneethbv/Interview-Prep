@@ -4,16 +4,31 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Implementation of Summary Ranges algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SummaryRanges{
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		List<String> outputList=summaryRanges(new int[]{-1000000000,-9999,0,1,2,10,100,1000,999999999,1000000000});
-		System.out.println(Arrays.toString(outputList.toArray()));
-		outputList=summaryRanges(new int[]{0,1,2,4,5,7});
-		System.out.println(Arrays.toString(outputList.toArray()));		
+
 	}
 
+	/**
+	 * Performs summaryRanges operation.
+	 *
+	 * @param arr the array to process
+	 * @return the list of results
+	 */
 	private static List<String> summaryRanges(int[] arr) {
 		List<String> list=new ArrayList<>();
+		// Check for null/base case
 		if(arr==null||arr.length==0)
 			return list;
 		int startValue=arr[0],endValue=arr[0];

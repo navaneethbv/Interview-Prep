@@ -7,7 +7,18 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM154 Super Rot algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM154SuperRot {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(decoder("Uryyb 28"));
 		System.out.println(decoder("GbcPbqre"));
@@ -17,9 +28,16 @@ public class SRM154SuperRot {
 		System.out.println(decoder("Gvzr vf 54 71 CZ ba Whyl 4gu bs gur lrne 7558 NQ"));
 		System.out.println(decoder("Gur dhvpx oebja sbk whzcf bire n ynml qbt"));
 	}
+	/**
+	 * Performs decoder operation.
+	 *
+	 * @param message the message parameter
+	 * @return the resulting string
+	 */
 	public static String decoder(String message){
 		StringBuilder sb=new StringBuilder("");
 
+		// Inner loop to check combinations
 		for (int j = 0; j < message.length(); j++) {
 			char c=message.charAt(j);
 			if(Character.isDigit(c)){

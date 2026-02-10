@@ -4,6 +4,12 @@ package hackerRank.DataStructures.Trees;
  * Link:https://www.hackerrank.com/challenges/tree-level-order-traversal
  */
 
+/**
+ * Implementation of Tree Level Order Traversal algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TreeLevelOrderTraversal {
 	class Node {
 		int data;

@@ -3,7 +3,16 @@ package yelpInterview;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Implementation of Intersection Of Two LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class IntersectionOfTwoLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -12,6 +21,11 @@ public class IntersectionOfTwoLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 
 		Node n=new Node(1);
@@ -31,6 +45,13 @@ public class IntersectionOfTwoLL {
 
 
 
+	/**
+	 * Finds intersection in the data structure.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param n2 the n2 parameter
+	 * @return the Node result
+	 */
 	private static Node findIntersection(Node n1,Node n2) {
 		Set<Integer> set=new HashSet<>();
 		Node outputNode=new Node(-1);
@@ -55,6 +76,11 @@ public class IntersectionOfTwoLL {
 
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{

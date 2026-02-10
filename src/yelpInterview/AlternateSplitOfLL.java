@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of Alternate Split Of LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AlternateSplitOfLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -9,6 +18,11 @@ public class AlternateSplitOfLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 
 		Node n=new Node(0);
@@ -28,6 +42,11 @@ public class AlternateSplitOfLL {
 
 
 
+	/**
+	 * Performs alterNateSplit operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void alterNateSplit(Node n) {
 		Node n1=new Node(-1);
 		Node n2=new Node(-1);
@@ -60,6 +79,11 @@ public class AlternateSplitOfLL {
 
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{

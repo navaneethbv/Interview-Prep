@@ -7,8 +7,19 @@ import java.util.Scanner;
 
 /*	Implementation of FCFS Scheduling Algorithm
  *	Assuming the arrays are sorted	*/
+/**
+ * Implementation of FCFS Scheduling Non Pre Emptive algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FCFSSchedulingNonPreEmptive{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		Integer noOfProcesses=Integer.parseInt(scanner.nextLine());
@@ -58,7 +69,15 @@ public class FCFSSchedulingNonPreEmptive{
 		return outputArray;
 	}
 
+	/**
+	 * Retrieves index from the data structure.
+	 *
+	 * @param element the element parameter
+	 * @param arrivalArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int getIndex(int element, int[] arrivalArray) {
+		// Iterate through all elements
 		for (int i = 0; i < arrivalArray.length; i++) {
 			if(arrivalArray[i]==element)
 				return i;
@@ -66,11 +85,20 @@ public class FCFSSchedulingNonPreEmptive{
 		return 0;
 	}
 
+	/**
+	 * Performs fcfsScheduleSorted operation.
+	 *
+	 * @param arrivalArray the array to process
+	 * @param serviceArray the array to process
+	 * @return the resulting array
+	 */
 	private static float[] fcfsScheduleSorted(int[] arrivalArray, int[] serviceArray) {
 		int finishArray[]=new int[arrivalArray.length];
 		int turnAroundArray[]=new int[arrivalArray.length];
 
+		// Iterate through all elements
 		for (int i = 0; i < arrivalArray.length; i++) {
+			// Check for null/base case
 			if(i==0)
 			{
 				finishArray[i]=serviceArray[i];
@@ -79,10 +107,12 @@ public class FCFSSchedulingNonPreEmptive{
 				finishArray[i]=finishArray[i-1]+serviceArray[i];
 			}
 		}
+		// Iterate through all elements
 		for (int i = 0; i < turnAroundArray.length; i++) {
 			turnAroundArray[i]=finishArray[i]-arrivalArray[i];
 		}
 		float outputArray[]=new float[finishArray.length];
+		// Iterate through all elements
 		for (int i = 0; i < turnAroundArray.length; i++) {
 			outputArray[i]=(float)turnAroundArray[i]/serviceArray[i];
 		}

@@ -13,7 +13,18 @@ import java.util.Scanner;
  * It may contain multiple spaces. Get first letter of every word and return the result as a string
  * The result should not contain any space
  */;
+/**
+ * Implementation of Amazon Interview_09_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_09_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 String inputString=scanner.nextLine();
@@ -23,9 +34,16 @@ import java.util.Scanner;
 		 System.out.println(getFirstCharacters(inputString));
 	 }
 
+	/**
+	 * Retrieves first characters from the data structure.
+	 *
+	 * @param inputString the inputString parameter
+	 * @return the resulting string
+	 */
 	private static String getFirstCharacters(String inputString) {
 		String inputStringArray[]=inputString.split(" ");
 		String outputString="";
+		// Iterate through all elements
 		for (int i = 0; i < inputStringArray.length; i++) {
 			outputString+=inputStringArray[i].charAt(0);
 		}

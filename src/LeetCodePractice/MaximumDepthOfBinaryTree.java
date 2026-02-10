@@ -5,14 +5,28 @@ import java.util.List;
 
 import LeetCodePractice._102BinaryTreeLevelOrderTraversal.TreeNode;
 
+/**
+ * Implementation of Maximum Depth Of Binary Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaximumDepthOfBinaryTree {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -23,8 +37,15 @@ public class MaximumDepthOfBinaryTree {
 		levelOrderBottom(tn);
 	}
 	static List<Integer> list;
+	/**
+	 * Performs levelOrderBottom operation.
+	 *
+	 * @param root the tree node to process
+	 * @return the list of results
+	 */
 	public static List<List<Integer>> levelOrderBottom(TreeNode root) {
 		List<List<Integer>> outputList=new ArrayList<>();
+		// Check for null/base case
 		if(root!=null)
 		{
 			int height=getHeight(root);
@@ -37,9 +58,18 @@ public class MaximumDepthOfBinaryTree {
 		return outputList;
 	}
 
+	/**
+	 * Performs printNodes operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param level the level parameter
+	 * @param list the list parameter
+	 */
 	private static void printNodes(TreeNode tn, int level, List<Integer> list) {
+		// Check for null/base case
 		if(tn==null)
 			return;
+		// Check for null/base case
 		if(level==0)
 		{
 			list.add(tn.val);
@@ -48,9 +78,17 @@ public class MaximumDepthOfBinaryTree {
 		printNodes(tn.right, level-1,list);
 	}
 
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
+			// Recursively process left and right subtrees
 			return 1+Math.max(getHeight(tn.left), getHeight(tn.right));
 		}
 		return 0;

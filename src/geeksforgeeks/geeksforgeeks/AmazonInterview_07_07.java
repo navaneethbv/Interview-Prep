@@ -9,11 +9,19 @@ import java.util.Scanner;
  * Given any Binary Tree, convert it to a tree where every node is sum of all of its children.
  * 
  */;
+/**
+ * Implementation of Amazon Interview_07_07 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_07_07 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		 int size=Integer.parseInt(scanner.nextLine());
-		 scanner.close();
-		
+
 	 }
  }

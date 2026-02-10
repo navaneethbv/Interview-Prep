@@ -8,7 +8,18 @@ import java.util.Stack;
 
 
 /*Implementation of CTCI 2.7*/
+/**
+ * Implementation of Linked List_6 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LinkedList_6 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner =new Scanner(new InputStreamReader(System.in));
 		_02linkedList linkedList=new _02linkedList();
@@ -23,6 +34,12 @@ public class LinkedList_6 {
 
 	}
 
+	/**
+	 * Performs checkPalindromeStack operation.
+	 *
+	 * @param linkedList the linkedList parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkPalindromeStack(_02linkedList linkedList) {
 		Stack<Integer> stack=new Stack<Integer>();
 		for (int i = 0; i < linkedList.size(); i++) {
@@ -35,6 +52,12 @@ public class LinkedList_6 {
 		return true;
 	}
 
+	/**
+	 * Performs checkPalindromeLonger operation.
+	 *
+	 * @param linkedList the linkedList parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkPalindromeLonger(_02linkedList linkedList) {
 		for (int i = 0; i < linkedList.size()/2; i++) {
 			if(linkedList.get(i)!=linkedList.get(linkedList.size()-i-1))

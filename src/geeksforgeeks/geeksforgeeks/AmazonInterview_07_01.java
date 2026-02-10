@@ -9,7 +9,18 @@ import java.util.Scanner;
  * Given two strings, write a function to remove all characters in one string which are present in other string
  * 
  */;
+/**
+ * Implementation of Amazon Interview_07_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_07_01 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		String inputString1=scanner.nextLine();

@@ -4,7 +4,18 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Implementation of Majority Number algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MajorityNumber {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Integer arr[] = { 2, 3, 2, 1, 2, 2, 3, 2, 1 };
 		HashMap<Integer,Integer> countMap = new HashMap<>();
@@ -23,6 +34,13 @@ public class MajorityNumber {
 		System.out.println("NONE");
 
 	}
+	/**
+	 * Checks if majority.
+	 *
+	 * @param arr the array to process
+	 * @return true if condition is met, false otherwise
+	 */
+	/*public static boolean isMajority(int[] arr)
 	/*public static boolean isMajority(int[] arr)
 	{
 		int halfsize = arr.length/2;
@@ -49,6 +67,11 @@ public class MajorityNumber {
 		return false;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main (String[] args) {
 		int[] arr = {2,2,2,3,3,3,3,5,6};
 

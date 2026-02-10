@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of BT Print Ancestors algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BTPrintAncestors {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node left,right;
 		int value;
@@ -8,6 +17,11 @@ public class BTPrintAncestors {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n1=new Node(1);
 		n1.left=new Node(2);
@@ -17,7 +31,15 @@ public class BTPrintAncestors {
 		n1.left.left.left=new Node(7);
 		printAncestors(n1,4);
 	}
+	/**
+	 * Performs printAncestors operation.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param i the i parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean printAncestors(Node n1, int i) {
+		// Check for null/base case
 		if(n1!=null)
 		{
 			if(n1.value==i){

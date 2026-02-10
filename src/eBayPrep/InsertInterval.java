@@ -6,8 +6,17 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * Implementation of Insert Interval algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class InsertInterval {
 
+	/**
+	 * Inner class Interval for supporting operations.
+	 */
 	public static class Interval {
 		int start;
 		int end;
@@ -15,6 +24,11 @@ public class InsertInterval {
 		Interval(int s, int e) { start = s; end = e; }
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		List<Interval> aList=new ArrayList<>();
 		aList.add(new Interval(1,2));
@@ -29,6 +43,13 @@ public class InsertInterval {
 		}
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param intervals the intervals parameter
+	 * @param newInterval the newInterval parameter
+	 * @return the list of results
+	 */
 	public static List<Interval> insert(List<Interval> intervals, Interval newInterval) {
 		Stack<Interval> stack=new Stack<>();
 		List<Interval> outputList=new ArrayList<>();

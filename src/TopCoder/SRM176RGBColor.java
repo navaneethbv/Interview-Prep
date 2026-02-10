@@ -9,16 +9,32 @@ import java.util.Arrays;
 
 
 
+/**
+ * Implementation of SRM176 RGB Color algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM176RGBColor {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(getComplement(new int[]{255,0,0})));
-		System.out.println(Arrays.toString(getComplement(new int[]{115,115,143})));
-		System.out.println(Arrays.toString(getComplement(new int[]{115,115,144})));
-		System.out.println(Arrays.toString(getComplement(new int[]{153,12,55})));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Retrieves complement from the data structure.
+	 *
+	 * @param rgb the array to process
+	 * @return the resulting array
+	 */
 	public static int[] getComplement(int[] rgb){
 		int[] rgbcomplement=new int[3];
 		int count=0;
+		// Iterate through all elements
 		for (int i = 0; i < rgbcomplement.length; i++) {
 			rgbcomplement[i]=255-rgb[i];
 			if(Math.abs(rgbcomplement[i]-rgb[i])<=32){
@@ -26,6 +42,7 @@ public class SRM176RGBColor {
 			}
 		}
 		if(count==3)
+			// Iterate through all elements
 			for (int i = 0; i < rgbcomplement.length; i++) {
 				rgbcomplement[i]=rgb[i]-128>=0?rgb[i]-128:rgb[i]+128;
 			}

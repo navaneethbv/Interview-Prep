@@ -1,7 +1,16 @@
 package appleInterview;
 
+/**
+ * Implementation of DSLL Rotate LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSLLRotateLL {
 	static Node head;
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node next;
 		int value;
@@ -9,6 +18,11 @@ public class DSLLRotateLL {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node head = new Node(10);
 		head.next = new Node(20);
@@ -22,9 +36,17 @@ public class DSLLRotateLL {
 	}
 
 
+	/**
+	 * Rotates the ll.
+	 *
+	 * @param head2 the head2 parameter
+	 * @param i the i parameter
+	 * @return the Node result
+	 */
 	private static Node rotateLL(Node head2, int i) {
 		Node mainHead=head2;
 		int length=findLength(head2);
+		// Inner loop to check combinations
 		for (int j = 0; j < i; j++) {
 			Node pointer=mainHead;
 			Node tempPointer=pointer;
@@ -39,6 +61,12 @@ public class DSLLRotateLL {
 	}
 
 
+	/**
+	 * Finds length in the data structure.
+	 *
+	 * @param head2 the head2 parameter
+	 * @return the computed integer result
+	 */
 	private static int findLength(Node head2) {
 		int length=0;
 		while(head2!=null){
@@ -49,6 +77,11 @@ public class DSLLRotateLL {
 	}
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null){
 			System.out.print(n.value+"/");

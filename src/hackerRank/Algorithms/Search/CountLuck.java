@@ -7,12 +7,23 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/count-luck
  */
+/**
+ * Implementation of Count Luck algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CountLuck {
 
 	static boolean found=false;
 	static boolean[][] visited;
 //	*.M
 //	.X.
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int noOfTestCases=1;//Integer.parseInt(scanner.nextLine());
@@ -39,6 +50,16 @@ public class CountLuck {
 		}
 	}
 
+	/**
+	 * Retrieves count luck from the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @param visited the array to process
+	 * @param i the i parameter
+	 * @param j the j parameter
+	 * @param count the count parameter
+	 * @return the computed integer result
+	 */
 	private static int getCountLuck(char[][] inputArray, boolean[][] visited, int i, int j,int count) {
 		if(i<0||j<0||i>inputArray.length-1||j>inputArray[0].length-1)
 			return count;

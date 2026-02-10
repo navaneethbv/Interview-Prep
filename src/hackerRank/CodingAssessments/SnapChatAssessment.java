@@ -7,11 +7,23 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Implementation of Snap Chat Assessment algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SnapChatAssessment {
 
 
 	static ArrayList<String> dictionaryList;
 	static HashMap<String,Integer> pointerMap;
+	/**
+	 * Performs dictionaryHasWord operation.
+	 *
+	 * @param word the word parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean dictionaryHasWord(String word) {
 		for (String dictionaryWord : dictionaryList) {
 			if (dictionaryWord.equals(word))
@@ -20,7 +32,14 @@ public class SnapChatAssessment {
 		return false;
 	}
 
+	/**
+	 * Performs breakWords operation.
+	 *
+	 * @param mainWord the mainWord parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean breakWords(String mainWord) {
+		// Check for null/base case
 		if(dictionaryList.size()==0)
 			return false;
 		boolean[] flagArray = new boolean[mainWord.length()];
@@ -39,12 +58,19 @@ public class SnapChatAssessment {
 		}
 		return flagArray[mainWord.length() - 1];
 	}
+	/**
+	 * Performs simpleWords operation.
+	 *
+	 * @param strArr the array to process
+	 * @return the resulting array
+	 */
 	static String[] simpleWords(String[] strArr) {
 		dictionaryList=new ArrayList<>();
 		pointerMap=new HashMap<>();
 		populatePointers(strArr);
 		Arrays.sort(strArr,new LengthBasedStringSort());
 		Map<String,Integer> outputMap=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < strArr.length; i++) {
 			if(!breakWords(strArr[i])){
 				outputMap.put(strArr[i],pointerMap.get(strArr[i]));
@@ -61,22 +87,48 @@ public class SnapChatAssessment {
 		}
 		return outputArr;
 	}
+	/**
+	 * Performs populatePointers operation.
+	 *
+	 * @param strArr the array to process
+	 */
 	private static void populatePointers(String[] strArr) {
+		// Iterate through all elements
 		for (int i = 0; i < strArr.length; i++) {
 			pointerMap.put(strArr[i], i);
 		}
 	}
+	/**
+	 * Inner class LengthBasedStringSort for supporting operations.
+	 */
 	public static class LengthBasedStringSort implements Comparator<String> {
+		/**
+		 * Performs compare operation.
+		 *
+		 * @param string1 the string1 parameter
+		 * @param string2 the string2 parameter
+		 * @return the computed integer result
+		 */
 		public int compare(String string1, String string2) {
 			int difference = string1.length() - string2.length();
+			// Recursively process left and right subtrees
 			return difference != 0? difference: string1.compareTo(string2);
 		}
 	}
+	/**
+	 * Performs sortByValue operation.
+	 *
+	 * @param map the map parameter
+	 * @return the Map<String,Integer> result
+	 */
 	public static Map<String,Integer> sortByValue(Map<String,Integer> map) {
 		Map<String,Integer> outputMap = new TreeMap(new CompareValues(map));
 		outputMap.putAll(map);
 		return outputMap;
 	}
+	/**
+	 * Inner class CompareValues for supporting operations.
+	 */
 	static class CompareValues implements Comparator {
 		Map<String,Integer> map;
 
@@ -84,13 +136,26 @@ public class SnapChatAssessment {
 			this.map = map;
 		}
 
+		/**
+		 * Performs compare operation.
+		 *
+		 * @param keyA the keyA parameter
+		 * @param keyB the keyB parameter
+		 * @return the computed integer result
+		 */
 		public int compare(Object keyA, Object keyB) {
 			Comparable comparableA = (Comparable) map.get(keyA);
 			Comparable comparableB = (Comparable) map.get(keyB);
+			// Recursively process left and right subtrees
 			return comparableA.compareTo(comparableB);
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(simpleWords(
 				new String[]{"chat","ever","snapchat","snap","salesperson","per","person","sales","son","whatsoever","what","so"})));

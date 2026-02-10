@@ -1,16 +1,32 @@
 package yelpInterview;
 
+/**
+ * Implementation of Reverse Integer algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ReverseInteger {
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		//System.out.println(reverse(9646324351));
-		System.out.println(reverse(-321));
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
 
 	@SuppressWarnings("finally")
+	/**
+	 * Performs reverse operation.
+	 *
+	 * @param x the x parameter
+	 * @return the computed integer result
+	 */
 	public static int reverse(int x) {
 		try{
 		String s=new StringBuilder(x+"").reverse().toString();

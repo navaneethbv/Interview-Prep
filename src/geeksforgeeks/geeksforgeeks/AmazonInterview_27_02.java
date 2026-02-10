@@ -15,7 +15,18 @@ import java.util.Scanner;
  * Inversions (2,1) , (5,1), (3,1), (5,3)
  * Answer will be  4
  */;
+/**
+ * Implementation of Amazon Interview_27_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_27_02 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 Integer size=Integer.parseInt(scanner.nextLine());
@@ -29,6 +40,12 @@ import java.util.Scanner;
 
 	 }
 
+	 /**
+	  * Retrieves inversions short from the data structure.
+	  *
+	  * @param inputArray the array to process
+	  * @return the list of results
+	  */
 	 private static ArrayList<String> getInversionsShort(int[] inputArray) {
 		 ArrayList<String> outputList=new ArrayList<String>();
 		 //merge sort here
@@ -37,8 +54,15 @@ import java.util.Scanner;
 		 return null;
 	 }
 
+	 /**
+	  * Retrieves inversions long from the data structure.
+	  *
+	  * @param inputArray the array to process
+	  * @return the list of results
+	  */
 	 private static ArrayList<String> getInversionsLong(int[] inputArray) {
 		 ArrayList<String> outputList=new ArrayList<String>();
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 for (int j = i+1; j < inputArray.length; j++) {
 				 if(inputArray[j]<inputArray[i])
@@ -50,6 +74,12 @@ import java.util.Scanner;
 		 return outputList;
 	 }
 
+	 /**
+	  * Performs buildInputArray operation.
+	  *
+	  * @param size the size parameter
+	  * @return the resulting array
+	  */
 	 private static int[] buildInputArray(Integer size) {
 		 int[] inputArray=new int[size];
 		 for (int i = 0; i < size; i++) {

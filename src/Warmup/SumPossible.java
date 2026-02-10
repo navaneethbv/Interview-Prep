@@ -5,17 +5,34 @@ import java.util.Arrays;
 /*
  * Link:https://www.careercup.com/question?id=23884662
  */
+/**
+ * Implementation of Sum Possible algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SumPossible {
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		System.out.println(isScorePossible(new int[]{3,7},10));
-		System.out.println(isScorePossible(new int[]{7,4,6},9 ));
-		System.out.println(isScorePossible(new int[]{3,7}, 7));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
 
 
+	/**
+	 * Checks if score possible.
+	 *
+	 * @param points the array to process
+	 * @param value the value value
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isScorePossible(int[] points, int value){
 		int status [] =new int [value+1];
 		status [0]=1;

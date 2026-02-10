@@ -1,7 +1,16 @@
 package appleInterview;
 
+/**
+ * Implementation of DSLL Reverse LL Recursive algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSLLReverseLLRecursive {
 	static Node head;
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node next;
 		int value;
@@ -9,6 +18,11 @@ public class DSLLReverseLLRecursive {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node n=new Node(1);
 		n.next=new Node(2);
@@ -22,7 +36,15 @@ public class DSLLReverseLLRecursive {
 
 	}
 
+	/**
+	 * Performs reverseUtil operation.
+	 *
+	 * @param curr the curr parameter
+	 * @param prev the prev parameter
+	 * @return the Node result
+	 */
 	static Node reverseUtil(Node curr, Node prev) {
+		// Check for null/base case
 		if (curr.next == null) {
 			head = curr;
 			curr.next = prev;
@@ -34,6 +56,11 @@ public class DSLLReverseLLRecursive {
 		return head;
 	}
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null){
 			System.out.print(n.value+"/");

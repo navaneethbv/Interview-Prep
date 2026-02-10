@@ -4,7 +4,18 @@ package GeeksforGeeksPractice;
  * Link : http://www.geeksforgeeks.org/custom-tree-problem/
  * To be done later
  */
+/**
+ * Implementation of Custom Treeproblem algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CustomTreeproblem {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		String [] links1 = {"a b", "b c", "b d", "a e"};
         System.out.println("------------ Forest 1 ----------------");
@@ -17,6 +28,11 @@ public class CustomTreeproblem {
 	}
 
 
+	/**
+	 * Performs printForest operation.
+	 *
+	 * @param links1 the array to process
+	 */
 	private static void printForest(String[] links1) {
 		
 		
@@ -27,6 +43,9 @@ public class CustomTreeproblem {
 
 	
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;

@@ -4,7 +4,18 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList; 
 import java.util.Scanner; 
 
+/**
+ * Implementation of DP4 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DP4 { 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]) throws FileNotFoundException { 
 		ArrayList<String> aDictionary = new ArrayList<String>(); 
 		Scanner sc = new Scanner(new File("E:\\Notes\\twl06.txt")); 
@@ -36,10 +47,18 @@ public class DP4 {
 		printSentence(sentence,path,n-1); 
 	} 
 
+	/**
+	 * Performs printSentence operation.
+	 *
+	 * @param sentence the sentence parameter
+	 * @param path the array to process
+	 * @param n the size or count parameter
+	 */
 	private static void printSentence(String sentence,int[] path, int n) { 
 		// TODO Auto-generated method stub 
+		// Check for null/base case
 		if(n==0)return; 
 		printSentence(sentence, path,path[n]); 
 		System.out.print(" "+sentence.substring(path[n]+1,n+1)); 
-	} 
+	}
 } 

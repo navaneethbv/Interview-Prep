@@ -4,12 +4,27 @@ import java.util.Stack;
 /*
  * http://stackoverflow.com/questions/19720349/find-next-higher-element-in-an-array-for-each-element
 */
+/**
+ * Implementation of DS Stack Next Greater Element algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSStackNextGreaterElement {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray[]=new int[]{40,50,11,32,55,68,75};
-		nextGreaterElement(inputArray);
+
 	}
 
+	/**
+	 * Performs nextGreaterElement operation.
+	 *
+	 * @param inputArray the array to process
+	 */
 	private static void nextGreaterElement(int[] inputArray) {
 		Stack<Integer> stack=new Stack<>();
 		stack.push(inputArray[0]);

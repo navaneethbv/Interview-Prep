@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of BSTBST Summed Up algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTBSTSummedUp {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -8,6 +17,11 @@ public class BSTBSTSummedUp {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=insert(null,5);
 		insert(n,2);
@@ -22,7 +36,13 @@ public class BSTBSTSummedUp {
 
 
 	static int sum=0;
+	/**
+	 * Performs changeNodes operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void changeNodes(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			changeNodes(n.left);
@@ -32,7 +52,13 @@ public class BSTBSTSummedUp {
 			changeNodes(n.right);
 		}
 	}
+	/**
+	 * Retrieves sum from the data structure.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void getSum(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			getSum(n.left);
@@ -43,7 +69,13 @@ public class BSTBSTSummedUp {
 
 
 
+	/**
+	 * Performs inOrderTraversal operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrderTraversal(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			inOrderTraversal(n.left);
@@ -52,7 +84,15 @@ public class BSTBSTSummedUp {
 		}
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)

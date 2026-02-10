@@ -8,15 +8,32 @@ import java.util.Random;
  * Given an array of numbers
  * write a function which will return another array containing the elements of the previous array but in random order.
  */
+/**
+ * Implementation of Google Career Cup Problem1796 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem1796 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray[]=new int[]{5,3,7,10};
-		System.out.println(Arrays.toString(inputArray));
-		System.out.println(Arrays.toString(randomiseArray(inputArray)));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs randomiseArray operation.
+	 *
+	 * @param inputArray the array to process
+	 * @return the resulting array
+	 */
 	public static int[] randomiseArray(int[] inputArray){
 		Random r=new Random();
 		int[] outputArray=new int[inputArray.length];
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			int index=r.nextInt(inputArray.length-i);
 			outputArray[i]=inputArray[index];

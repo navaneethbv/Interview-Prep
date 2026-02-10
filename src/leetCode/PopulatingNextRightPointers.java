@@ -7,40 +7,64 @@ import java.util.Queue;
  * Link : https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
  */
 
+/**
+ * Implementation of Populating Next Right Pointers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PopulatingNextRightPointers {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeLinkNode {
 		int val;
 		TreeLinkNode left, right, next;
 		TreeLinkNode(int x) { val = x; }
 	}
 
+	/**
+	 * Performs connect operation.
+	 *
+	 * @param root the tree node to process
+	 */
 	public static void connect(TreeLinkNode root) {
 		dfs(root);
 	}
 	
+	/**
+	 * Performs dfs operation.
+	 *
+	 * @param root the tree node to process
+	 */
 	private static void dfs(TreeLinkNode root) {
 		Queue<TreeLinkNode> queue=new LinkedList<>();
 		System.out.println();
 		int level=0;
 		TreeLinkNode tempNode = null;
+		// Check for null/base case
 		if(root!=null)
 		{
 			queue.add(root);
 			while(!queue.isEmpty())
 			{
 				TreeLinkNode tn=queue.remove();
+				// Check for null/base case
 				if(tn.left!=null)
 					queue.add(tn.left);
+				// Check for null/base case
 				if(tn.right!=null)
 					queue.add(tn.right);
 				System.out.println(tn.val);
 				int height=getHeight(tn);
+				// Check for null/base case
 				if(height!=level && tempNode!=null)
 				{
 					tempNode.next=null;
 					tempNode=tn;
 					level=height;
 				}
+				// Check for null/base case
 				else if(height==level && tempNode!=null)
 				{
 					tempNode.next=tn;
@@ -55,6 +79,13 @@ public class PopulatingNextRightPointers {
 		}
 		
 	}
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
+	public static int getHeight(TreeLinkNode n)
 	public static int getHeight(TreeLinkNode n)
 	{
 		if(n!=null)
@@ -71,6 +102,11 @@ public class PopulatingNextRightPointers {
 		return 0;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeLinkNode tn=new TreeLinkNode(1);
 		tn.left=new TreeLinkNode(2);
@@ -83,10 +119,17 @@ public class PopulatingNextRightPointers {
 		preOrder(tn);
 	}
 
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeLinkNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			System.out.print(tn.val+"--");
+			// Check for null/base case
 			if(tn.next!=null)
 			{
 				System.out.print(tn.next.val);

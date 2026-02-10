@@ -13,7 +13,18 @@ import java.util.Stack;
  * Code for converting floating point decimal number to binary numbers.
  * If the number cannot be converted, state so.
  */;
+/**
+ * Implementation of Amazon Interview_22_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_22_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 Float inputNumber=Float.parseFloat(scanner.nextLine());
@@ -22,6 +33,11 @@ import java.util.Stack;
 		 convertToBinary(inputNumber);
 	 }
 
+	 /**
+	  * Performs convertToBinary operation.
+	  *
+	  * @param inputNumber the inputNumber parameter
+	  */
 	 private static void convertToBinary(Float inputNumber) {
 		 String inputString=String.valueOf(inputNumber);
 		 Integer numberPart=Integer.parseInt(inputString.substring(0,inputString.indexOf('.')));
@@ -31,6 +47,12 @@ import java.util.Stack;
 		 System.out.println(strBefore+"."+strAfter);		
 	 }
 
+	 /**
+	  * Retrieves binary after from the data structure.
+	  *
+	  * @param decimalPart the decimalPart parameter
+	  * @return the resulting string
+	  */
 	 private static String getBinaryAfter(Float decimalPart) {
 		 Stack<String> stack=new Stack<String>();	
 		 StringBuffer sb=new StringBuffer();
@@ -45,6 +67,12 @@ import java.util.Stack;
 		 return sb.toString();
 	 }
 
+	 /**
+	  * Retrieves binary before from the data structure.
+	  *
+	  * @param numberPart the numberPart parameter
+	  * @return the resulting string
+	  */
 	 private static String getBinaryBefore(Integer numberPart) {
 		 Stack<Integer> stack=new Stack<Integer>();	
 		 while(numberPart!=0){

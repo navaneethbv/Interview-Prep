@@ -1,12 +1,26 @@
 package LeetCodePractice;
 
+/**
+ * Implementation of Partition List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PartitionList {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(1);
 		ln.next=new ListNode(4);
@@ -19,6 +33,13 @@ public class PartitionList {
 	}									
 
 
+	/**
+	 * Performs partition operation.
+	 *
+	 * @param head the head parameter
+	 * @param x the x parameter
+	 * @return the list of results
+	 */
 	public static ListNode partition(ListNode head, int x) {
 		ListNode output=new ListNode(-1);
 		ListNode outputPointer=output;

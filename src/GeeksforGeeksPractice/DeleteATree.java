@@ -1,6 +1,17 @@
 package GeeksforGeeksPractice;
 
+/**
+ * Implementation of Delete A Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DeleteATree {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -14,7 +25,13 @@ public class DeleteATree {
 		preOrder(tn);System.out.println();	//-1/-1/-1/-1/-1/-1/-1/
 	}
 	
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			System.out.print(tn.val+"/");
@@ -23,7 +40,13 @@ public class DeleteATree {
 		}
 	}
 
+	/**
+	 * Performs deleteTree operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void deleteTree(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			deleteTree(tn.left);
@@ -34,6 +57,9 @@ public class DeleteATree {
 		
 	}
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;

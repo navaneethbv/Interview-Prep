@@ -8,7 +8,18 @@ import java.util.TreeMap;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=8222
  */
 
+/**
+ * Implementation of SRM372 Diet Plan algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM372DietPlan {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(chooseDinner("ABCD", "AB", "C"));
 		System.out.println(chooseDinner("ABEDCS", "", ""));
@@ -16,8 +27,17 @@ public class SRM372DietPlan {
 		System.out.println(chooseDinner("", "", ""));
 		System.out.println(chooseDinner("IWANTSODER", "SOW", "RAT"));
 	}
+	/**
+	 * Performs chooseDinner operation.
+	 *
+	 * @param diet the diet parameter
+	 * @param breakfast the breakfast parameter
+	 * @param lunch the lunch parameter
+	 * @return the resulting string
+	 */
 	public static String chooseDinner(String diet, String breakfast, String lunch){
 		TreeMap<Character,Integer> charCount=new TreeMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < diet.length(); i++) {
 			char c=diet.charAt(i);
 			if(!charCount.containsKey(c))
@@ -28,10 +48,12 @@ public class SRM372DietPlan {
 				charCount.put(c,charCount.get(c)+1);
 			}
 		}
+		// Iterate through all elements
 		for (int i = 0; i < breakfast.length(); i++) {
 			char c=breakfast.charAt(i);
 			if(charCount.containsKey(c))
 			{
+				// Check for null/base case
 				if(charCount.get(c)==0)
 					return "CHEATER";
 				else
@@ -41,10 +63,12 @@ public class SRM372DietPlan {
 				return "CHEATER";
 			}
 		}
+		// Iterate through all elements
 		for (int i = 0; i < lunch.length(); i++) {
 			char c=lunch.charAt(i);
 			if(charCount.containsKey(c))
 			{
+				// Check for null/base case
 				if(charCount.get(c)==0)
 					return "CHEATER";
 				else

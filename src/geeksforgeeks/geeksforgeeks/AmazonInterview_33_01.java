@@ -13,7 +13,18 @@ import ctci._02linkedList.Node;
  * Eg: Input: 5 13 15 18 20 11 6 7
  * Output: 13 5 18 15 11 20 7 6
  */;
+/**
+ * Implementation of Amazon Interview_33_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_33_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _02linkedList linkedList=new _02linkedList();
 		 linkedList.add(5);
@@ -29,6 +40,12 @@ import ctci._02linkedList.Node;
 		 System.out.println(linkedList.toString());
 	 }
 
+	/**
+	 * Performs swapTwoNodes operation.
+	 *
+	 * @param linkedList the linkedList parameter
+	 * @return the list of results
+	 */
 	private static _02linkedList swapTwoNodes(_02linkedList linkedList) {
 		Node pointerNode=linkedList.getHeadNode();
 		while(pointerNode!=null && pointerNode.next!=null)
@@ -36,6 +53,7 @@ import ctci._02linkedList.Node;
 			pointerNode.data=pointerNode.data^pointerNode.next.data;
 			pointerNode.next.data=pointerNode.data^pointerNode.next.data;
 			pointerNode.data=pointerNode.data^pointerNode.next.data;
+			// Check for null/base case
 			if(pointerNode.next!=null && pointerNode.next.next!=null)
 				pointerNode=pointerNode.next.next;
 			else

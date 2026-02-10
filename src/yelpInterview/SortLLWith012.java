@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of Sort LL With012 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SortLLWith012 {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -9,6 +18,11 @@ public class SortLLWith012 {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(0);
 		n.next=new Node(1);
@@ -24,11 +38,18 @@ public class SortLLWith012 {
 	}
 
 
+	/**
+	 * Performs sort operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node sort(Node n) {
 		Node outputNode=n;
 
 		int onesCount=0,twosCount=0,zeroesCount=0;
 		while(n!=null){
+			// Check for null/base case
 			if(n.value==0)
 			{
 				zeroesCount++;
@@ -63,6 +84,11 @@ public class SortLLWith012 {
 	}
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{

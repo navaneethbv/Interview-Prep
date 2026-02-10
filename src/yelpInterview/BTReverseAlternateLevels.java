@@ -2,7 +2,16 @@ package yelpInterview;
 
 import java.util.ArrayList;
 
+/**
+ * Implementation of BT Reverse Alternate Levels algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BTReverseAlternateLevels {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node left,right;
 		int value;
@@ -10,6 +19,11 @@ public class BTReverseAlternateLevels {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n1=new Node(1);
 		n1.left=new Node(2);
@@ -30,7 +44,13 @@ public class BTReverseAlternateLevels {
 		reverseLevels(n1);
 		levelOrder(n1);System.out.println();
 	}
+	/**
+	 * Performs levelOrder operation.
+	 *
+	 * @param n1 the n1 parameter
+	 */
 	private static void levelOrder(Node n1) {
+		// Check for null/base case
 		if(n1!=null)
 		{
 			for (int i = 0; i < getHeight(n1); i++) {
@@ -39,9 +59,17 @@ public class BTReverseAlternateLevels {
 		}
 	}
 
+	/**
+	 * Performs levelOrderTraversal operation.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param i the i parameter
+	 */
 	private static void levelOrderTraversal(Node n1, int i) {
+		// Check for null/base case
 		if(n1!=null)
 		{
+			// Check for null/base case
 			if(i==0)
 			{
 				System.out.print(n1.value+"/");
@@ -58,6 +86,11 @@ public class BTReverseAlternateLevels {
 	static ArrayList<Node> nodeList=new ArrayList<>();
 	static ArrayList<Integer> valueList=new ArrayList<>();
 
+	/**
+	 * Performs reverseLevels operation.
+	 *
+	 * @param n1 the n1 parameter
+	 */
 	private static void reverseLevels(Node n1) {
 		for (int i = 0; i < getHeight(n1); i++) {
 			nodeList=new ArrayList<>();
@@ -68,15 +101,27 @@ public class BTReverseAlternateLevels {
 			}
 		}
 	}
+	/**
+	 * Performs repopulateNodes operation.
+	 *
+	 */
 	private static void repopulateNodes() {
 		for (int i = 0; i < nodeList.size(); i++) {
 			Node n=nodeList.get(i);
 			n.value=valueList.get(valueList.size()-1-i);
 		}
 	}
+	/**
+	 * Performs alternateLevels operation.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param i the i parameter
+	 */
 	private static void alternateLevels(Node n1, int i) {
+		// Check for null/base case
 		if(n1!=null)
 		{
+			// Check for null/base case
 			if(i==0)
 			{
 				nodeList.add(n1);
@@ -90,7 +135,14 @@ public class BTReverseAlternateLevels {
 		}
 
 	}
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param n1 the n1 parameter
+	 * @return the computed integer result
+	 */
 	private static int getHeight(Node n1) {
+		// Recursively process left and right subtrees
 		return n1!=null?1+Math.max(getHeight(n1.left), getHeight(n1.right)):0;
 	}
 

@@ -2,9 +2,21 @@ package hackerRank.CodingAssessments;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Box Assessment algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BoxAssessment {
+	/**
+	 * Performs rpn_calculate operation.
+	 *
+	 * @param tokens the array to process
+	 */
 	static void rpn_calculate(String[] tokens){
 		Stack<String> stack=new Stack<>();
+		// Iterate through all elements
 		for (int i = 0; i < tokens.length; i++) {
 			boolean exceptionFlag=false;
 			try{
@@ -47,6 +59,14 @@ public class BoxAssessment {
 	}
 
 
+	/**
+	 * Performs handleInput operation.
+	 *
+	 * @param value1 the value1 parameter
+	 * @param value2 the value2 parameter
+	 * @param string the string parameter
+	 * @return the resulting string
+	 */
 	private static String handleInput(int value1, int value2, String string) {
 		String output;
 		switch(string){
@@ -65,8 +85,12 @@ public class BoxAssessment {
 	}
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		rpn_calculate(new String[]{"3","4","5","*","-"});
-		rpn_calculate(new String[]{"10","100","-","90","+"});
+
 	}
 }

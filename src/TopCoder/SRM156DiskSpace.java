@@ -9,7 +9,18 @@ import java.util.Arrays;
 
 
 
+/**
+ * Implementation of SRM156 Disk Space algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM156DiskSpace {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(minDrives(new int[]{300,525,110}, new int[]{350,600,115}));
 		System.out.println(minDrives(new int[]{1,200,200,199,200,200}, new int[]{1000,200,200,200,200,200}));
@@ -21,9 +32,17 @@ public class SRM156DiskSpace {
 		System.out.println(minDrives(new int[]{331,242,384,366,428,114,145,89,381,170,329,190,482,246,2,38,220,290,402,385}, 
 				new int[]{992,509,997,946,976,873,771,565,693,714,755,878,897,789,969,727,765,521,961,906}));
 	}
+	/**
+	 * Performs minDrives operation.
+	 *
+	 * @param used the array to process
+	 * @param total the array to process
+	 * @return the computed integer result
+	 */
 	public static int minDrives(int[] used, int[] total){
 		int count=0;
 		int totalUsedSpace=0;
+		// Iterate through all elements
 		for (int i = 0; i < used.length; i++) {
 			totalUsedSpace+=used[i];
 		}

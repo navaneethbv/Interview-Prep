@@ -2,15 +2,32 @@ package appleInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of DS Stack Reverse String Using Stack algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSStackReverseStringUsingStack {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		String string="malayalama";
-		System.out.println(reverseString(string));
+
 	}
 
+	/**
+	 * Performs reverseString operation.
+	 *
+	 * @param string the string parameter
+	 * @return the resulting string
+	 */
 	private static String reverseString(String string) {
 		StringBuilder sb=new StringBuilder("");
 		Stack<Character> stack=new Stack<>();
+		// Iterate through all elements
 		for (int i = 0; i < string.length(); i++) {
 			stack.push(string.charAt(i));
 		}

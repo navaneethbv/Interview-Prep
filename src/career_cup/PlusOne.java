@@ -2,14 +2,27 @@ package career_cup;
 
 import java.util.ArrayList;
 
+/**
+ * Implementation of Plus One algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PlusOne {
 	
+		 /**
+		  * Performs plusOne operation.
+		  *
+		  * @param A the A parameter
+		  * @return the list of results
+		  */
 		 public static ArrayList<Integer> plusOne(ArrayList<Integer> A) {
 		        // the one to be plus
 		        int carry = 1;
 		        ArrayList<Integer> result = new ArrayList<>(A);
 		        int len = A.size();
 		        for (int i = len - 1; i >= 0; i--) {
+		            // Check for null/base case
 		            if (carry == 0) {
 		                // no need to check remaining digits
 		                break;
@@ -42,8 +55,13 @@ public class PlusOne {
 		        }
 		        
 		        return result;
-		    }
+		 }
 	
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args)
 	{
 		ArrayList<Integer> array = new ArrayList<>();

@@ -4,8 +4,17 @@ package hackerRank.Java.OOP;
  * Link:https://www.hackerrank.com/challenges/java-inheritance-1
  */
 
+/**
+ * Implementation of Java Inheritance1 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JavaInheritance1 {
 
+	/**
+	 * Inner class Animal for supporting operations.
+	 */
 	static class Animal{
 		void walk()
 		{
@@ -13,6 +22,9 @@ public class JavaInheritance1 {
 		}
 	}
 
+	/**
+	 * Inner class Bird for supporting operations.
+	 */
 	static class Bird extends Animal
 	{
 		void fly()
@@ -25,6 +37,11 @@ public class JavaInheritance1 {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[])
 	{
 

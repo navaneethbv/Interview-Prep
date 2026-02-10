@@ -18,8 +18,21 @@ class Interval {
 	}
 }
 
+/**
+ * Implementation of google Assessment2 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class googleAssessment2 {
+	/**
+	 * Performs merge operation.
+	 *
+	 * @param intervals the intervals parameter
+	 * @return the list of results
+	 */
 	public static  ArrayList<Interval> merge(ArrayList<Interval> intervals) {
+		// Check for null/base case
 		if (intervals == null || intervals.size() <= 1)
 			return intervals;
 		Collections.sort(intervals, new IntervalComparator());
@@ -39,6 +52,11 @@ public class googleAssessment2 {
 		return result;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ArrayList<Interval> intervalList=new ArrayList<>();
 		intervalList.add(new Interval(2, 3));
@@ -53,6 +71,13 @@ public class googleAssessment2 {
 }
 
 class IntervalComparator implements Comparator<Interval> {
+	/**
+	 * Performs compare operation.
+	 *
+	 * @param i1 the i1 parameter
+	 * @param i2 the i2 parameter
+	 * @return the computed integer result
+	 */
 	public int compare(Interval i1, Interval i2) {
 		return i1.start - i2.start;
 	}

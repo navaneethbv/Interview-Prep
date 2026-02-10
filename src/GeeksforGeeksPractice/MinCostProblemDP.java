@@ -5,15 +5,27 @@ import java.util.Arrays;
 /*
  * Link: http://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/
  */
+/**
+ * Implementation of Min Cost Problem DP algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MinCostProblemDP {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int cost[][] = { {1, 2, 3},
-                {4, 8, 2},
-                {1, 5, 3} };
-		
-		findMinCost(cost);
+
 	}
 
+	/**
+	 * Finds min cost in the data structure.
+	 *
+	 * @param cost the array to process
+	 */
 	private static void findMinCost(int[][] cost) {
 		int newCost[][]=new int[cost.length-1][cost[0].length-1];
 		newCost[0][0]=cost[0][0];

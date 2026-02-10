@@ -12,7 +12,13 @@ class _8Stacks {
 		presentNode=new Node();
 		presentNode.previousNode=null;
 	}
+	/**
+	 * Performs push operation.
+	 *
+	 * @param value the value value
+	 */
 	public void push(int value){
+		// Check for null/base case
 		if(minList.size()==0)
 			minList.add(value);
 		else{
@@ -27,6 +33,11 @@ class _8Stacks {
 		presentNode=newNode;
 		noOfElements++;
 	}
+	/**
+	 * Performs pop operation.
+	 *
+	 * @return the computed integer result
+	 */
 	public int pop() throws ArrayIndexOutOfBoundsException{
 		int value=presentNode.previousNode.data;
 		presentNode=presentNode.previousNode;
@@ -35,12 +46,27 @@ class _8Stacks {
 		noOfElements--;
 		return value;
 	}
+	/**
+	 * Performs size operation.
+	 *
+	 * @return the computed integer result
+	 */
 	public int size(){
 		return noOfElements;
 	}
+	/**
+	 * Checks if empty.
+	 *
+	 * @return true if condition is met, false otherwise
+	 */
 	public boolean isEmpty(){
 		return noOfElements==0?true:false;
 	}
+	/**
+	 * Performs toString operation.
+	 *
+	 * @return the resulting string
+	 */
 	public String toString(){
 		StringBuilder outputStringBuilder=new StringBuilder();
 		Node pointerNode=new Node();
@@ -49,9 +75,16 @@ class _8Stacks {
 			outputStringBuilder.append(pointerNode.data+"\n");
 			pointerNode=pointerNode.previousNode;
 		}
+		// Recursively process left and right subtrees
 		return outputStringBuilder.toString();
 	}
+	/**
+	 * Performs min operation.
+	 *
+	 * @return the computed integer result
+	 */
 	public int min(){
+		// Recursively process left and right subtrees
 		return minList.get(minList.size()-1);
 	}
 
@@ -61,22 +94,53 @@ class _8Stacks {
 	class Node{
 		int data;
 		Node previousNode;
+		/**
+		 * Retrieves data from the data structure.
+		 *
+		 * @return the computed integer result
+		 */
 		public int getData() {
 			return data;
 		}
+		/**
+		 * Sets data in the data structure.
+		 *
+		 * @param data the data parameter
+		 */
 		public void setData(int data) {
 			this.data = data;
 		}
+		/**
+		 * Retrieves previous node from the data structure.
+		 *
+		 * @return the Node result
+		 */
 		public Node getPreviousNode() {
 			return previousNode;
 		}
+		/**
+		 * Sets previous node in the data structure.
+		 *
+		 * @param previousNode the previousNode parameter
+		 */
 		public void setPreviousNode(Node previousNode) {
 			this.previousNode = previousNode;
 		}
 
 	}
 }
+/**
+ * Implementation of Stacks And Queues_2 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class StacksAndQueues_2{
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		_8Stacks stack=new _8Stacks();
 		stack.push(10);

@@ -8,8 +8,19 @@ import java.util.Scanner;
 /*Implementation of LFU Page Replacement Algorithm
  * Quantum set to 1
  * */
+/**
+ * Implementation of RR Scheduling Non Pre Emptive algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RRSchedulingNonPreEmptive{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		Integer noOfProcesses=5;//Integer.parseInt(scanner.nextLine());

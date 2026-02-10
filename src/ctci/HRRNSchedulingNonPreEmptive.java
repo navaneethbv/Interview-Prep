@@ -6,8 +6,19 @@ import java.util.Scanner;
 
 
 /*Implementation of LFU Page Replacement Algorithm*/
+/**
+ * Implementation of HRRN Scheduling Non Pre Emptive algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class HRRNSchedulingNonPreEmptive{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		Integer noOfProcesses=Integer.parseInt(scanner.nextLine());

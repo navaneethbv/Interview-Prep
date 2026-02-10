@@ -1,11 +1,27 @@
 package yelpInterview;
 
+/**
+ * Implementation of Array Max Sum No Two Elements Adjacent algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayMaxSumNoTwoElementsAdjacent {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int arr[] = {5,  5, 10, 40, 50, 35};
-		System.out.println(findSum(arr));
+
 	}
 
+	/**
+	 * Finds sum in the data structure.
+	 *
+	 * @param arr the array to process
+	 * @return the computed integer result
+	 */
 	private static int findSum(int[] arr) {
 		int incl=arr[0],excl=0;
 		for (int i = 1; i < arr.length; i++) {

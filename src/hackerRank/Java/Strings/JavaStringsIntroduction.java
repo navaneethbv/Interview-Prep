@@ -6,8 +6,19 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/java-strings-introduction
  */
 
+/**
+ * Implementation of Java Strings Introduction algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JavaStringsIntroduction {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param []argv the []argv parameter
+	 */
 	public static void main(String []argv)
 	{
 		Scanner scanner=new Scanner(System.in);

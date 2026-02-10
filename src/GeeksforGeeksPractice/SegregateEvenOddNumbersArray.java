@@ -5,12 +5,27 @@ import java.util.Arrays;
 /*
  * Link: http://www.geeksforgeeks.org/segregate-even-and-odd-numbers/
  */
+/**
+ * Implementation of Segregate Even Odd Numbers Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SegregateEvenOddNumbersArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int arr[] =   {12, 34, 45, 9, 8, 90, 3};
-		segregateNumbers(arr);
+
 	}
 
+	/**
+	 * Performs segregateNumbers operation.
+	 *
+	 * @param arr the array to process
+	 */
 	private static void segregateNumbers(int[] arr) {
 		int left=0,right=arr.length-1;
 		while(left<right)

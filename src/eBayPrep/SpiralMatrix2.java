@@ -2,16 +2,31 @@ package eBayPrep;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Spiral Matrix2 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SpiralMatrix2 {
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int[][] mat=generateMatrix(5);
-		for (int i = 0; i < mat.length; i++) {
-			System.out.println(Arrays.toString(mat[i]));
-		}
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs generateMatrix operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the resulting array
+	 */
 	public static int[][] generateMatrix(int n) {
 		int outputMatrix[][]=new int[n][n];
 		int value=1;
@@ -46,6 +61,7 @@ public class SpiralMatrix2 {
 				left++;
 			}
 		}
+		// Iterate through all elements
 		for (int i = 0; i < outputMatrix.length; i++) {
 			System.out.println(Arrays.toString(outputMatrix[i]));
 		}

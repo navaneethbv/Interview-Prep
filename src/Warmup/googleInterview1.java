@@ -1,20 +1,27 @@
 package Warmup;
 
+/**
+ * Implementation of google Interview1 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class googleInterview1 {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		
-		//starts with 0xxxxxx- no repetitions
-		//starts with 110xxxxx 10xxxxxx
-		//starts with 1110xxxx 10xxxxxx 10xxxxxx
-		//starts with 1111xxxx 10xxxxxx 10xxxxxx 10xxxxxx
-		
-		Byte[] inputByteArray =new Byte[]{(byte) 0111111};
-		checkInput(inputByteArray);
-		
-		
+
 	}
 
+	/**
+	 * Performs checkInput operation.
+	 *
+	 * @param inputByteArray the array to process
+	 */
 	private static void checkInput(Byte[] inputByteArray) {
 		
 		

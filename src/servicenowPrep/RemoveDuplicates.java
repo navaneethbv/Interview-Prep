@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Remove Duplicates algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveDuplicates {
 	
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		public ListNode(int value) {
@@ -10,6 +19,11 @@ public class RemoveDuplicates {
 		ListNode next;
 		
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(11);
 		ln.next=new ListNode(11);
@@ -26,11 +40,18 @@ public class RemoveDuplicates {
 			ln=ln.next;
 		}
 	}
+	/**
+	 * Removes duplicates from the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @return the list of results
+	 */
 	private static ListNode removeDuplicates(ListNode ln) {
 		ListNode pointer=ln;
 		ListNode prev=null,curr=ln;
 		while(curr!=null)
 		{	
+			// Check for null/base case
 			if(prev==null ||curr.value!=prev.value)
 			{
 				prev=curr;

@@ -4,7 +4,18 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+/**
+ * Implementation of matrix Rotation_ Extra algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class matrixRotation_Extra {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws Exception {
 		BufferedReader scanner=new BufferedReader(new InputStreamReader(System.in));
 		String input=scanner.readLine();

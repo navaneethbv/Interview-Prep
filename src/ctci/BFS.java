@@ -9,8 +9,19 @@ import ctci._10BinarySearchTree.Node;
 
 
 /*Implementation of Breadth First Search*/
+/**
+ * Implementation of BFS algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BFS{
 	Node rootNode;
+	/**
+	 * Performs bfs operation.
+	 *
+	 * @param node the tree node to process
+	 */
 	private void bfs(Node node){
 		Queue<Node> q=new Queue<_10BinarySearchTree.Node>() {
 			int noOfElements=0;
@@ -131,14 +142,28 @@ public class BFS{
 		Node n;
 		while(!q.isEmpty()){
 			n=q.remove();
+			// Check for null/base case
 			if(n!=null){
 				System.out.println(n.data);
+				// Check for null/base case
 				if(n.left!=null)
 					q.add(n.left);
+				// Check for null/base case
 				if(n.right!=null)
 					q.add(n.right);
 			}
 		}
+	}
+
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
 }

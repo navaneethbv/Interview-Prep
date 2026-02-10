@@ -9,7 +9,19 @@ import java.util.Arrays;
 
 
 
+/**
+ * Implementation of SRM165 British Coins algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM165BritishCoins {
+	/**
+	 * Performs coins operation.
+	 *
+	 * @param pence the pence parameter
+	 * @return the resulting array
+	 */
 	public static int[] coins(int pence){
 		int []outputArray=new int[3];
 		outputArray[0]=pence/240;
@@ -18,6 +30,11 @@ public class SRM165BritishCoins {
 		return outputArray;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(coins(533)));
 		System.out.println(Arrays.toString(coins(0)));

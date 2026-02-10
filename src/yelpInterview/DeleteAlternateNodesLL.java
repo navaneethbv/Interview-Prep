@@ -3,7 +3,16 @@ package yelpInterview;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Implementation of Delete Alternate Nodes LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DeleteAlternateNodesLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -12,6 +21,11 @@ public class DeleteAlternateNodesLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 
 		Node n=new Node(1);
@@ -29,10 +43,17 @@ public class DeleteAlternateNodesLL {
 
 
 
+	/**
+	 * Performs deleteNodes operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node deleteNodes(Node n) {
 		Node outputNode=n;
 		while(n!=null)
 		{	
+			// Check for null/base case
 			if(n.next!=null)
 				n.next=n.next.next;
 			n=n.next;
@@ -43,6 +64,11 @@ public class DeleteAlternateNodesLL {
 
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{

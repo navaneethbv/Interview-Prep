@@ -10,7 +10,18 @@ import java.text.SimpleDateFormat;
 
 
 
+/**
+ * Implementation of SRM163 Calendar Recycle algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM163CalendarRecycle {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args)  {
 		System.out.println(useAgain(2002));
 		System.out.println(useAgain(2013));
@@ -19,6 +30,12 @@ public class SRM163CalendarRecycle {
 		System.out.println(useAgain(2525));
 	}
 	@SuppressWarnings("deprecation")
+	/**
+	 * Performs useAgain operation.
+	 *
+	 * @param year the year parameter
+	 * @return the computed integer result
+	 */
 	public static int useAgain(int year){
 		SimpleDateFormat sf = new SimpleDateFormat("dd/MM/yyyy");
 		int day;

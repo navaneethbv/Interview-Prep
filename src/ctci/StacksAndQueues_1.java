@@ -7,12 +7,23 @@ import java.util.Scanner;
 
 
 /*Implementation of CTCI 3.1*/
+/**
+ * Implementation of Stacks And Queues_1 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class StacksAndQueues_1 {
 	private static int mainArray[];
 	private static int firstStackMin,firstStackMax;
 	private static int secondStackMin,secondStackMax;
 	private static int thirdStackMin,thirdStackMax;
 	private static int firstStackPointer,secondStackPointer,thirdStackPointer;
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner =new Scanner(new InputStreamReader(System.in));
 		System.out.println("Enter Array Size");
@@ -66,6 +77,12 @@ public class StacksAndQueues_1 {
 		scanner.close();
 		System.out.println("Exited");
 	}
+	/**
+	 * Performs firstPush operation.
+	 *
+	 * @param value the value value
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean firstPush(int value){
 		if(firstStackPointer>=firstStackMin-1 && firstStackPointer<=firstStackMax){
 			mainArray[firstStackPointer]=value;
@@ -74,6 +91,11 @@ public class StacksAndQueues_1 {
 		}
 		return false;
 	}
+	/**
+	 * Performs firstPop operation.
+	 *
+	 * @return the computed integer result
+	 */
 	public static int firstPop(){
 		if(firstStackPointer>=firstStackMin && firstStackPointer<=firstStackMax){
 			firstStackPointer--;
@@ -82,6 +104,12 @@ public class StacksAndQueues_1 {
 		else
 			return -2147483648;
 	}
+	/**
+	 * Performs secondPush operation.
+	 *
+	 * @param value the value value
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean secondPush(int value){
 		if(secondStackPointer>=secondStackMin-1 && secondStackPointer<=secondStackMax){
 			mainArray[secondStackPointer]=value;
@@ -90,6 +118,11 @@ public class StacksAndQueues_1 {
 		}
 		return false;
 	}
+	/**
+	 * Performs secondPop operation.
+	 *
+	 * @return the computed integer result
+	 */
 	public static int secondPop(){
 		if(secondStackPointer>=secondStackMin && secondStackPointer<=secondStackMax){
 			secondStackPointer--;
@@ -98,6 +131,12 @@ public class StacksAndQueues_1 {
 		else
 			return -2147483648;
 	}
+	/**
+	 * Performs thirdPush operation.
+	 *
+	 * @param value the value value
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean thirdPush(int value){
 		if(thirdStackPointer>=thirdStackMin-1 && thirdStackPointer<=thirdStackMax){
 			mainArray[thirdStackPointer]=value;
@@ -106,6 +145,11 @@ public class StacksAndQueues_1 {
 		}
 		return false;
 	}
+	/**
+	 * Performs thirdPop operation.
+	 *
+	 * @return the computed integer result
+	 */
 	public static int thirdPop(){
 		if(thirdStackPointer>=thirdStackMin && thirdStackPointer<=thirdStackMax){
 			thirdStackPointer--;

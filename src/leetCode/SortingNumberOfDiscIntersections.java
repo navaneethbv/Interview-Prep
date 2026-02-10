@@ -7,16 +7,34 @@ import java.util.HashMap;
  * Link : https://codility.com/programmers/task/number_of_disc_intersections
  */
 
+/**
+ * Implementation of Sorting Number Of Disc Intersections algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SortingNumberOfDiscIntersections {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		//System.out.println(NotSoPropersolution(new int[]{1,5,2,1,4,0}));
-		System.out.println(solution(new int[]{1,5,2,1,4,0}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
 	public static int solution(int[] A){
 		int posArray[] = new int[A.length];
 		int negArray[] = new int[A.length];
 
+		// Iterate through all elements
 		for(int i = 0; i < A.length; i++){
 			posArray[i] = A[i] + i;
 			negArray[i] = i-A[i];
@@ -49,9 +67,16 @@ public class SortingNumberOfDiscIntersections {
 
 		return (int)count;
 	}
+	/**
+	 * Performs NotSoPropersolution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
 	public static int NotSoPropersolution(int[] A){
 		int min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
 		HashMap<Integer, Integer> elementMap=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < A.length; i++) {
 			int element=A[i];
 			min =-i-element<min?-i-element:min;

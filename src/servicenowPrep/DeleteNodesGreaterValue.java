@@ -2,8 +2,17 @@ package servicenowPrep;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Delete Nodes Greater Value algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DeleteNodesGreaterValue {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		public ListNode(int value) {
@@ -13,6 +22,11 @@ public class DeleteNodesGreaterValue {
 
 	}
 	//12->15->10->11->5->6->2->3
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(12);
 		ln.next=new ListNode(15);
@@ -30,17 +44,30 @@ public class DeleteNodesGreaterValue {
 			ln=ln.next;
 		}
 	}
+	/**
+	 * Removes nodes from the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @return the list of results
+	 */
 	private static ListNode removeNodes(ListNode ln) {
 		ln=reverseLL(ln);
 		ln=removeNodesGreater(ln);
 		ln=reverseLL(ln);
 		return ln;
 	}
+	/**
+	 * Removes nodes greater from the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @return the list of results
+	 */
 	private static ListNode removeNodesGreater(ListNode ln) {
 		ListNode prev=null,curr=ln;
 		ListNode output=new ListNode(-1),pointer=output;
 		while(curr!=null)
 		{
+			// Check for null/base case
 			if(prev==null||curr.value>prev.value)
 			{
 				prev=curr;
@@ -56,6 +83,12 @@ public class DeleteNodesGreaterValue {
 		output.next=null;
 		return pointer.next;
 	}
+	/**
+	 * Performs reverseLL operation.
+	 *
+	 * @param ln the ln parameter
+	 * @return the list of results
+	 */
 	private static ListNode reverseLL(ListNode ln) {
 		Stack<ListNode> stack=new Stack<ListNode>();
 		ListNode newPointer=new ListNode(-1),output=newPointer;

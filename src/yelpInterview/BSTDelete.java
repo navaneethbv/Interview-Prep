@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of BST Delete algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTDelete {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -8,6 +17,11 @@ public class BSTDelete {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node root=insert(null,10);
 		insert(root,20);
@@ -23,7 +37,15 @@ public class BSTDelete {
 
 	}
 
+	/**
+	 * Performs deleteNode operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node  deleteNode(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return n;
 		if(n.value>value)
@@ -31,10 +53,12 @@ public class BSTDelete {
 		else if(n.value<value)
 			n.right=deleteNode(n.right, value);
 		else{
+			// Check for null/base case
 			if(n.left==null)
 			{
 				return n.right;
 			}
+			// Check for null/base case
 			else if(n.right==null)
 			{
 				return n.left;
@@ -46,7 +70,14 @@ public class BSTDelete {
 		return n;
 	}
 
+	/**
+	 * Retrieves min value node from the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node getMinValueNode(Node n) {
+		// Check for null/base case
 		if(n==null)
 			return n;
 		while(n.left!=null)
@@ -54,7 +85,15 @@ public class BSTDelete {
 		return n;
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)
@@ -66,7 +105,13 @@ public class BSTDelete {
 		}
 		return n;
 	}
+	/**
+	 * Performs inOrder operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrder(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{	
 			inOrder(n.left);

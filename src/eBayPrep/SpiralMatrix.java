@@ -3,8 +3,19 @@ package eBayPrep;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Implementation of Spiral Matrix algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SpiralMatrix {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(spiralOrder(new int[][]{ {1,  2,  3,  4,  5,  6},
 			{7,  8,  9,  10, 11, 12},
@@ -14,8 +25,15 @@ public class SpiralMatrix {
 			{4,0,-1}
 		}));
 	}
+	/**
+	 * Performs spiralOrder operation.
+	 *
+	 * @param matrix the array to process
+	 * @return the list of results
+	 */
 	public static List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> aList=new ArrayList<>();
+	    // Check for null/base case
 	    if(matrix==null||matrix.length==0)
 	        return aList;
 		int top=0,left=0,right=matrix[0].length-1,bottom=matrix.length-1;

@@ -11,7 +11,18 @@ import java.util.Scanner;
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  *  Find non-unique characters in a given string
  */;
+/**
+ * Implementation of Amazon Interview_08_06 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_08_06 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 String inputString=scanner.nextLine();

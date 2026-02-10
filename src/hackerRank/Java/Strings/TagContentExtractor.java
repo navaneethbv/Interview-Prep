@@ -7,8 +7,19 @@ import java.util.Stack;
  * Link:https://www.hackerrank.com/challenges/tag-content-extractor
  */
 
+/**
+ * Implementation of Tag Content Extractor algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TagContentExtractor {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param []args the []args parameter
+	 */
 	public static void main(String []args)
 	{
 		Scanner scanner = new Scanner(System.in);

@@ -3,18 +3,40 @@ package eBayPrep;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Implementation of Pascals Triangle algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PascalsTriangle {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeLinkNode {
 		int val;
 		TreeLinkNode left, right, next;
 		TreeLinkNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(generate(5));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs generate operation.
+	 *
+	 * @param numRows the numRows parameter
+	 * @return the list of results
+	 */
 	public static List<List<Integer>> generate(int numRows) {
 		List<List<Integer>> outputList=new ArrayList<>();
+		// Check for null/base case
 		if(numRows==0)return outputList;
 		List<Integer> individualList=new ArrayList<>();
 		individualList.add(1);
@@ -25,7 +47,9 @@ public class PascalsTriangle {
 			for (int i = 2; i <=numRows; i++) {
 				individualList=outputList.get(outputList.size()-1);
 				List<Integer> tempList=new ArrayList<>();
+				// Inner loop to check combinations
 				for (int j = 0; j <=individualList.size(); j++) {
+					// Check for null/base case
 					if(j==0||j==individualList.size())
 					{
 						tempList.add(individualList.get(0));

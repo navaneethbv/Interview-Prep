@@ -5,8 +5,19 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/given-n-x-n-square-matrix-find-sum-sub-squares-size-k-x-k/
  */
+/**
+ * Implementation of Find Sub Square Sum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FindSubSquareSum {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int mat[][] = {{1, 1, 1, 1, 1},
 				{2, 2, 2, 2, 2},
@@ -21,9 +32,16 @@ public class FindSubSquareSum {
 
 
 
+	/**
+	 * Performs printSumSimple operation.
+	 *
+	 * @param mat the array to process
+	 * @param k the k value
+	 */
 	private static void printSumSimple(int[][] mat, int k) {
 		int noOfRows=mat.length;
 		int noOfCols=mat[0].length;
+		// Iterate through all elements
 		for (int i = 0; i < mat.length; i++) {
 			for (int j = 0; j < mat[0].length; j++) {
 				if(noOfRows-i>=k && noOfCols-j>=k){
@@ -49,7 +67,13 @@ public class FindSubSquareSum {
 
 
 
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(int[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}

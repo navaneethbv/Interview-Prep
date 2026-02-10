@@ -12,7 +12,18 @@ import ctci._02linkedList.Node;
  *  The random pointer of a node N could be after N, before N or the node N itself.
  *  Note:Run through the same node loop again to set the random pointer
  */
+/**
+ * Implementation of Amazon Interview_02_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_02_04 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		_02linkedList linkedList=new _02linkedList();
 		linkedList.add(10);
@@ -31,6 +42,11 @@ public class AmazonInterview_02_04 {
 
 	}
 
+	/**
+	 * Performs deepCopy operation.
+	 *
+	 * @param linkedList the linkedList parameter
+	 */
 	private static void deepCopy(_02linkedList linkedList) {
 		Node n=linkedList.getHeadNode();
 		_02linkedList linkedListCloned=new _02linkedList();
@@ -50,7 +66,12 @@ public class AmazonInterview_02_04 {
 			n=n.next;		
 			clonedNode=clonedNode.next;
 		}
-	}	
+	}
+	/**
+	 * Performs clonedCopy operation.
+	 *
+	 * @param linkedList the linkedList parameter
+	 */
 	private static void clonedCopy(_02linkedList linkedList) {
 		Node n=linkedList.getHeadNode();
 		_02linkedList linkedListCloned=new _02linkedList();
@@ -70,5 +91,5 @@ public class AmazonInterview_02_04 {
 			n=n.next;			
 			clonedNode=clonedNode.next;
 		}
-	}	
+	}
 }

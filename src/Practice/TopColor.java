@@ -8,7 +8,19 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Objects;
 
+/**
+ * Implementation of Top Color algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TopColor {
+	/**
+	 * Performs mostCommon operation.
+	 *
+	 * @param image the image parameter
+	 * @return the list of results
+	 */
 	static List<String> mostCommon(List<List<String>> image) {
 		Map<String, Integer> map = new HashMap<String, Integer>(); 
 		List<String> list = new ArrayList<String>();
@@ -21,6 +33,7 @@ public class TopColor {
 		Entry<String, Integer> max = null;
 		int count = 0;
 		for (Entry<String, Integer> e : map.entrySet()) {
+			// Check for null/base case
 			if (max == null || e.getValue() > max.getValue())
 				max = e;
 		}
@@ -35,6 +48,11 @@ public class TopColor {
 	}
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		List<List<String>> image = new ArrayList<List<String>>();
 		List<String> list1 = new ArrayList<String>();

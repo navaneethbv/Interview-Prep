@@ -7,7 +7,18 @@ package geeksforgeeks;
  * Given a linked list containing character in each node, segregate its nodes in such a way that all nodes containing a vowel
  * are moved to the end of the linked list.We will have to maintain the order.
  */
+/**
+ * Implementation of Amazon Interview_03_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_03_01 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		_01AmazonInterview_03linkedList linkedList=new _01AmazonInterview_03linkedList();
 		linkedList.add("d");
@@ -65,9 +76,20 @@ class _01AmazonInterview_03linkedList {
 	private int noOfElements=0;
 	public _01AmazonInterview_03linkedList() {
 	}
+	/**
+	 * Retrieves head node from the data structure.
+	 *
+	 * @return the Node result
+	 */
 	public Node getHeadNode(){
 		return headNode;
 	}
+	/**
+	 * Retrieves  from the data structure.
+	 *
+	 * @param position the position parameter
+	 * @return the resulting string
+	 */
 	public String get(int position){
 		if(position>noOfElements)
 			throw new ArrayIndexOutOfBoundsException();
@@ -84,9 +106,17 @@ class _01AmazonInterview_03linkedList {
 			return pointerNode.data;
 		}
 	}
+	/**
+	 * Adds  to the data structure.
+	 *
+	 * @param position the position parameter
+	 * @param value the value value
+	 * @return true if condition is met, false otherwise
+	 */
 	public boolean add(int position,String value){
 		if(position>noOfElements)
 			return false;
+		// Check for null/base case
 		if(position==0){
 			add(value);
 			return true;
@@ -106,10 +136,21 @@ class _01AmazonInterview_03linkedList {
 		noOfElements++;
 		return true;
 	}
+	/**
+	 * Performs size operation.
+	 *
+	 * @return the computed integer result
+	 */
 	public int size(){
 		return noOfElements;
 	}
+	/**
+	 * Adds  to the data structure.
+	 *
+	 * @param value the value value
+	 */
 	public void add(String value){
+		// Check for null/base case
 		if(presentNode==null){
 			headNode=new Node();
 			headNode.next=null;
@@ -125,16 +166,29 @@ class _01AmazonInterview_03linkedList {
 		}
 		noOfElements++;
 	}
+	/**
+	 * Performs delete operation.
+	 *
+	 * @return true if condition is met, false otherwise
+	 */
 	public boolean delete(){
+		// Check for null/base case
 		if(headNode==null)
 			return false;
 		headNode=headNode.next;
 		noOfElements--;
 		return true;
 	}
+	/**
+	 * Performs delete operation.
+	 *
+	 * @param position the position parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public boolean delete(int position){
 		if(position>noOfElements)
 			return false;
+		// Check for null/base case
 		if(position==0){
 			delete();
 			return true;
@@ -153,6 +207,11 @@ class _01AmazonInterview_03linkedList {
 		noOfElements--;
 		return true;
 	}
+	/**
+	 * Performs toString operation.
+	 *
+	 * @return the resulting string
+	 */
 	public String toString(){
 		Node pointerNode=new Node();
 		pointerNode=headNode;
@@ -161,6 +220,7 @@ class _01AmazonInterview_03linkedList {
 			outputStringBuffer.append(pointerNode.data+" ");
 			pointerNode=pointerNode.next;
 		}
+		// Recursively process left and right subtrees
 		return outputStringBuffer.toString();
 	}
 	public class Node{
@@ -173,9 +233,19 @@ class _01AmazonInterview_03linkedList {
 			this.data=data;
 			this.next=next;
 		}
+		/**
+		 * Retrieves data from the data structure.
+		 *
+		 * @return the resulting string
+		 */
 		public String getData() {
 			return data;
 		}
+		/**
+		 * Sets data in the data structure.
+		 *
+		 * @param data the data parameter
+		 */
 		public void setData(String data) {
 			this.data = data;
 		}

@@ -4,8 +4,22 @@ package leetCode;
 /*
  * Link : https://leetcode.com/problems/remove-linked-list-elements/
  */
+/**
+ * Implementation of Remove Linked List Elements algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveLinkedListElements {
+	/**
+	 * Removes elements from the data structure.
+	 *
+	 * @param head the head parameter
+	 * @param val the val parameter
+	 * @return the list of results
+	 */
 	public static ListNode removeElements(ListNode head, int val) {
+		// Check for null/base case
 		if(head==null)
 			return null;
 		ListNode headNode=head;
@@ -27,11 +41,19 @@ public class RemoveLinkedListElements {
 		return headNode;
 	}
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(1);
 		//ln.next=new ListNode(2);

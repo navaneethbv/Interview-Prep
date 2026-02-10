@@ -4,12 +4,24 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Implementation of Encircular algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Encircular {
 
 	/*
 	 * Complete the function below.
 	 */
 
+	/**
+	 * Performs doesCircleExist operation.
+	 *
+	 * @param commands the commands parameter
+	 * @return the resulting string
+	 */
 	static String doesCircleExist(String commands) {
 
 		int initialX = 0;
@@ -19,6 +31,7 @@ public class Encircular {
 		int y = 0;
 		String direction = "north";
 		
+		// Iterate through all elements
 		for (int i = 0; i < commands.length(); i++) {
 			
 			if (direction.equals("north")) {
@@ -71,6 +84,11 @@ public class Encircular {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws IOException {
 		Scanner in = new Scanner(System.in);
 		final String fileName = System.getenv("C:\\Users\\navan\\Desktop\\Test.txt");

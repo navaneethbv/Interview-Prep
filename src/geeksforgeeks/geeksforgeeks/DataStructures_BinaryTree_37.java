@@ -9,8 +9,19 @@ import java.util.Stack;
  * http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
  * Boundary Traversal of binary tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_37 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_37 {
 	 static Stack<Integer> stack=new Stack<Integer>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,20);
@@ -30,7 +41,13 @@ import java.util.Stack;
 		 traverseBoundary(binaryTree1.rootNode);
 	 }
 
+	 /**
+	  * Performs traverseBoundary operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void traverseBoundary(Node node) {
+		 // Check for null/base case
 		 if(node!=null){
 			 printBoundaryLeft(node);
 			 printLeaves(node.left);
@@ -40,16 +57,29 @@ import java.util.Stack;
 		 }
 	 }
 
+	 /**
+	  * Performs printBoundaryRight operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void printBoundaryRight(Node node) {
+		 // Check for null/base case
 		 if(node!=null){	
 			 printBoundaryLeft(node.right);
+			 // Check if node is a leaf (no children)
 			 if(node.left!=null || node.right!=null)
 				 System.out.print(node.data+",");
 		 }
 
 	 }
 
+	 /**
+	  * Performs printBoundaryLeft operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void printBoundaryLeft(Node node) {
+		 // Check for null/base case
 		 if(node!=null){	
 			 if(node.left!=null || node.right!=null)
 				 System.out.print(node.data+",");
@@ -57,9 +87,16 @@ import java.util.Stack;
 		 }
 	 }
 
+	 /**
+	  * Performs printLeaves operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void printLeaves(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
+			 // Check if node is a leaf (no children)
 			 if(node.left==null && node.right==null)
 				 System.out.print(node.data+",");
 			 printLeaves(node.left);

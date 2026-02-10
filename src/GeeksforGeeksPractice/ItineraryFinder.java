@@ -6,8 +6,19 @@ import java.util.HashMap;
 /*
  * Link : http://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/
  */
+/**
+ * Implementation of Itinerary Finder algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ItineraryFinder {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ArrayList<String> inputList=new ArrayList<>();
 		inputList.add("Chennai->Banglore");
@@ -17,6 +28,11 @@ public class ItineraryFinder {
 		findItinerary(inputList);
 	}
 
+	/**
+	 * Finds itinerary in the data structure.
+	 *
+	 * @param inputList the inputList parameter
+	 */
 	private static void findItinerary(ArrayList<String> inputList) {
 		HashMap<String, String> inputMap=new HashMap<>();
 		HashMap<String, String> reverseInputMap=new HashMap<>();
@@ -29,6 +45,7 @@ public class ItineraryFinder {
 		
 		Object[] keyArray=inputMap.keySet().toArray();
 		String startingPoint = null;
+		// Iterate through all elements
 		for (int i = 0; i < keyArray.length; i++) {
 			if(!reverseInputMap.containsKey(keyArray[i]))
 			{

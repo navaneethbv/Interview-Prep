@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of BST Minimum Value Node algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTMinimumValueNode {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -8,6 +17,11 @@ public class BSTMinimumValueNode {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node root=insert(null, 4);
 		insert(root, 2);
@@ -23,7 +37,14 @@ public class BSTMinimumValueNode {
 
 
 
+	/**
+	 * Finds min value node in the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node findMinValueNode(Node n) {
+		// Check for null/base case
 		if(n==null)
 			return null;
 		while(n.left!=null)
@@ -33,7 +54,15 @@ public class BSTMinimumValueNode {
 
 
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)
@@ -45,7 +74,13 @@ public class BSTMinimumValueNode {
 		}
 		return n;
 	}
+	/**
+	 * Performs inOrder operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrder(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{	
 			inOrder(n.left);

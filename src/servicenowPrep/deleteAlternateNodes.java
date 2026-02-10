@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of delete Alternate Nodes algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class deleteAlternateNodes {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -10,6 +19,11 @@ public class deleteAlternateNodes {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(1);
 		ln.next=new ListNode(2);
@@ -23,10 +37,17 @@ public class deleteAlternateNodes {
 		}
 	}
 
+	/**
+	 * Performs deleteAlternateNodes operation.
+	 *
+	 * @param ln the ln parameter
+	 * @return the list of results
+	 */
 	private static ListNode deleteAlternateNodes(ListNode ln) {
 		ListNode pointer=ln;
 		while(pointer!=null)
 		{
+			// Check for null/base case
 			if(pointer.next!=null)
 			{
 				pointer.next=pointer.next.next;

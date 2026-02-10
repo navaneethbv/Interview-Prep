@@ -10,7 +10,18 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
  * Remove all nodes which dont lie in any path with sum>= k
  * 
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_46 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_46 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -33,7 +44,13 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 preOrder(outputNode);
 	 }
 
+	 /**
+	  * Performs preOrder operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void preOrder(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 preOrder(node.left);
@@ -48,7 +65,16 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 return deleteNodeSum(binaryTree1.rootNode,k,0);
 	 }
 
+	 /**
+	  * Performs deleteNodeSum operation.
+	  *
+	  * @param node the tree node to process
+	  * @param k the k value
+	  * @param sum the sum parameter
+	  * @return the Node result
+	  */
 	 private static Node deleteNodeSum(Node node, int k, int sum) {
+		 // Check for null/base case
 		 if(node==null)
 			 return null;
 		 int leftSum=sum+node.data;

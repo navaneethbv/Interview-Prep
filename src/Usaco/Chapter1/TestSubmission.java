@@ -8,7 +8,18 @@ TASK: test
 import java.io.*;
 import java.util.*;
 
+/**
+ * Implementation of Test Submission algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TestSubmission {
+  /**
+   * Main method to test the functionality of the class with various test cases.
+   *
+   * @param args the array to process
+   */
   public static void main (String [] args) throws IOException {
     // Use BufferedReader rather than RandomAccessFile; it's much faster
     BufferedReader f = new BufferedReader(new FileReader("test.in"));

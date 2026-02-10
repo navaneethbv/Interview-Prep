@@ -6,10 +6,27 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/lonely-integer
  */
+/**
+ * Implementation of Lonely Integer algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LonelyInteger {
+	/**
+	 * Performs lonelyinteger operation.
+	 *
+	 * @param a the array to process
+	 * @return the computed integer result
+	 */
 	static int lonelyinteger(int[] a) {
 		return 0;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int res;

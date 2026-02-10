@@ -5,7 +5,18 @@ package careerCup;
  * Find the next in order node of given node in binary tree. Write the program of same. pointer to parent node is given.
  * http://www.geeksforgeeks.org/inorder-successor-in-binary-search-tree/
  */
+/**
+ * Implementation of Google Career Cup Problem6113 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem6113 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 
 		TreeNode tn=new TreeNode(20);
@@ -23,9 +34,16 @@ public class GoogleCareerCupProblem6113 {
 	}
 
 
+	/**
+	 * Finds in order successor in the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the TreeNode result
+	 */
 	private static TreeNode findInOrderSuccessor(TreeNode tn) {
 
 
+		// Check for null/base case
 		if(tn.right!=null)
 		{
 			while(tn.left!=null)
@@ -40,6 +58,7 @@ public class GoogleCareerCupProblem6113 {
 		{
 			tempNode=tempNode.parent;
 		}
+		// Check for null/base case
 		if(tempNode!=null)
 			if(tempNode.parent.left==tempNode && tempNode.parent.right!=tempNode)
 				return tempNode.parent;
@@ -48,7 +67,13 @@ public class GoogleCareerCupProblem6113 {
 	}
 
 
+	/**
+	 * Performs inOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void inOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{	
 			inOrder(tn.left);
@@ -59,6 +84,9 @@ public class GoogleCareerCupProblem6113 {
 	}
 
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right,parent;
 		int val;

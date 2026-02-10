@@ -7,7 +7,18 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/java-biginteger
  */
 
+/**
+ * Implementation of Java Big Integer algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JavaBigInteger {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param []argv the []argv parameter
+	 */
 	public static void main(String []argv)
 	{
 		Scanner scanner=new Scanner(System.in);

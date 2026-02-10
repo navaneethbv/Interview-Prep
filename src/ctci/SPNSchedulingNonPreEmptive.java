@@ -6,8 +6,19 @@ import java.util.Scanner;
 
 
 /*Implementation of LFU Page Replacement Algorithm*/
+/**
+ * Implementation of SPN Scheduling Non Pre Emptive algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SPNSchedulingNonPreEmptive{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		Integer noOfProcesses=Integer.parseInt(scanner.nextLine());
@@ -61,8 +72,15 @@ public class SPNSchedulingNonPreEmptive{
 		return outputArray;
 	}
 
+	/**
+	 * Finds next index in the data structure.
+	 *
+	 * @param remainingTimeArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int findNextIndex(int[] remainingTimeArray) {
 		int index=0,min=Integer.MAX_VALUE;
+		// Iterate through all elements
 		for (int i = 0; i < remainingTimeArray.length; i++) {
 			if(remainingTimeArray[i]!=0 && remainingTimeArray[i]<min)
 			{

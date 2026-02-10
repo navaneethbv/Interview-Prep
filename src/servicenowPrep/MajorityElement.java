@@ -2,15 +2,32 @@ package servicenowPrep;
 
 import java.util.HashMap;
 
+/**
+ * Implementation of Majority Element algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MajorityElement
 {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray[]=new int[] {1, 4,7,4,8,4,10,4,18};
-		System.out.println(findMajorityElement(inputArray));
+
 	}
 	static HashMap<Integer, Integer> elementCountMap=new HashMap<>();
+	/**
+	 * Finds majority element in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMajorityElement(int[] inputArray) {
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			if(elementCountMap.containsKey(inputArray[i]))
 			{
@@ -22,6 +39,7 @@ public class MajorityElement
 		}
 		Object[] keyArr=elementCountMap.keySet().toArray();
 		int maxCount=0,element=0;
+		// Iterate through all elements
 		for (int i = 0; i < keyArr.length; i++) {
 			if(elementCountMap.get(keyArr[i])>maxCount)
 			{

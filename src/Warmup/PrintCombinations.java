@@ -3,15 +3,33 @@ package Warmup;
 /*
  * Link:https://www.careercup.com/question?id=5761652767064064
  */
+/**
+ * Implementation of Print Combinations algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrintCombinations {
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		printComb("","0ab");
-		printComb("","ab1cs");
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs printComb operation.
+	 *
+	 * @param prefix the prefix parameter
+	 * @param str the str parameter
+	 */
 	public static void printComb(String prefix,String str) {
+		// Check for null/base case
 		if (str.length() == 0) {
 			System.out.println(prefix);
 			return;

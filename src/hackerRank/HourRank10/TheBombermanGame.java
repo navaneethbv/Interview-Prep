@@ -2,7 +2,18 @@ package hackerRank.HourRank10;
 
 import java.util.Scanner;
 
+/**
+ * Implementation of The Bomberman Game algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TheBombermanGame {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		String str[]=scanner.nextLine().split(" ");
@@ -44,13 +55,21 @@ public class TheBombermanGame {
 		}
 	}
 
+	/**
+	 * Performs detonateBombs operation.
+	 *
+	 * @param bombMatrix the array to process
+	 * @return the resulting array
+	 */
 	private static char[][] detonateBombs(char[][] bombMatrix) {
 		char[][] newBombMatrix=new char[bombMatrix.length][bombMatrix[0].length];
+		// Iterate through all elements
 		for (int i = 0; i < bombMatrix.length; i++) {
 			for (int j = 0; j < bombMatrix[0].length; j++) {
 				if(newBombMatrix[i][j]=='.' && bombMatrix[i][j]!='3')
 					continue;
 				if(bombMatrix[i][j]!='.' && bombMatrix[i][j]!='3'){
+					// Check for null/base case
 					if(bombMatrix[i][j]=='0')
 						newBombMatrix[i][j]='1';
 					else if(bombMatrix[i][j]=='1')
@@ -87,12 +106,20 @@ public class TheBombermanGame {
 		return newBombMatrix;
 	}
 
+	/**
+	 * Performs fillBombsToEmptyCells operation.
+	 *
+	 * @param bombMatrix the array to process
+	 * @return the resulting array
+	 */
 	private static char[][] fillBombsToEmptyCells(char[][] bombMatrix) {
+		// Iterate through all elements
 		for (int i = 0; i < bombMatrix.length; i++) {
 			for (int j = 0; j < bombMatrix[0].length; j++) {
 				if(bombMatrix[i][j]=='.')
 					bombMatrix[i][j]='0';
 				else{
+					// Check for null/base case
 					if(bombMatrix[i][j]=='0')
 						bombMatrix[i][j]='1';
 					else if(bombMatrix[i][j]=='1')

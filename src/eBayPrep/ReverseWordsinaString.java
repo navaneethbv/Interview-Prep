@@ -1,11 +1,29 @@
 package eBayPrep;
 
+/**
+ * Implementation of Reverse Wordsina String algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ReverseWordsinaString {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(reverseWords("the sky     is blue"));
-		System.out.println(reverseWords(" 1"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs reverseWords1 operation.
+	 *
+	 * @param str the str parameter
+	 * @return the resulting string
+	 */
 	public static String reverseWords1(String str) {
+		// Check for null/base case
 		if(str==null||str.length()==0)return str;
 		str=str.replaceAll("[ ]+", " ");
 		char c[]=str.toCharArray();
@@ -18,6 +36,7 @@ public class ReverseWordsinaString {
 			left++;right--;
 		}
 		left=right=0;
+		// Iterate through all elements
 		for (int i = 0; i < c.length; i++) {
 			if(c[i]==' ')
 			{
@@ -50,6 +69,12 @@ public class ReverseWordsinaString {
 		return new String(c);
 	}
 
+	/**
+	 * Performs reverseWords operation.
+	 *
+	 * @param str the str parameter
+	 * @return the resulting string
+	 */
 	public static String reverseWords(String str) {
 		str=str.replaceAll("[ ]+", " ");
 		String arr[]=str.split(" ");

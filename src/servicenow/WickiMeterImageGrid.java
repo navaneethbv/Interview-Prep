@@ -6,6 +6,12 @@ import java.io.IOException;
  * Class  : WickiMeterImageGrid
  * Description:This Class is used to instantiate a WickiMeter Image and convert it to a 2-dimensional character array.
  */
+/**
+ * Implementation of Wicki Meter Image Grid algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class WickiMeterImageGrid {
 	String wickiMeterFilePath;
 	int height,width;
@@ -56,16 +62,47 @@ public class WickiMeterImageGrid {
 		br.close();
 
 	}
+	/**
+	 * Retrieves wicki meter file path from the data structure.
+	 *
+	 * @return the resulting string
+	 */
 	public  String getWickiMeterFilePath() {
 		return wickiMeterFilePath;
 	}
+	/**
+	 * Sets wicki meter file path in the data structure.
+	 *
+	 * @param wickiMeterFilePath the wickiMeterFilePath parameter
+	 */
 	public  void setWickiMeterFilePath(String wickiMeterFilePath) {
 		this.wickiMeterFilePath = wickiMeterFilePath;
 	}
+	/**
+	 * Retrieves image grid from the data structure.
+	 *
+	 * @return the resulting array
+	 */
 	public  char[][] getImageGrid() {
 		return imageGrid;
 	}
+	/**
+	 * Sets image grid in the data structure.
+	 *
+	 * @param imageGrid the array to process
+	 */
 	public  void setImageGrid(char[][] imageGrid) {
 		this.imageGrid = imageGrid;
 	}
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+
 }

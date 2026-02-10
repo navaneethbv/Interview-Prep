@@ -8,9 +8,20 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
  * http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
  * Construct Tree from given Inorder and Preorder traversals
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_19 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_19 {
 	  static int preIndex=0;
 	 static _01DataStructures_BinaryTree_00 tree=new _01DataStructures_BinaryTree_00();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,50);
@@ -27,6 +38,15 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 buildTree(inOrder,preOrder,0,inOrder.length-1);
 	 }
 
+	 /**
+	  * Performs buildTree operation.
+	  *
+	  * @param inOrder the array to process
+	  * @param preOrder the array to process
+	  * @param start the start parameter
+	  * @param end the end parameter
+	  * @return the Node result
+	  */
 	 private static Node buildTree(String[] inOrder, String[] preOrder,int start,int end) {
 		 if(start>end)
 			 return null;

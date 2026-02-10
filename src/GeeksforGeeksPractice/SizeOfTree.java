@@ -2,8 +2,19 @@ package GeeksforGeeksPractice;
 
 import GeeksforGeeksPractice._0022VerticalSumInTree.TreeNode;
 
+/**
+ * Implementation of Size Of Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SizeOfTree {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 
 		TreeNode tn=new TreeNode(1);
@@ -17,9 +28,17 @@ public class SizeOfTree {
 
 	}
 
+	/**
+	 * Performs sizeOfTree operation.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int sizeOfTree(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
+			// Recursively process left and right subtrees
 			return 1+sizeOfTree(tn.left)+sizeOfTree(tn.right);
 			
 		}

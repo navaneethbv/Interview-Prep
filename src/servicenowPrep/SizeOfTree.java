@@ -1,6 +1,15 @@
 package servicenowPrep;
+/**
+ * Implementation of Size Of Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SizeOfTree
 {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		int value;
 		TreeNode left,right;
@@ -9,6 +18,11 @@ public class SizeOfTree
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -20,9 +34,17 @@ public class SizeOfTree
 		System.out.println(sizeOfTree(tn));
 	}
 
+	/**
+	 * Performs sizeOfTree operation.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int sizeOfTree(TreeNode tn) {
+		// Check for null/base case
 		if(tn==null)	
 			return 0;
+		// Recursively process left and right subtrees
 		return 1+sizeOfTree(tn.left)+sizeOfTree(tn.right);
 	}
 

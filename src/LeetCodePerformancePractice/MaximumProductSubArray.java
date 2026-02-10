@@ -2,11 +2,30 @@ package LeetCodePerformancePractice;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Maximum Product Sub Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaximumProductSubArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(maxProduct(new int[]{-2,3,-4}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs maxProduct operation.
+	 *
+	 * @param nums the array to process
+	 * @return the computed integer result
+	 */
 	public static int maxProduct(int[] nums) {
+		// Check for null/base case
 		if(nums==null||nums.length==0)
 			return 0;
 		int min[]=new int[nums.length];

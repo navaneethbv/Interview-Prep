@@ -2,17 +2,34 @@ package yelpInterview;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Array Min Max algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayMinMax {
+	/**
+	 * Inner class minMax for supporting operations.
+	 */
 	static class minMax{
 		int min,max;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int inputArray[] = {1000, 11, 445, 1, 330, 3000};
-		minMax mm=printMinMax(inputArray);
-		System.out.println(mm.min);
-		System.out.println(mm.max);
+
 	}
 
+	/**
+	 * Performs printMinMax operation.
+	 *
+	 * @param inputArray the array to process
+	 * @return the minMax result
+	 */
 	private static minMax printMinMax(int[] inputArray) {
 		if(inputArray.length==1)
 		{

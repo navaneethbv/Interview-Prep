@@ -5,7 +5,18 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Set;
 
+/**
+ * Implementation of Word Ladder algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class WordLadder {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Set<String> set=new HashSet<>();
 		set.add("hot");
@@ -25,6 +36,9 @@ public class WordLadder {
 		set.add("dot");
 		System.out.println(ladderLength("hot", "dog", set));
 	}
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class WordNode{
 		String word;
 		int numSteps;
@@ -35,6 +49,14 @@ public class WordLadder {
 		}
 	}
 
+	/**
+	 * Performs ladderLength operation.
+	 *
+	 * @param beginWord the beginWord parameter
+	 * @param endWord the endWord parameter
+	 * @param wordList the wordList parameter
+	 * @return the computed integer result
+	 */
 	public static int ladderLength(String beginWord, String endWord, Set<String> wordList) {
 		Queue<WordNode> queue=new LinkedList<>();
 		wordList.add(endWord);
@@ -45,6 +67,7 @@ public class WordLadder {
 			if(wordNode.word.equals(endWord))
 				return wordNode.numSteps;
 			String currWord=wordNode.word;
+			// Iterate through all elements
 			for (int i = 0; i < currWord.length(); i++) {
 				for (char c = 'a'; c < 'z'; c++) {
 					String newWord=currWord.substring(0, i)+c+currWord.substring(i+1);
@@ -61,11 +84,21 @@ public class WordLadder {
 
 
 	/*	 static int outputVal=Integer.MAX_VALUE;
+		/**
+		 * Performs ladderLengthNew operation.
+		 *
+		 * @param beginWord the beginWord parameter
+		 * @param endWord the endWord parameter
+		 * @param wordList the wordList parameter
+		 * @param currLength the currLength parameter
+		 * @return the computed integer result
+		 */
 		public static int ladderLengthNew(String beginWord, String endWord, Set<String> wordList,int currLength) {
 			wordList.remove(beginWord);
 			if(beginWord.contentEquals(endWord))
 				return currLength+1;
 			wordList.add(endWord);
+			// Iterate through all elements
 			for (int i = 0; i < beginWord.length(); i++) {
 				for (char c='a'; c < 'z'; c++) {
 					String currWord=beginWord.substring(0,i)+c+beginWord.substring(i+1);
@@ -79,5 +112,6 @@ public class WordLadder {
 			}
 			return Integer.MAX_VALUE;
 		}*/
+		}
 }
 

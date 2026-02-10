@@ -10,7 +10,18 @@ import java.util.TreeMap;
 
 
 
+/**
+ * Implementation of SRM159 Sets algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM159Sets {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args)  {
 		System.out.println(Arrays.toString(operate(new int[]{1,2,3,4}, new int[]{3,4,5,6},"INTERSECTION")));
 		System.out.println(Arrays.toString(operate(new int[]{1,2,3,4}, new int[]{3,4,5,6},"UNION")));
@@ -18,6 +29,14 @@ public class SRM159Sets {
 		System.out.println(Arrays.toString(operate(new int[]{6,5,7,4}, new int[]{7,6,4,10},"SYMMETRIC DIFFERENCE" )));
 		System.out.println(Arrays.toString(operate(new int[]{342,654,897,312,76,23,78}, new int[]{21,43,87,98,23,756,897,234,645,876,123},"SYMMETRIC DIFFERENCE")));
 	}
+	/**
+	 * Performs operate operation.
+	 *
+	 * @param A the array to process
+	 * @param B the array to process
+	 * @param operation the operation parameter
+	 * @return the resulting array
+	 */
 	public static int[] operate(int[] A, int[] B, String operation){
 		int[] output = null;
 		TreeMap<Integer, Integer> elementCount=new TreeMap<>();
@@ -26,15 +45,18 @@ public class SRM159Sets {
 		switch(operation){
 		case "UNION":
 			count=0;
+			// Iterate through all elements
 			for (int i = 0; i < A.length; i++) {
 				elementCount.put(A[i], 1);
 			}
+			// Iterate through all elements
 			for (int i = 0; i < B.length; i++) {
 				elementCount.put(B[i], 1);
 			}
 			counter=0;
 			arr=elementCount.keySet().toArray();
 			output=new int[arr.length];
+			// Iterate through all elements
 			for (int i = 0; i < arr.length; i++) {
 				output[counter]=(int) arr[i];
 				counter++;
@@ -42,9 +64,11 @@ public class SRM159Sets {
 			break;
 		case "INTERSECTION":
 			count=0;
+			// Iterate through all elements
 			for (int i = 0; i < A.length; i++) {
 				elementCount.put(A[i], 1);
 			}
+			// Iterate through all elements
 			for (int i = 0; i < B.length; i++) {
 				if(elementCount.containsKey(B[i])){
 					count++;
@@ -54,6 +78,7 @@ public class SRM159Sets {
 			counter=0;
 			arr=elementCount.keySet().toArray();
 			output=new int[count];
+			// Iterate through all elements
 			for (int i = 0; i < arr.length; i++) {
 				if(elementCount.get(arr[i])==2){
 					output[counter]=(int) arr[i];
@@ -63,10 +88,12 @@ public class SRM159Sets {
 			break;
 		case "SYMMETRIC DIFFERENCE":
 			count=0;
+			// Iterate through all elements
 			for (int i = 0; i < A.length; i++) {
 				elementCount.put(A[i], 1);
 				count++;
 			}
+			// Iterate through all elements
 			for (int i = 0; i < B.length; i++) {
 				if(elementCount.containsKey(B[i])){
 					elementCount.put(B[i], 2);
@@ -80,6 +107,7 @@ public class SRM159Sets {
 			output=new int[count];
 			counter=0;
 			arr=elementCount.keySet().toArray();
+			// Iterate through all elements
 			for (int i = 0; i < arr.length; i++) {
 				if(elementCount.get(arr[i])==1){
 					output[counter]=(int) arr[i];

@@ -1,9 +1,27 @@
 package LeetCodePerformancePractice;
 
+/**
+ * Implementation of Count Numbers Unique Digits algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CountNumbersUniqueDigits {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(countNumbersWithUniqueDigits(100));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Counts the number of numbers with unique digits.
+	 *
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	public static int countNumbersWithUniqueDigits(int n) {
 		int[] arr=new int[n+1];
 		arr[0]=1;

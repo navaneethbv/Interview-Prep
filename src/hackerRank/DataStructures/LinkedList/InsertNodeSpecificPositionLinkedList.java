@@ -4,6 +4,12 @@ package hackerRank.DataStructures.LinkedList;
  * Link:https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list
  */
 
+/**
+ * Implementation of Insert Node Specific Position Linked List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class InsertNodeSpecificPositionLinkedList {
 
 	Node InsertNth(Node head, int data, int position) {

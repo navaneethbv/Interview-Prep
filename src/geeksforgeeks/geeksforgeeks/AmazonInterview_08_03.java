@@ -11,7 +11,18 @@ import java.util.Scanner;
  * http://www.geeksforgeeks.org/amazon-interview-set-8/
  *  Given an array of positive integers, find the max no that can be formed by any permutation of the arrangement
  */;
+/**
+ * Implementation of Amazon Interview_08_03 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_08_03 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 int size=Integer.parseInt(scanner.nextLine());
@@ -27,8 +38,15 @@ import java.util.Scanner;
 		 System.out.println(arrangeNumbers(inputArray));
 	 }
 
+	 /**
+	  * Performs arrangeNumbers operation.
+	  *
+	  * @param inputArray the array to process
+	  * @return the resulting string
+	  */
 	 private static String arrangeNumbers(int[] inputArray) {
 		 HashMap<Integer,Integer> elementMap=new HashMap<Integer,Integer>();
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 String inputElementArray[]=String.valueOf(inputArray[i]).trim().split("");
 			 for (int j = 1; j < inputElementArray.length; j++) {
@@ -53,6 +71,12 @@ import java.util.Scanner;
 		 return  outputString.toString();
 	 }
 
+	 /**
+	  * Performs arrangeElements operation.
+	  *
+	  * @param inputArray the array to process
+	  * @return the resulting string
+	  */
 	 private static String arrangeElements(int[] inputArray) {
 		 /*
 		 	1,8,9

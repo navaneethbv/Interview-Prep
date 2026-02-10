@@ -7,7 +7,18 @@ import java.util.Queue;
 /*
  * Link : http://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/
  */
+/**
+ * Implementation of Top View Binary algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TopViewBinary {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 /*		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -42,9 +53,16 @@ public class TopViewBinary {
 	
 	
 	private static HashMap<Integer,Integer> elementMap=new HashMap<>();
+	/**
+	 * Performs printTopView operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param level the level parameter
+	 */
 	private static void printTopView(TreeNode tn,int level) {
 		Queue<TreeNode> elementQueue=new LinkedList<>();
 		Queue<Integer> levelQueue=new LinkedList<>();
+		// Check for null/base case
 		if(tn!=null)
 		{	
 			elementQueue.add(tn);
@@ -54,11 +72,13 @@ public class TopViewBinary {
 				level=levelQueue.poll();
 				if(!elementMap.containsKey(level))
 					elementMap.put(level,tn.value);
+				// Check for null/base case
 				if(tn.left!=null)
 				{
 					elementQueue.add(tn.left);
 					levelQueue.add(level-1);
 				}
+				// Check for null/base case
 				if(tn.right!=null)
 				{
 					elementQueue.add(tn.right);
@@ -70,6 +90,9 @@ public class TopViewBinary {
 
 
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;

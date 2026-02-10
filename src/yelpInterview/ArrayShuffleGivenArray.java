@@ -3,14 +3,28 @@ package yelpInterview;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * Implementation of Array Shuffle Given Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayShuffleGivenArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int arr[] = {1, 2, 3, 4, 5, 6, 7, 8};
-		System.out.println(Arrays.toString(arr));
-		arr=shuffleArray(arr);
-		System.out.println(Arrays.toString(arr));
+
 	}
 
+	/**
+	 * Performs shuffleArray operation.
+	 *
+	 * @param arr the array to process
+	 * @return the resulting array
+	 */
 	private static int[] shuffleArray(int[] arr) {
 		Random rand = new Random();
 		for (int i = arr.length-1; i > 0; i--)

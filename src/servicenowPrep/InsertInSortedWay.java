@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Insert In Sorted Way algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class InsertInSortedWay {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -10,6 +19,11 @@ public class InsertInSortedWay {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(2);
 		ln.next=new ListNode(5);
@@ -24,6 +38,13 @@ public class InsertInSortedWay {
 		}
 	}
 
+	/**
+	 * Performs insertSorted operation.
+	 *
+	 * @param ln the ln parameter
+	 * @param i the i parameter
+	 * @return the list of results
+	 */
 	private static ListNode insertSorted(ListNode ln, int i) {
 		if(ln.value>i)
 		{

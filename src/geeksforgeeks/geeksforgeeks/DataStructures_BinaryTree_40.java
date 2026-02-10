@@ -9,8 +9,19 @@ import java.util.Stack;
  * http://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/
  * Convert a given Binary Tree to Doubly Linked List 
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_40 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_40 {
 	 static Stack<Integer> stack=new Stack<Integer>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,10);
@@ -24,6 +35,11 @@ import java.util.Stack;
 		 Node node=convertToList(binaryTree1);
 		 printData(node);
 	 }
+	 /**
+	  * Performs printData operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void printData(Node node) {
 		 while(node!=null){
 			 System.out.print(node.data+",");
@@ -38,9 +54,17 @@ import java.util.Stack;
 			 node = node.left;
 		 return (node);
 	 }
+	 /**
+	  * Performs convertToList operation.
+	  *
+	  * @param node the tree node to process
+	  * @return the Node result
+	  */
 	 private static Node convertToList(Node node) {
+		 // Check for null/base case
 		 if(node==null)
 			 return null;
+		 // Check for null/base case
 		 if(node.left!=null)
 		 {
 			 Node left=convertToList(node.left);
@@ -48,6 +72,7 @@ import java.util.Stack;
 			 left.right =node;
 			 node.left=left;
 		 }
+		 // Check for null/base case
 		 if (node.right!=null)
 		 {
 			 Node right = convertToList(node.right);

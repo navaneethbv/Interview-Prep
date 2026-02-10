@@ -9,9 +9,20 @@ import java.util.Arrays;
  * http://www.geeksforgeeks.org/sum-numbers-formed-root-leaf-paths/
  * Sum of all the numbers that are formed from root to leaf paths
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_52 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_52 {
 	 static int path[];
 	 static ArrayList<int []> arrayList=new ArrayList<int []>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -34,12 +45,22 @@ import java.util.Arrays;
 
 	 }
 
+	 /**
+	  * Finds leaf paths recursive in the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param sum the sum parameter
+	  * @return the computed integer result
+	  */
 	 private static int findLeafPathsRecursive(Node node,int sum) {
+		 // Check for null/base case
 		 if(node==null)
 			 return 0;
 		 sum=sum*10+node.data;
+		 // Check if node is a leaf (no children)
 		 if(node.left==null && node.right==null)
 			 return sum;
+		 // Recursively process left and right subtrees
 		 return findLeafPathsRecursive(node.left,sum)+findLeafPathsRecursive(node.right,sum);
 	 }
 
@@ -59,11 +80,20 @@ import java.util.Arrays;
 		 return sum;
 	 }
 
+	 /**
+	  * Finds leaf paths in the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param path2 the array to process
+	  * @param i the i parameter
+	  */
 	 private static void findLeafPaths(Node node, int[] path2, int i) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
 		 path[i]=node.data;
 		 i++;
+		 // Check if node is a leaf (no children)
 		 if(node.left==null && node.right==null)
 		 {
 			 arrayList.add(Arrays.copyOfRange(path,0,i));
@@ -74,7 +104,14 @@ import java.util.Arrays;
 		 }
 	 }
 
+	 /**
+	  * Retrieves height from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int getHeight(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 int leftHeight=getHeight(node.left);

@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Search An Element In A Linked List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SearchAnElementInALinkedList {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -10,6 +19,11 @@ public class SearchAnElementInALinkedList {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(1);
 		ln.next=new ListNode(2);
@@ -22,6 +36,13 @@ public class SearchAnElementInALinkedList {
 		
 	}
 
+	/**
+	 * Searches for element.
+	 *
+	 * @param ln the ln parameter
+	 * @param i the i parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean searchElement(ListNode ln, int i) {
 		while(ln!=null)
 		{
@@ -32,7 +53,15 @@ public class SearchAnElementInALinkedList {
 		return false;
 	}
 	
+	/**
+	 * Searches for element recursive.
+	 *
+	 * @param ln the ln parameter
+	 * @param i the i parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean searchElementRecursive(ListNode ln, int i) {
+		// Check for null/base case
 		if(ln==null)
 			return false;
 		if(ln.value==i)

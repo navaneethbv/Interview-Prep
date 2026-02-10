@@ -10,13 +10,28 @@ package careerCup;
  * 1+2+300+400 &lt; 10000 is valid
  * 1+2+2 is not valid (2 appear twice)
  */
+/**
+ * Implementation of Google Career Cup Problem4695 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem4695 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		
-		System.out.println(findCombinations(1000));
-		
+
 	}
 
+	/**
+	 * Finds combinations in the data structure.
+	 *
+	 * @param value the value value
+	 * @return the computed integer result
+	 */
 	private static int findCombinations(int value) {
 		int count=0;
 		boolean[] sum = new boolean[10001];

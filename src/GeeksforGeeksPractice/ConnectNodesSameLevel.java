@@ -1,6 +1,15 @@
 package GeeksforGeeksPractice;
 
+/**
+ * Implementation of Connect Nodes Same Level algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ConnectNodesSameLevel {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
@@ -8,6 +17,11 @@ public class ConnectNodesSameLevel {
 		TreeNode next;
 		TreeNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(10);
 		tn.left=new TreeNode(8);
@@ -21,13 +35,21 @@ public class ConnectNodesSameLevel {
 		connectRecursive(tn);
 		preOrder(tn);
 	}
+	/**
+	 * Performs connectRecursive operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void connectRecursive(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
+			// Check for null/base case
 			if(tn.left!=null)
 			{
 				tn.left.next=tn.right;
 			}
+			// Check for null/base case
 			if(tn.right!=null)
 			{
 				tn.right.next=(tn.next!=null)?tn.next.left:null;
@@ -38,9 +60,16 @@ public class ConnectNodesSameLevel {
 		
 	}
 	static TreeNode temp;
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{	
+			// Check for null/base case
 			if(tn.next==null)
 				System.out.println(tn.val+"//null");
 			else
@@ -49,6 +78,11 @@ public class ConnectNodesSameLevel {
 			preOrder(tn.right);
 		}
 	}
+	/**
+	 * Performs connect operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void connect(TreeNode tn) {
 		int height=getHeight(tn);
 		for (int i = 0; i <=height; i++) {
@@ -57,11 +91,19 @@ public class ConnectNodesSameLevel {
 			System.out.println();
 		}
 	}
+	/**
+	 * Performs connectNodes operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param i the i parameter
+	 */
 	private static void connectNodes(TreeNode tn, int i) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			if(i==1){
 				System.out.print(tn.val+"/");
+				// Check for null/base case
 				if(temp!=null)
 					tn.next=temp;
 				else{
@@ -73,9 +115,17 @@ public class ConnectNodesSameLevel {
 			connectNodes(tn.left,i-1);
 		}
 	}
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
+			// Recursively process left and right subtrees
 			return 1+Math.max(getHeight(tn.left), getHeight(tn.right));
 		}
 		return 0;

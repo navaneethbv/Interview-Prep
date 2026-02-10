@@ -10,7 +10,18 @@ import java.util.Scanner;
  * Given an array of size N, move the first d elements to its last.
  * 3,5,34,49,91,110
  */;
+/**
+ * Implementation of Amazon Interview_09_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_09_04 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new  Scanner(new InputStreamReader(System.in));
 		 int size=Integer.parseInt(scanner.nextLine());
@@ -23,6 +34,13 @@ import java.util.Scanner;
 		 printArray(inputArray);
 	 }
 
+	 /**
+	  * Performs shiftinputArray operation.
+	  *
+	  * @param inputArray the array to process
+	  * @param d the d parameter
+	  * @return the resulting array
+	  */
 	 private static int[] shiftinputArray(int[] inputArray, int d) {
 		 int[] outputArray=new int[inputArray.length];
 		 int outputIndex=0;
@@ -37,14 +55,27 @@ import java.util.Scanner;
 		 return outputArray;
 	 }
 
+	 /**
+	  * Performs printArray operation.
+	  *
+	  * @param inputArray the array to process
+	  */
 	 private static void printArray(int[] inputArray) {
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 System.out.print(inputArray[i]+",");
 		 }
 		 System.out.println();
 	 }
 
+	 /**
+	  * Performs buildInputArray operation.
+	  *
+	  * @param inputArray the array to process
+	  * @return the resulting array
+	  */
 	 private static int[] buildInputArray(int[] inputArray) {
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 inputArray[i]=new Random().nextInt(inputArray.length*3);
 		 }

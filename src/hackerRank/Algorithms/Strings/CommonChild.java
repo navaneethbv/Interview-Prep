@@ -6,30 +6,67 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/the-love-letter-mystery
  */
+/**
+ * Implementation of Common Child algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CommonChild {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		System.out.println(findCommonChild(scanner.nextLine(),scanner.nextLine()));
+
 	}
+	/**
+	 * Finds common child in the data structure.
+	 *
+	 * @param inputString1 the inputString1 parameter
+	 * @param inputString2 the inputString2 parameter
+	 * @return the computed integer result
+	 */
 	private static int findCommonChild(String inputString1, String inputString2) {
 		return lcs(inputString1.toCharArray(),inputString2.toCharArray(),inputString1.length(),inputString2.length());
 	}
+	/**
+	 * Performs lcs operation.
+	 *
+	 * @param inputString1 the array to process
+	 * @param inputString2 the array to process
+	 * @param length1 the length1 parameter
+	 * @param length2 the length2 parameter
+	 * @return the computed integer result
+	 */
 	private static int lcs(char[] inputString1, char[] inputString2, int length1, int length2) {
+		// Check for null/base case
 		if(length1==0||length2==0)
 			return 0;
 		if(inputString1[length1-1]==inputString2[length2-1])
+			// Recursively process left and right subtrees
 			return 1+lcs(inputString1,inputString2,length1-1,length2-1);
 		else
+			// Recursively process left and right subtrees
 			return Math.max(lcs(inputString1,inputString2,length1,length2-1), lcs(inputString1,inputString2,length1-1,length2));
 	}
 
 
 
 	//Doesnt consider the ordering of the sequences
+	/**
+	 * Finds common child in the data structure.
+	 *
+	 * @param inputString1 the inputString1 parameter
+	 * @param inputString2 the inputString2 parameter
+	 * @return the computed integer result
+	 */
 	/*private static int findCommonChild(String inputString1, String inputString2) {
 		int count=0;
 		HashMap<Character, Integer> charCount1=new HashMap<>();
 		HashMap<Character, Integer> charCount2=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < inputString1.length(); i++) {
 			char c1=inputString1.charAt(i);
 			char c2=inputString2.charAt(i);

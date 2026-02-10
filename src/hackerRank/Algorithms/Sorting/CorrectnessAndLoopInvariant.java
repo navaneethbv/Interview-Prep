@@ -5,8 +5,19 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/correctness-invariant
  */
+/**
+ * Implementation of Correctness And Loop Invariant algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CorrectnessAndLoopInvariant {
 
+	/**
+	 * Performs insertionSort operation.
+	 *
+	 * @param A the array to process
+	 */
 	public static void insertionSort(int[] A){
 		for(int i = 1; i < A.length; i++){
 			int value = A[i];
@@ -22,11 +33,21 @@ public class CorrectnessAndLoopInvariant {
 	}
 
 
+	/**
+	 * Performs printArray operation.
+	 *
+	 * @param ar the array to process
+	 */
 	static void printArray(int[] ar) {
 		for(int n: ar){
 			System.out.print(n+" ");
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();

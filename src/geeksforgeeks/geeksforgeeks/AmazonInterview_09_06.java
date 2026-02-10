@@ -12,7 +12,18 @@ import java.util.Scanner;
  *   bring odd values in the beginning and even values at the end.
  *    The relative order of odd values, and that of even values should be maintained as it is.
  */;
+/**
+ * Implementation of Amazon Interview_09_06 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_09_06 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new  Scanner(new InputStreamReader(System.in));
 		 Integer size=Integer.parseInt(scanner.nextLine());
@@ -27,6 +38,12 @@ import java.util.Scanner;
 
 	 }
 
+	 /**
+	  * Performs reorderList operation.
+	  *
+	  * @param inputList the inputList parameter
+	  * @return the list of results
+	  */
 	 private static LinkedList<Integer> reorderList(LinkedList<Integer> inputList) {
 		LinkedList<Integer> outputList=new LinkedList<Integer>();
 		for (int i = 0; i < inputList.size(); i++) {
@@ -36,19 +53,25 @@ import java.util.Scanner;
 		}
 		for (int i = 0; i < inputList.size(); i++) {
 			int element=inputList.get(i);
+			// Check for null/base case
 			if(element%2==0)
 				outputList.add(element);
 		}
 		return outputList;
-	}
+	 }
 
+	/**
+	 * Performs printList operation.
+	 *
+	 * @param inputList the inputList parameter
+	 */
 	private static void printList(LinkedList<Integer> inputList) {
 		 // TODO Auto-generated method stub
 		 for (int i = 0; i < inputList.size(); i++) {
 			 System.out.print(inputList.get(i)+",");
 		 }
 		 System.out.println();
-	 }
+	}
 
 
  }

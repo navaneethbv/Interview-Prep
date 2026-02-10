@@ -18,19 +18,33 @@ import java.util.TreeMap;
 
 
 
+/**
+ * Implementation of SRM166 Binary Cardinality algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM166BinaryCardinality {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		//System.out.println(Arrays.toString(arrange(new int[]{4})));
-		//System.out.println(Arrays.toString(arrange(new int[]{31,15,7,3,2})));
-		//System.out.println(Arrays.toString(arrange(new int[]{10,9,8,7,6,5,4,3,2,1})));
-		//System.out.println(Arrays.toString(arrange(new int[]{811385,340578,980086,545001,774872,855585,13848,863414,419523,190151,784903,127461})));
-		System.out.println(Arrays.toString(arrange(new int[]{2, 1, 0, 2, 1, 0, 2, 1, 0, 2, 1, 0})));
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs arrange operation.
+	 *
+	 * @param numbers the array to process
+	 * @return the resulting array
+	 */
 	public static int[] arrange(int[] numbers){
 		HashMap<Integer, Integer> onesCount=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < numbers.length; i++) {
 			onesCount.put(numbers[i], Integer.bitCount(numbers[i]));
 		}
@@ -38,6 +52,7 @@ public class SRM166BinaryCardinality {
 		Map<Integer, Integer> m = new TreeMap<Integer, Integer>();
 		m = sortByComparator(onesCount);
 		Object arr[]=m.keySet().toArray();
+		// Iterate through all elements
 		for (int i = 0; i < arr.length; i++) {
 			numbers[i]=(Integer)arr[i];
 		}

@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of Remove Duplicates Sorted LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveDuplicatesSortedLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -9,6 +18,11 @@ public class RemoveDuplicatesSortedLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(11);
 		n.next=new Node(11);
@@ -21,10 +35,17 @@ public class RemoveDuplicatesSortedLL {
 		print(n);
 	}
 
+	/**
+	 * Removes duplicates from the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node removeDuplicates(Node n) {
 		Node outputNode=n;
 		while(n!=null)
 		{
+			// Check for null/base case
 			if(n.next!=null && n.value==n.next.value)
 			{
 				n.next=n.next.next;
@@ -43,6 +64,11 @@ public class RemoveDuplicatesSortedLL {
 
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{

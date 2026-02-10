@@ -12,7 +12,18 @@ import java.util.Scanner;
  * given the numerator and denominator of a fraction, 
  * find the quotient and the remainder without using divide and mod (/, % )operators
  */;
+/**
+ * Implementation of Amazon Interview_08_10 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_08_10 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 int numerator=Integer.parseInt(scanner.nextLine());

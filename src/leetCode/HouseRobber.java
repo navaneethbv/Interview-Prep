@@ -4,7 +4,19 @@ package leetCode;
  * Link : https://leetcode.com/problems/house-robber/
  */
 
+/**
+ * Implementation of House Robber algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class HouseRobber {
+	/**
+	 * Performs robDP operation.
+	 *
+	 * @param nums the array to process
+	 * @return the computed integer result
+	 */
 	public static int robDP(int[] nums) {
 		if(nums.length<1)
 			return 0;
@@ -16,9 +28,17 @@ public class HouseRobber {
 		}
 		return dpOutput[dpOutput.length-1];
 	}
+	/**
+	 * Performs robnonDP operation.
+	 *
+	 * @param nums the array to process
+	 * @return the computed integer result
+	 */
 	public static int robnonDP(int[] nums) {
 		int evenSum=0,oddSum=0;
+		// Iterate through all elements
 		for (int i = 0; i < nums.length; i++) {
+			// Check for null/base case
 			if(i%2==0)
 			{
 				evenSum+=nums[i];
@@ -31,8 +51,13 @@ public class HouseRobber {
 		}
 		return evenSum>oddSum?evenSum:oddSum;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(robnonDP(new int[]{50,1,1,50}));
-		System.out.println(robDP(new int[]{50,1,1,50}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

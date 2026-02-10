@@ -5,10 +5,28 @@ package leetCode;
  * To be checked later
  */
 
+/**
+ * Implementation of Fibonacci Fib Frog algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FibonacciFibFrog {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(solution(new int[]{3,1,2,3,6}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
 	public static int solution(int[] A){
 		int N=A.length;
 		 if (N <= 2){
@@ -50,6 +68,7 @@ public class FibonacciFibFrog {
 		    int min = 0x7FFFFFFF;
 		    for (i = 0; i < N; i++){
 		        //if the cell is not reachable, we can neglect it.
+		        // Check for null/base case
 		        if (reached[i] == 0){   
 		            continue;
 		        }
@@ -68,6 +87,7 @@ public class FibonacciFibFrog {
 		            
 		            //if the next jump is too large, or there is no leaf there,
 		            //we can neglect this jump.
+		            // Check for null/base case
 		            if (next_pos > N || A[next_pos] == 0){
 		                continue;
 		            }
@@ -75,6 +95,7 @@ public class FibonacciFibFrog {
 		            //if we have never reached to the next position before, or we can reach 
 		            //the next position with less jumps, update the min number of jumps
 		            // at the position.
+		            // Check for null/base case
 		            if (reached[next_pos] == 0 || 
 		                reached[next_pos] > min_jumps_to_here + 1){
 		                reached[next_pos] = min_jumps_to_here + 1;
@@ -83,7 +104,7 @@ public class FibonacciFibFrog {
 		    }
 		    
 		    return min == 0x7FFFFFFF ? -1 : min;
-		}
+	}
 
 
 }

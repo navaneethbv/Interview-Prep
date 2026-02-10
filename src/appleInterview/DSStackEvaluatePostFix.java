@@ -2,13 +2,30 @@ package appleInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of DS Stack Evaluate Post Fix algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSStackEvaluatePostFix {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		String postfix="231*+9-";
-		System.out.println(evaluatePostfix(postfix));
+
 	}
+	/**
+	 * Performs evaluatePostfix operation.
+	 *
+	 * @param postfix the postfix parameter
+	 * @return the computed integer result
+	 */
 	private static int evaluatePostfix(String postfix) {
 		Stack<Integer> charStack=new Stack<>();
+		// Iterate through all elements
 		for (int i = 0; i < postfix.length(); i++) {
 			char c=postfix.charAt(i);
 			switch(c){
@@ -22,6 +39,12 @@ public class DSStackEvaluatePostFix {
 		}
 		return charStack.isEmpty()?0:Integer.parseInt(charStack.peek()+"");
 	}
+	/**
+	 * Performs performOperation operation.
+	 *
+	 * @param charStack the charStack parameter
+	 * @param c the c parameter
+	 */
 	private static void performOperation(Stack<Integer> charStack,Character c) {
 		if(!charStack.isEmpty())
 		{	

@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Get Intersection Point algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GetIntersectionPoint {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -10,6 +19,11 @@ public class GetIntersectionPoint {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(3);
 		ln.next=new ListNode(6);
@@ -22,6 +36,13 @@ public class GetIntersectionPoint {
 		System.out.println(findIntersection(ln,ln1).value);
 	}
 
+	/**
+	 * Finds intersection in the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @param ln1 the ln1 parameter
+	 * @return the list of results
+	 */
 	private static ListNode findIntersection(ListNode ln, ListNode ln1) {
 		int length1=findLength(ln);
 		int length2=findLength(ln1);
@@ -55,8 +76,16 @@ public class GetIntersectionPoint {
 		return ln;
 	}
 
+	/**
+	 * Finds length in the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @return the computed integer result
+	 */
 	private static int findLength(ListNode ln) {
+		// Check for null/base case
 		if(ln!=null)
+			// Recursively process left and right subtrees
 			return 1+findLength(ln.next);
 		return 0;
 	}

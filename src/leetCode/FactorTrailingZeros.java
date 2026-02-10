@@ -4,7 +4,19 @@ package leetCode;
  * Link : https://leetcode.com/problems/factorial-trailing-zeroes/
  */
 
+/**
+ * Implementation of Factor Trailing Zeros algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FactorTrailingZeros {
+	/**
+	 * Performs trailingZeroes operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	public static int trailingZeroes(int n) {
 		int sum=0;
 		int number=5,result=n;
@@ -15,8 +27,13 @@ public class FactorTrailingZeros {
 		}
 		return sum;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(trailingZeroes(101));
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

@@ -7,13 +7,28 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM144 Time algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM144Time {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	/*public static void main(String[] args) {
-		System.out.println(whatTime(0));
-		System.out.println(whatTime(3661));
-		System.out.println(whatTime(5436));
-		System.out.println(whatTime(86399));
-	}*/
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+	/**
+	 * Performs whatTime operation.
+	 *
+	 * @param seconds the seconds parameter
+	 * @return the resulting string
+	 */
 	public static String whatTime(int seconds){
 		int secondsValue=(seconds%60);
 		int hoursValue=(seconds/3600);

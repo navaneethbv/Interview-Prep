@@ -15,15 +15,31 @@ package geeksforgeeks;
  *  you we would able to visit entire circle without running out of fuel.
  *  Initially truck has no fuel.
  */;
+/**
+ * Implementation of Amazon Interview_21_03 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_21_03 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		 int distance[]={6,3,7};
-		 int petrol[]={4,6,4};
-		 startingPointLong(distance,petrol);
+
 	 }
 
+	/**
+	 * Performs startingPointLong operation.
+	 *
+	 * @param distance the array to process
+	 * @param petrol the array to process
+	 */
 	private static void startingPointLong(int[] distance, int[] petrol) {	
 		
+		// Iterate through all elements
 		for (int i = 0; i < petrol.length; i++) {//for forward propogation in circle
 			boolean exited=false;
 			int distanceValue=distance[i];

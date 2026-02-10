@@ -3,7 +3,18 @@ package Warmup;
 /*
  * Link:https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list 
  */	
+/**
+ * Implementation of linked List DS algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class linkedListDS {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node n=new Node();
 		n.data=1;
@@ -20,6 +31,9 @@ public class linkedListDS {
 	  Insert Node at the end of a linked list 
 	  head pointer input could be NULL as well for empty list
 	  Node is defined as */
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node {
 		int data;
 		Node next;

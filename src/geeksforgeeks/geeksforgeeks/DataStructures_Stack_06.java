@@ -8,7 +8,18 @@ import ctci._05queue;
  * http://www.geeksforgeeks.org/implement-stack-using-queue/
  * Implement Stack using Queues
  */;
+/**
+ * Implementation of Data Structures_ Stack_06 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_Stack_06 {	 
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
          
 		 MyStack myStack=new MyStack();
@@ -32,9 +43,19 @@ import ctci._05queue;
 	 _05queue queue2=new _05queue();
 
 
+	 /**
+	  * Performs push operation.
+	  *
+	  * @param value the value value
+	  */
 	 public void push(int value){
 		 queue1.add(value);
 	 }
+	 /**
+	  * Performs pop operation.
+	  *
+	  * @return the computed integer result
+	  */
 	 public int pop(){
 		 if(queue1.isEmpty())
 			 return Integer.MIN_VALUE;

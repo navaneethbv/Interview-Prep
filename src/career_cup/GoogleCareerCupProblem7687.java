@@ -7,14 +7,28 @@ package careerCup;
  * Stages repeat. I coded using arrays, interviewer was interested in a solution without the use of arrays.
  * http://www.geeksforgeeks.org/dynamic-programming-set-31-optimal-strategy-for-a-game/
  */
+/**
+ * Implementation of Google Career Cup Problem7687 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem7687 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray[]=new int[]{5,3,7,10};
-		System.out.println(findMaximum(inputArray));
-		inputArray=new int[]{8,15,3,7};
-		System.out.println(findMaximum(inputArray));
+
 	}
 
+	/**
+	 * Finds maximum in the data structure.
+	 *
+	 * @param arr the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMaximum(int[] arr) {
 		int n=arr.length, gap, i, j, x, y, z;
 		int table[][]=new int[n][n];

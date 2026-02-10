@@ -12,7 +12,18 @@ import java.util.Iterator;
 
 
 
+/**
+ * Implementation of SRM164 Party Seats algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM164PartySeats {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(seating(new String[]{"BOB boy","SAM girl","DAVE boy","JO girl"})));
 		System.out.println(Arrays.toString(seating(new String[]{"JOHN boy"})));
@@ -22,11 +33,18 @@ public class SRM164PartySeats {
 		System.out.println(Arrays.toString(seating(new String[]{"AM girl", "ROB boy", "JIM boy", "AM girl", "DAVE boy", "JO girl"})));
 	}
 
+	/**
+	 * Performs seating operation.
+	 *
+	 * @param attendees the array to process
+	 * @return the resulting array
+	 */
 	public static String[] seating(String[] attendees){
 		if(attendees.length%2!=0)
 			return new String[]{};
 		ArrayList<String> girls=new ArrayList<>();
 		ArrayList<String> boys=new ArrayList<>();
+		// Iterate through all elements
 		for (int i = 0; i < attendees.length; i++) {
 			if(attendees[i].contains("girl")){
 				girls.add(attendees[i].split(" ")[0]);
@@ -43,7 +61,9 @@ public class SRM164PartySeats {
 			return new String[]{};
 		ArrayList<String> outputList=new ArrayList<>();
 		String next="M";
+		// Iterate through all elements
 		for (int i = 0; i < attendees.length+2; i++) {
+			// Check for null/base case
 			if(i==0 && next.equals("M"))
 			{
 				outputList.add("HOST");

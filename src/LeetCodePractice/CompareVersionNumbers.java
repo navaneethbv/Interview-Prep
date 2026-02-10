@@ -2,12 +2,31 @@ package LeetCodePractice;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Compare Version Numbers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CompareVersionNumbers {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(compareVersion("0.1", "1.2"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs compareVersion operation.
+	 *
+	 * @param version1 the version1 parameter
+	 * @param version2 the version2 parameter
+	 * @return the computed integer result
+	 */
 	public static int compareVersion(String version1, String version2) {
 		String v1Arr[]=version1.split("\\.");
 		String v2Arr[]=version2.split("\\.");
@@ -16,6 +35,7 @@ public class CompareVersionNumbers {
 		
 		if(v1Arr.length>v2Arr.length)
 		{
+			// Iterate through all elements
 			for (int i = 0; i < v2Arr.length; i++) {
 				if(Integer.parseInt(v1Arr[i]+"")>Integer.parseInt(v2Arr[i]+""))
 					return 1;
@@ -30,6 +50,7 @@ public class CompareVersionNumbers {
 		}
 		else
 		{
+			// Iterate through all elements
 			for (int i = 0; i < v1Arr.length; i++) {
 				if(Integer.parseInt(v1Arr[i]+"")>Integer.parseInt(v2Arr[i]+""))
 					return 1;

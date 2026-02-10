@@ -7,7 +7,18 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM155 Quipu algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM155Quipu {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(readKnots("-XX-XXXX-XXX-"));
 		System.out.println(readKnots("-XX--XXXX---XXX-"));
@@ -15,6 +26,12 @@ public class SRM155Quipu {
 		System.out.println(readKnots("-X-------"));
 		System.out.println(readKnots("-XXXXXXXXX--XXXXXXXXX-XXXXXXXXX-XXXXXXX-XXXXXXXXX-"));
 	}
+	/**
+	 * Performs readKnots operation.
+	 *
+	 * @param knots the knots parameter
+	 * @return the computed integer result
+	 */
 	public static int readKnots(String knots){
 		StringBuilder sb=new StringBuilder("");
 		int knotCounter=0;

@@ -24,14 +24,20 @@ package geeksforgeeks;
  * OR
  * 3,5,34,49,91,110
  */;
+/**
+ * Implementation of Amazon Interview_09_03 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_09_03 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		 String inputString1="1,2,3";
-		 String inputString2="4,5,6,7,8,1,2,1,2,3,5,4,6,7,8,9,0,6,7";
-		 String inputString3="1,2,9,4,5,10,7,8";
-		 String inputString4="20, 3,22, 5,50, 34, 49, 91,110";
-		 
-		 
+
 	 }
 
 

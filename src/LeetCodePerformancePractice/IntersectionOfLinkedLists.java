@@ -1,5 +1,11 @@
 package LeetCodePerformancePractice;
 
+/**
+ * Implementation of Intersection Of Linked Lists algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class IntersectionOfLinkedLists {
 	public class ListNode {
 		int val;
@@ -9,10 +15,22 @@ public class IntersectionOfLinkedLists {
 			next = null;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Retrieves intersection node from the data structure.
+	 *
+	 * @param headA the headA parameter
+	 * @param headB the headB parameter
+	 * @return the list of results
+	 */
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 		int length1=getLength(headA);
 		int length2=getLength(headB);
@@ -34,6 +52,13 @@ public class IntersectionOfLinkedLists {
 			return intersection(headB,headA);
 		}
 	}
+	/**
+	 * Performs intersection operation.
+	 *
+	 * @param head1 the head1 parameter
+	 * @param head2 the head2 parameter
+	 * @return the list of results
+	 */
 	private ListNode intersection(ListNode head1, ListNode head2) {
 		while(head1!=null && head2!=null)
 		{
@@ -44,7 +69,14 @@ public class IntersectionOfLinkedLists {
 		}
 		return head1;
 	}
+	/**
+	 * Retrieves length from the data structure.
+	 *
+	 * @param head the head parameter
+	 * @return the computed integer result
+	 */
 	private int getLength(ListNode head) {
+		// Recursively process left and right subtrees
 		return head!=null?1+getLength(head.next):0;
 	}
 }

@@ -6,12 +6,26 @@ import java.util.HashMap;
  * Link : https://leetcode.com/problems/valid-sudoku/
  */
 
+/**
+ * Implementation of Valid Sudoku algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ValidSudoku {
+	/**
+	 * Checks if valid sudoku.
+	 *
+	 * @param board the array to process
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isValidSudoku(char[][] board) {
 		HashMap<Character, Integer> rowMap=new HashMap<>();
 		HashMap<Integer, HashMap<Character, Integer>> columnMap=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < board[0].length; i++) {			
 			rowMap=new HashMap<>();
+			// Inner loop to check combinations
 			for (int j = 0; j < board.length; j++) {
 				if(board[i][j]!='.'){
 					if(rowMap.containsKey(board[i][j]))
@@ -52,6 +66,11 @@ public class ValidSudoku {
 		return true;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		char sudokuArray[][]=new char[][]
 				{

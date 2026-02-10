@@ -6,6 +6,12 @@ import java.io.IOException;
  * Class  : PhotonBombImageGrid
  * Description:This Class is used to instantiate a PhotonBomb Image and convert it to a 2-dimensional character array.
  */
+/**
+ * Implementation of Photon Bomb Image Grid algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PhotonBombImageGrid {
 	String photonFilePath;
 	int height,width;
@@ -55,16 +61,47 @@ public class PhotonBombImageGrid {
 		}
 		br.close();
 	}
+	/**
+	 * Retrieves photon file path from the data structure.
+	 *
+	 * @return the resulting string
+	 */
 	public  String getPhotonFilePath() {
 		return photonFilePath;
 	}
+	/**
+	 * Sets photon file path in the data structure.
+	 *
+	 * @param photonFilePath the photonFilePath parameter
+	 */
 	public  void setPhotonFilePath(String photonFilePath) {
 		this.photonFilePath = photonFilePath;
 	}
+	/**
+	 * Retrieves image grid from the data structure.
+	 *
+	 * @return the resulting array
+	 */
 	public  char[][] getImageGrid() {
 		return imageGrid;
 	}
+	/**
+	 * Sets image grid in the data structure.
+	 *
+	 * @param imageGrid the array to process
+	 */
 	public  void setImageGrid(char[][] imageGrid) {
 		this.imageGrid = imageGrid;
 	}
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+
 }

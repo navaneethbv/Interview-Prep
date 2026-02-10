@@ -15,7 +15,18 @@ import java.util.Scanner;
  * There are n frames of m data element each. The data element in each frame is arranged in increasing order.
  * You are provided m*n space in which you have to arrange all data in increasing order.
  */
+/**
+ * Implementation of Amazon Interview_04_03 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_04_03 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int m=Integer.parseInt(scanner.nextLine());
@@ -46,10 +57,16 @@ public class AmazonInterview_04_03 {
 		sortDataMergeSort(nFrames);
 	}
 
+	/**
+	 * Performs sortDataMergeSort operation.
+	 *
+	 * @param nFrames the nFrames parameter
+	 */
 	private static void sortDataMergeSort(ArrayList<ArrayList<Integer>> nFrames) {
 			ArrayList<Integer> elementList=new ArrayList<Integer>();
 			for (int i = 0; i < nFrames.size(); i++) {
 				ArrayList<Integer> elementframeList=nFrames.get(i);
+				// Inner loop to check combinations
 				for (int j = 0; j < elementframeList.size(); j++) {
 					elementList.add(elementframeList.get(i));
 				}
@@ -58,6 +75,10 @@ public class AmazonInterview_04_03 {
 			//do merge sort for this data
 	}
 
+	/**
+	 * Performs sortDataHeap operation.
+	 *
+	 */
 	private static void sortDataHeap() {
 		// TODO Auto-generated method stub
 		//add to heap and do a bfs to get the sorted elements

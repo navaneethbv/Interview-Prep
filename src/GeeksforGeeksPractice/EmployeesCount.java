@@ -6,8 +6,19 @@ import java.util.HashMap;
 /*
  * Link : http://www.geeksforgeeks.org/find-number-of-employees-under-every-manager/
  */
+/**
+ * Implementation of Employees Count algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class EmployeesCount {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ArrayList<String> inputList=new ArrayList<>();
 		inputList.add("A->C");
@@ -19,6 +30,11 @@ public class EmployeesCount {
 		findEmployees(inputList);
 	}
 
+	/**
+	 * Finds employees in the data structure.
+	 *
+	 * @param inputList the inputList parameter
+	 */
 	private static void findEmployees(ArrayList<String> inputList) {
 		HashMap<String, ArrayList<String>> managerDirect=new HashMap<>();
 		for (int i = 0; i < inputList.size(); i++) {
@@ -47,6 +63,7 @@ public class EmployeesCount {
 				ArrayList<String> elementList=managerDirect.get(element);
 				int count=elementList.size();
 				System.out.println(element+"//"+count);
+				// Inner loop to check combinations
 				for (int j = 0; j < elementList.size(); j++) {
 					if(countMap.containsKey(elementList.get(j)))	
 						count+=countMap.get(elementList.get(j));
@@ -55,6 +72,7 @@ public class EmployeesCount {
 			}
 		}
 		Object[] arr=countMap.keySet().toArray();
+		// Iterate through all elements
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]+"->"+countMap.get(arr[i]));
 		}

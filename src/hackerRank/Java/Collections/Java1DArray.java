@@ -6,7 +6,18 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/java-1d-array-easy
  */
 
+/**
+ * Implementation of Java1 D Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Java1DArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param []argv the []argv parameter
+	 */
 	public static void main(String []argv)
 	{
 		Scanner scanner=new Scanner(System.in);

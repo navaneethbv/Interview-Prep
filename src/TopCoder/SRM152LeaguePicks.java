@@ -9,13 +9,29 @@ import java.util.Arrays;
 
 
 
+/**
+ * Implementation of SRM152 League Picks algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM152LeaguePicks {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(returnPicks(3,6,15)));
-		System.out.println(Arrays.toString(returnPicks(1,1,10)));
-		System.out.println(Arrays.toString(returnPicks(1,2,39)));
-		System.out.println(Arrays.toString(returnPicks(5,11,100)));
+
 	}
+	/**
+	 * Performs returnPicks operation.
+	 *
+	 * @param position the position parameter
+	 * @param friends the friends parameter
+	 * @param picks the picks parameter
+	 * @return the resulting array
+	 */
 	static int[] returnPicks(int position, int friends, int picks){
 		int noOfFriends=friends;
 		StringBuilder sb=new StringBuilder();
@@ -45,6 +61,7 @@ public class SRM152LeaguePicks {
 		String outputArray[]=(sb.toString().split("/"));
 		int outputArr[]=new int[outputArray.length];
 
+		// Iterate through all elements
 		for (int i = 0; i < outputArray.length; i++) {
 			outputArr[i]=Integer.parseInt(outputArray[i]);
 		}

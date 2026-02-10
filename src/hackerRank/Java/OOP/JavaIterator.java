@@ -8,8 +8,21 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/java-iterator
  */
 
+/**
+ * Implementation of Java Iterator algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JavaIterator {
 
+	/**
+	 * Performs func operation.
+	 *
+	 * @param mylist the mylist parameter
+	 * @return the Iterator result
+	 */
+	static Iterator func(ArrayList mylist)
 	static Iterator func(ArrayList mylist)
 	{
 		Iterator it=mylist.iterator();
@@ -23,6 +36,11 @@ public class JavaIterator {
 
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param []argh the []argh parameter
+	 */
 	public static void main(String []argh)
 	{
 		ArrayList mylist = new ArrayList();

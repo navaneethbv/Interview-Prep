@@ -12,7 +12,18 @@ import java.util.TreeMap;
 
 
 
+/**
+ * Implementation of SRM144 Lottery algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM144Lottery {
+/**
+ * Main method to test the functionality of the class with various test cases.
+ *
+ * @param args the array to process
+ */
 /*	public static void main(String[] args) {
 		System.out.println(Arrays.toString(sortByOdds(new String[]{"INDIGO: 93 8 T F",
 			 "ORANGE: 29 8 F T",
@@ -22,9 +33,16 @@ public class SRM144Lottery {
 			 "GREEN: 78 6 F T",
 			 "YELLOW: 75 6 F F"})));
 	}*/
+	/**
+	 * Performs sortByOdds operation.
+	 *
+	 * @param rules the array to process
+	 * @return the resulting array
+	 */
 	public static String[] sortByOdds(String[] rules){
 		String[] outputArray=new String[rules.length];
 		TreeMap<Double,ArrayList<String>> scoreMap=new TreeMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < outputArray.length; i++) {
 			String inputLine=rules[i];
 			String splitString[]=inputLine.split(":");
@@ -63,6 +81,7 @@ public class SRM144Lottery {
 			ArrayList<String> values=entry.getValue();
 			Object[] valueArray=(Object[]) values.toArray();
 			Arrays.sort(valueArray);
+			// Iterate through all elements
 			for (int i = 0; i < valueArray.length; i++) {
 				outputArray[counter]=(String) valueArray[i];
 				counter++;
@@ -70,6 +89,13 @@ public class SRM144Lottery {
 		}
 		return outputArray;
 	}
+	/**
+	 * Performs binomial operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param k the k value
+	 * @return the Double result
+	 */
 	private static Double binomial(int n, int k) {
 		if (k > n - k) {
 			k = n - k;
@@ -80,6 +106,13 @@ public class SRM144Lottery {
 		}
 		return result;
 	}
+	/**
+	 * Performs permutation operation.
+	 *
+	 * @param choices the choices parameter
+	 * @param blanks the blanks parameter
+	 * @return the double result
+	 */
 	private static double permutation(int choices, int blanks) {
 		blanks=choices-blanks;
 		double output=1;
@@ -90,5 +123,5 @@ public class SRM144Lottery {
 			output/=i;
 		}
 		return output;
-	}	
+	}
 }

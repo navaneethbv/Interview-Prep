@@ -16,7 +16,18 @@ import java.util.Scanner;
  * they display all numbers in ascending order.
  * Ascending order is important.
  */;
+/**
+ * Implementation of Amazon Interview_21_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_21_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 int size=Integer.parseInt(scanner.nextLine());
@@ -29,10 +40,17 @@ import java.util.Scanner;
 		}
 	}
 
+	/**
+	 * Finds max numbers in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @return the list of results
+	 */
 	private static ArrayList<Integer> findMaxNumbers(int[] inputArray) {
 		ArrayList<Integer> maxNumbers=new ArrayList<Integer>();
 		HashMap<Integer,Integer> elementsMap=new HashMap<Integer,Integer>();
 		int max=0;
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			int element=inputArray[i];
 			if(!elementsMap.containsKey(element)){
@@ -54,6 +72,12 @@ import java.util.Scanner;
 		return maxNumbers;
 	}
 
+	/**
+	 * Performs buildInputArray operation.
+	 *
+	 * @param size the size parameter
+	 * @return the resulting array
+	 */
 	private static int[] buildInputArray(int size) {
 		int[] inputArray=new int[size];
 		for (int i = 0; i < size; i++) {

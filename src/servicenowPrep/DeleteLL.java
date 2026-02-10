@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Delete LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DeleteLL {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		public ListNode(int value) {
@@ -10,6 +19,11 @@ public class DeleteLL {
 		ListNode next;
 
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln = new ListNode(0);
         ln.next = new ListNode(1);
@@ -27,6 +41,12 @@ public class DeleteLL {
         	System.out.println(ln.value);ln=ln.next;
         }
 	}
+	/**
+	 * Performs deleteLL operation.
+	 *
+	 * @param ln the ln parameter
+	 * @return the list of results
+	 */
 	private static ListNode deleteLL(ListNode ln) {
 		while(ln!=null)
 		{

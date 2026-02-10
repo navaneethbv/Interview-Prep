@@ -9,7 +9,18 @@ import java.util.ArrayList;
 
 
 
+/**
+ * Implementation of SRM170 Recurrence Relation algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM170RecurrenceRelation {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(moduloTen(new int[]{2,1}, new int[]{9,7},6));
 		System.out.println(moduloTen(new int[]{1,1}, new int[]{0,1},9));
@@ -19,14 +30,25 @@ public class SRM170RecurrenceRelation {
 		System.out.println(moduloTen(new int[]{9,8,7,6,5,4,3,2,1,0}, new int[]{1,2,3,4,5,6,7,8,9,10},654));
 		System.out.println(moduloTen(new int[]{901,492,100}, new int[]{-6,-15,-39},0));
 	}
+	/**
+	 * Performs moduloTen operation.
+	 *
+	 * @param coefficients the array to process
+	 * @param initial the array to process
+	 * @param N the size or count parameter
+	 * @return the computed integer result
+	 */
 	public static int moduloTen(int[] coefficients, int[] initial, int N){
 		ArrayList<Integer> valuesList=new ArrayList<>();
+		// Iterate through all elements
 		for (int i = 0; i < initial.length; i++) {
 			valuesList.add(initial[i]);
 		}
+		// Iterate through all elements
 		for (int i = 0; i <=N-initial.length; i++) {
 			int valuesCounter=valuesList.size()-1;
 			long value=0;
+			// Inner loop to check combinations
 			for (int j = 0; j < coefficients.length; j++) {
 				value+=(valuesList.get(valuesCounter)*coefficients[coefficients.length-1-j]);
 				valuesCounter--;

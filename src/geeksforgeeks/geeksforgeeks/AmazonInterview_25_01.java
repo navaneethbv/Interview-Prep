@@ -10,7 +10,18 @@ import java.util.Scanner;
  * Given an integer array and an integer value X,
  * return two elements in that array such that sum of them equals to X.
  */;
+/**
+ * Implementation of Amazon Interview_25_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_25_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 Integer size=Integer.parseInt(scanner.nextLine());
@@ -20,12 +31,20 @@ import java.util.Scanner;
 		 System.out.println(findElementNormalMethod(inputArray,(int)(size*2)/3));
 		 findElementMapMethod(inputArray,(int)(size*2)/3);
 	 }
+	 /**
+	  * Finds element map method in the data structure.
+	  *
+	  * @param inputArray the array to process
+	  * @param element the element parameter
+	  */
 	 private static void findElementMapMethod(int[] inputArray, int element) {
 
 		 int binaryMap[]=new int[inputArray.length*2+1];
 		 Arrays.fill(binaryMap,0);
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 int difference=element-inputArray[i];
+			 // Check for null/base case
 			 if(difference>=0&&binaryMap[difference]==1)
 			 {
 				 System.out.println(inputArray[i]+"//"+difference);
@@ -33,6 +52,13 @@ import java.util.Scanner;
 			 binaryMap[inputArray[i]]=1;
 		 }
 	 }
+	 /**
+	  * Finds element normal method in the data structure.
+	  *
+	  * @param inputArray the array to process
+	  * @param element the element parameter
+	  * @return the resulting string
+	  */
 	 private static String findElementNormalMethod(int[] inputArray, int element) {
 		 Arrays.sort(inputArray);
 		 System.out.println(Arrays.toString(inputArray));
@@ -50,6 +76,12 @@ import java.util.Scanner;
 		 }
 		 return "-1";
 	 }
+	 /**
+	  * Performs buildInputArray operation.
+	  *
+	  * @param size the size parameter
+	  * @return the resulting array
+	  */
 	 private static int[] buildInputArray(Integer size) {
 		 int inputArray[]=new int[size];
 		 for (int i = 0; i < size; i++) {

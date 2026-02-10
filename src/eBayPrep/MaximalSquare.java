@@ -2,7 +2,18 @@ package eBayPrep;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Maximal Square algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaximalSquare{
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(maximalSquare(new char[][]{
 			{'1','0','1','0','0'},
@@ -21,13 +32,22 @@ public class MaximalSquare{
 			{'1', '0'}}));
 
 	}
+	/**
+	 * Performs maximalSquare operation.
+	 *
+	 * @param s the array to process
+	 * @return the computed integer result
+	 */
 	public static int maximalSquare(char[][] s) {
+		// Check for null/base case
 		if(s==null||s.length==0)
 			return 0;
 		int[][] m=new int[s.length][s[0].length];
+		// Iterate through all elements
 		for (int i = 0; i < m[0].length; i++) {
 			m[0][i]=Integer.parseInt(s[0][i]+"");
 		}
+		// Iterate through all elements
 		for (int i = 0; i < m.length; i++) {
 			m[i][0]=Integer.parseInt(s[i][0]+"");
 		}
@@ -50,6 +70,7 @@ public class MaximalSquare{
 				}
 			}
 		}
+		// Iterate through all elements
 		for (int i = 0; i < m.length; i++) {
 			for (int j = 0; j < m[0].length; j++) {
 				max=Math.max(m[i][j], max);

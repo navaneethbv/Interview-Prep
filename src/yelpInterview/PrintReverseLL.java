@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of Print Reverse LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrintReverseLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -9,6 +18,11 @@ public class PrintReverseLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(0);
 		n.next=new Node(1);
@@ -27,7 +41,13 @@ public class PrintReverseLL {
 
 
 
+	/**
+	 * Performs recursivePrint operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void recursivePrint(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			recursivePrint(n.next);
@@ -39,6 +59,11 @@ public class PrintReverseLL {
 
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{

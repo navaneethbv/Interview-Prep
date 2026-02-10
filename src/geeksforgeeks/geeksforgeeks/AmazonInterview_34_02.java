@@ -10,16 +10,31 @@ import java.util.Arrays;
  * and negative numbers are placed alternatively, constraints are that it
  * should be in-place and order of elements should not change.
  */;
+/**
+ * Implementation of Amazon Interview_34_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_34_02 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		 int inputArray[]={-1, 2, -3, 4, 5, 6, -7, 8, 9};
-		 System.out.println(Arrays.toString(inputArray));
-		 inputArray=rearrange(inputArray);
-		 System.out.println(Arrays.toString(inputArray));
+
 	 }
 
+	 /**
+	  * Performs rearrange operation.
+	  *
+	  * @param inputArray the array to process
+	  * @return the resulting array
+	  */
 	 private static int[] rearrange(int[] inputArray) {
 		 int index=-1;
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 if(inputArray[i]<0)
 			 {

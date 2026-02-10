@@ -2,7 +2,18 @@ package Practice;
 import java.util.ArrayList;
 import java.util.List;
  
+/**
+ * Implementation of Dictionary Without Regex algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DictionaryWithoutRegex {
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args[] the args[] parameter
+     */
     public static void main(String args[]) {
         List<String> dict = new ArrayList<String>();
  

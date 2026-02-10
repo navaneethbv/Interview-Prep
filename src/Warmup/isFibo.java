@@ -9,7 +9,18 @@ import java.util.ArrayList;
  * Problem Statement Link:https://www.hackerrank.com/challenges/is-fibo
  */
 
+/**
+ * Implementation of is Fibo algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class isFibo {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws Exception {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		Long noOfTestCases=Long.parseLong(br.readLine());

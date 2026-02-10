@@ -1,7 +1,16 @@
 package LeetCodePerformancePractice;
 
 
+/**
+ * Implementation of Add Two Numbers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AddTwoNumbers {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
@@ -9,6 +18,11 @@ public class AddTwoNumbers {
 	}
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode l1=new ListNode(1);
 		l1.next=new ListNode(8);
@@ -22,6 +36,13 @@ public class AddTwoNumbers {
 			l1=l1.next;
 		}
 	}
+	/**
+	 * Adds two numbers to the data structure.
+	 *
+	 * @param l1 the l1 parameter
+	 * @param l2 the l2 parameter
+	 * @return the list of results
+	 */
 	public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		ListNode output=new ListNode(-1);
 		ListNode outputPointer=output;
@@ -39,6 +60,7 @@ public class AddTwoNumbers {
 			l1=l1.next;
 			l2=l2.next;
 		}
+		// Check for null/base case
 		if(l1!=null || l2!=null)
 		{
 			while(l1!=null)

@@ -2,19 +2,36 @@ package yelpInterview;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Algo Closest Pair Sorted Arrays algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AlgoClosestPairSortedArrays {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int arr1[] = {1, 4, 5, 7};
-		int arr2[] = {10, 20, 30, 40};
-		System.out.println(findClosestPair(arr1,arr2,32));
 
 	}
 
+	/**
+	 * Finds closest pair in the data structure.
+	 *
+	 * @param arr1 the array to process
+	 * @param arr2 the array to process
+	 * @param value the value value
+	 * @return the computed integer result
+	 */
 	private static int findClosestPair(int[] arr1, int[] arr2,int value) {
 
 		int mergedArray[]=new int[arr1.length+arr2.length];
 		int arr2Index=0;
+		// Iterate through all elements
 		for (int i = 0; i < mergedArray.length; i++) {
 			if(i<arr1.length)
 			{

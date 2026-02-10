@@ -2,7 +2,16 @@ package eBayPrep;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Binary Search Tree Iterator algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BinarySearchTreeIterator {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
@@ -46,6 +55,11 @@ public class BinarySearchTreeIterator {
 		else
 			return -1;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(5);
 		tn.left=new TreeNode(3);

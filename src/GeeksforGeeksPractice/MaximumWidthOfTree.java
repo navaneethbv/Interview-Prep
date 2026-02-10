@@ -2,8 +2,19 @@ package GeeksforGeeksPractice;
 
 import GeeksforGeeksPractice._0022VerticalSumInTree.TreeNode;
 
+/**
+ * Implementation of Maximum Width Of Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaximumWidthOfTree {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 
 		TreeNode tn=new TreeNode(1);
@@ -17,7 +28,14 @@ public class MaximumWidthOfTree {
 
 	}
 
+	/**
+	 * Performs width operation.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int width(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{	
 			int max=0;
@@ -33,20 +51,37 @@ public class MaximumWidthOfTree {
 		return 0;
 	}
 
+	/**
+	 * Retrieves count from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @param i the i parameter
+	 * @return the computed integer result
+	 */
 	private static int getCount(TreeNode tn, int i) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			if(i==1){
 				System.out.print("<-"+tn.val+"->");
 				return 1;
 			}
+			// Recursively process left and right subtrees
 			return getCount(tn.left, i-1)+getCount(tn.right, i-1);
 		}
 		return 0;
 	}
 
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null){
+			// Recursively process left and right subtrees
 			return 1+Math.max(getHeight(tn.left), getHeight(tn.right));
 		}
 		return 0;

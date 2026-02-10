@@ -5,12 +5,28 @@ import java.util.Arrays;
 /*
  * Link: http://www.geeksforgeeks.org/maximum-difference-between-two-elements/
  */
+/**
+ * Implementation of max Difference Arrays algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class maxDifferenceArrays {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int arr[] ={2, 3, 10, 6, 4, 8, 1};
-		System.out.println(findMaxDifference(arr));
+
 	}
 
+	/**
+	 * Finds max difference in the data structure.
+	 *
+	 * @param arr the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMaxDifference(int[] arr) {
 		int maxDifference=arr[1]-arr[0];
 		int minElement=arr[0];

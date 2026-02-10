@@ -1,7 +1,16 @@
 package appleInterview;
 
+/**
+ * Implementation of DSLL Detect Loops LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSLLDetectLoopsLL {
 	static Node head;
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node next;
 		int value;
@@ -9,6 +18,11 @@ public class DSLLDetectLoopsLL {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node head = new Node(50);
 		head.next = new Node(20);
@@ -21,6 +35,12 @@ public class DSLLDetectLoopsLL {
 		print(head);
 	}
 
+	/**
+	 * Removes loop from the data structure.
+	 *
+	 * @param head2 the head2 parameter
+	 * @return the Node result
+	 */
 	private static Node removeLoop(Node head2) {
 		Node n=startPointLoop(head2);
 		System.out.println(n.value);
@@ -33,6 +53,12 @@ public class DSLLDetectLoopsLL {
 		return n;
 	}
 
+	/**
+	 * Performs startPointLoop operation.
+	 *
+	 * @param head the head parameter
+	 * @return the Node result
+	 */
 	public static Node startPointLoop(Node head){
 		if(!detectLoop(head))
 			return null;
@@ -40,6 +66,7 @@ public class DSLLDetectLoopsLL {
 		Node slowPointer=head;
 		while(fastPointer!=null && slowPointer!=null){
 			fastPointer=fastPointer.next;
+			// Check for null/base case
 			if(fastPointer!=null)
 				fastPointer=fastPointer.next;
 			slowPointer=slowPointer.next;
@@ -57,11 +84,18 @@ public class DSLLDetectLoopsLL {
 	}
 
 
+	/**
+	 * Performs detectLoop operation.
+	 *
+	 * @param head the head parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean detectLoop(Node head) {
 		Node fastPointer=head;
 		Node slowPointer=head;
 		while(fastPointer!=null && slowPointer!=null){
 			fastPointer=fastPointer.next;
+			// Check for null/base case
 			if(fastPointer!=null)
 				fastPointer=fastPointer.next;
 			slowPointer=slowPointer.next;
@@ -71,6 +105,11 @@ public class DSLLDetectLoopsLL {
 		return false;
 	}
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null){
 			System.out.print(n.value+"/");

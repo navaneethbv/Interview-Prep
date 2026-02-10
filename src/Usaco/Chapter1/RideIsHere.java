@@ -14,7 +14,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * Implementation of Ride Is Here algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RideIsHere {
+  /**
+   * Main method to test the functionality of the class with various test cases.
+   *
+   * @param args the array to process
+   */
   public static void main (String [] args) throws IOException {
     BufferedReader f = new BufferedReader(new FileReader("ride.in"));
     PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("ride.out")));

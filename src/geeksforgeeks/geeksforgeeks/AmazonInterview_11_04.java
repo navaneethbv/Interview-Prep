@@ -10,7 +10,18 @@ import java.util.Scanner;
  * http://www.geeksforgeeks.org/amazon-interview-set-11/
  * Program to implement atoi function
  */;
+/**
+ * Implementation of Amazon Interview_11_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_11_04 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int size=Integer.parseInt(scanner.nextLine());
@@ -23,6 +34,12 @@ import java.util.Scanner;
 		System.out.println("Integer value is :"+atoi(inputArray));
 	}
 
+	/**
+	 * Performs atoi operation.
+	 *
+	 * @param inputArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int atoi(int[] inputArray) {
 		int output=0;
 		int tenCount=1;
@@ -33,7 +50,13 @@ import java.util.Scanner;
 		return output;
 	}
 
+	/**
+	 * Performs printArray operation.
+	 *
+	 * @param inputArray the array to process
+	 */
 	private static void printArray(int[] inputArray) {
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			System.out.print(inputArray[i]+",");
 		}

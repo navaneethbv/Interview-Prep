@@ -1,5 +1,11 @@
 package Codility.Lesson_1;
 
+/**
+ * Implementation of Tic Tac Toe algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TicTacToe {
 
     private char[][] board; 
@@ -13,12 +19,17 @@ public class TicTacToe {
 	
 	
     // Set/Reset the board back to all empty values.
+    /**
+     * Performs initializeBoard operation.
+     *
+     */
     public void initializeBoard() {
 		
         // Loop through rows
         for (int i = 0; i < 3; i++) {
 			
             // Loop through columns
+            // Inner loop to check combinations
             for (int j = 0; j < 3; j++) {
                 board[i][j] = '-';
             }
@@ -27,11 +38,16 @@ public class TicTacToe {
 	
 	
     // Print the current board (may be replaced by GUI implementation later)
+    /**
+     * Performs printBoard operation.
+     *
+     */
     public void printBoard() {
         System.out.println("-------------");
 		
         for (int i = 0; i < 3; i++) {
             System.out.print("| ");
+            // Inner loop to check combinations
             for (int j = 0; j < 3; j++) {
                 System.out.print(board[i][j] + " | ");
             }
@@ -43,10 +59,16 @@ public class TicTacToe {
 	
     // Loop through all cells of the board and if one is found to be empty (contains char '-') then return false.
     // Otherwise the board is full.
+    /**
+     * Checks if board full.
+     *
+     * @return true if condition is met, false otherwise
+     */
     public boolean isBoardFull() {
         boolean isFull = true;
 		
         for (int i = 0; i < 3; i++) {
+            // Inner loop to check combinations
             for (int j = 0; j < 3; j++) {
                 if (board[i][j] == '-') {
                     isFull = false;
@@ -60,14 +82,25 @@ public class TicTacToe {
 	
     // Returns true if there is a win, false otherwise.
     // This calls our other win check functions to check the entire board.
+    /**
+     * Performs checkForWin operation.
+     *
+     * @return true if condition is met, false otherwise
+     */
     public boolean checkForWin() {
         return (checkRowsForWin() || checkColumnsForWin() || checkDiagonalsForWin());
     }
 	
 	
     // Loop through rows and see if any are winners.
+    /**
+     * Performs checkRowsForWin operation.
+     *
+     * @return true if condition is met, false otherwise
+     */
     private boolean checkRowsForWin() {
         for (int i = 0; i < 3; i++) {
+            // Check for null/base case
             if (checkRowCol(board[i][0], board[i][1], board[i][2]) == true) {
                 return true;
             }
@@ -77,8 +110,14 @@ public class TicTacToe {
 	
 	
     // Loop through columns and see if any are winners.
+    /**
+     * Performs checkColumnsForWin operation.
+     *
+     * @return true if condition is met, false otherwise
+     */
     private boolean checkColumnsForWin() {
         for (int i = 0; i < 3; i++) {
+            // Check for null/base case
             if (checkRowCol(board[0][i], board[1][i], board[2][i]) == true) {
                 return true;
             }
@@ -88,18 +127,35 @@ public class TicTacToe {
 	
 	
     // Check the two diagonals to see if either is a win. Return true if either wins.
+    /**
+     * Performs checkDiagonalsForWin operation.
+     *
+     * @return true if condition is met, false otherwise
+     */
     private boolean checkDiagonalsForWin() {
         return ((checkRowCol(board[0][0], board[1][1], board[2][2]) == true) || (checkRowCol(board[0][2], board[1][1], board[2][0]) == true));
     }
 	
 	
     // Check to see if all three values are the same (and not empty) indicating a win.
+    /**
+     * Performs checkRowCol operation.
+     *
+     * @param c1 the c1 parameter
+     * @param c2 the c2 parameter
+     * @param c3 the c3 parameter
+     * @return true if condition is met, false otherwise
+     */
     private boolean checkRowCol(char c1, char c2, char c3) {
         return ((c1 != '-') && (c1 == c2) && (c2 == c3));
     }
 	
 	
     // Change player marks back and forth.
+    /**
+     * Performs changePlayer operation.
+     *
+     */
     public void changePlayer() {
         if (currentPlayerMark == 'x') {
             currentPlayerMark = 'o';
@@ -111,6 +167,13 @@ public class TicTacToe {
 	
 	
     // Places a mark at the cell specified by row and col with the mark of the current player.
+    /**
+     * Performs placeMark operation.
+     *
+     * @param row the row parameter
+     * @param col the col parameter
+     * @return true if condition is met, false otherwise
+     */
     public boolean placeMark(int row, int col) {
 		
         // Make sure that row and column are in bounds of the board.
@@ -127,6 +190,11 @@ public class TicTacToe {
     }
     
     
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param [] the [] parameter
+     */
     public static void main (String args [])
 	{
 		// Create game and initialize it.

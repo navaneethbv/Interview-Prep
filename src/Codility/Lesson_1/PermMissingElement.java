@@ -10,6 +10,13 @@ Your goal is to find that missing element.
 
 Write a function:
 
+/**
+ * Performs solution operation.
+ *
+ * @param A the array to process
+ * @return the computed integer result
+ */
+class Solution { public int solution(int[] A); }
 class Solution { public int solution(int[] A); }
 
 that, given a zero-indexed array A, returns the value of the missing element.
@@ -35,10 +42,23 @@ Elements of input arrays can be modified.
  */
 
 
+/**
+ * Implementation of Perm Missing Element algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PermMissingElement 
 {
 	// swap the ith element and the (A[i]-1)th element, until A[i]=i+1;
 	
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
+	public int solution(int[] A) 
 	public int solution(int[] A) 
 	{
 		int n = A.length;
@@ -57,6 +77,14 @@ public class PermMissingElement
 		return n + 1;
 	}
 
+	/**
+	 * Performs swap operation.
+	 *
+	 * @param a the array to process
+	 * @param x the x parameter
+	 * @param y the y parameter
+	 */
+	private void swap(int[] a, int x, int y) 
 	private void swap(int[] a, int x, int y) 
 	{
 		int tmp = a[x];
@@ -64,6 +92,11 @@ public class PermMissingElement
 		a[y] = tmp;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) 
 	{
 		int answer = new PermMissingElement().solution(new int[]{5, 2, 3, 1});
@@ -71,6 +104,13 @@ public class PermMissingElement
 	}
 
 	// calculate the sum of all elements
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
+	/* public int solution(int[] A) 
 	/* public int solution(int[] A) 
 	 * {
         int n = A.length;

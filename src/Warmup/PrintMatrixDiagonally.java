@@ -3,7 +3,18 @@ package Warmup;
 /*
  * Link: http://www.geeksforgeeks.org/print-matrix-diagonally/
 */	
+/**
+ * Implementation of Print Matrix Diagonally algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrintMatrixDiagonally {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws Exception {
 		int inputArray[][] = {{1, 2, 3, 4},
                 {5, 6, 7, 8},
@@ -15,6 +26,11 @@ public class PrintMatrixDiagonally {
 		
 	}
 
+	/**
+	 * Performs printDiagonalMatrix operation.
+	 *
+	 * @param inputArray the array to process
+	 */
 	private static void printDiagonalMatrix(int[][] inputArray) {
 		int rows=inputArray.length;
 		int cols=inputArray[0].length;

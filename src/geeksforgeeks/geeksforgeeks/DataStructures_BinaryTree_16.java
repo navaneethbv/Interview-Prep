@@ -10,7 +10,18 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
  * http://www.geeksforgeeks.org/inorder-tree-traversal-without-recursion-and-without-stack/
  * Inorder Tree Traversal without recursion and without stack
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_16 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_16 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,50);
@@ -32,11 +43,17 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 inOrderWithoutStack(binaryTree1.rootNode);
 	 }
 
+	 /**
+	  * Performs inOrderWithoutStack operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void inOrderWithoutStack(Node node) {
 		 Node current=node;
 		 Node pre;
 		 while(current!=null)
 		 {
+			 // Check for null/base case
 			 if(current.left==null){
 				 System.out.print(current.data+",");
 				 current=current.right;
@@ -45,6 +62,7 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 				 pre=current.left;
 				 while(pre.right!=null && pre.right!=current)
 					 pre=pre.right;
+				 // Check for null/base case
 				 if(pre.right==null){
 					 pre.right=current;
 					 current=current.left;

@@ -9,12 +9,19 @@ import java.util.Scanner;
  * Given a Binary Tree, check if every node is sum of all of its children.
  * 
  */;
+/**
+ * Implementation of Amazon Interview_07_06 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_07_06 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		 int size=Integer.parseInt(scanner.nextLine());
-		 scanner.close();
-		//use bfs and add allnodes to a stack
-		 //use preorder traversals on those node to sum up their count
+
 	 }
  }

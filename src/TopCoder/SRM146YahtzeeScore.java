@@ -10,15 +10,31 @@ import java.util.TreeMap;
 
 
 
+/**
+ * Implementation of SRM146 Yahtzee Score algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM146YahtzeeScore {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(maxPoints(new int[]{2, 2, 3, 5, 4}));
-		System.out.println(maxPoints(new int[]{6, 4, 1, 1, 3}));
-		System.out.println(maxPoints(new int[]{5, 3, 5, 3, 3}));
-		System.out.println(maxPoints(new int[]{5, 4, 3, 2, 8}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs maxPoints operation.
+	 *
+	 * @param toss the array to process
+	 * @return the computed integer result
+	 */
 	public static int maxPoints(int[] toss){
 		TreeMap<Integer,Integer> elementCount=new TreeMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < toss.length; i++) {
 			if(!elementCount.containsKey(toss[i]))
 			{

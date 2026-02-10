@@ -13,7 +13,18 @@ import java.util.Scanner;
  * http://www.geeksforgeeks.org/amazon-interview-set-4-2/
  * Given an array of infinite size containing 0/1 only and in sorted order, find position of first one. 
  */
+/**
+ * Implementation of Amazon Interview_05_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_05_04 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int size=Integer.parseInt(scanner.nextLine());
@@ -61,9 +72,18 @@ public class AmazonInterview_05_04 {
 
 	}
 
+	/**
+	 * Finds first one in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @param prevIndex the prevIndex parameter
+	 * @param finalindex the finalindex parameter
+	 * @return the computed integer result
+	 */
 	private static int findfFirstOne(int[] inputArray,int prevIndex,int finalindex) {
 		boolean foundOne=false;
 		while(foundOne==false){
+			// Check for null/base case
 			if(inputArray[finalindex]==0)
 				return -1;
 			else{
@@ -73,6 +93,12 @@ public class AmazonInterview_05_04 {
 		return 100;
 	}
 
+	/**
+	 * Performs doBinarySearch operation.
+	 *
+	 * @param arrayOfRange the array to process
+	 * @return the computed integer result
+	 */
 	private static int doBinarySearch(int[] arrayOfRange) {
 		int startIndex=0;
 		int endIndex=arrayOfRange.length-1;
@@ -82,6 +108,7 @@ public class AmazonInterview_05_04 {
 			if(arrayOfRange[mid]==1){
 				endIndex=mid-1;
 			}
+			// Check for null/base case
 			else if(arrayOfRange[mid]==0){
 				startIndex=mid+1;
 			}

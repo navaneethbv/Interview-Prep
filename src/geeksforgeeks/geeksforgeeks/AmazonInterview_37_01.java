@@ -12,14 +12,28 @@ import java.util.Scanner;
  * array: 1 2 3 1 4 3 4 1 2
  * ans: 6 (3 1 4 3 4 1)
  */;
+/**
+ * Implementation of Amazon Interview_37_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_37_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		scanner.close();
-		int inputArray[]={1,2,3,1,4,3,4,1,2};
-		System.out.println(findMAxLength(inputArray));
+
 	 }
 
+	/**
+	 * Finds m ax length in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMAxLength(int[] inputArray) {
 		StringBuffer sb=new StringBuffer();
 		int length=3;

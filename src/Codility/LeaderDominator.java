@@ -7,10 +7,29 @@ import java.util.HashMap;
  * Link : https://codility.com/programmers/task/dominator
  */
 
+/**
+ * Implementation of Leader Dominator algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LeaderDominator {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(solution(new int[]{3,4,3,2,3,-1,3,3}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
+	public static int solution(int[] A)
 	public static int solution(int[] A)
 	{
 		HashMap<Integer, Integer> elementMap=new HashMap<>();

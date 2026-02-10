@@ -1,6 +1,20 @@
 package geeksforgeeks;
 
+/**
+ * Implementation of Array Rotation algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayRotation {
+	/**
+	 * Performs rev operation.
+	 *
+	 * @param arr1[] the arr1[] parameter
+	 * @param rotation the rotation parameter
+	 * @return the resulting array
+	 */
+	public  static  int[]  rev(int  arr1[],  int  rotation)
 	public  static  int[]  rev(int  arr1[],  int  rotation)
 	{  
 		int  len= arr1.length;  
@@ -20,6 +34,11 @@ public class ArrayRotation {
 		}  
 		return  arr2; 
 	} 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int arr1[] = {1,2,3,4,5,6};
 

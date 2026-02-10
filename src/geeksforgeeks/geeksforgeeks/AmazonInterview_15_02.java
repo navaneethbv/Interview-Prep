@@ -18,7 +18,18 @@ import java.util.Scanner;
  * OUTPUT:
  * a,3
  */;
+/**
+ * Implementation of Amazon Interview_15_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_15_02 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 int size=Integer.parseInt(scanner.nextLine());
@@ -30,12 +41,20 @@ import java.util.Scanner;
 		 System.out.println("Character count : "+findMostCharCount(inputArray));
 	 }
 
+	 /**
+	  * Finds most char count in the data structure.
+	  *
+	  * @param inputArray the array to process
+	  * @return the resulting string
+	  */
 	 private static String findMostCharCount(String[] inputArray) {
 		 char character=' ',mainCharacter=' ';
 		 int charCount=0,maxCount=0;
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			String inputStringArray[]=inputArray[i].split("");
 			for (int j = 1; j < inputStringArray.length; j++) {
+				// Check for null/base case
 				if(inputStringArray[j].charAt(0)==character){
 					charCount++;
 				}
@@ -50,5 +69,5 @@ import java.util.Scanner;
 			}
 		}
 		return mainCharacter+" "+maxCount;
-	}
+	 }
  }

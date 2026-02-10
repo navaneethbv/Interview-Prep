@@ -6,8 +6,19 @@ import java.util.Scanner;
 
 
 /*Implementation of FIFO Page Replacement Algorithm*/
+/**
+ * Implementation of Fifo Page Replacement Algorithm algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FifoPageReplacementAlgorithm{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		String inputArray[]=scanner.nextLine().split(",");
@@ -35,6 +46,13 @@ public class FifoPageReplacementAlgorithm{
 
 	}
 
+	/**
+	 * Performs appendToStart operation.
+	 *
+	 * @param frameArray the array to process
+	 * @param element the element parameter
+	 * @return the resulting array
+	 */
 	private static String[] appendToStart(String[] frameArray, String element) {
 		String newArray[]=new String[frameArray.length];
 		Arrays.fill(newArray," ");
@@ -45,7 +63,15 @@ public class FifoPageReplacementAlgorithm{
 		return newArray;
 	}
 
+	/**
+	 * Performs checkElement operation.
+	 *
+	 * @param frameArray the array to process
+	 * @param element the element parameter
+	 * @return the computed integer result
+	 */
 	private static int checkElement(String[] frameArray, String element) {
+		// Iterate through all elements
 		for (int i = 0; i < frameArray.length; i++) {
 			if(frameArray[i].contentEquals(element))
 				return i;

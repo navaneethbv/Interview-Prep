@@ -2,8 +2,17 @@ package appleInterview;
 
 import java.math.BigInteger;
 
+/**
+ * Implementation of DSLL Add Nos LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSLLAddNosLL {
 	static Node head;
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node next;
 		int value;
@@ -11,6 +20,11 @@ public class DSLLAddNosLL {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node head = new Node(5);
 		head.next = new Node(6);
@@ -32,6 +46,13 @@ public class DSLLAddNosLL {
 	}
 
 
+	/**
+	 * Adds nos to the data structure.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param n2 the n2 parameter
+	 * @return the Node result
+	 */
 	private static Node addNos(Node n1, Node n2) {
 		BigInteger b1=generateNumber(n1);
 		BigInteger b2=generateNumber(n2);
@@ -40,6 +61,7 @@ public class DSLLAddNosLL {
 		String str=sb.reverse().toString();
 		Node n=new Node(0);
 		Node pointer=n;
+		// Iterate through all elements
 		for (int i = 0; i < str.length(); i++) {
 			pointer.next=new Node(Integer.parseInt(str.charAt(i)+""));
 			pointer=pointer.next;
@@ -48,6 +70,12 @@ public class DSLLAddNosLL {
 	}
 
 
+	/**
+	 * Performs generateNumber operation.
+	 *
+	 * @param n1 the n1 parameter
+	 * @return the BigInteger result
+	 */
 	private static BigInteger generateNumber(Node n1) {
 		StringBuilder sb1=new StringBuilder("");
 		while(n1!=null)
@@ -59,6 +87,11 @@ public class DSLLAddNosLL {
 	}
 
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null){
 			System.out.print(n.value+"/");

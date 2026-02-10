@@ -6,8 +6,19 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/the-time-in-words
  */
+/**
+ * Implementation of Time In Words algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TimeInWords {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param ards[] the ards[] parameter
+	 */
 	public static void main(String ards[])
 	{
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
@@ -28,6 +39,12 @@ public class TimeInWords {
 		}
 	}
 
+	/**
+	 * Performs decodeMinutes operation.
+	 *
+	 * @param m the m parameter
+	 * @return the resulting string
+	 */
 	private static String decodeMinutes(int m) {
 		String connector="";
 		if(m<=30)
@@ -72,6 +89,12 @@ public class TimeInWords {
 		return "";
 	}
 
+	/**
+	 * Performs decodeHour operation.
+	 *
+	 * @param h the h parameter
+	 * @return the resulting string
+	 */
 	private static String decodeHour(int h) {
 		switch (h) {
 		case 1:return "one";

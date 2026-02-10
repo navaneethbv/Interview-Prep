@@ -7,7 +7,18 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
  * http://www.geeksforgeeks.org/print-nodes-at-k-distance-from-root/
  * Print nodes at k distance from root
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_23 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_23 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -25,9 +36,17 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 printNodesAtDistance(binaryTree1.rootNode,k);
 	 }
 
+	 /**
+	  * Performs printNodesAtDistance operation.
+	  *
+	  * @param node the tree node to process
+	  * @param k the k value
+	  */
 	 private static void printNodesAtDistance(Node node, int k) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
+		 // Check for null/base case
 		 if(k==0)
 			 System.out.print(node.data+",");
 		 else{

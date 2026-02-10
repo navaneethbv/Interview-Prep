@@ -1,6 +1,15 @@
 package servicenowPrep;
+/**
+ * Implementation of Tree Identical algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TreeIdentical
 {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		int value;
 		TreeNode left,right;
@@ -9,6 +18,11 @@ public class TreeIdentical
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -27,11 +41,21 @@ public class TreeIdentical
 		System.out.println(isIdentical(tn,tn1));
 	}
 
+	/**
+	 * Checks if identical.
+	 *
+	 * @param tn the tree node to process
+	 * @param tn1 the tn1 parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean isIdentical(TreeNode tn, TreeNode tn1) {
+		// Check for null/base case
 		if(tn==null && tn1==null)
 			return true;
+		// Check for null/base case
 		if(tn==null||tn1==null)
 			return false;
+		// Recursively process left and right subtrees
 		return tn.value==tn1.value && isIdentical(tn.left, tn1.left) && isIdentical(tn.right, tn1.right);
 	}
 	

@@ -7,7 +7,18 @@ import java.util.HashMap;
  * http://www.geeksforgeeks.org/amazon-interview-set-36/
  * check the validity of sudoku.
  */;
+/**
+ * Implementation of Amazon Interview_36_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_36_02 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 int inputArray[][]={
 				 {5,3,4,6,7,8,9,1,2},
@@ -24,10 +35,18 @@ import java.util.HashMap;
 		 System.out.println(checkSudoku(inputArray));
 	 }
 
+	 /**
+	  * Performs checkSudoku operation.
+	  *
+	  * @param inputArray the array to process
+	  * @return true if condition is met, false otherwise
+	  */
 	 private static boolean checkSudoku(int[][] inputArray) {
 		 HashMap<Integer,Integer> sumMap=new HashMap<Integer,Integer>(); 
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 HashMap<Integer,Integer> elementsMap=new HashMap<Integer,Integer>();
+			 // Inner loop to check combinations
 			 for (int j = 0; j < inputArray[0].length; j++) {
 				 int element=inputArray[i][j];
 				 if(element!=0)
@@ -50,12 +69,15 @@ import java.util.HashMap;
 				 }
 			 }
 		 }
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 if(sumMap.get(i)!=45)
 				 return false;
 		 }
+		 // Iterate through all elements
 		 for (int i = 0; i < inputArray.length; i++) {
 			 HashMap<Integer,Integer> elementsMap=new HashMap<Integer,Integer>();
+			 // Inner loop to check combinations
 			 for (int j = 0; j < inputArray[0].length; j++) {
 				 int element=inputArray[j][i];
 				 if(element!=0)

@@ -7,8 +7,19 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM163 Rochambo algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM163Rochambo {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(wins("PS"));
 		System.out.println(wins("PSRRPS"));
@@ -16,9 +27,16 @@ public class SRM163Rochambo {
 		System.out.println(wins("SRPSRPSPRSPRPSRPSRP"));
 		System.out.println(wins("RPPPRRPSSSRRRSRSPPSSPRRPSRRRRSPPPPSSPSSSSSRSSSRPRR"));
 	}
+	/**
+	 * Performs wins operation.
+	 *
+	 * @param opponent the opponent parameter
+	 * @return the computed integer result
+	 */
 	public static int wins(String opponent){
 		int noOfWins=0;
 		StringBuilder myBets=new StringBuilder("RR");
+		// Iterate through all elements
 		for (int i = 0; i < opponent.length(); i++) {
 			if(i<=1)
 			{
@@ -31,6 +49,12 @@ public class SRM163Rochambo {
 		return noOfWins;
 
 	}
+	/**
+	 * Finds winner in the data structure.
+	 *
+	 * @param predict the predict parameter
+	 * @return the char result
+	 */
 	private static char findWinner(char predict) {
 		if(predict=='R')
 			return 'P';
@@ -39,7 +63,14 @@ public class SRM163Rochambo {
 		else 
 			return 'R';	
 	}
+	/**
+	 * Performs predict operation.
+	 *
+	 * @param substring the substring parameter
+	 * @return the char result
+	 */
 	private static char predict(String substring) {
+		// Check for null/base case
 		if(substring.charAt(0)==substring.charAt(1))
 			return substring.charAt(0);
 		else{
@@ -52,6 +83,13 @@ public class SRM163Rochambo {
 			}
 		}
 	}
+	/**
+	 * Performs checkWin operation.
+	 *
+	 * @param myBet the myBet parameter
+	 * @param opponentBet the opponentBet parameter
+	 * @return the computed integer result
+	 */
 	private static int checkWin(char myBet, char opponentBet) {
 		if((myBet=='R' && opponentBet=='S')||(myBet=='S' && opponentBet=='P')||(myBet=='P' && opponentBet=='R'))
 			return 1;

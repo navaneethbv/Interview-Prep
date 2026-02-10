@@ -3,6 +3,9 @@ package geeksforgeeks;
 class LinkedList
 {
 	Node head; 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node 
 	{
 		int data; 
@@ -44,6 +47,11 @@ class LinkedList
 		last.next = new_node;
 		return;
 	}
+	/**
+	 * Removes first from the data structure.
+	 *
+	 */
+	public void removeFirst()
 	public void removeFirst()
 	{
 		if(head==null)
@@ -93,6 +101,11 @@ class LinkedList
 	      prev.next = curr.next;
 	}
 	
+	/**
+	 * Performs printlist operation.
+	 *
+	 */
+	public void printlist()
 	public void printlist()
 	{
 		Node n = head;
@@ -102,6 +115,11 @@ class LinkedList
 			n=n.next;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args)
 	{
 		LinkedList llist = new LinkedList();

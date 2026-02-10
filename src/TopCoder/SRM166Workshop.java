@@ -9,8 +9,19 @@ import java.util.Arrays;
 
 
 
+/**
+ * Implementation of SRM166 Workshop algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM166Workshop {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(pictureFrames(new int[]{1,2,3,4,5}));
 		System.out.println(pictureFrames(new int[]{8,5,3}));
@@ -21,10 +32,17 @@ public class SRM166Workshop {
 		
 	}
 
+	/**
+	 * Performs pictureFrames operation.
+	 *
+	 * @param pieces the array to process
+	 * @return the computed integer result
+	 */
 	public static int pictureFrames(int[] pieces){
 		int count=0;
 		int k=0;
 		Arrays.sort(pieces);
+		// Iterate through all elements
 		for (int i = 0; i < pieces.length-2; i++) {
 			k=i+2;
 			for (int j = i+1; j < pieces.length; j++) {

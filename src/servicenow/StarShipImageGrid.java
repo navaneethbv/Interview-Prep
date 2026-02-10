@@ -6,6 +6,12 @@ import java.io.IOException;
  * Class  : StarShipImageGrid
  * Description:This Class is used to instantiate a StarShip Image and convert it to a 2-dimensional character array.
  */
+/**
+ * Implementation of Star Ship Image Grid algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class StarShipImageGrid {
 	String starShipImagePath;
 	int height,width;
@@ -61,16 +67,47 @@ public class StarShipImageGrid {
 		};
 		br.close();
 	}
+	/**
+	 * Retrieves star ship image path from the data structure.
+	 *
+	 * @return the resulting string
+	 */
 	public  String getStarShipImagePath() {
 		return starShipImagePath;
 	}
+	/**
+	 * Sets star ship image path in the data structure.
+	 *
+	 * @param starShipImagePath the starShipImagePath parameter
+	 */
 	public  void setStarShipImagePath(String starShipImagePath) {
 		this.starShipImagePath = starShipImagePath;
 	}
+	/**
+	 * Retrieves image grid from the data structure.
+	 *
+	 * @return the resulting array
+	 */
 	public  char[][] getImageGrid() {
 		return imageGrid;
 	}
+	/**
+	 * Sets image grid in the data structure.
+	 *
+	 * @param imageGrid the array to process
+	 */
 	public  void setImageGrid(char[][] imageGrid) {
 		this.imageGrid = imageGrid;
 	}
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+
 }

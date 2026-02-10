@@ -1,6 +1,15 @@
 package servicenowPrep;
+/**
+ * Implementation of Level Order Traversal algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LevelOrderTraversal
 {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		int value;
 		TreeNode left,right;
@@ -9,6 +18,11 @@ public class LevelOrderTraversal
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -20,6 +34,11 @@ public class LevelOrderTraversal
 		levelOrderTraversal(tn);
 	}
 
+	/**
+	 * Performs levelOrderTraversal operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void levelOrderTraversal(TreeNode tn) {
 		int height=getHeight(tn);
 		for (int i = 0; i < height; i++) {
@@ -28,7 +47,14 @@ public class LevelOrderTraversal
 		}
 	}
 
+	/**
+	 * Performs printNodes operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param i the i parameter
+	 */
 	private static void printNodes(TreeNode tn, int i) {
+		// Check for null/base case
 		if(tn==null||i<0)return;
 		if(i==0)
 			System.out.print(tn.value+"/");
@@ -36,9 +62,17 @@ public class LevelOrderTraversal
 		printNodes(tn.right, i-1);
 	}
 
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode tn) {
+		// Check for null/base case
 		if(tn==null)	
 			return 0;
+		// Recursively process left and right subtrees
 		return 1+Math.max(getHeight(tn.left), getHeight(tn.right));
 	}
 

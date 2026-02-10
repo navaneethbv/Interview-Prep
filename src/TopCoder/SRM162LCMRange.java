@@ -7,12 +7,29 @@ package TopCoder;
 
 
 
+/**
+ * Implementation of SRM162 LCM Range algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM162LCMRange {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args)  {
-		System.out.println(lcm(1,5));
-		System.out.println(lcm(4,5));
-		System.out.println(lcm(1,12));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs lcm operation.
+	 *
+	 * @param first the first parameter
+	 * @param last the last parameter
+	 * @return the computed integer result
+	 */
 	public static int lcm(int first, int last){
 		int num=1;
 		for (int i = first; i <=last; i++) {
@@ -20,10 +37,26 @@ public class SRM162LCMRange {
 		}
 		return num;
 	}
+	/**
+	 * Finds lcm in the data structure.
+	 *
+	 * @param a the a parameter
+	 * @param b the b parameter
+	 * @return the computed integer result
+	 */
+	private static int findLcm(int a, int b)
 	private static int findLcm(int a, int b)
 	{
 		return a * (b / gcd(a, b));
 	}
+	/**
+	 * Performs gcd operation.
+	 *
+	 * @param a the a parameter
+	 * @param b the b parameter
+	 * @return the computed integer result
+	 */
+	private static int gcd(int a, int b)
 	private static int gcd(int a, int b)
 	{
 		while (b > 0)

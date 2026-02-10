@@ -6,8 +6,19 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/xoring-ninja
  */
+/**
+ * Implementation of Xoring Ninja algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class XoringNinja {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param ards[] the ards[] parameter
+	 */
 	public static void main(String ards[])
 	{
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));

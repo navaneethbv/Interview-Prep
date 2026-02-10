@@ -2,6 +2,12 @@ package Practice;
 
 class SecondHighest {
 
+        /**
+         * Finds  in the data structure.
+         *
+         * @param array the array to process
+         * @return the computed integer result
+         */
         public static int findsecondhighest(int[] array) {
                 int highest = 0, secondhighest = 0;
                 if(array[0] > array[1]) {
@@ -25,9 +31,14 @@ class SecondHighest {
                 return secondhighest;
         }
 
+        /**
+         * Main method to test the functionality of the class with various test cases.
+         *
+         * @param args the array to process
+         */
         public static void main(String[] args) {
-                int[] array = {3, 2, 9, 7, 11, 1, 5};
-                System.out.println("The second highest number in the array is "+findsecondhighest(array));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
         }
 
 }

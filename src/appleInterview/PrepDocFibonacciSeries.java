@@ -2,13 +2,29 @@ package appleInterview;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Prep Doc Fibonacci Series algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrepDocFibonacciSeries {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		printFiboNacciSeries(10);
-		printFiboNacciSeries(7);
+
 	}
 
+	/**
+	 * Performs printFiboNacciSeries operation.
+	 *
+	 * @param i the i parameter
+	 */
 	private static void printFiboNacciSeries(int i) {
+		// Check for null/base case
 		if(i==0)return;
 		if(i==1){System.out.println(1);return;}
 		if(i==2){System.out.println(1+"/"+1);return;}

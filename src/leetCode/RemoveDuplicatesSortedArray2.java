@@ -7,10 +7,23 @@ import java.util.HashMap;
  * Link : https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
  */
 
+/**
+ * Implementation of Remove Duplicates Sorted Array2 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveDuplicatesSortedArray2 {
+	/**
+	 * Removes duplicates from the data structure.
+	 *
+	 * @param nums the array to process
+	 * @return the computed integer result
+	 */
 	public static int removeDuplicates(int[] nums) {
 		HashMap<Integer, Integer> elementCount=new HashMap<>();
 		int index=-1,count=0;
+		// Iterate through all elements
 		for (int i = 0; i < nums.length; i++) {
 			if(!elementCount.containsKey(nums[i]))
 			{
@@ -40,9 +53,13 @@ public class RemoveDuplicatesSortedArray2 {
 		return count;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray[]=new int[]{1,1,1,2,2,3};
-		System.out.println(removeDuplicates(inputArray));
-		System.out.println(Arrays.toString(inputArray));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

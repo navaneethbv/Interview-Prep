@@ -10,15 +10,31 @@ import java.util.TreeMap;
 /*
  * http://www.geeksforgeeks.org/sort-elements-by-frequency/
  */
+/**
+ * Implementation of Sort Elements Frequency Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SortElementsFrequencyArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int arr[] =  {2, 5, 2, 8, 5, 5, 8, 8};
-		sortElementsByFrequency(arr);
+
 	}
 
+	/**
+	 * Performs sortElementsByFrequency operation.
+	 *
+	 * @param arr the array to process
+	 */
 	private static void sortElementsByFrequency(int[] arr) {
 		Arrays.sort(arr);
 		Map<Integer, Integer> elementMap=new TreeMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < arr.length; i++) {
 			if(elementMap.containsKey(arr[i]))
 				elementMap.put(arr[i],elementMap.get(arr[i])+1);
@@ -27,6 +43,7 @@ public class SortElementsFrequencyArray {
 		}
 		Object[] keys=elementMap.keySet().toArray();
 		Map<Integer, ArrayList<Integer>> reverseElementMap=new TreeMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < keys.length; i++) {
 			int element=elementMap.get(keys[i]);
 			if(reverseElementMap.containsKey(element))
@@ -49,6 +66,7 @@ public class SortElementsFrequencyArray {
 		int index=0;
 		for (int i = values.length-1; i >=0; i--) {
 			ArrayList<Integer> al=reverseElementMap.get(values[i]);
+			// Inner loop to check combinations
 			for (int j = 0; j < al.size(); j++) {
 				Arrays.fill(arr,index,index+(Integer)values[i],al.get(j));
 				index=index+(Integer)values[i];
@@ -56,5 +74,5 @@ public class SortElementsFrequencyArray {
 		}
 		System.out.println(Arrays.toString(arr));
 
-	}	
+	}
 }

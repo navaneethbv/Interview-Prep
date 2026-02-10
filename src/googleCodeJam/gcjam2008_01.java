@@ -12,9 +12,20 @@ import java.util.Scanner;
  * 
  * TO  be done later
  */
+/**
+ * Implementation of gcjam2008_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class gcjam2008_01 {
 
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		Integer noOfTestCases=Integer.parseInt(scanner.nextLine());
@@ -30,12 +41,26 @@ public class gcjam2008_01 {
 		scanner.close();
 	}
 
+	/**
+	 * Performs translateInputIndex operation.
+	 *
+	 * @param inputIndex the inputIndex parameter
+	 * @param outputLanguage the outputLanguage parameter
+	 * @return the resulting string
+	 */
 	private static String translateInputIndex(int inputIndex, String outputLanguage) {
 
 
 		return null;
 	}
 
+	/**
+	 * Finds input language index in the data structure.
+	 *
+	 * @param inputNumber the inputNumber parameter
+	 * @param inputLanguage the inputLanguage parameter
+	 * @return the computed integer result
+	 */
 	private static int findInputLanguageIndex(String inputNumber, String inputLanguage) {
 		//make 0 to 9 string array and then check values
 		if(inputLanguage.length()==1)

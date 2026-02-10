@@ -3,8 +3,17 @@ package servicenowPrep;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Implementation of Print Vertical Order algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrintVerticalOrder
 {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		int value;
 		TreeNode left,right;
@@ -13,6 +22,11 @@ public class PrintVerticalOrder
 		}
 	}
 	static HashMap<Integer, ArrayList<Integer>> levelMap=new HashMap<>();
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -26,7 +40,14 @@ public class PrintVerticalOrder
 		printVerticalOrder(tn,0);
 		System.out.println(levelMap);
 	}
+	/**
+	 * Performs printVerticalOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param level the level parameter
+	 */
 	private static void printVerticalOrder(TreeNode tn,int level) {
+		// Check for null/base case
 		if(tn==null)return;
 		if(levelMap.containsKey(level))
 		{
