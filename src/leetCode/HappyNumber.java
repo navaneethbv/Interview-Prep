@@ -25,7 +25,7 @@ public class HappyNumber {
 			// Iterate through all elements
 			for (int i = 0; i < inputString.length(); i++) {
 				int digit = Integer.parseInt(inputString.charAt(i) + "");
-				value += digit * digit;
+				value = value + (digit * digit);
 			}
 			inputString=String.valueOf(value);
 		}

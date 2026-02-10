@@ -21,7 +21,9 @@ public class ExcelSheetColumnNumber {
 		int value=0;
 		for (int i = s.length()-1; i >=0; i--) {
 			int charCount=((int)s.charAt(i))-64;
-			value+=Math.pow(26, s.length()-1-i)*charCount;
+			int exponent = s.length() - 1 - i;
+			int placeValue = (int) Math.pow(26, exponent);
+			value = value + (placeValue * charCount);
 		}
 		return value;
 	}

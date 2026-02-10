@@ -33,7 +33,7 @@ public class HappyNumber {
 			int sum=0;
 			// Iterate through all elements
 			for (int i = 0; i < arr.length; i++) {
-				sum+=(Integer.parseInt(arr[i]+"")*Integer.parseInt(arr[i]+""));
+				sum = sum + (Integer.parseInt(arr[i]+"") * Integer.parseInt(arr[i]+""));
 			}
 			if(sum==1)
 				return true;
