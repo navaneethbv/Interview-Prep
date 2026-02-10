@@ -1,0 +1,24 @@
+package Codility;
+
+/*
+ * Author : Navaneeth Rao
+ * Link : https://codility.com/programmers/task/min_perimeter_rectangle
+ */
+
+public class PrimeNosCountFactors {
+	public static void main(String[] args) {
+		System.out.println(solution(60));
+	}
+	public static int solution(int N){
+		int count=0;
+		for (int i = 1; i*i <=N; i++) {
+			if(N%i==0)
+			{
+				count++;
+				count++;				
+			}
+		}
+		
+		return count;
+	}
+}
