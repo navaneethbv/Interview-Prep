@@ -2,14 +2,24 @@ package geeksforgeeks;
 
 import java.util.Arrays;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-26/
  * http://www.geeksforgeeks.org/find-the-maximum-element-in-an-array-which-is-first-increasing-and-then-decreasing/
  * Given an array of integers which is initially increasing and then decreasing,
  * find the maximum value in the array.
  */;
+/**
+ * Implementation of Amazon Interview_26_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_26_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 int input1[]={8, 10, 20, 80, 100, 200, 400, 500, 3, 2, 1};
 		 int input2[]={1, 3, 50, 10, 9, 7, 6};
@@ -29,6 +39,12 @@ import java.util.Arrays;
 		 System.out.println("Binary : "+findMAxElementBinary(input4));
 	 }
 
+	 /**
+	  * Finds m ax element binary in the data structure.
+	  *
+	  * @param input the array to process
+	  * @return the computed integer result
+	  */
 	 private static int findMAxElementBinary(int[] input) {
 		 // TODO Auto-generated method stub
 		 int start=0,last=input.length-1; 
@@ -55,6 +71,12 @@ import java.util.Arrays;
 		 return 0;
 	 }
 
+	 /**
+	  * Finds m ax element normal in the data structure.
+	  *
+	  * @param input the array to process
+	  * @return the computed integer result
+	  */
 	 private static int findMAxElementNormal(int[] input) {
 		 int max=input[0];
 		 for (int i = 1; i < input.length; i++) {

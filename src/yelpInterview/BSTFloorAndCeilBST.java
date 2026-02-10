@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of BST Floor And Ceil BST algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTFloorAndCeilBST {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -8,6 +17,11 @@ public class BSTFloorAndCeilBST {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=insert(null,8);
 		insert(n,4);
@@ -23,13 +37,21 @@ public class BSTFloorAndCeilBST {
 		}
 	}
 
-
+	/**
+	 * Finds floor in the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the computed integer result
+	 */
 	private static int findFloor(Node n, int value) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			if(n.value==value)
 				return value;
 			if(n.value>value)
+				// Recursively process left and right subtrees
 				return findFloor(n.left, value);
 			int ceil=findFloor(n.right, value);
 			return ceil>=n.value?ceil:n.value;
@@ -37,13 +59,21 @@ public class BSTFloorAndCeilBST {
 		return -1;
 	}
 
-
+	/**
+	 * Finds ceil in the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the computed integer result
+	 */
 	private static int findCeil(Node n, int value) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			if(n.value==value)
 				return value;
 			if(n.value<value)
+				// Recursively process left and right subtrees
 				return findCeil(n.right, value);
 			int ceil=findCeil(n.left, value);
 			return ceil>=value?ceil:n.value;
@@ -52,9 +82,14 @@ public class BSTFloorAndCeilBST {
 		return -1;
 	}
 
-
 	
+	/**
+	 * Performs inOrderTraversal operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrderTraversal(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			inOrderTraversal(n.left);
@@ -63,7 +98,15 @@ public class BSTFloorAndCeilBST {
 		}
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)

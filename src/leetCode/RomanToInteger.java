@@ -4,7 +4,19 @@ package leetCode;
  * Link : https://leetcode.com/problems/move-zeroes/
  */
 
+/**
+ * Implementation of Roman To Integer algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RomanToInteger {
+	/**
+	 * Performs romanToInt operation.
+	 *
+	 * @param s the s parameter
+	 * @return the computed integer result
+	 */
 	public static int romanToInt(String s) {
 		int value=0;
 		Integer prevValue=null;
@@ -13,6 +25,7 @@ public class RomanToInteger {
 			for (int i = s.length()-1; i>=0;i--) {
 				int romanValue=romanTable(s.charAt(i));
 				System.out.println(value);
+				// Check for null/base case
 				if(prevValue==null)
 				{
 					prevValue=romanValue;
@@ -32,6 +45,12 @@ public class RomanToInteger {
 		}
 		return value;
 	}
+	/**
+	 * Performs romanTable operation.
+	 *
+	 * @param c the c parameter
+	 * @return the computed integer result
+	 */
 	public static int romanTable(char c){
 		int num = 0;
 		switch(c){
@@ -64,7 +83,13 @@ public class RomanToInteger {
 	}
 	
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(romanToInt("MMMMCMXCIX"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

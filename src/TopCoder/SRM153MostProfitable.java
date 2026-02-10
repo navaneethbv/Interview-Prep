@@ -5,9 +5,18 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1774&rd=4570
  */
 
-
-
+/**
+ * Implementation of SRM153 Most Profitable algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM153MostProfitable {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(bestItem(new int[]{100,120,150,1000},new int[]{110,110,200,2000},
 				new int[]{20,100,50,3},new String[]{"Video Card","256M Mem","CPU/Mobo combo","Complete machine"}));
@@ -17,9 +26,19 @@ public class SRM153MostProfitable {
 		
 
 	}
+	/**
+	 * Performs bestItem operation.
+	 *
+	 * @param costs the array to process
+	 * @param prices the array to process
+	 * @param sales the array to process
+	 * @param items the array to process
+	 * @return the resulting string
+	 */
 	static String bestItem(int[] costs, int[] prices, int[] sales, String[] items){
 		String bestItem="";
 		int maxProfit=0;
+		// Iterate through all elements
 		for (int i = 0; i < items.length; i++) {
 			int itemProfit=0;
 			if(prices[i]>costs[i]){

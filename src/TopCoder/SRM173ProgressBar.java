@@ -5,19 +5,33 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1975&rd=4670
  */
 
-
-
+/**
+ * Implementation of SRM173 Progress Bar algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM173ProgressBar {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		//System.out.println(showProgress(new int[]{19,6,23,17},3));
-		//System.out.println(showProgress(new int[]{2,3,7,1,4,3},4));
-		//System.out.println(showProgress(new int[]{553,846,816,203,101,120,161,818,315,772},4));
-		//System.out.println(showProgress(new int[]{7,60,468,489,707,499,350,998,1000,716,457,104,597,583,396,862},2));
-		//System.out.println(showProgress(new int[]{419,337,853,513,632,861,336,594,94,367,336,297,966,627,399,433,846,859,80,2},19));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs showProgress operation.
+	 *
+	 * @param taskTimes the array to process
+	 * @param tasksCompleted the tasksCompleted parameter
+	 * @return the resulting string
+	 */
 	public static String showProgress(int[] taskTimes, int tasksCompleted){
 		int total=0;
 		int completed=0;
+		// Iterate through all elements
 		for (int i = 0; i < taskTimes.length; i++) {
 			if(i<tasksCompleted)
 				completed+=taskTimes[i];

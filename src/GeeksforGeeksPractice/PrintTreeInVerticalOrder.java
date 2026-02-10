@@ -6,8 +6,19 @@ import java.util.HashMap;
 /*
  * Link : http://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/
  */
+/**
+ * Implementation of Print Tree In Vertical Order algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrintTreeInVerticalOrder {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn = new TreeNode(1);
 	    tn.left = new TreeNode(2);
@@ -36,7 +47,14 @@ public class PrintTreeInVerticalOrder {
 		}
 	}
 	static HashMap<Integer,ArrayList<Integer>> elementMap=new HashMap<>();
+	/**
+	 * Performs printVerticalOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param level the level parameter
+	 */
 	private static void printVerticalOrder(TreeNode tn,int level) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			if(elementMap.containsKey(level))
@@ -54,6 +72,9 @@ public class PrintTreeInVerticalOrder {
 			printVerticalOrder(tn.right, level+1);
 		}
 	}
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;

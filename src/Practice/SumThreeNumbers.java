@@ -5,14 +5,24 @@ package Practice;
 import java.util.*;
 
 class SumThreeNumbers {
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args the array to process
+     */
     public static void main(String[] args) {
-        int[] array = {3,5,6,12,9,4,10};
-        int sum = 23;
-        sumThreeNumbers(array,sum);
+
     }
     
      // Brute Force Method - O(n^3)
+   /**
+    * Performs sumThreeNumbers operation.
+    *
+    * @param array the array to process
+    * @param sum the sum parameter
+    */
    /* static void sumThreeNumbers(int[] array, int sum) {
+        // Iterate through all elements
         for(int i = 0; i < array.length; i++) {
             for(int j = i+1; j < array.length; j++) {
                 for(int k = j+1; k < array.length; k++) {
@@ -23,15 +33,23 @@ class SumThreeNumbers {
             }
         }
     }*/
-    
+   }
     
    // Complexity is O(n)
+    /**
+     * Performs sumThreeNumbers operation.
+     *
+     * @param array the array to process
+     * @param sum the sum parameter
+     */
     static void sumThreeNumbers(int[] array, int sum) {
         Set<Integer> set = new HashSet<Integer>();
         int difference = 0;
+        // Iterate through all elements
         for(int i = 0; i < array.length; i++) {
             set.add(array[i]);
         }
+        // Iterate through all elements
         for(int i = 0; i < array.length; i++) {
             difference = sum - array[i];
            //System.out.print("The pair of numbers are "+array[i]);
@@ -39,6 +57,14 @@ class SumThreeNumbers {
         }
     }
     
+    /**
+     * Finds sum pair in the data structure.
+     *
+     * @param set the set parameter
+     * @param difference the difference parameter
+     * @param num the num parameter
+     * @param sum the sum parameter
+     */
     static void findSumPair(Set<Integer> set, int difference, int num, int sum) {
         set.remove(num);
         int[] array = new int[set.size()];
@@ -47,6 +73,7 @@ class SumThreeNumbers {
             array[index++] = i; 
         }
         int diff = 0;
+        // Iterate through all elements
         for(int i = 0; i < array.length; i++) {
             diff = difference - array[i];
             if((set.contains(diff))&&(num + diff +array[i] == sum)&&(array[i] != diff)) {

@@ -4,6 +4,12 @@ package hackerRank.CodeWhiz;
  * Maximum and Minimum
  * Link:https://www.hackerrank.com/contests/codewhiz-java-march-2016/challenges/maximum-and-minimum
  */
+/**
+ * Implementation of Covariant Return Types algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CovariantReturnTypes {
 
 	class Flower{
@@ -28,7 +34,6 @@ public class CovariantReturnTypes {
 			return "Lotus";
 		}
 	}
-
 
 	class State{
 		Flower your_National_Flower(){

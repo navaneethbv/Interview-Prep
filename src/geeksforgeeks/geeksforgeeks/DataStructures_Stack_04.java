@@ -5,21 +5,32 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Stack;
 
-
-
 /*
  * http://geeksquiz.com/stack-set-2-infix-to-postfix/
  * Infix to Postfix
  */;
+/**
+ * Implementation of Data Structures_ Stack_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_Stack_04 {	 
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		 String inputString="a+b*(c^d-e)^(f+g*h)-i";//scanner.nextLine();
-		 scanner.close();
-		 //abcd^e-fgh*+^*+i-
-		 System.out.println(convertToPostfix(inputString));
+
 	 }
 
+	 /**
+	  * Performs convertToPostfix operation.
+	  *
+	  * @param inputString the inputString parameter
+	  * @return the resulting string
+	  */
 	 private static String convertToPostfix(String inputString) {
 		 Stack<Character> stack=new Stack<Character>();
 		 StringBuilder sb=new StringBuilder();
@@ -32,6 +43,7 @@ import java.util.Stack;
 		 precedenceMap.put('(',5);
 		 precedenceMap.put(')',5);
 
+		 // Iterate through all elements
 		 for (int i = 0; i < inputString.length(); i++) {
 			 char element=inputString.charAt(i);
 			 if((element+"").matches("^[a-z0-9]"))
@@ -76,20 +88,11 @@ import java.util.Stack;
 						 }
 					 }
 
-
-
-
-
 				 }
 
 			 }
 
-
-
 		 }
-
-
-
 
 		 return null;
 	 }

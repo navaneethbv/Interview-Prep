@@ -4,13 +4,23 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/iterative-preorder-traversal/
  * Iterative Preorder Traversal
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_38 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_38 {
 	 static Stack<Integer> stack=new Stack<Integer>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,20);
@@ -29,19 +39,25 @@ import java.util.Stack;
 		 preOrderIterator(binaryTree1.rootNode);
 	 }
 
+	 /**
+	  * Performs preOrderIterator operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void preOrderIterator(Node node) {
 		 Stack<Node> stack=new Stack<Node>();
 		 stack.push(node);
 		 while(!stack.isEmpty()){
 			 Node n=stack.pop();
 			 System.out.print(n.data+",");
+			 // Check for null/base case
 			 if(n.right!=null)
 				 stack.push(n.right);
+			 // Check for null/base case
 			 if(n.left!=null)
 				 stack.push(n.left);
 		 }
 
 	 }
-
 
  }

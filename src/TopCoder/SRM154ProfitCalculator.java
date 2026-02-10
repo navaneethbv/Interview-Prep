@@ -5,9 +5,18 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1768&rd=4575
  */
 
-
-
+/**
+ * Implementation of SRM154 Profit Calculator algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM154ProfitCalculator {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(percent(new String[]{"012.99 008.73","099.99 050.00","123.45 101.07"}));
 		System.out.println(percent(new String[]{"000.00 049.99","999.99 936.22","033.99 025.64","249.99 211.87"}));
@@ -25,10 +34,16 @@ public class SRM154ProfitCalculator {
 				"809.63 508.33","375.68 290.84","334.66 477.89","689.54 526.35","084.77 316.51",
 				"304.76 015.91","460.63 636.56","357.84 436.20","752.24 047.64","922.10 573.12"}));
 
-
 	}
+	/**
+	 * Performs percent operation.
+	 *
+	 * @param items the array to process
+	 * @return the computed integer result
+	 */
 	public static int percent(String[] items){
 		double cost=0,sp=0;
+		// Iterate through all elements
 		for (int i = 0; i < items.length; i++) {
 			String[] splitArray=(items[i].split(" "));
 			cost+=Double.parseDouble(splitArray[0]);

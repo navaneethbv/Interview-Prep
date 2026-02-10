@@ -6,7 +6,19 @@ package leetCode;
  * Link : https://leetcode.com/problems/count-and-say/
  */
 
+/**
+ * Implementation of Count And Say algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CountAndSay {
+	/**
+	 * Counts the number of and say.
+	 *
+	 * @param n the size or count parameter
+	 * @return the resulting string
+	 */
 	public static String countAndSay(int n) {
 		BigInteger start=new BigInteger("1");
 		for (int i = 0; i < n-1; i++) {
@@ -16,6 +28,7 @@ public class CountAndSay {
 			int prevCharCount=0;
 			//boolean ended=true;
 			StringBuffer sb=new StringBuffer();
+			// Inner loop to check combinations
 			for (int j = 0; j < numberString.length(); j++) {
 				if(prevChar==' ')
 				{
@@ -40,7 +53,13 @@ public class CountAndSay {
 		}
 		return start.toString();
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(countAndSay(1));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

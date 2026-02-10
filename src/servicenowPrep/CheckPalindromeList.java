@@ -2,8 +2,17 @@ package servicenowPrep;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Check Palindrome List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CheckPalindromeList {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -12,6 +21,11 @@ public class CheckPalindromeList {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(2);
 		ln.next=new ListNode(3);
@@ -21,6 +35,12 @@ public class CheckPalindromeList {
 		System.out.println(isPalindrome(ln));
 	}
 
+	/**
+	 * Checks if palindrome.
+	 *
+	 * @param ln the ln parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean isPalindrome(ListNode ln) {
 		ListNode pointer=ln;
 		Stack<Integer> stack=new Stack<>();
@@ -39,6 +59,5 @@ public class CheckPalindromeList {
 	}
 
 	
-
 
 }

@@ -3,14 +3,22 @@ package geeksforgeeks;
 import ctci._02linkedList;
 import ctci._02linkedList.Node;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-11/
  * Program to swap the kth node from end and kth node from front
  */;
+/**
+ * Implementation of Amazon Interview_11_05 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_11_05 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _02linkedList linkedList=new _02linkedList();
 		 linkedList.add(10);
@@ -30,10 +38,17 @@ import ctci._02linkedList.Node;
 		 System.out.println("After : "+linkedList.toString());
 	 }
 
+	 /**
+	  * Performs swapElements operation.
+	  *
+	  * @param linkedList the linkedList parameter
+	  * @param i the i parameter
+	  */
 	 private static void swapElements(_02linkedList linkedList, int i) {
 		 // TODO Auto-generated method stub
 		 Node forwardPointer=linkedList.getHeadNode();
 		 Node trailingPointer=linkedList.getHeadNode();
+		 // Inner loop to check combinations
 		 for (int j = 0; j < i; j++) {
 			 forwardPointer=forwardPointer.next;
 		 }

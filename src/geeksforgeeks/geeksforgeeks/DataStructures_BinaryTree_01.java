@@ -1,12 +1,21 @@
 package geeksforgeeks;
 
-
-
 /*
  * http://www.geeksforgeeks.org/618/
  * Tree Traversals
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree=new _01DataStructures_BinaryTree_00();
 		 binaryTree.insert(null,null,10);

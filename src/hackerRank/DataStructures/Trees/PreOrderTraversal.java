@@ -4,6 +4,12 @@ package hackerRank.DataStructures.Trees;
  * Link:https://www.hackerrank.com/challenges/tree-preorder-traversal
  */
 
+/**
+ * Implementation of Pre Order Traversal algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PreOrderTraversal {
 
 	void Preorder(Node root) {
@@ -14,7 +20,6 @@ public class PreOrderTraversal {
 			Preorder(root.right);
 		}
 	}
-
 
 	class Node {
 		int data;

@@ -2,7 +2,16 @@ package yelpInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Reverse LL Size K algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ReverseLLSizeK {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -11,6 +20,11 @@ public class ReverseLLSizeK {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(1);
 		n.next=new Node(2);
@@ -25,7 +39,13 @@ public class ReverseLLSizeK {
 		print(n);
 	}
 
-
+	/**
+	 * Performs reverseLL operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param k the k value
+	 * @return the Node result
+	 */
 	private static Node reverseLL(Node n,int k) {
 		Node outputNode=new Node(-1);
 		Node ptr=outputNode;
@@ -35,6 +55,7 @@ public class ReverseLLSizeK {
 			if(!flag){
 				Stack<Integer> stack=new Stack<>();
 				for (int i = 0; i < k; i++) {
+					// Check for null/base case
 					if(n!=null)
 						stack.push(n.value);
 					else
@@ -49,6 +70,7 @@ public class ReverseLLSizeK {
 			}
 			else{
 				for (int i = 0; i < k; i++) {
+					// Check for null/base case
 					if(n!=null){
 						outputNode.next=new Node(n.value);
 						outputNode=outputNode.next;
@@ -64,17 +86,11 @@ public class ReverseLLSizeK {
 		return ptr.next;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{
@@ -84,9 +100,4 @@ public class ReverseLLSizeK {
 	}
 
 }
-
-
-
-
-
 

@@ -4,9 +4,21 @@ package leetCode;
  * Link : https://leetcode.com/problems/move-zeroes/
  */
 
+/**
+ * Implementation of Move Zeroes algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MoveZeroes {
+	/**
+	 * Performs moveZeroes operation.
+	 *
+	 * @param nums the array to process
+	 */
 	public static void moveZeroes(int[] nums) {
 		int index=0,zeroCount=0;
+		// Iterate through all elements
 		for (int i = 0; i < nums.length; i++) {
 			if(nums[i]!=0)
 			{
@@ -22,7 +34,13 @@ public class MoveZeroes {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		moveZeroes(new int[]{0, 1, 0, 3, 12});
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

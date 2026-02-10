@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of Delete LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DeleteLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -9,6 +18,11 @@ public class DeleteLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(1);
 		n.next=new Node(2);
@@ -19,6 +33,11 @@ public class DeleteLL {
 		deleteLL(n);
 	}
 
+	/**
+	 * Performs deleteLL operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void deleteLL(Node n) {
 		while(n!=null){
 			Node temp=n.next;
@@ -27,12 +46,5 @@ public class DeleteLL {
 		}
 	}
 
-
-
 }
-
-
-
-
-
 

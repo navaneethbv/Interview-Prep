@@ -3,8 +3,19 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://www.geeksforgeeks.org/print-matrix-diagonally/
  */
+/**
+ * Implementation of Print Matrix Diagonally algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrintMatrixDiagonally {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int mat[][] = {{1, 2, 3, 4},
 				{5, 6, 7, 8},
@@ -15,6 +26,11 @@ public class PrintMatrixDiagonally {
 		printDiagonally(mat);
 	}
 
+	/**
+	 * Performs printDiagonally operation.
+	 *
+	 * @param mat the array to process
+	 */
 	private static void printDiagonally(int[][] mat) {
 		int row=mat.length,col=mat[0].length;
 		for(int line=0;line<=row+col-1;line++)
@@ -29,6 +45,5 @@ public class PrintMatrixDiagonally {
 		}
 
 	}
-
 
 }

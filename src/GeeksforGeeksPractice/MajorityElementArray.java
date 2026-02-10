@@ -5,19 +5,33 @@ import java.util.HashMap;
 /*
  * Link : http://www.geeksforgeeks.org/majority-element/
  */
+/**
+ * Implementation of Majority Element Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MajorityElementArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray[]={3 ,3 ,4 ,2 ,4 ,4 ,2, 4,4};
-		System.out.println(printMajorityElement(inputArray));
-		inputArray=new int[]{3,3,4,2,4,4,2,4};
-		System.out.println(printMajorityElement(inputArray));
-		
+
 	}
 
+	/**
+	 * Performs printMajorityElement operation.
+	 *
+	 * @param inputArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int printMajorityElement(int[] inputArray) {
 		HashMap<Integer, Integer> elementMap=new HashMap<>();
 
 		int maxCount=0,maxElement=0;
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			int element=inputArray[i];
 			if(elementMap.containsKey(element))
@@ -31,6 +45,7 @@ public class MajorityElementArray {
 			}
 			else{
 				elementMap.put(element, 1);
+				// Check for null/base case
 				if(maxCount==0){
 					maxCount=1;
 					maxElement=element;
@@ -42,8 +57,5 @@ public class MajorityElementArray {
 			return maxElement;
 		return Integer.MIN_VALUE;
 	}
-
-
-
 
 }

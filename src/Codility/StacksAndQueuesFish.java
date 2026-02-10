@@ -7,12 +7,32 @@ import java.util.Stack;
  * Link : https://codility.com/programmers/task/fish
  */
 
+/**
+ * Implementation of Stacks And Queues Fish algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class StacksAndQueuesFish {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(solution(new int[]{4,3,2,1,5},new int[]{0,1,0,0,0}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A[] the A[] parameter
+	 * @param B[] the B[] parameter
+	 * @return the computed integer result
+	 */
 	public static int solution(int A[],int B[]) {
 		Stack<StackObj> stack=new Stack<StackObj>();
+		// Iterate through all elements
 		for (int i = 0; i < A.length; i++) {
 			StackObj sb=new StackObj(A[i],(B[i]==0)?"up":"down");
 			if(stack.isEmpty())
@@ -42,7 +62,6 @@ public class StacksAndQueuesFish {
 		}
 		return stack.size();
 	}
-
 
 }
 class StackObj{

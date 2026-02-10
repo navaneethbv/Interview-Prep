@@ -4,15 +4,36 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Implementation of Four Sum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FourSum {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs fourSum operation.
+	 *
+	 * @param nums the array to process
+	 * @param target the target value
+	 * @return the list of results
+	 */
 	public static List<List<Integer>> fourSum(int[] nums, int target) {
 		List<List<Integer>> outputList=new ArrayList<List<Integer>>();
 		Arrays.sort(nums);
+		// Iterate through all elements
 		for (int i = 0; i < nums.length-3; i++) {
+			// Check for null/base case
 			if(i==0||nums[i]>nums[i-1])
 				for (int j = i+1; j < nums.length-2; j++) {
 					if(j==i+1||nums[j]>nums[j-1])

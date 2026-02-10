@@ -5,7 +5,18 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/check-two-nodes-cousins-binary-tree/
  */
+/**
+ * Implementation of Cousin Nodes Check algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CousinNodesCheck {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(6);
 		tn.left=new TreeNode(3);
@@ -19,6 +30,14 @@ public class CousinNodesCheck {
 		System.out.println(checkCousins(tn,7,5));
 	}
 	static int[] path,firstPath,secondPath;
+	/**
+	 * Performs checkCousins operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param firstNode the firstNode parameter
+	 * @param secondNode the secondNode parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkCousins(TreeNode tn, int firstNode, int secondNode) {
 		path=new int[10];
 		printNodes(tn,firstNode,secondNode,path,0);
@@ -35,7 +54,17 @@ public class CousinNodesCheck {
 		return true;
 
 	}
+	/**
+	 * Performs printNodes operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param firstNode the firstNode parameter
+	 * @param secondNode the secondNode parameter
+	 * @param path the array to process
+	 * @param pathLen the pathLen parameter
+	 */
 	private static void printNodes(TreeNode tn, int firstNode, int secondNode, int[] path, int pathLen) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			path[pathLen]=tn.value;
@@ -52,6 +81,9 @@ public class CousinNodesCheck {
 			printNodes(tn.right, firstNode, secondNode, path, pathLen);
 		}	
 	}
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;
@@ -59,6 +91,5 @@ public class CousinNodesCheck {
 			this.value=value;
 		}		
 	}
-
 
 }

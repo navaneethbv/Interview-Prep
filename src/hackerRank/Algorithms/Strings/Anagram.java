@@ -6,7 +6,18 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/anagram
  */
+/**
+ * Implementation of Anagram algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Anagram {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int noOfTestCases=Integer.parseInt(scanner.nextLine());
@@ -22,12 +33,20 @@ public class Anagram {
 		}
 	}
 
+	/**
+	 * Finds anagram length in the data structure.
+	 *
+	 * @param s1 the s1 parameter
+	 * @param s2 the s2 parameter
+	 * @return the computed integer result
+	 */
 	private static int findAnagramLength(String s1, String s2) {
 		if(s1.length()!=s2.length())
 			return -1;
 		int noOfChanges=0;
 		HashMap<Character, Integer> stringOneCharCount=new HashMap<>();
 		HashMap<Character, Integer> stringTwoCharCount=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < s1.length(); i++) {
 			char c1=s1.charAt(i);
 			char c2=s2.charAt(i);

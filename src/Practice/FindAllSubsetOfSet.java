@@ -4,21 +4,40 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+/**
+ * Implementation of Find All Subset Of Set algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FindAllSubsetOfSet {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {  
-		System.out.println("\n"+createSubsetUsingTree("ABC"));
-	} 
 
+	}
+
+	/**
+	 * Performs createSubsetUsingTree operation.
+	 *
+	 * @param str the str parameter
+	 * @return the list of results
+	 */
 	private static List<String> createSubsetUsingTree(String str){
 
 		List<String> result = new ArrayList<String>(); // take set if you want unique results.
 		result.add("[]");
 
 		//If str is not null, then process further otherwise return empty set.
+		// Check for null/base case
 		if(str != null && str.length() > 0){
 
 			//Iterate each element of a set
+			// Iterate through all elements
 			for (int i = 0; i < str.length(); i++) {
 
 				//Working on str.charAt(i);

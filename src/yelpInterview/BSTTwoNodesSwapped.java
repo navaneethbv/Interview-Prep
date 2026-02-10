@@ -3,7 +3,16 @@ package yelpInterview;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Implementation of BST Two Nodes Swapped algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTTwoNodesSwapped {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -11,6 +20,11 @@ public class BSTTwoNodesSwapped {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(10);
 		n.left=new Node(5);
@@ -23,14 +37,19 @@ public class BSTTwoNodesSwapped {
 		inOrderTraversal(n);
 	}
 
-
 	static ArrayList<Integer> aList;
+	/**
+	 * Performs correctBST operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void correctBST(Node n) {
 		aList=new ArrayList<>();
 		addToList(n);
 		Object arr[]=aList.toArray();
 		Arrays.sort(arr);
 		int first=Integer.MIN_VALUE,second=Integer.MIN_VALUE;
+		// Iterate through all elements
 		for (int i = 0; i < arr.length; i++) {
 			if(aList.get(i)!=arr[i])
 			{
@@ -46,9 +65,15 @@ public class BSTTwoNodesSwapped {
 		changeNodeVal(n,first,second);
 	}
 
-
-
+	/**
+	 * Performs changeNodeVal operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param first the first parameter
+	 * @param second the second parameter
+	 */
 	private static void changeNodeVal(Node n, int first, int second) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			changeNodeVal(n.left, first, second);
@@ -60,9 +85,13 @@ public class BSTTwoNodesSwapped {
 		}
 	}
 
-
-
+	/**
+	 * Adds to list to the data structure.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void addToList(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			addToList(n.left);
@@ -71,9 +100,13 @@ public class BSTTwoNodesSwapped {
 		}
 	}
 
-
-
+	/**
+	 * Performs inOrderTraversal operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrderTraversal(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			inOrderTraversal(n.left);
@@ -82,7 +115,15 @@ public class BSTTwoNodesSwapped {
 		}
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)

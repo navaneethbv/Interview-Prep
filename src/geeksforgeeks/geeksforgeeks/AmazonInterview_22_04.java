@@ -1,10 +1,5 @@
 package geeksforgeeks;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-22/
  * Given N buckets each of capacity 1L numbered from 1 to N. Buckets are arranged in a form of a 2D Pyramid shown below.
@@ -20,8 +15,19 @@ package geeksforgeeks;
  * I will add x L of water in bucket number 1.
  * float getWaterInBucket(float x, int n);
  */;
+/**
+ * Implementation of Amazon Interview_22_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_22_04 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		
+
 	 }
  }

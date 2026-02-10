@@ -2,7 +2,16 @@ package yelpInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Check Palindrome LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CheckPalindromeLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -11,6 +20,11 @@ public class CheckPalindromeLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(1);
 		n.next=new Node(2);
@@ -21,6 +35,12 @@ public class CheckPalindromeLL {
 		System.out.println(checkPalindrome(n));
 	}
 
+	/**
+	 * Performs checkPalindrome operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkPalindrome(Node n) {
 		Node pointer=n;
 		Stack<Integer> stack=new Stack<>();
@@ -36,12 +56,5 @@ public class CheckPalindromeLL {
 		return true;
 	}
 
-
-
 }
-
-
-
-
-
 

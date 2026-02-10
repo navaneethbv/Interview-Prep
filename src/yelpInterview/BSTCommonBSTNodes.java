@@ -3,7 +3,16 @@ package yelpInterview;
 import java.util.ArrayList;
 import java.util.HashSet;
 
+/**
+ * Implementation of BST Common BST Nodes algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTCommonBSTNodes {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -11,6 +20,11 @@ public class BSTCommonBSTNodes {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=insert(null, 5);
 		insert(n, 1);
@@ -30,8 +44,12 @@ public class BSTCommonBSTNodes {
 		findCommonNodes(n,n2);
 	}
 
-
-
+	/**
+	 * Finds common nodes in the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @param n2 the n2 parameter
+	 */
 	private static void findCommonNodes(Node n, Node n2) {
 		aList=new ArrayList<>();
 		populateList(n);
@@ -42,14 +60,20 @@ public class BSTCommonBSTNodes {
 		printIntersection(arr1,arr2);
 	}
 
-
-
+	/**
+	 * Performs printIntersection operation.
+	 *
+	 * @param arr1 the array to process
+	 * @param arr2 the array to process
+	 */
 	private static void printIntersection(Object[] arr1, Object[] arr2) {
 		HashSet<Integer> set=new HashSet<>();
+		// Iterate through all elements
 		for (int i = 0; i < arr1.length; i++) {
 			set.add((int)arr1[i]);
 		}
 		System.out.println();
+		// Iterate through all elements
 		for (int i = 0; i < arr2.length; i++) {
 			if(set.contains((int)arr2[i]))
 			{
@@ -58,10 +82,14 @@ public class BSTCommonBSTNodes {
 		}
 	}
 
-
-
 	static ArrayList<Integer> aList;
+	/**
+	 * Performs populateList operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void populateList(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			populateList(n.left);
@@ -70,11 +98,13 @@ public class BSTCommonBSTNodes {
 		}
 	}
 
-
-
-
-
+	/**
+	 * Performs inOrderTraversal operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrderTraversal(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			inOrderTraversal(n.left);
@@ -83,7 +113,15 @@ public class BSTCommonBSTNodes {
 		}
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)

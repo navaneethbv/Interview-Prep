@@ -2,16 +2,28 @@ package Practice;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of longest Sub Array Containing Consecutive Numbers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class longestSubArrayContainingConsecutiveNumbers {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		// Find the longest consecutive numbers from input array
-		int[] input = {4, 5, 13, 33, 32, 10, 11, 34, 12, 31, 14};
-		
-		int[] res = findLongestConsecNum(input);
-		
-		System.out.println(Arrays.toString(res));
+
 	}
 	
+	/**
+	 * Finds longest consec num in the data structure.
+	 *
+	 * @param input the array to process
+	 * @return the resulting array
+	 */
 	static int[] findLongestConsecNum(int[] input) {
 		// sorting and find the longest consecutive num : O(nlogn) + O(n)
 		// scan all numbers if a number belongs to certain consecutive chain : 1+2+3+...+n-1 = O(n^2)

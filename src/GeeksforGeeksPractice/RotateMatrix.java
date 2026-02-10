@@ -5,8 +5,19 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/rotate-matrix-elements/
  */
+/**
+ * Implementation of Rotate Matrix algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RotateMatrix {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int a[][] = { {1,  2,  3,  4},
 				{5,  6,  7,  8},
@@ -22,7 +33,11 @@ public class RotateMatrix {
 		//rotatematrix(a);
 	}
 
-
+	/**
+	 * Rotates the .
+	 *
+	 * @param mat the array to process
+	 */
 	private static void rotatematrix(int[][] mat) {
 		
 		//similar to spiral matrix print but store the elements
@@ -73,13 +88,17 @@ public class RotateMatrix {
 		    }
 	}
 
-
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(int[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}
 
 	}
-
 
 }

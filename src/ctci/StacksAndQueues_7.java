@@ -3,18 +3,27 @@ package ctci;
 import java.util.LinkedList;
 
 /*Implementation of CTCI 3.7*/
+/**
+ * Implementation of Stacks And Queues_7 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class StacksAndQueues_7{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Shelter shelter=new Shelter();
 		shelter.enQueue("Dog");
-		shelter.enQueue("Dog");
 		shelter.enQueue("Cat");
 		shelter.enQueue("Dog");
 		shelter.enQueue("Cat");
 		shelter.enQueue("Dog");
 		shelter.enQueue("Cat");
-		System.out.println(shelter.deQueueDog());
 		System.out.println(shelter.deQueueDog());
 		System.out.println(shelter.deQueueAny());
 		System.out.println(shelter.deQueueDog());
@@ -29,6 +38,11 @@ class Shelter{
 		dogList=new LinkedList<Animal>();
 		catList=new LinkedList<Animal>();
 	}
+	/**
+	 * Performs enQueue operation.
+	 *
+	 * @param type the type parameter
+	 */
 	public void enQueue(String type){
 		if(type.toLowerCase().contentEquals("dog")){
 			dogList.add(new Animal("Dog",animalAge));
@@ -38,6 +52,11 @@ class Shelter{
 		}
 		animalAge++;
 	}
+	/**
+	 * Performs deQueueAny operation.
+	 *
+	 * @return the resulting string
+	 */
 	public String deQueueAny(){
 		int value=0;
 		if(catList.get(0).age<dogList.get(0).age)
@@ -54,11 +73,21 @@ class Shelter{
 		
 
 	}
+	/**
+	 * Performs deQueueDog operation.
+	 *
+	 * @return the resulting string
+	 */
 	public String deQueueDog(){
 		int value=dogList.get(0).age;
 		dogList.removeFirst();
 		return "Dog : "+value;
 	}
+	/**
+	 * Performs deQueueCat operation.
+	 *
+	 * @return the resulting string
+	 */
 	public String deQueueCat(){
 		int value=catList.get(0).age;
 		catList.removeFirst();

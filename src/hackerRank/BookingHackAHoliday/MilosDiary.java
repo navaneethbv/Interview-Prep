@@ -7,8 +7,19 @@ import java.util.Set;
 /*
  * Link:https://www.hackerrank.com/contests/booking-hack-a-holiday/challenges/milos-diary
 */
+/**
+ * Implementation of Milos Diary algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MilosDiary{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		int M=scanner.nextInt();

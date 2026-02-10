@@ -4,13 +4,23 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/reverse-level-order-traversal/
  * Reverse Level Order Traversal
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_41 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_41 {
 	 static Stack<Integer> stack=new Stack<Integer>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -31,7 +41,14 @@ import java.util.Stack;
 		 }
 
 	 }
+	 /**
+	  * Performs reverseLevelOrder operation.
+	  *
+	  * @param node the tree node to process
+	  * @param level the level parameter
+	  */
 	 private static void reverseLevelOrder(Node node,int level) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
 		 if(level==1)
@@ -42,7 +59,14 @@ import java.util.Stack;
 		 }
 
 	 }
+	 /**
+	  * Performs height operation.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int height(Node node) {
+		 // Check for null/base case
 		 if(node!=null){
 			 int leftHeight=height(node.left);
 			 int rightHeight=height(node.right);
@@ -50,7 +74,5 @@ import java.util.Stack;
 		 }
 		 return 0;
 	 }
-
-
 
  }

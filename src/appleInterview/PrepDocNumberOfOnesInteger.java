@@ -1,12 +1,27 @@
 package appleInterview;
 
+/**
+ * Implementation of Prep Doc Number Of Ones Integer algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrepDocNumberOfOnesInteger {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		Integer x=123123;
-		System.out.println(findOnes(x));
-		System.out.println(findOnesBit(x));
+
 	}
 
+	/**
+	 * Finds ones bit in the data structure.
+	 *
+	 * @param x the x parameter
+	 * @return the computed integer result
+	 */
 	private static int findOnesBit(Integer x) {
 		int count=0;
 		while(x>0)
@@ -17,6 +32,12 @@ public class PrepDocNumberOfOnesInteger {
 		return count;
 	}
 
+	/**
+	 * Finds ones in the data structure.
+	 *
+	 * @param x the x parameter
+	 * @return the computed integer result
+	 */
 	private static int findOnes(Integer x) {
 		System.out.println(Integer.toBinaryString(x));
 		return Integer.bitCount(x);

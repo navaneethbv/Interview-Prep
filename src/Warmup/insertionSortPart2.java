@@ -5,7 +5,18 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 //https://www.hackerrank.com/challenges/insertionsort2
+/**
+ * Implementation of insertion Sort Part2 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class insertionSortPart2 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws Exception {
 		BufferedReader scanner=new BufferedReader(new InputStreamReader(System.in));
 		int s=Integer.parseInt(scanner.readLine());
@@ -20,12 +31,24 @@ public class insertionSortPart2 {
 		}
 		
 	}
+	/**
+	 * Performs printArray operation.
+	 *
+	 * @param inputArray the array to process
+	 */
 	private static void printArray(String[] inputArray) {
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			System.out.print(inputArray[i]+" ");
 		}
 		System.out.println();
 	}
+	/**
+	 * Performs insertionSort1 operation.
+	 *
+	 * @param inputArray the array to process
+	 * @return the resulting array
+	 */
 	public static String[] insertionSort1(String[] inputArray){
 		int rightPositionElement=Integer.parseInt(inputArray[inputArray.length-1]);
 		int positionCheck=inputArray.length-2;
@@ -37,6 +60,7 @@ public class insertionSortPart2 {
 			if(previousElement!=presentElement){
 				if(presentElement>rightPositionElement)
 				{
+					// Inner loop to check combinations
 					for (int j = 0; j < modifiedArray.length; j++) {
 						if(Integer.parseInt(inputArray[j])==presentElement)
 							modifiedArray[j+1]=(inputArray[j]);

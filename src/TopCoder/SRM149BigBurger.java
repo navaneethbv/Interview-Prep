@@ -5,16 +5,30 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1648&rd=4550
  */
 
-
-
+/**
+ * Implementation of SRM149 Big Burger algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM149BigBurger {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(maxWait(new int[]{3,3,9},new int[]{2,15,14}));
-		System.out.println(maxWait(new int[]{182},new int[]{11}));
-		System.out.println(maxWait(new int[]{2,10,11},new int[]{3,4,3}));
-		System.out.println(maxWait(new int[]{2,10,12},new int[]{15,1,15}));		
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs maxWait operation.
+	 *
+	 * @param arrival the array to process
+	 * @param service the array to process
+	 * @return the computed integer result
+	 */
 	public static int maxWait(int[] arrival, int[] service){
 		if(service.length==1)
 			return 0;

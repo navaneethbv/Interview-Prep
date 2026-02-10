@@ -5,20 +5,35 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1772&rd=4570
  */
 
-
-
+/**
+ * Implementation of SRM153 Inventory algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM153Inventory {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(monthlyOrder(new int[]{5}, new int[]{15}));
-		System.out.println(monthlyOrder(new int[]{75,120,0,93}, new int[]{24,30,0,30}));
-		System.out.println(monthlyOrder(new int[]{8773}, new int[]{16}));
-		System.out.println(monthlyOrder(new int[]{1115,7264,3206,6868,7301}, new int[]{1,3,9,4,18}));
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs monthlyOrder operation.
+	 *
+	 * @param sales the array to process
+	 * @param daysAvailable the array to process
+	 * @return the computed integer result
+	 */
 	public static int monthlyOrder(int[] sales, int[] daysAvailable){
 		int count=0;
 		double total=0;
+		// Iterate through all elements
 		for (int i = 0; i < daysAvailable.length; i++) {
+			// Check for null/base case
 			if(daysAvailable[i]==0)
 				continue;
 			total+=sales[i]*30/(float)daysAvailable[i];

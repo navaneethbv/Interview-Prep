@@ -6,7 +6,18 @@ import java.util.Queue;
 /*
  * Link : http://www.geeksforgeeks.org/perfect-binary-tree-specific-level-order-traversal/
  */
+/**
+ * Implementation of Specific Level Order Traversal algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SpecificLevelOrderTraversal {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn = new TreeNode(1);
 		tn.left        = new TreeNode(2);
@@ -42,21 +53,24 @@ public class SpecificLevelOrderTraversal {
 		levelOrderTraversal(tn);
 	}
 
-
-
-
-
-
+	/**
+	 * Performs levelOrderTraversal operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void levelOrderTraversal(TreeNode tn) {
 		Queue<TreeNode> q=new LinkedList<>();
+		// Check for null/base case
 		if(tn!=null)
 		{
 			
 			System.out.println(tn.value);
+			// Check for null/base case
 			if(tn.left!=null){
 				//System.out.println(tn.left.value);
 				q.add(tn.left);	
 			}
+			// Check for null/base case
 			if(tn.right!=null){
 				//System.out.println(tn.right.value);
 				q.add(tn.right);
@@ -72,12 +86,16 @@ public class SpecificLevelOrderTraversal {
 					TreeNode tnRight=tn.right;
 					TreeNode tn1Left=tn1.left;
 					TreeNode tn1Right=tn1.right;
+					// Check for null/base case
 					if(tnLeft!=null)
 						q.add(tnLeft);
+					// Check for null/base case
 					if(tn1Right!=null)
 						q.add(tn1Right);
+					// Check for null/base case
 					if(tnRight!=null)
 						q.add(tnRight);
+					// Check for null/base case
 					if(tn1Left!=null)
 						q.add(tn1Left);						
 				}
@@ -85,11 +103,9 @@ public class SpecificLevelOrderTraversal {
 		}
 	}
 
-
-
-
-
-
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;
@@ -97,6 +113,5 @@ public class SpecificLevelOrderTraversal {
 			this.value=value;
 		}		
 	}
-
 
 }

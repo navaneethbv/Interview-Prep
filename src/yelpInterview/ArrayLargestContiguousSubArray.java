@@ -1,11 +1,27 @@
 package yelpInterview;
 
+/**
+ * Implementation of Array Largest Contiguous Sub Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayLargestContiguousSubArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int inputArray[] = {-2, -3, 4, -1, -2, 1, 5, -3};
-		System.out.println(findMaxSum(inputArray));
+
 	}
 
+	/**
+	 * Finds max sum in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMaxSum(int[] inputArray) {
 		int maxSoFar=0,maxEndingHere=0;
 		for (int i = 1; i < inputArray.length; i++) {
@@ -16,7 +32,6 @@ public class ArrayLargestContiguousSubArray {
 		}
 		return maxSoFar;
 	}
-
 
 }
 

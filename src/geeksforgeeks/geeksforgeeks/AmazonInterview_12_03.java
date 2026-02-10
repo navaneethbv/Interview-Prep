@@ -3,19 +3,26 @@ package geeksforgeeks;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-12/
  * Linked list is given as below (with elements as 1, 2 and 3), sort this in one pass.
  * 3->2->2->1->2->3->1
  */;
+/**
+ * Implementation of Amazon Interview_12_03 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_12_03 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 LinkedList<Integer> linkedList=new LinkedList<Integer>();
 		 linkedList.add(3);
-		 linkedList.add(2);
 		 linkedList.add(2);
 		 linkedList.add(1);
 		 linkedList.add(2);

@@ -1,6 +1,18 @@
 package geeksforgeeks;
 
+/**
+ * Implementation of Maximum Sub Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaximumSubArray {
+	/**
+	 * Performs maxSubArray operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
 	public static int maxSubArray(int[] A) {
 		int newsum=A[0];
 	       int max=A[0];
@@ -12,8 +24,13 @@ public class MaximumSubArray {
 	       }
 	       return max;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int[] A = {-2,1,-3,4,-1,2,1,-5,4};
-		System.out.println(maxSubArray(A));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

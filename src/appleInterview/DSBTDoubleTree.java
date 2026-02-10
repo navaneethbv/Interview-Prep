@@ -1,6 +1,15 @@
 package appleInterview;
 
+/**
+ * Implementation of DSBT Double Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSBTDoubleTree {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node left,right;
 		int value;
@@ -9,6 +18,11 @@ public class DSBTDoubleTree {
 		}
 	}
 	static Node oldLeft=null;
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node root=new Node(2);
 		root.left=new Node(1);
@@ -25,7 +39,13 @@ public class DSBTDoubleTree {
 		inorder(root);
 	}
 
+	/**
+	 * Performs doubleTree operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void doubleTree(Node tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			doubleTree(tn.left);
@@ -36,7 +56,13 @@ public class DSBTDoubleTree {
 		}
 
 	}
+	/**
+	 * Performs inorder operation.
+	 *
+	 * @param root the tree node to process
+	 */
 	private static void inorder(Node root) {
+		// Check for null/base case
 		if(root!=null)
 		{
 			System.out.print(root.value+"/");
@@ -44,7 +70,6 @@ public class DSBTDoubleTree {
 			inorder(root.right);
 		}
 	}
-
 
 }
 

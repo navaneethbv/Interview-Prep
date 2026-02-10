@@ -15,7 +15,18 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * Implementation of Greedy Gift Givers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GreedyGiftGivers {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main (String [] args) throws IOException {
 		BufferedReader f = new BufferedReader(new FileReader("gift1.in"));		
 		PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("gift1.out")));

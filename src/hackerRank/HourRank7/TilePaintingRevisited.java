@@ -3,10 +3,19 @@ package hackerRank.HourRank7;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Implementation of Tile Painting Revisited algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TilePaintingRevisited {
 
-
-
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int T = in.nextInt();
@@ -16,7 +25,14 @@ public class TilePaintingRevisited {
 		}
 	}
 
+	/**
+	 * Finds number of arith sequences in the data structure.
+	 *
+	 * @param elements the elements parameter
+	 * @return the computed integer result
+	 */
 	private static int findNumberOfArithSequences(int elements) {
+		// Check for null/base case
 		if(elements%5==0||elements>5)
 		{
 			return elements*(elements-1)+1+elements/5;
@@ -24,9 +40,5 @@ public class TilePaintingRevisited {
 		else
 			return elements*(elements-1)+1;
 	}
-
-
-
-
 
 }

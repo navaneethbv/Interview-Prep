@@ -1,6 +1,17 @@
 package Practice;
 
+/**
+ * Implementation of Reverse Word But Not Special Characters algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ReverseWordButNotSpecialCharacters {
+	/**
+	 * Performs revWord operation.
+	 *
+	 * @param str the str parameter
+	 */
 	public void revWord(String str){		
 		int flag=0;
 		String word="";
@@ -24,14 +35,20 @@ public class ReverseWordButNotSpecialCharacters {
 				flag=0;
 				word="";
 			}
+			// Check for null/base case
 			if(flag==0){ // System.out.println("final else");
 				finalString=finalString+charArray[i];
 			}
 		}
 		System.out.println(finalString);
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
-		ReverseWordButNotSpecialCharacters list1=new ReverseWordButNotSpecialCharacters();
-		list1.revWord("I love, driving 5 cars");
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

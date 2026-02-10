@@ -7,11 +7,22 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/count-luck
  */
+/**
+ * Implementation of Cut The Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CutTheTree {
 
 	static boolean found=false;
 	static boolean[][] visited;
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int noOfTestCases=Integer.parseInt(scanner.nextLine());
@@ -40,6 +51,17 @@ public class CutTheTree {
 		}
 	}
 
+	/**
+	 * Retrieves count luck from the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @param visited the array to process
+	 * @param i the i parameter
+	 * @param j the j parameter
+	 * @param count the count parameter
+	 * @param direction the direction parameter
+	 * @return the computed integer result
+	 */
 	private static int getCountLuck(char[][] inputArray, boolean[][] visited, int i, int j,int count,int direction) {
 		if(i<0||j<0||i>=inputArray.length||j>=inputArray[0].length)
 			return count;

@@ -7,9 +7,18 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1888&rd=4650
  */
 
-
-
+/**
+ * Implementation of SRM169 Swimmers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM169Swimmers {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(getSwimTimes(new int[]{ 300, 300, 300 }, new int[]{ 1, 2, 3 },2)));
 		System.out.println(Arrays.toString(getSwimTimes(new int[]{ 500, 500 }, new int[]{ 4, 5 },2)));
@@ -22,14 +31,24 @@ public class SRM169Swimmers {
 						73, 79, 83, 89, 97, 99, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30,
 						32, 34, 36, 38, 40, 42, 44, 46, 48, 51 },6)));
 	}
+	/**
+	 * Retrieves swim times from the data structure.
+	 *
+	 * @param distances the array to process
+	 * @param speeds the array to process
+	 * @param current the current parameter
+	 * @return the resulting array
+	 */
 	public static int[] getSwimTimes(int[] distances, int[] speeds, int current){
 		int outputArr[]=new int[speeds.length];
+		// Iterate through all elements
 		for (int i = 0; i < outputArr.length; i++) {
 			if((speeds[i]+current<0 || speeds[i]-current<=0) && distances[i]!=0)
 			{
 				outputArr[i]=-1;
 				continue;
 			}
+			// Check for null/base case
 			if(distances[i]==0 || speeds[i]+current==0 || speeds[i]-current==0)
 			{
 				outputArr[i]=0;

@@ -1,12 +1,26 @@
 package LeetCodePractice;
 
+/**
+ * Implementation of Remove Duplicates Sorted List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveDuplicatesSortedList {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(1);
 		ln.next=new ListNode(1);
@@ -26,8 +40,14 @@ public class RemoveDuplicatesSortedList {
 		while(ln!=null){System.out.print(ln.val+"/");ln=ln.next;}System.out.println();
 	}									
 
-
+	/**
+	 * Performs deleteDuplicates operation.
+	 *
+	 * @param head the head parameter
+	 * @return the list of results
+	 */
 	public static ListNode deleteDuplicates(ListNode head) {
+		// Check for null/base case
 		if(head==null||head.next==null)
 			return head;
 		ListNode output=new ListNode(Integer.MIN_VALUE);

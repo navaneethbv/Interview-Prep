@@ -6,8 +6,19 @@ import java.util.HashMap;
 /*
  * Link : http://www.geeksforgeeks.org/find-common-element-rows-row-wise-sorted-matrix/
  */
+/**
+ * Implementation of Find Common Element Matrix algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FindCommonElementMatrix {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int mat[][] = { {1, 2, 3, 4, 5},
                 {2, 4, 5, 8, 10},
@@ -17,9 +28,15 @@ public class FindCommonElementMatrix {
 		System.out.println(findCommonElement(mat));
 	}
 
-
+	/**
+	 * Finds common element in the data structure.
+	 *
+	 * @param mat the array to process
+	 * @return the computed integer result
+	 */
 	private static int findCommonElement(int[][] mat) {
 		HashMap<Integer, Integer> elementMap=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < mat.length; i++) {
 			for (int j = 0; j < mat[0].length; j++) {
 				int element=mat[i][j];
@@ -39,7 +56,11 @@ public class FindCommonElementMatrix {
 		
 	}
 
-
+	/**
+	 * Rotates the .
+	 *
+	 * @param mat the array to process
+	 */
 	private static void rotatematrix(int[][] mat) {
 		
 		//similar to spiral matrix print but store the elements
@@ -90,13 +111,17 @@ public class FindCommonElementMatrix {
 		    }
 	}
 
-
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(int[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}
 
 	}
-
 
 }

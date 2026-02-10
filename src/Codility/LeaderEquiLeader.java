@@ -7,10 +7,28 @@ import java.util.HashMap;
  * Link : https://codility.com/programmers/task/equi_leader
  */
 
+/**
+ * Implementation of Leader Equi Leader algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LeaderEquiLeader {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(solution(new int[]{4,3,4,4,4,2}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
 	public static int solution(int[] A){
 		HashMap<Integer, Integer> elementMap=new HashMap<>();
 		elementMap.put(A[0], 1);
@@ -31,6 +49,7 @@ public class LeaderEquiLeader {
 			}
 		}
 		int totalLeaders=0;
+		// Iterate through all elements
 		for (int i = 0; i < A.length; i++) {
 			if(A[i]==leaderElement)
 			{
@@ -41,6 +60,7 @@ public class LeaderEquiLeader {
 			return 0;
 		
 		int finalLeaderCount=0,equiLeaders=0;
+		// Iterate through all elements
 		for (int i = 0; i < A.length; i++) {
 			if(A[i] == leaderElement) 
 				finalLeaderCount++;

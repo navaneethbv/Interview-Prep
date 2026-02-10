@@ -5,17 +5,24 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-3/
  * An array of n integers is there in which the range of elements is n,
  * i.e., the difference between maximum and minimum number is n. Find the repeating numbers.
  * Was also asked to find number of times each number is repeated.
  */
+/**
+ * Implementation of Amazon Interview_04_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AmazonInterview_04_02 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		int n=Integer.parseInt(scanner.nextLine());

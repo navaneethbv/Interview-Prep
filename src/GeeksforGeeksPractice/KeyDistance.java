@@ -5,7 +5,18 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/find-distance-two-given-nodes/
  */
+/**
+ * Implementation of Key Distance algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class KeyDistance {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -20,7 +31,14 @@ public class KeyDistance {
 		System.out.println(dist(tn,2,4));
 	}
 	
-	
+	/**
+	 * Performs dist operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param l1 the l1 parameter
+	 * @param l2 the l2 parameter
+	 * @return the computed integer result
+	 */
 	private static int dist(TreeNode tn, int l1, int l2) {
 		int lca=lca(tn,l1,l2);
 		int l1Dist=getHeight(tn,l1,0);
@@ -29,8 +47,16 @@ public class KeyDistance {
 		return l1Dist+l2Dist-2*midDist;
 	}
 
-
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @param element the element parameter
+	 * @param level the level parameter
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode tn, int element,int level) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			if(tn.value==element)
@@ -47,8 +73,15 @@ public class KeyDistance {
 		return -1;
 	}
 
-
 	static int[] path,pathFirst,pathSecond;
+	/**
+	 * Performs lca operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param firstNode the firstNode parameter
+	 * @param secondNode the secondNode parameter
+	 * @return the computed integer result
+	 */
 	private static int lca(TreeNode tn, int firstNode, int secondNode) {
 		path=new int[10];
 		pathFirst=new int[10];
@@ -61,15 +94,22 @@ public class KeyDistance {
 		return findIntersection(pathFirst,pathSecond);
 	}
 
-
-
+	/**
+	 * Finds intersection in the data structure.
+	 *
+	 * @param pathFirst the array to process
+	 * @param pathSecond the array to process
+	 * @return the computed integer result
+	 */
 	private static int findIntersection(int[] pathFirst, int[] pathSecond) {
 		int length=pathFirst.length>pathSecond.length?pathSecond.length:pathFirst.length;
+		// Iterate through all elements
 		for (int i = 0; i <length; i++) {
 			if(pathFirst[i]!=pathSecond[i] && i!=0)
 			{
 				return pathFirst[i-1];
 			}	
+			// Check for null/base case
 			else if(pathFirst[i]!=pathSecond[i] && i==0)
 			{
 				return Integer.MIN_VALUE;
@@ -78,9 +118,16 @@ public class KeyDistance {
 		return pathFirst[length-1];
 	}
 
-
-
+	/**
+	 * Retrieves path from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @param firstNodeValue the firstNodeValue parameter
+	 * @param path the array to process
+	 * @param pathLen the pathLen parameter
+	 */
 	private static void getPath(TreeNode tn, int firstNodeValue, int[] path, int pathLen) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			path[pathLen]=tn.value;
@@ -94,14 +141,11 @@ public class KeyDistance {
 			getPath(tn.right, firstNodeValue, path, pathLen);
 		}
 		
-		
-		
-		
-		
 	}
 
-
-
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;
@@ -109,6 +153,5 @@ public class KeyDistance {
 			this.value=value;
 		}		
 	}
-
 
 }

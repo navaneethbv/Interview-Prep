@@ -1,9 +1,19 @@
 package ctci;
 
-
 /*Implementation of Binary Search Tree Tester */
+/**
+ * Implementation of Binary Search Tree Test algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BinarySearchTreeTest{
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		_10BinarySearchTree bst=new _10BinarySearchTree();
 		/*bst.insert(20);

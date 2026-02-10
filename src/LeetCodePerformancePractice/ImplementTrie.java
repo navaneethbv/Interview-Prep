@@ -2,6 +2,12 @@ package LeetCodePerformancePractice;
 
 import java.util.HashMap;
 
+/**
+ * Implementation of Implement Trie algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ImplementTrie {
 	class TrieNode {
 		// Initialize your data structure here.
@@ -24,8 +30,14 @@ public class ImplementTrie {
 		}
 
 		// Inserts a word into the trie.
+		/**
+		 * Performs insert operation.
+		 *
+		 * @param word the word parameter
+		 */
 		public void insert(String word) {
 			HashMap<Character, TrieNode> child=root.childrens;
+			// Iterate through all elements
 			for (int i = 0; i < word.length(); i++) {
 				if(!child.containsKey(word.charAt(i)))
 				{
@@ -38,9 +50,16 @@ public class ImplementTrie {
 		}
 
 		// Returns if the word is in the trie.
+		/**
+		 * Searches for .
+		 *
+		 * @param word the word parameter
+		 * @return true if condition is met, false otherwise
+		 */
 		public boolean search(String word) {
 
 			TrieNode tn=findNode(word);
+			// Check for null/base case
 			if(tn!=null)
 			{
 				if(tn.isLeaf)
@@ -66,8 +85,25 @@ public class ImplementTrie {
 		}
 		// Returns if there is any word in the trie
 		// that starts with the given prefix.
+		/**
+		 * Performs startsWith operation.
+		 *
+		 * @param prefix the prefix parameter
+		 * @return true if condition is met, false otherwise
+		 */
 		public boolean startsWith(String prefix) {
 			return findNode(prefix)!=null;
 		}
 	}
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+
 }

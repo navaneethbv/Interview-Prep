@@ -4,6 +4,12 @@ package hackerRank.DataStructures.LinkedList;
  * Link:https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list
  */
 
+/**
+ * Implementation of Delete Node algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DeleteNode {
 
 	Node Delete(Node head, int position) {

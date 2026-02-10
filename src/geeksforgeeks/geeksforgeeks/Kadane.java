@@ -2,6 +2,12 @@ package geeksforgeeks;
 
 class Kadane
 {
+	/**
+	 * Retrieves max sub array from the data structure.
+	 *
+	 * @param arr the array to process
+	 * @return the resulting array
+	 */
 	public static int[] getMaxSubArray(int[] arr)
 	{
 		int startI=0,finalStart=0,endI=1,sumLocal=0,sumMax=Integer.MIN_VALUE;
@@ -26,6 +32,11 @@ class Kadane
 		return  res;  
 	}  
 	
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param st the array to process
+	 */
 	public  static  void  main(String[]  st)  
 	{  
 	int[]  arr={-1,-1,-2,-3,-3,-4,-1,-5};

@@ -1,9 +1,20 @@
 package yelpInterview;
 
+/**
+ * Implementation of Stack Implement Two Stacked Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class StackImplementTwoStackedArray {
 	static int pointer1=-1;
 	static int pointer2=-1;
 	static int arr[];
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		arr=new int[10];
 		pointer2=arr.length;
@@ -24,6 +35,11 @@ public class StackImplementTwoStackedArray {
 		push2(13);
 	}
 
+	/**
+	 * Performs pop1 operation.
+	 *
+	 * @return the computed integer result
+	 */
 	private static int pop1() {
 		if(pointer1>=0){
 			pointer1--;
@@ -32,6 +48,11 @@ public class StackImplementTwoStackedArray {
 		return -1;
 	}
 
+	/**
+	 * Performs pop2 operation.
+	 *
+	 * @return the computed integer result
+	 */
 	private static int pop2() {
 		if(pointer2<arr.length){
 			pointer2++;
@@ -40,6 +61,11 @@ public class StackImplementTwoStackedArray {
 		return -1;
 	}
 
+	/**
+	 * Performs push1 operation.
+	 *
+	 * @param i the i parameter
+	 */
 	private static void push1(int i) {
 		if(pointer1+1<pointer2){
 			arr[pointer1+1]=i;
@@ -48,16 +74,17 @@ public class StackImplementTwoStackedArray {
 
 	}
 
+	/**
+	 * Performs push2 operation.
+	 *
+	 * @param i the i parameter
+	 */
 	private static void push2(int i) {
 		if(pointer1<pointer2-1){
 			arr[pointer2-1]=i;
 			pointer2--;
 		}
 	}
-
-
-
-
 
 }
 

@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of Flatten ALL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FlattenALL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node right;
@@ -10,6 +19,11 @@ public class FlattenALL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(5);
 		n.right=new Node(10);
@@ -28,15 +42,32 @@ public class FlattenALL {
 		print(n);
 	}
 
+	/**
+	 * Performs flatten operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node flatten(Node n) {
+		// Check for null/base case
 		if(n==null||n.right==null)
 			return n;
+		// Recursively process left and right subtrees
 		return merge(n,flatten(n.right));
 	}
 
+	/**
+	 * Performs merge operation.
+	 *
+	 * @param a the a parameter
+	 * @param b the b parameter
+	 * @return the Node result
+	 */
 	private static Node merge(Node a, Node b) {
+		// Check for null/base case
 		if(a==null)
 			return b;
+		// Check for null/base case
 		if(b==null)
 			return a;
 		Node result;
@@ -52,6 +83,11 @@ public class FlattenALL {
 		return result;
 	}
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{
@@ -61,9 +97,4 @@ public class FlattenALL {
 	}
 
 }
-
-
-
-
-
 

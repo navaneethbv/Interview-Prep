@@ -6,9 +6,19 @@ import java.util.Scanner;
 /*
  * Link: https://www.hackerrank.com/challenges/simple-array-sum
 */	
+/**
+ * Implementation of simple Array Sum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class simpleArraySum {
 
-
+	    /**
+	     * Main method to test the functionality of the class with various test cases.
+	     *
+	     * @param args the array to process
+	     */
 	    public static void main(String[] args) {
 	        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 	        Scanner scanner=new Scanner(new InputStreamReader(System.in));
@@ -21,7 +31,5 @@ public class simpleArraySum {
 	        }
 	        System.out.println(sum);
 	    }
-	
-	
 	
 }

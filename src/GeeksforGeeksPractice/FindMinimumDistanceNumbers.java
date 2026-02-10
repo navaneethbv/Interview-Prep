@@ -3,7 +3,18 @@ package GeeksforGeeksPractice;
 /*
  * Link: http://www.geeksforgeeks.org/find-the-minimum-distance-between-two-numbers/
  */
+/**
+ * Implementation of Find Minimum Distance Numbers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FindMinimumDistanceNumbers {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 	int arr[]={1,2};
 	System.out.println(findDistance(arr,1,2));
@@ -16,6 +27,14 @@ public class FindMinimumDistanceNumbers {
 	
 	}
 
+	/**
+	 * Finds distance in the data structure.
+	 *
+	 * @param arr the array to process
+	 * @param firstElement the firstElement parameter
+	 * @param secondElement the secondElement parameter
+	 * @return the computed integer result
+	 */
 	private static int findDistance(int[] arr, int firstElement, int secondElement) {
 		int length=Integer.MAX_VALUE,prev=Integer.MIN_VALUE,prevIndex=0;
 		for (int k = 0; k < arr.length; k++) {

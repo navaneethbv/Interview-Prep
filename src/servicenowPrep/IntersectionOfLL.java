@@ -3,8 +3,17 @@ package servicenowPrep;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Implementation of Intersection Of LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class IntersectionOfLL {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		ListNode next;
@@ -13,6 +22,11 @@ public class IntersectionOfLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(1);
 		ln.next=new ListNode(2);
@@ -30,6 +44,13 @@ public class IntersectionOfLL {
 		}
 	}
 
+	/**
+	 * Performs intersection operation.
+	 *
+	 * @param ln the ln parameter
+	 * @param ln1 the ln1 parameter
+	 * @return the list of results
+	 */
 	private static ListNode intersection(ListNode ln, ListNode ln1) {
 		ListNode outputPointer=new ListNode(-1);
 		ListNode output=outputPointer;
@@ -51,7 +72,5 @@ public class IntersectionOfLL {
 		}
 		return outputPointer.next;
 	}
-
-
 
 }

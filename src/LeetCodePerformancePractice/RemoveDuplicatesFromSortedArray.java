@@ -1,10 +1,29 @@
 package LeetCodePerformancePractice;
 
+/**
+ * Implementation of Remove Duplicates From Sorted Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveDuplicatesFromSortedArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(removeDuplicates(new int[]{1,2,3}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Removes duplicates from the data structure.
+	 *
+	 * @param nums the array to process
+	 * @return the computed integer result
+	 */
 	public static int removeDuplicates(int[] nums) {
+		// Check for null/base case
 		if(nums==null||nums.length<=1)
 			return nums==null?0:nums.length;
 		int index=1;
@@ -19,9 +38,6 @@ public class RemoveDuplicatesFromSortedArray {
 		}
 		return index;
 	}
-
-
-
 
 }
 

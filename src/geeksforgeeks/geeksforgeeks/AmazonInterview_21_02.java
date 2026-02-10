@@ -4,16 +4,24 @@ import java.math.BigInteger;
 
 import ctci._02linkedList;
 
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-21/
  * Two numbers represented as linked lists. (Bigger than integers). Return a linked list which is the product of the given two linked lists.
  * 1->2->3->Null (123)
  * 2->3-Null (23)
  */;
+/**
+ * Implementation of Amazon Interview_21_02 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_21_02 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _02linkedList inputNumber1=new  _02linkedList();
 		 inputNumber1.add(2);
@@ -58,7 +66,5 @@ import ctci._02linkedList;
 		 }
 		 System.out.println(outputNumber.toString());
 	 }
-
-
 
  }

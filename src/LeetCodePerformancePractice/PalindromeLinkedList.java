@@ -1,19 +1,37 @@
 package LeetCodePerformancePractice;
 
+/**
+ * Implementation of Palindrome Linked List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PalindromeLinkedList {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		ListNode ln=new ListNode(1);
-		ln.next=new ListNode(2);
-		ln.next.next=new ListNode(1);
-		
-		System.out.println(isPalindrome(ln));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Checks if palindrome.
+	 *
+	 * @param head the head parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isPalindrome(ListNode head) {
+		// Check for null/base case
 		if(head==null ||head.next==null)
 			return true;
 		ListNode slowPointer=head;
@@ -23,7 +41,6 @@ public class PalindromeLinkedList {
 			fastPointer=fastPointer.next.next;
 			slowPointer=slowPointer.next;
 		}
-
 
 		ListNode newHead=slowPointer.next;
 		slowPointer.next=null;

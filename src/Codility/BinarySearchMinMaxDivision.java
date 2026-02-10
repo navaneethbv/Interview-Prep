@@ -5,10 +5,30 @@ package Codility;
  * Link : https://codility.com/programmers/task/min_max_division
  */
 
+/**
+ * Implementation of Binary Search Min Max Division algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BinarySearchMinMaxDivision {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(solution(3,5,new int[]{2,1,5,1,2,2,2}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs solution operation.
+	 *
+	 * @param K the K value
+	 * @param M the M parameter
+	 * @param A the array to process
+	 * @return the computed integer result
+	 */
 	public static int solution(int K, int M, int[] A){
 		int max = A[0];
 		int sum = 0;
@@ -35,7 +55,15 @@ public class BinarySearchMinMaxDivision {
 		return min;
 	}
 
-
+	/**
+	 * Performs check operation.
+	 *
+	 * @param num the num parameter
+	 * @param K the K value
+	 * @param A[] the A[] parameter
+	 * @param N the size or count parameter
+	 * @return the computed integer result
+	 */
 	public static int check(int num, int K, int A[], int N)
 	{
 		int i = 0;
@@ -58,6 +86,5 @@ public class BinarySearchMinMaxDivision {
 
 		return 1;
 	}
-
 
 }

@@ -1,12 +1,26 @@
 package GeeksforGeeksPractice;
 
+/**
+ * Implementation of Convert Binary Tree To Child Sum Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ConvertBinaryTreeToChildSumTree {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(50);
 		tn.left=new TreeNode(8);
@@ -23,7 +37,13 @@ public class ConvertBinaryTreeToChildSumTree {
 		//50/19/14/5/31/1/30/
 
 	}
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			System.out.print(tn.val+"/");
@@ -32,6 +52,11 @@ public class ConvertBinaryTreeToChildSumTree {
 		}
 
 	}
+	/**
+	 * Performs modifyChildSumProperty operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void modifyChildSumProperty(TreeNode tn) 
 	{
 		if(tn!=null)
@@ -55,11 +80,19 @@ public class ConvertBinaryTreeToChildSumTree {
 		}
 
 	}
+	/**
+	 * Performs increment operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param diff the diff parameter
+	 */
 	private static void increment(TreeNode tn, int diff) {
+		// Check for null/base case
 		if(tn.left!=null)
 		{
 			tn.left.val+=diff;
 			increment(tn.left, diff);
+		// Check for null/base case
 		}else if(tn.right!=null)
 		{
 			tn.right.val+=diff;

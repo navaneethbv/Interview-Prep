@@ -2,7 +2,19 @@ package ctci;
 
 import java.util.Scanner;
 
+/**
+ * Implementation of Unique String algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class UniqueString {
+	/**
+	 * Checks if unique.
+	 *
+	 * @param str the str parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isUnique(String str)
 	{
 		if(str.length()>128)
@@ -20,6 +32,11 @@ public class UniqueString {
 		return true;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		try
 		{

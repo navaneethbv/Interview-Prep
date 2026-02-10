@@ -2,8 +2,17 @@ package servicenowPrep;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Reverse Alternate Levels algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ReverseAlternateLevels
 {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		int value;
 		TreeNode left,right;
@@ -11,6 +20,11 @@ public class ReverseAlternateLevels
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -29,13 +43,24 @@ public class ReverseAlternateLevels
 		tn.right.right.right=new TreeNode(15);
 		reverseAlternateLevels(tn);
 	}
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn==null)return;
 		System.out.print(tn.value+"/");
 		preOrder(tn.left);
 		preOrder(tn.right);
 	}
 	static Stack<Integer> stack;
+	/**
+	 * Performs reverseAlternateLevels operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void reverseAlternateLevels(TreeNode tn) {
 		int height=getHeight(tn);
 		for (int i = 0; i < height; i++) {
@@ -48,7 +73,14 @@ public class ReverseAlternateLevels
 			}
 		}
 	}
+	/**
+	 * Performs repopulateNodes operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param i the i parameter
+	 */
 	private static void repopulateNodes(TreeNode tn, int i) {
+		// Check for null/base case
 		if(tn==null)return;
 		if(i==0)
 		{
@@ -58,7 +90,14 @@ public class ReverseAlternateLevels
 		repopulateNodes(tn.left, i-1);
 		repopulateNodes(tn.right, i-1);
 	}
+	/**
+	 * Performs populateNodes operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param i the i parameter
+	 */
 	private static void populateNodes(TreeNode tn, int i) {
+		// Check for null/base case
 		if(tn==null)return;
 		if(i==0)
 		{	
@@ -68,7 +107,14 @@ public class ReverseAlternateLevels
 		populateNodes(tn.left, i-1);
 		populateNodes(tn.right, i-1);
 	}
+	/**
+	 * Performs printNodes operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param i the i parameter
+	 */
 	private static void printNodes(TreeNode tn, int i) {
+		// Check for null/base case
 		if(tn==null)return;
 		if(i==0)
 		{	
@@ -78,7 +124,14 @@ public class ReverseAlternateLevels
 		printNodes(tn.left, i-1);
 		printNodes(tn.right, i-1);
 	}
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode tn) {
+		// Recursively process left and right subtrees
 		return tn==null?0:1+Math.max(getHeight(tn.left), getHeight(tn.right));
 	}
 

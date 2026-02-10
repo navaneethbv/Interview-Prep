@@ -4,6 +4,12 @@ package hackerRank.DataStructures.LinkedList;
  * Link:https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists
  */
 
+/**
+ * Implementation of Merge Two Sorted Linked Lists algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MergeTwoSortedLinkedLists {
 
 	Node MergeLists(Node headA, Node headB) {

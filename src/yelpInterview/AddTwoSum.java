@@ -1,7 +1,16 @@
 package yelpInterview;
 
+/**
+ * Implementation of Add Two Sum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AddTwoSum {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		ListNode next;
 		int val;
@@ -9,6 +18,11 @@ public class AddTwoSum {
 			this.val=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		ListNode l1=new ListNode(2);
 		l1.next=new ListNode(4);
@@ -24,6 +38,13 @@ public class AddTwoSum {
 		}
 	}
 
+	/**
+	 * Adds two numbers to the data structure.
+	 *
+	 * @param l1 the l1 parameter
+	 * @param l2 the l2 parameter
+	 * @return the list of results
+	 */
 	public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		int carry=0;
 		ListNode output=new ListNode(-1);
@@ -31,6 +52,7 @@ public class AddTwoSum {
 		while(l1!=null || l2!=null)
 		{
 			int sum=0;
+			// Check for null/base case
 			if(l1!=null && l2!=null)
 			{
 				sum=l1.val+l2.val+carry;
@@ -44,6 +66,7 @@ public class AddTwoSum {
 					pointer.next=new ListNode(sum);
 				}
 			}
+			// Check for null/base case
 			else if(l1!=null)
 			{
 				sum=l1.val+carry;

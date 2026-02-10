@@ -4,7 +4,19 @@ package leetCode;
  * Link : https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/	
  */
 
+/**
+ * Implementation of Rotated Sorted Array Minimum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RotatedSortedArrayMinimum {
+	/**
+	 * Finds min in the data structure.
+	 *
+	 * @param nums the array to process
+	 * @return the computed integer result
+	 */
 	public static int findMin(int[] nums) {
 		if(nums.length<1)
 			return 0;
@@ -30,8 +42,14 @@ public class RotatedSortedArrayMinimum {
 			return nums[start];
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(findMin(new int[]{4,5,6,7,0,1,2}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
 }

@@ -4,13 +4,23 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/morris-traversal-for-preorder/
  * Morris traversal for Preorder
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_39 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_39 {
 	 static Stack<Integer> stack=new Stack<Integer>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,20);
@@ -28,8 +38,14 @@ import java.util.Stack;
 			 _01DataStructures_BinaryTree_00 binaryTree1) {
 		 morrisTraversal(binaryTree1.rootNode);
 	 }
+	 /**
+	  * Performs morrisTraversal operation.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void morrisTraversal(Node node) {
 		 while(node!=null){
+			 // Check for null/base case
 			 if(node.left==null){
 				 System.out.print(node.data+",");
 				 node=(node.right);

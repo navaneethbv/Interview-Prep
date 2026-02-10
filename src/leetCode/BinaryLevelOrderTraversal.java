@@ -8,7 +8,16 @@ import java.util.List;
  * Link : https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
  */
 
+/**
+ * Implementation of Binary Level Order Traversal algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BinaryLevelOrderTraversal {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
@@ -17,6 +26,12 @@ public class BinaryLevelOrderTraversal {
 	}
 	static List<List<Integer>> ArrayList;
 	static List<Integer> arrayArrayList;
+	/**
+	 * Performs levelOrderBottom operation.
+	 *
+	 * @param root the tree node to process
+	 * @return the list of results
+	 */
 	public static List<List<Integer>> levelOrderBottom(TreeNode root) {
 		int height=getHeight(root);
 		ArrayList=new ArrayList<List<Integer>>();
@@ -33,11 +48,14 @@ public class BinaryLevelOrderTraversal {
 		return ArrayListNew;
 	}
 
-
-
-
-
+	/**
+	 * Performs printNodes operation.
+	 *
+	 * @param root the tree node to process
+	 * @param height the height parameter
+	 */
 	private static void printNodes(TreeNode root, int height) {
+		// Check for null/base case
 		if(root==null)
 			return;
 		if(height==1){
@@ -49,16 +67,21 @@ public class BinaryLevelOrderTraversal {
 		}
 	}
 
-
-
-
-
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param root the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode root) {
 		int leftHeight=0,rightHeight=0;
+		// Check for null/base case
 		if(root==null)
 			return 0;
+		// Check for null/base case
 		if(root.left!=null)
 			leftHeight=getHeight(root.left);
+		// Check for null/base case
 		if(root.right!=null)
 			rightHeight=getHeight(root.right);
 		if(leftHeight>rightHeight)
@@ -67,10 +90,11 @@ public class BinaryLevelOrderTraversal {
 			return 1+rightHeight;
 	}
 
-
-
-
-
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode rootnode=new TreeNode(3);
 		rootnode.left=new TreeNode(9);

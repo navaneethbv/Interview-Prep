@@ -2,7 +2,18 @@ package Warmup;
 
 import java.util.Scanner;
 
+/**
+ * Implementation of chocolate Feast algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class chocolateFeast {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	/*public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader scanner=new BufferedReader(new InputStreamReader(System.in));
 		long T=Integer.parseInt(scanner.readLine());
@@ -21,6 +32,11 @@ public class chocolateFeast {
 			}
 			System.out.println(noOfChocolates);
 		}*/
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int t = in.nextInt();
@@ -29,6 +45,14 @@ public class chocolateFeast {
 		}
 	}
 
+	/**
+	 * Performs Solve operation.
+	 *
+	 * @param N the size or count parameter
+	 * @param C the C parameter
+	 * @param M the M parameter
+	 * @return the computed integer result
+	 */
 	private static long Solve(int N, int C, int M){
 		long noOfChocolates=N/C;
 		long noOfWrappers=noOfChocolates;

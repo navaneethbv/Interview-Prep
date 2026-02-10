@@ -5,13 +5,23 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-2/
  * Median of two sorted arrays.
  * 
  */;
+/**
+ * Implementation of Amazon Interview_07_05 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_07_05 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 int size=Integer.parseInt(scanner.nextLine());
@@ -37,6 +47,13 @@ import java.util.Scanner;
 		 System.out.println("Median is : "+median);
 	 }
 
+	 /**
+	  * Finds median in the data structure.
+	  *
+	  * @param inputArray1 the array to process
+	  * @param inputArray2 the array to process
+	  * @return the computed integer result
+	  */
 	 private static int findMedian(int[] inputArray1, int[] inputArray2) {
 		 int median1=inputArray1[inputArray1.length/2];
 		 int median2=inputArray2[inputArray2.length/2];
@@ -48,8 +65,10 @@ import java.util.Scanner;
 			 return median1;
 		 }
 		 else if(median1>median2){
+			 // Recursively process left and right subtrees
 			 return findMedian(Arrays.copyOfRange(inputArray1, 0, (inputArray1.length/2)+1),Arrays.copyOfRange(inputArray2, inputArray2.length/2,inputArray2.length));
 		 }else{
+			 // Recursively process left and right subtrees
 			 return findMedian(Arrays.copyOfRange(inputArray1, inputArray2.length/2,inputArray2.length),Arrays.copyOfRange(inputArray2,0,(inputArray2.length/2)+1));
 		 }
 	 }

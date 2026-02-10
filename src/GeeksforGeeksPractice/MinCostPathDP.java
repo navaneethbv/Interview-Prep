@@ -3,7 +3,18 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://www.geeksforgeeks.org/dynamic-programming-set-6-min-cost-path/
  */
+/**
+ * Implementation of Min Cost Path DP algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MinCostPathDP {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int cost[][] = { {1, 2, 3},
 				{4, 8, 2},
@@ -12,6 +23,14 @@ public class MinCostPathDP {
 		System.out.println(minCostDP(cost,cost.length-1,cost[0].length-1));
 	}
 
+	/**
+	 * Performs minCostDP operation.
+	 *
+	 * @param cost the array to process
+	 * @param m the m parameter
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	private static int minCostDP(int[][] cost,int m,int n) {
 		int[][] costNew=new int[m+1][n+1];
 		costNew[0][0]=cost[0][0];
@@ -30,16 +49,24 @@ public class MinCostPathDP {
 		return costNew[m][n];
 	}
 
+	/**
+	 * Performs minCost operation.
+	 *
+	 * @param cost the array to process
+	 * @param m the m parameter
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	private static int minCost(int[][] cost,int m,int n) {	
 		
 		if(n<0||m<0)
 			return Integer.MAX_VALUE;
+		// Check for null/base case
 		else if(m==0 && n==0)
 			return cost[m][n];
 		else
+			// Recursively process left and right subtrees
 			return cost[m][n]+Math.min(minCost(cost,m-1,n),Math.min(minCost(cost, m, n-1),minCost(cost, m-1, n-1)));
 	}
-
-
 
 }

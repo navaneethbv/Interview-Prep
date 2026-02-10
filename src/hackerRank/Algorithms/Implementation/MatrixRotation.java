@@ -7,8 +7,19 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/matrix-rotation-algo
  */
+/**
+ * Implementation of Matrix Rotation algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MatrixRotation {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param ards[] the ards[] parameter
+	 */
 	public static void main(String ards[])
 	{
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
@@ -25,6 +36,13 @@ public class MatrixRotation {
 		printMatrix(inputArray);
 	}
 
+	/**
+	 * Rotates the matrix.
+	 *
+	 * @param inputArray the array to process
+	 * @param R the R parameter
+	 * @return the resulting array
+	 */
 	private static int[][] rotateMatrix(int[][] inputArray,int R) {
 		int topRow=0,bottomRow=inputArray.length-1,leftCol=0,rightCol=inputArray[0].length-1;
 		while(topRow<=bottomRow && leftCol<=rightCol)
@@ -66,7 +84,13 @@ public class MatrixRotation {
 		return inputArray;
 	}
 
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param inputArray the array to process
+	 */
 	private static void printMatrix(int[][] inputArray) {
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			System.out.println(Arrays.toString(inputArray[i]).replaceAll(",","").replace("[","").replace("]",""));
 		}

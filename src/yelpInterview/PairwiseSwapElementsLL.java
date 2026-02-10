@@ -3,7 +3,16 @@ package yelpInterview;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * Implementation of Pairwise Swap Elements LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PairwiseSwapElementsLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -12,6 +21,11 @@ public class PairwiseSwapElementsLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(1);
 		n.next=new Node(2);
@@ -25,13 +39,18 @@ public class PairwiseSwapElementsLL {
 		print(n);
 	}
 
-
-
+	/**
+	 * Performs pairwiseSwap operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node pairwiseSwap(Node n) {
 		Node outputNode=n;
 		while(n!=null)
 		{
 			int firstValue=n.value;
+			// Check for null/base case
 			if(n.next!=null){
 				int secondValue=n.next.value;
 				n.value=secondValue;
@@ -43,8 +62,11 @@ public class PairwiseSwapElementsLL {
 		return outputNode;
 	}
 
-
-
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{
@@ -54,9 +76,4 @@ public class PairwiseSwapElementsLL {
 	}
 
 }
-
-
-
-
-
 

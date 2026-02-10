@@ -5,11 +5,28 @@ import java.util.Arrays;
 /*
  * Link: http://www.geeksforgeeks.org/ugly-numbers/
  */
+/**
+ * Implementation of Ugly Nos Algo DP algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class UglyNosAlgoDP {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(findUglyNumber(150));
+
 	}
 
+	/**
+	 * Finds ugly number in the data structure.
+	 *
+	 * @param number the number parameter
+	 * @return the computed integer result
+	 */
 	private static int findUglyNumber(int number)
 	{
 		int[] ugly=new int[number];
@@ -40,7 +57,5 @@ public class UglyNosAlgoDP {
 		
 		return ugly[number-1];
 	}
-
-
 
 }

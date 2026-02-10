@@ -1,6 +1,15 @@
 package appleInterview;
 
+/**
+ * Implementation of DSBT Tree Traversal algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSBTTreeTraversal {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node left,right;
 		int value;
@@ -8,6 +17,11 @@ public class DSBTTreeTraversal {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node n=new Node(1);
 		n.left=new Node(2);
@@ -21,7 +35,13 @@ public class DSBTTreeTraversal {
 		inOrder(n);
 		System.out.println();
 	}
+	/**
+	 * Performs postOrder operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void postOrder(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			postOrder(n.left);
@@ -29,7 +49,13 @@ public class DSBTTreeTraversal {
 			System.out.print(n.value+"->");
 		}
 	}
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void preOrder(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			System.out.print(n.value+"->");
@@ -37,7 +63,13 @@ public class DSBTTreeTraversal {
 			preOrder(n.right);
 		}
 	}
+	/**
+	 * Performs inOrder operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrder(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			inOrder(n.left);

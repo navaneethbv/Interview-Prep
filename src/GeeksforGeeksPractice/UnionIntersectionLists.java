@@ -6,8 +6,19 @@ import java.util.Set;
 /*
  * Link : http://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/
  */
+/**
+ * Implementation of Union Intersection Lists algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class UnionIntersectionLists {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln1=new ListNode(10);
 		ln1.next=new ListNode(15);
@@ -23,11 +34,17 @@ public class UnionIntersectionLists {
 		intersection(ln1,ln2);
 	}
 
-
+	/**
+	 * Performs intersection operation.
+	 *
+	 * @param ln1 the ln1 parameter
+	 * @param ln2 the ln2 parameter
+	 */
 	private static void intersection(ListNode ln1, ListNode ln2) {
 		Set<Integer> elementMap=new HashSet<>();
 		while(ln1!=null){
 			elementMap.add(ln1.value);
+			// Check for null/base case
 			if(ln1.next==null)
 			{
 				break;
@@ -47,11 +64,17 @@ public class UnionIntersectionLists {
 		
 	}
 
-
+	/**
+	 * Performs union operation.
+	 *
+	 * @param ln1 the ln1 parameter
+	 * @param ln2 the ln2 parameter
+	 */
 	private static void union(ListNode ln1, ListNode ln2) {
 		Set<Integer> elementMap=new HashSet<>();
 		while(ln1!=null){
 			elementMap.add(ln1.value);
+			// Check for null/base case
 			if(ln1.next==null)
 			{
 				break;
@@ -69,7 +92,9 @@ public class UnionIntersectionLists {
 		}		
 	}
 
-
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		ListNode next;
 		int value;

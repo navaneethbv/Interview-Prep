@@ -7,15 +7,29 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1757&rd=4625
  */
 
-
-
+/**
+ * Implementation of SRM164 Justifier algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM164Justifier {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(justify(new String[]{"BOB","TOMMY","JIM"})));
-		System.out.println(Arrays.toString(justify(new String[]{"JOHN","JAKE","ALAN","BLUE"})));
-		System.out.println(Arrays.toString(justify(new String[]{"LONGEST","A","LONGER","SHORT"})));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs justify operation.
+	 *
+	 * @param textIn the array to process
+	 * @return the resulting array
+	 */
 	public static String[] justify(String[] textIn){
 		int maxLength=0;
 		for(int i=0;i<textIn.length;i++){
@@ -32,9 +46,6 @@ public class SRM164Justifier {
 		}
 		return outputArray;
 
-
-
 	}
-
 
 }

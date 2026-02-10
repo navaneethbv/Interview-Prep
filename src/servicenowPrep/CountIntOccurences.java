@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Count Int Occurences algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CountIntOccurences {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		public ListNode(int value) {
@@ -10,6 +19,11 @@ public class CountIntOccurences {
 		ListNode next;
 
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln = new ListNode(0);
 		ln.next = new ListNode(1);
@@ -23,6 +37,13 @@ public class CountIntOccurences {
 		System.out.println(getCount(ln,2));
 
 	}
+	/**
+	 * Retrieves count from the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @param number the number parameter
+	 * @return the computed integer result
+	 */
 	private static int getCount(ListNode ln,int number) {
 		int count=0;
 		while(ln!=null)

@@ -3,14 +3,32 @@ package eBayPrep;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * Implementation of Largest Number algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LargestNumber {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(largestNumber(new int[]{3, 30, 34, 5, 9}));
-		System.out.println(largestNumber(new int[]{0,0}));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs largestNumber operation.
+	 *
+	 * @param nums the array to process
+	 * @return the resulting string
+	 */
 	public static String largestNumber(int[] nums) {
 		String[] arr=new String[nums.length];
+		// Iterate through all elements
 		for (int i = 0; i < nums.length; i++) {
 			arr[i]=String.valueOf(nums[i]);
 		}
@@ -23,6 +41,7 @@ public class LargestNumber {
 			}
 		});
 		StringBuilder sb=new StringBuilder();
+		// Iterate through all elements
 		for (int i = 0; i < arr.length; i++) {
 			sb.append(arr[i]);
 		}

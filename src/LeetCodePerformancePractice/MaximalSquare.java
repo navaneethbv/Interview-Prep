@@ -1,6 +1,17 @@
 package LeetCodePerformancePractice;
 
+/**
+ * Implementation of Maximal Square algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaximalSquare {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(maximalSquare(new char[][]{
 			{'1','0','1','0','0'},
@@ -10,15 +21,24 @@ public class MaximalSquare {
 		}));
 	}
 
+	/**
+	 * Performs maximalSquare operation.
+	 *
+	 * @param matrix the array to process
+	 * @return the computed integer result
+	 */
 	public static int maximalSquare(char[][] matrix) {
+		// Check for null/base case
 		if(matrix==null||matrix.length==0)
 			return 0;
 		int s[][]=new int[matrix.length][matrix[0].length];
 		int max=0;
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			s[i][0]=Integer.parseInt(""+matrix[i][0]);
 			max=Math.max(max,s[i][0]);
 		}
+		// Iterate through all elements
 		for (int i = 0; i < s[0].length; i++) {
 			s[0][i]=Integer.parseInt(""+matrix[0][i]);
 			max=Math.max(max,s[0][i]);

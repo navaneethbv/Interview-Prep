@@ -3,8 +3,19 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://www.geeksforgeeks.org/print-a-given-matrix-in-spiral-form/
  */
+/**
+ * Implementation of Matrix Spiral Form algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MatrixSpiralForm {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int a[][] = { {1,  2,  3,  4,  5,  6},
 				{7,  8,  9,  10, 11, 12},
@@ -19,6 +30,11 @@ public class MatrixSpiralForm {
 			printSpiralForm(a);
 	}
 
+	/**
+	 * Performs printSpiralForm operation.
+	 *
+	 * @param a the array to process
+	 */
 	private static void printSpiralForm(int[][] a) {
 		int k,l,m,n;
 		k=0;
@@ -49,6 +65,5 @@ public class MatrixSpiralForm {
 			}
 		}
 	}
-
 
 }

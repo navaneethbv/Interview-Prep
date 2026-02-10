@@ -7,7 +7,18 @@ import java.util.Arrays;
 import java.util.HashMap;
 /*
  * Link:https://www.hackerearth.com/problem/algorithm/sumit-and-rohil/
+/**
+ * Implementation of Sumit And Rohil algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 */public class SumitAndRohil {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[] ) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();
@@ -49,6 +60,12 @@ import java.util.HashMap;
 		return aList.contains(sortedInput);
 	}
 
+	/**
+	 * Performs sorter operation.
+	 *
+	 * @param input the input parameter
+	 * @return the resulting string
+	 */
 	private static String sorter(String input) {
 		char cArr[]=input.toCharArray();
 		Arrays.sort(cArr);

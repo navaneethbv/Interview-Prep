@@ -4,8 +4,13 @@ package hackerRank.DataStructures.LinkedList;
  * Link:https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle
  */
 
+/**
+ * Implementation of Detect Cycle algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DetectCycle {
-
 
 	int HasCycle(Node head) {
 		Node slowPointer=head;
@@ -28,6 +33,5 @@ public class DetectCycle {
 		Node next;
 		int data;
 	}
-
 
 }

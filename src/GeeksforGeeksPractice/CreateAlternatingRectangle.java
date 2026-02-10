@@ -5,20 +5,29 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/create-a-matrix-with-alternating-rectangles-of-0-and-x/
  */
+/**
+ * Implementation of Create Alternating Rectangle algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CreateAlternatingRectangle {
 	static char[][] mat;
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		createAlternatingRectangles(3,3);System.out.println("-****************-");
-		createAlternatingRectangles(4,5);System.out.println("-****************-");
-		createAlternatingRectangles(5,5);System.out.println("-****************-");
-		createAlternatingRectangles(6,7);
+
 	}
 
-
-
-
-
-
+	/**
+	 * Performs createAlternatingRectangles operation.
+	 *
+	 * @param noOfRows the noOfRows parameter
+	 * @param noOfCols the noOfCols parameter
+	 */
 	private static void createAlternatingRectangles(int noOfRows, int noOfCols) {
 		mat=new char[noOfRows][noOfCols];
 		int k=0,l=noOfRows,m=0,n=noOfCols;
@@ -36,14 +45,12 @@ public class CreateAlternatingRectangle {
 			}
 			n--;
 
-
 			//last row-under condition
 			if(m<n)
 				for (int i = n-1; i >=m; i--) {
 					mat[l-1][i]=x;
 				}
 			l--;
-
 
 			//first column-under condition
 			if(k<l)
@@ -54,25 +61,21 @@ public class CreateAlternatingRectangle {
 
 			x=x=='X'?'O':'X';
 
-
-
-
-
 		}
 		printMatrix(mat);
 	}
 
-
-
-
-
-
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(char[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}
 
 	}
-
 
 }

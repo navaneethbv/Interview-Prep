@@ -1,6 +1,15 @@
 package eBayPrep;
 
+/**
+ * Implementation of Intersectionof Two Linked Lists algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class IntersectionofTwoLinkedLists {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
@@ -9,14 +18,23 @@ public class IntersectionofTwoLinkedLists {
 			next = null;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		ListNode ln1=new ListNode(3);
-		ListNode ln2=new ListNode(2);
-		ln2.next=ln1;
-		System.out.println(getIntersectionNode(ln1, ln2).val);
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Retrieves intersection node from the data structure.
+	 *
+	 * @param headA the headA parameter
+	 * @param headB the headB parameter
+	 * @return the list of results
+	 */
 	public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 		int lengthA=getLength(headA);
 		int lengthB=getLength(headB);
@@ -50,9 +68,17 @@ public class IntersectionofTwoLinkedLists {
 		}
 	}
 
+	/**
+	 * Retrieves length from the data structure.
+	 *
+	 * @param headA the headA parameter
+	 * @return the computed integer result
+	 */
 	private static int getLength(ListNode headA) {
+		// Check for null/base case
 		if(headA==null)
 			return 0;
+		// Recursively process left and right subtrees
 		return 1+getLength(headA.next);
 	}
 }

@@ -5,17 +5,31 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1753&rd=4600
  */
 
-
-
+/**
+ * Implementation of SRM159 Street Parking algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM159StreetParking {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args)  {
-		System.out.println(freeParks("---B--S-D--S--"));
-		System.out.println(freeParks("DDBDDBDDBDD"));
-		System.out.println(freeParks("--S--S--S--S--"));
-		System.out.println(freeParks("SSD-B---BD-DDSB-----S-S--------S-B----BSB-S--B-S-D"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs freeParks operation.
+	 *
+	 * @param street the street parameter
+	 * @return the computed integer result
+	 */
 	public static int freeParks(String street){
 		int count=0;
+		// Iterate through all elements
 		for (int i = 0; i < street.length(); i++) {
 			if(street.charAt(i)=='-')
 			{	

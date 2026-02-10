@@ -3,7 +3,6 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-34/
  * Given a string, find the longest sinusoidal sequence in it.
@@ -15,14 +14,28 @@ import java.util.Scanner;
  * a u n , a r n , r u n are three such sequences of length 3.
  * But, a r n is output since it comes first in lexicographic order.
  */;
+/**
+ * Implementation of Amazon Interview_34_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_34_04 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
-		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		 String inputString=scanner.nextLine();
-		 scanner.close();
-		 System.out.println(findSinusoidalSequence(inputString));
+
 	 }
 
+	 /**
+	  * Finds sinusoidal sequence in the data structure.
+	  *
+	  * @param inputString the inputString parameter
+	  * @return the resulting string
+	  */
 	 private static String findSinusoidalSequence(String inputString) {
 		 int maxLength=0;
 		 String outputString="";

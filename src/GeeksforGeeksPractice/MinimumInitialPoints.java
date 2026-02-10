@@ -5,8 +5,19 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/
  */
+/**
+ * Implementation of Minimum Initial Points algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MinimumInitialPoints {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int mat[][] = { {-2,-3,3},
 				{-5,-10,1},
@@ -16,8 +27,12 @@ public class MinimumInitialPoints {
 
 	}
 
-
-
+	/**
+	 * Finds minimum initial points in the data structure.
+	 *
+	 * @param mat the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMinimumInitialPoints(int[][] mat) {
 		int dp[][]=new int[mat.length][mat[0].length];
 	    int m = mat.length, n = mat[0].length;
@@ -42,14 +57,17 @@ public class MinimumInitialPoints {
 	     return dp[0][0];
 	}
 
-
-
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(int[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}
 
 	}
-
 
 }

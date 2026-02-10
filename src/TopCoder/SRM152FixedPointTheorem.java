@@ -5,9 +5,18 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1765&rd=4565
  */
 
-
-
+/**
+ * Implementation of SRM152 Fixed Point Theorem algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM152FixedPointTheorem {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(cycleRange(0.1));
 		System.out.println(cycleRange(3.05));
@@ -17,6 +26,12 @@ public class SRM152FixedPointTheorem {
 		System.out.println(cycleRange(3.5689));
 		System.out.println(cycleRange(3.00005));
 	}
+	/**
+	 * Performs cycleRange operation.
+	 *
+	 * @param R the R parameter
+	 * @return the double result
+	 */
 	static double cycleRange(double R){
 		double max=Integer.MIN_VALUE;
 		double min=Integer.MAX_VALUE;

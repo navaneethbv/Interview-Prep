@@ -9,6 +9,12 @@ import java.util.TreeSet;
  * Link:https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list
  */
 
+/**
+ * Implementation of Delete Duplicate Value Sorted List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DeleteDuplicateValueSortedList {
 
 	Node RemoveDuplicates(Node head) {
@@ -41,6 +47,5 @@ public class DeleteDuplicateValueSortedList {
 		Node next;
 		int data;
 	}
-
 
 }

@@ -1,19 +1,41 @@
 package appleInterview;
 
+/**
+ * Implementation of Prep Doc Fibonacci algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrepDocFibonacci {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(findFibonacci(10));;
-		System.out.println(findRecursiveFibonacci(10));
 
 	}
 
+	/**
+	 * Finds recursive fibonacci in the data structure.
+	 *
+	 * @param i the i parameter
+	 * @return the computed integer result
+	 */
 	private static int findRecursiveFibonacci(int i) {
 		if(i<2)
 			return 1;
 		else
+			// Recursively process left and right subtrees
 			return findRecursiveFibonacci(i-1)+findRecursiveFibonacci(i-2);
 	}
 
+	/**
+	 * Finds fibonacci in the data structure.
+	 *
+	 * @param i the i parameter
+	 * @return the computed integer result
+	 */
 	private static  int findFibonacci(int i) {
 		if(i<2)
 			return 1;
@@ -25,8 +47,5 @@ public class PrepDocFibonacci {
 		}
 		return fib1;
 	}
-
-
-
 
 }

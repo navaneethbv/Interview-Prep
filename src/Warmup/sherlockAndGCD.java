@@ -5,7 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+/**
+ * Implementation of sherlock And GCD algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class sherlockAndGCD {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws IOException {
 		BufferedReader scanner=new BufferedReader(new InputStreamReader(System.in));
 		long T=Long.parseLong(scanner.readLine());
@@ -35,21 +46,28 @@ public class sherlockAndGCD {
 			else
 				System.out.println("YES");
 
-
 		}
 	}
 	
-	
+	/**
+	 * Performs gcd operation.
+	 *
+	 * @param m the m parameter
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	public static long gcd(long m,long n){
 		
 		long r=m%n;
 		//System.out.println(r);
+		// Check for null/base case
 		if(r==0)
 			return n;
 		else
 		{
 			m=n;
 			n=r;
+			// Recursively process left and right subtrees
 			return gcd(m,n);
 		}
 		

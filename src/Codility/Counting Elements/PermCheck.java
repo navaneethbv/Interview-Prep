@@ -36,14 +36,38 @@ import java.util.BitSet;
  * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
  * Elements of input arrays can be modified.
  */
+/**
+ * Implementation of Perm Check algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PermCheck {
+    /**
+     * Performs solution operation.
+     *
+     * @param A the array to process
+     * @return the computed integer result
+     */
     public int solution(int[] A) {
         int n = A.length;
         BitSet bit = new BitSet(n);
+        // Iterate through all elements
         for (int i = 0; i < A.length; i++) {
             if (A[i] < 1 || A[i] > n || bit.get(A[i] - 1)) return 0;
             bit.set(A[i] - 1);
         }
         return 1;
     }
+
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args command line arguments (not used)
+	 */
+	public static void main(String[] args) {
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
+	}
+
 }

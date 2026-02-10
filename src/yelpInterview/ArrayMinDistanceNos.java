@@ -1,6 +1,17 @@
 package yelpInterview;
 
+/**
+ * Implementation of Array Min Distance Nos algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayMinDistanceNos {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		int[] inputArray=new int[]{1, 2};
 		int x = 1, y = 2;
@@ -16,9 +27,18 @@ public class ArrayMinDistanceNos {
 		System.out.println(findMinDistance(inputArray,x,y));
 	}
 
+	/**
+	 * Finds min distance in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @param x the x parameter
+	 * @param y the y parameter
+	 * @return the computed integer result
+	 */
 	private static int findMinDistance(int[] inputArray, int x, int y) {
 		int prev=-1,prevIndex=-1;
 		int distance=Integer.MAX_VALUE;
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			if(inputArray[i]==x || inputArray[i]==y)
 			{
@@ -39,6 +59,5 @@ public class ArrayMinDistanceNos {
 		}
 		return distance;
 	}
-
 
 }

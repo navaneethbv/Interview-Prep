@@ -7,15 +7,33 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/java-instanceof-keyword
  */
 
+/**
+ * Implementation of Java Instance Of Keyword algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JavaInstanceOfKeyword {
 
-
+	/**
+	 * Inner class Student for supporting operations.
+	 */
 	static class Student{}
+	/**
+	 * Inner class Rockstar for supporting operations.
+	 */
 	static class Rockstar{   }
+	/**
+	 * Inner class Hacker for supporting operations.
+	 */
 	static class Hacker{}
 
-
-
+	/**
+	 * Counts the number of .
+	 *
+	 * @param mylist the mylist parameter
+	 * @return the resulting string
+	 */
 	static String count(ArrayList mylist)
 	{
 		int a=0,b=0,c=0;
@@ -33,6 +51,11 @@ public class JavaInstanceOfKeyword {
 		return ret;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param []argh the []argh parameter
+	 */
 	public static void main(String []argh)
 	{
 		ArrayList mylist=new ArrayList();

@@ -5,14 +5,28 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/merge-one-array-of-size-n-into-another-one-of-size-mn/
  */
+/**
+ * Implementation of Merge Arrays algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MergeArrays {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int mPlusN[] = {2, 8, Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE, 13, Integer.MAX_VALUE, 15, 20};
-		int N[] = {5, 7, 9, 25};
-		mergeArrays(mPlusN,N);
-		System.out.println(Arrays.toString(mPlusN));
+
 	}
 
+	/**
+	 * Performs mergeArrays operation.
+	 *
+	 * @param mPlusN the array to process
+	 * @param n the array to process
+	 */
 	private static void mergeArrays(int[] mPlusN, int[] n) {
 		int mn=mPlusN.length;
 		Arrays.sort(mPlusN);
@@ -47,11 +61,6 @@ public class MergeArrays {
 				}
 		}
 
-
-
-
-
 	}
-
 
 }

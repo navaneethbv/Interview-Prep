@@ -6,6 +6,12 @@ import java.util.Map.Entry;
 
 class MaximumElement {
 
+        /**
+         * Performs maxoccurance operation.
+         *
+         * @param array the array to process
+         * @return the computed integer result
+         */
         public static int maxoccurance(char[] array) {
                 HashMap<Character,Integer> map = new HashMap<Character,Integer>();
                 int count = 1;
@@ -30,6 +36,11 @@ class MaximumElement {
 				return -1;
         }
 
+        /**
+         * Main method to test the functionality of the class with various test cases.
+         *
+         * @param args the array to process
+         */
         public static void main(String[] args) {
                 char[] array = {'b','a','b','c'};
                 if(maxoccurance(array) != -1) {

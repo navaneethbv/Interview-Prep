@@ -5,12 +5,28 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/
  */
+/**
+ * Implementation of Longest Substring DP algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LongestSubstringDP {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		String str= "ABDEFGABEF";
-		System.out.println(findLongestSubstringLength(str));	
+
 	}
 
+	/**
+	 * Finds longest substring length in the data structure.
+	 *
+	 * @param str the str parameter
+	 * @return the computed integer result
+	 */
 	private static int findLongestSubstringLength(String str) {
 
 		int n=str.length();
@@ -34,7 +50,5 @@ public class LongestSubstringDP {
 		}
 		return cur_length>max_length?cur_length:max_length;
 	}
-
-
 
 }

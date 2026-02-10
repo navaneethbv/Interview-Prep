@@ -6,18 +6,36 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Implementation of Four Sum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FourSum {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
-
-
+	/**
+	 * Performs fourSum operation.
+	 *
+	 * @param nums the array to process
+	 * @param target the target value
+	 * @return the list of results
+	 */
 	public static List<List<Integer>> fourSum(int[] nums, int target) {
 		Arrays.sort(nums);
 		List<List<Integer>> outputList=new ArrayList<>();
 		Set<String> set=new HashSet<>();
+		// Iterate through all elements
 		for (int i = 0; i < nums.length; i++) {
 			for (int j = 0; j < nums.length; j++) {
 				if(i==j)

@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of BST Sorted Order Printing algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTSortedOrderPrinting {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -8,6 +17,11 @@ public class BSTSortedOrderPrinting {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node root=insert(null, 20);
 		insert(root, 8);
@@ -20,7 +34,15 @@ public class BSTSortedOrderPrinting {
 
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)
@@ -32,7 +54,13 @@ public class BSTSortedOrderPrinting {
 		}
 		return n;
 	}
+	/**
+	 * Performs inOrder operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrder(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{	
 			inOrder(n.left);
@@ -40,11 +68,5 @@ public class BSTSortedOrderPrinting {
 			inOrder(n.right);			
 		}
 	}
-
-
-
-
-
-
 
 }

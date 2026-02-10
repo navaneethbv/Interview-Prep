@@ -9,9 +9,20 @@ import java.util.Arrays;
  * http://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
  * Lowest Common Ancestor in a Binary Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_53 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_53 {
 	 static int path[];
 	 static ArrayList<int []> arrayList=new ArrayList<int []>();
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -30,13 +41,23 @@ import java.util.Arrays;
 			 _01DataStructures_BinaryTree_00 binaryTree1, int i, int j) {
 		 return findLCAShort(binaryTree1.rootNode,i,j).data;
 	 }
+	 /**
+	  * Finds lca short in the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param i the i parameter
+	  * @param j the j parameter
+	  * @return the Node result
+	  */
 	 private static Node findLCAShort(Node node, int i, int j) {
+		 // Check for null/base case
 		 if(node==null)
 			 return null;
 		 if(node.data==i||node.data==j)
 			 return node;
 		 Node left=findLCAShort(node.left,i,j);
 		 Node right=findLCAShort(node.right,i,j);
+		 // Check if node is a leaf (no children)
 		 if(left!=null && right!=null)
 			 return node;
 		 return left!=null?left:right;
@@ -56,7 +77,14 @@ import java.util.Arrays;
 		 }
 		 return 0;
 	 }
+	 /**
+	  * Retrieves height from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int getHeight(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 int leftHeight=getHeight(node.left);
@@ -65,7 +93,17 @@ import java.util.Arrays;
 		 }
 		 return 0;
 	 }
+	 /**
+	  * Finds lca long in the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param path the array to process
+	  * @param i the i parameter
+	  * @param j the j parameter
+	  * @param pathLen the pathLen parameter
+	  */
 	 private static void findLCALong(Node node,int[] path, int i, int j,int pathLen) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 if(node.data==i||node.data==j)

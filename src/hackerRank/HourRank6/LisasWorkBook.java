@@ -4,7 +4,18 @@ import java.util.ArrayList;
 import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/contests/hourrank-6/challenges/bear-and-workbook
+/**
+ * Implementation of Lisas Work Book algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 */public class LisasWorkBook {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n=scanner.nextInt();

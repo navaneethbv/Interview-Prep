@@ -5,7 +5,18 @@ import java.util.Arrays;
 /*
  * Link: http://www.geeksforgeeks.org/search-floor-and-ceil-in-a-sorted-array/
  */
+/**
+ * Implementation of Floor Ceil Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FloorCeilArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int arr[] =  {1, 2, 8, 10, 10, 12, 19};
 		printFloorCeil(arr,0);
@@ -14,6 +25,12 @@ public class FloorCeilArray {
 		printFloorCeil(arr,20);
 	}
 
+	/**
+	 * Performs printFloorCeil operation.
+	 *
+	 * @param arr the array to process
+	 * @param key the key value
+	 */
 	private static void printFloorCeil(int[] arr, int key) {
 		int left=0,right=arr.length-1;
 		int mid=0;
@@ -39,6 +56,5 @@ public class FloorCeilArray {
 		else
 			System.out.println("Floor:"+arr[right]+"Ceil:"+arr[left]);
 	}
-
 
 }

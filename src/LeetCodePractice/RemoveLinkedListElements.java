@@ -1,11 +1,25 @@
 package LeetCodePractice;
 
+/**
+ * Implementation of Remove Linked List Elements algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveLinkedListElements {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(6);
 		ln.next=new ListNode(2);
@@ -20,6 +34,13 @@ public class RemoveLinkedListElements {
 			System.out.println(ln.val);ln=ln.next;
 		}
 	}
+	/**
+	 * Removes elements from the data structure.
+	 *
+	 * @param head the head parameter
+	 * @param val the val parameter
+	 * @return the list of results
+	 */
 	public static ListNode removeElements(ListNode head, int val) {
 		ListNode newHead=head;
 		while(head!=null && head.val==val)
@@ -29,6 +50,7 @@ public class RemoveLinkedListElements {
 		}
 		while(head!=null)
 		{
+			// Check for null/base case
 			if(head.next!=null && head.next.val==val)
 			{
 				head.next=head.next.next;

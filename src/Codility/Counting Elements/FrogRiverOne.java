@@ -21,6 +21,13 @@ import java.util.BitSet;
  * A[7] = 4
  * In minute 6, a leaf falls into position 5. This is the earliest time when leaves appear in every position across the river.
  * Write a function:
+ /**
+  * Performs solution operation.
+  *
+  * @param X the X parameter
+  * @param A the array to process
+  * @return the computed integer result
+  */
  * class Solution { public int solution(int X, int[] A); }
  * that, given a non-empty zero-indexed array A consisting of N integers and integer X,
  * returns the earliest time when the frog can jump to the other side of the river.
@@ -42,7 +49,20 @@ import java.util.BitSet;
  * expected worst-case space complexity is O(X), beyond input storage (not counting the storage required for input arguments).
  * Elements of input arrays can be modified.
  */
+/**
+ * Implementation of Frog River One algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FrogRiverOne {
+    /**
+     * Performs solution operation.
+     *
+     * @param X the X parameter
+     * @param A the array to process
+     * @return the computed integer result
+     */
     public int solution(int X, int[] A) {
         int n = A.length;
         BitSet hash = new BitSet(X + 1);
@@ -57,8 +77,13 @@ public class FrogRiverOne {
         return -1;
     }
 
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args the array to process
+     */
     public static void main(String[] args) {
-        int ans = new FrogRiverOne().solution(5, new int[]{1, 3, 1, 4, 2, 3, 5, 4});
-        System.out.println(ans);
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
     }
 }

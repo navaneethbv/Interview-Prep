@@ -3,12 +3,22 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-8-2/
  * Find integer value of sqrt(N). Do not use any library functions or any mathematical solution.
  */;
+/**
+ * Implementation of Amazon Interview_09_08 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_09_08 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new  Scanner(new InputStreamReader(System.in));
 		 Integer inputValue=Integer.parseInt(scanner.nextLine());

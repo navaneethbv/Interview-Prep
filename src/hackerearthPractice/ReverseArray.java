@@ -1,6 +1,5 @@
 package hackerearthPractice;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -20,6 +19,11 @@ Constraints:
  */
 
 class ReverseArray {
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args[] the args[] parameter
+     */
     public static void main(String args[] ) throws Exception {
         
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

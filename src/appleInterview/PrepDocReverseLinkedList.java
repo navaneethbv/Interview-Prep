@@ -3,7 +3,18 @@ package appleInterview;
 import java.util.LinkedList;
 import java.util.Stack;
 
+/**
+ * Implementation of Prep Doc Reverse Linked List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrepDocReverseLinkedList {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		LinkedList<Integer> l=new LinkedList<>();
 		l.add(1);l.add(2);l.add(3);l.add(4);l.add(5);
@@ -12,11 +23,22 @@ public class PrepDocReverseLinkedList {
 		l=reverseList(l);
 		printList(l);
 	}
+	/**
+	 * Performs printList operation.
+	 *
+	 * @param l the l parameter
+	 */
 	private static void printList(LinkedList<Integer> l) {
 		for (int i = 0; i < l.size(); i++) {
 			System.out.print(l.get(i)+"/");
 		}
 	}
+	/**
+	 * Performs reverseList operation.
+	 *
+	 * @param l the l parameter
+	 * @return the list of results
+	 */
 	private static LinkedList<Integer> reverseList(LinkedList<Integer> l) {
 		Stack<Integer> stack=new Stack<>();
 		for (int i = 0; i < l.size(); i++) {

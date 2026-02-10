@@ -6,7 +6,18 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
  * http://www.geeksforgeeks.org/write-a-c-program-to-find-the-maximum-depth-or-height-of-a-tree/
  * Write a C Program to Find the Maximum Depth or Height of a Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_04 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_04 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,10);
@@ -23,7 +34,13 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 binaryTree1.preOrder();
 	 }
 
+	 /**
+	  * Performs deleteTree operation.
+	  *
+	  * @param binaryTree1 the binaryTree1 parameter
+	  */
 	 private static void deleteTree(_01DataStructures_BinaryTree_00 binaryTree1) {
+		 // Check for null/base case
 		 if(binaryTree1.size()==0||binaryTree1.size()==1)
 		 {
 			 binaryTree1.rootNode=null;
@@ -33,7 +50,13 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 }
 	 }
 
+	/**
+	 * Performs deleteTree operation.
+	 *
+	 * @param node the tree node to process
+	 */
 	private static void deleteTree(Node node) {
+		// Check for null/base case
 		if(node!=null){
 			deleteTree(node.left);
 			deleteTree(node.right);

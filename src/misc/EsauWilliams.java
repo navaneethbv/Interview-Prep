@@ -1,5 +1,11 @@
 import java.util.HashSet;
 
+/**
+ * Implementation of Esau Williams algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class EsauWilliams {
 
 	static int noOfVertices;
@@ -10,6 +16,13 @@ public class EsauWilliams {
 	static int comparisonNum[] = new int[25];
 	static int maxWeight;
 
+	/**
+	 * Performs recursiveCompareNum operation.
+	 *
+	 * @param adjmat[][] the adjmat[][] parameter
+	 * @param v the v parameter
+	 * @param n the size or count parameter
+	 */
 	public static void recursiveCompareNum(int adjmat[][],int v,int n)
 	{
 
@@ -20,6 +33,11 @@ public class EsauWilliams {
 
 	}
 	static HashSet<String> set=new HashSet<>();
+	/**
+	 * Performs runMST operation.
+	 *
+	 * @param matrix[][] the matrix[][] parameter
+	 */
 	public static void runMST(int matrix[][])
 	{
 		graphStatus = new int[noOfVertices*noOfVertices];//status of the graph/Node
@@ -68,7 +86,6 @@ public class EsauWilliams {
 		}
 		//set the mintrade off values for each of the edges
 
-
 		//compare the costvalue recursively
 		for(i=0;i<noOfVertices;i++)
 			if(comparisonNum[i]==0)
@@ -87,8 +104,6 @@ public class EsauWilliams {
 		adjacencyMatrix[minIndex][0]=minimumWeight;
 
 		}
-
-
 
 		//print out the output
 
@@ -118,6 +133,11 @@ public class EsauWilliams {
 
 	}
 
+	/**
+	 * Performs performTradeOff operation.
+	 *
+	 * @param adjmat[][] the adjmat[][] parameter
+	 */
 	public static void performTradeOff(int adjmat[][])
 	{
 		int i,j,minTradeOffValue,minNodeValue=0;
@@ -134,6 +154,14 @@ public class EsauWilliams {
 		}
 	}
 
+	/**
+	 * Performs DFS_Path operation.
+	 *
+	 * @param adjmat[][] the adjmat[][] parameter
+	 * @param v1 the v1 parameter
+	 * @param v2 the v2 parameter
+	 * @return the computed integer result
+	 */
 	public static int DFS_Path(int adjmat[][],int v1,int v2)
 	{
 		int result=0;
@@ -147,6 +175,13 @@ public class EsauWilliams {
 		return result;
 	}
 
+	/**
+	 * Performs weight operation.
+	 *
+	 * @param adj_matrix[][] the adj_matrix[][] parameter
+	 * @param v the v parameter
+	 * @return the computed integer result
+	 */
 	public static int weight(int adj_matrix[][], int v)
 	{
 		int i,sum=0;
@@ -159,8 +194,11 @@ public class EsauWilliams {
 		return sum;
 	}
 
-
-
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param arg[] the arg[] parameter
+	 */
 	public static void main(String arg[]){
 		noOfVertices=6;
 		int[][] matrix=new int[][]{ {0, 5, 6, 9,12, 15},

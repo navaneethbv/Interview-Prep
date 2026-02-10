@@ -1,6 +1,15 @@
 package appleInterview;
 
+/**
+ * Implementation of DSBT Level Order Line Wise algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSBTLevelOrderLineWise {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node left,right;
 		int value;
@@ -8,6 +17,11 @@ public class DSBTLevelOrderLineWise {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node n=new Node(1);
 		n.left=new Node(2);
@@ -17,6 +31,11 @@ public class DSBTLevelOrderLineWise {
 		levelOrderTraversal(n);
 	}
 	
+	/**
+	 * Performs levelOrderTraversal operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void levelOrderTraversal(Node n) {
 		int height=getHeight(n);
 		for (int i = 0; i < height; i++) {
@@ -24,9 +43,17 @@ public class DSBTLevelOrderLineWise {
 			System.out.println();
 		}
 	}
+	/**
+	 * Performs levelTraverse operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param i the i parameter
+	 */
 	private static void levelTraverse(Node n, int i) {
+		// Check for null/base case
 		if(n==null)
 			return;
+		// Check for null/base case
 		if(i==0)
 		{
 			System.out.print(n.value+" ");
@@ -36,8 +63,16 @@ public class DSBTLevelOrderLineWise {
 			levelTraverse(n.right,i-1);
 		}
 	}
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	private static int getHeight(Node n) {
+		// Check for null/base case
 		if(n!=null)
+			// Recursively process left and right subtrees
 			return 1+Math.max(getHeight(n.left),getHeight(n.right));
 		return 0;
 	}

@@ -8,9 +8,20 @@ import java.util.Arrays;
  * http://www.geeksforgeeks.org/print-nodes-distance-k-leaf-node/
  * Print all nodes that are at distance k from a leaf node
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_55 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_55 {
 	 static int path[];
 	 static boolean[] visited;
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -34,8 +45,17 @@ import java.util.Arrays;
 		 printDistanceNodes(binaryTree1.rootNode,path,visited,0,k);
 	 }
 
-
+	 /**
+	  * Performs printDistanceNodes operation.
+	  *
+	  * @param node the tree node to process
+	  * @param path the array to process
+	  * @param visited the array to process
+	  * @param pathLen the pathLen parameter
+	  * @param k the k value
+	  */
 	 private static void printDistanceNodes(Node node, int[] path,boolean[] visited,int pathLen, int k) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
 		 else
@@ -44,6 +64,7 @@ import java.util.Arrays;
 			 path[pathLen]=node.data;
 			 visited[pathLen]=false;
 			 pathLen++;
+			 // Check if node is a leaf (no children)
 			 if(node.left==null && node.right==null && pathLen-k-1>=0 && visited[pathLen-k-1]==false)
 			 {
 				 System.out.println(path[pathLen-k-1]);
@@ -55,7 +76,14 @@ import java.util.Arrays;
 		 }
 
 	 }
+	 /**
+	  * Retrieves height from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int getHeight(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 int leftHeight=getHeight(node.left);

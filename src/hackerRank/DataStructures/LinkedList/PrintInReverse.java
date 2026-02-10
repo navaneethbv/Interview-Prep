@@ -6,6 +6,12 @@ import java.util.Stack;
  * Link:https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse
  */
 
+/**
+ * Implementation of Print In Reverse algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PrintInReverse {
 
 	void ReversePrint(Node head) {

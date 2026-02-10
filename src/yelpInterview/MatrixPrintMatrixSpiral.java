@@ -1,6 +1,17 @@
 package yelpInterview;
 
+/**
+ * Implementation of Matrix Print Matrix Spiral algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MatrixPrintMatrixSpiral {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		int mat[][] = { {1,  2,  3,  4,  5,  6},
 				{7,  8,  9,  10, 11, 12},
@@ -15,6 +26,11 @@ public class MatrixPrintMatrixSpiral {
 		printSpirally(mat);
 	}
 
+	/**
+	 * Performs printSpirally operation.
+	 *
+	 * @param mat the array to process
+	 */
 	private static void printSpirally(int[][] mat) {
 		int rowStart=0,rowEnd=mat.length;
 		int colStart=0,colEnd=mat[0].length;
@@ -52,6 +68,5 @@ public class MatrixPrintMatrixSpiral {
 		}
 		System.out.println();
 	}
-
 
 }

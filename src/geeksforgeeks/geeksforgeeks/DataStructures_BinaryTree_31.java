@@ -4,15 +4,22 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.HashMap;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/vertical-sum-in-a-given-binary-tree/
  * Vertical Sum in a given Binary Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_31 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_31 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -32,13 +39,20 @@ import java.util.HashMap;
 
 	 }
 
+	 /**
+	  * Retrieves vertical sum from the data structure.
+	  *
+	  * @param node the tree node to process
+	  */
 	 private static void getVerticalSum(Node node) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
 		 else
 		 {
 			 HashMap<Integer,Integer> hdMap=new HashMap<Integer,Integer>();
 			 getVerticalSum(node,0,hdMap);
+			 // Check for null/base case
 			 if(hdMap!=null)
 			 {
 				 System.out.println(hdMap.entrySet());
@@ -60,6 +74,5 @@ import java.util.HashMap;
 		 }
 
 	 }
-
 
  }

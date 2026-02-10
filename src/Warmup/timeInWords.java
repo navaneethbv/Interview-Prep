@@ -3,7 +3,18 @@ package Warmup;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * Implementation of time In Words algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class timeInWords {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws Exception {
 		BufferedReader scanner=new BufferedReader(new InputStreamReader(System.in));
 		int H=Integer.parseInt(scanner.readLine());
@@ -46,6 +57,12 @@ public class timeInWords {
 			
 	}
 
+	/**
+	 * Retrieves number string from the data structure.
+	 *
+	 * @param value the value value
+	 * @return the resulting string
+	 */
 	public static String getNumberString(int value){
 		if(value==1){
 			return "one";
@@ -65,6 +82,7 @@ public class timeInWords {
 			return "eight";
 		}else if(value==9){
 			return "nine";
+		// Check for null/base case
 		}else if(value==10){
 			return "ten";
 		}else if(value==11){
@@ -83,6 +101,7 @@ public class timeInWords {
 			return "eightteen";
 		}else if(value==19){
 			return "nineteen";
+		// Check for null/base case
 		}else if(value==20){
 			return "twenty";
 		}else if(value==21){

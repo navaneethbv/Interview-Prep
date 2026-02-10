@@ -2,12 +2,22 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/print-binary-tree-vertical-order/
  * Print a Binary Tree in Vertical Order
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_58 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_58 {	 
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -28,6 +38,11 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 printVerticalOrder(binaryTree1.rootNode);
 	}
 
+	/**
+	 * Performs printVerticalOrder operation.
+	 *
+	 * @param rootNode the rootNode parameter
+	 */
 	private static void printVerticalOrder(Node rootNode) {
 		// TODO Auto-generated method stub
 		

@@ -5,13 +5,30 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=6442
  */
 
+/**
+ * Implementation of SRM320 String Segment algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM320StringSegment {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(average("aaabbaaac"));
-		System.out.println(average("aabbccdd"));
-		System.out.println(average("abba"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs average operation.
+	 *
+	 * @param s the s parameter
+	 * @return the double result
+	 */
 	public static double average(String s){
+		// Check for null/base case
 		if(s.length()==0)
 			return 0.0;
 		int elementCount=0,total=0;

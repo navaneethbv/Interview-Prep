@@ -4,6 +4,12 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
  
+/**
+ * Implementation of Modified Kruskals Algo algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ModifiedKruskalsAlgo
 {
     //creates a edge class with source and destinations
@@ -11,12 +17,21 @@ public class ModifiedKruskalsAlgo
     {
         Node source, destination;
         int edgeWeight;
+        /**
+         * Performs compareTo operation.
+         *
+         * @param compareEdge the compareEdge parameter
+         * @return the computed integer result
+         */
         public int compareTo(GraphEdge compareEdge)
         {
             return this.edgeWeight-compareEdge.edgeWeight;
         }
     };
     //creates a Node class with node value and node weight
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
     static class Node{
         int nodeValue;
         int nodeWeight=1;
@@ -96,7 +111,6 @@ public class ModifiedKruskalsAlgo
             Node destinationRoot = findNode(subsets, newEdge.destination);
             int maxWeight=Math.max(weightCount.get(newEdge.source.nodeValue),weightCount.get(newEdge.destination.nodeValue));
             
-            
             //CMST weight evaluation condition
             // maxWeight<clusterCapacity || newEdge.source.nodeValue==0
             //add the edge to the output if the max weight of the node is less
@@ -140,6 +154,11 @@ public class ModifiedKruskalsAlgo
         
     }
  
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args the array to process
+     */
     public static void main (String[] args)
     {
         int V = 6; //number of vertices

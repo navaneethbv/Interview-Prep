@@ -4,8 +4,19 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/larrys-array
  */
+/**
+ * Implementation of Larrys Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LarrysArray {
 	static int[] inputArray;
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n=scanner.nextInt();
@@ -19,10 +30,16 @@ public class LarrysArray {
 		}
 		scanner.close();
 
-
 	}
 
+	/**
+	 * Performs checkSortArray operation.
+	 *
+	 * @param inputArray the array to process
+	 * @return the resulting string
+	 */
 	private static String checkSortArray(int[] inputArray) {
+		// Iterate through all elements
 		for (int i = 0; i <=inputArray.length-3; i++) {
 			if(!sort(i))
 				return "NO";
@@ -33,6 +50,12 @@ public class LarrysArray {
 		return "YES";
 	}
 
+	/**
+	 * Performs sort operation.
+	 *
+	 * @param i the i parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean sort(int i) {
 		if(inputArray[i]==i+1)
 			return true;
@@ -48,6 +71,11 @@ public class LarrysArray {
 		}
 	}
 
+	/**
+	 * Rotates the left.
+	 *
+	 * @param i the i parameter
+	 */
 	private static void rotateLeft(int i) {
 		inputArray[i]=inputArray[i]^inputArray[i+1];
 		inputArray[i+1]=inputArray[i]^inputArray[i+1];
@@ -57,6 +85,11 @@ public class LarrysArray {
 		inputArray[i]=inputArray[i]^inputArray[i+2];
 	}
 
+	/**
+	 * Rotates the right.
+	 *
+	 * @param i the i parameter
+	 */
 	private static void rotateRight(int i) {
 		inputArray[i]=inputArray[i]^inputArray[i+1];
 		inputArray[i+1]=inputArray[i]^inputArray[i+1];
@@ -65,6 +98,5 @@ public class LarrysArray {
 		inputArray[i+2]=inputArray[i]^inputArray[i+2];
 		inputArray[i]=inputArray[i]^inputArray[i+2];
 	}
-
 
 }

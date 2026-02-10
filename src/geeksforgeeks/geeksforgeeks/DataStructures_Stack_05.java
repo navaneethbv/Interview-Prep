@@ -2,12 +2,22 @@ package geeksforgeeks;
 
 import java.util.Arrays;
 
-
 /*
  * http://www.geeksforgeeks.org/implement-two-stacks-in-an-array/
  * Implement two stacks in an array
  */;
+/**
+ * Implementation of Data Structures_ Stack_05 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_Stack_05 {	 
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 MainStack mainStack=new MainStack();
 		 System.out.println(mainStack.push1(10));
@@ -26,12 +36,6 @@ import java.util.Arrays;
 		 System.out.println(mainStack.push2(60));
 		 System.out.println(mainStack.stack2String());
 		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 System.out.println(mainStack.pop2());
-		 
 		 
 		 BetterStack betterStack=new BetterStack();
 		 betterStack.push1(10);
@@ -49,27 +53,19 @@ import java.util.Arrays;
 		 betterStack.push1(110);
 		 betterStack.stackString();
 		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
 	 }
-
 
  }
  class MainStack{
 	 int stackArray[]=new int[10];
 	 int stack1Start=0,stack1End=4,stack2Start=5,stack2End=9;
 	 int stack1Pointer=0,stack2Pointer=5;
+	 /**
+	  * Performs push1 operation.
+	  *
+	  * @param value the value value
+	  * @return true if condition is met, false otherwise
+	  */
 	 public boolean push1(int value){
 		 if(stack1Pointer>stack1End || stack1Pointer<stack1Start)
 			 return false;
@@ -77,6 +73,12 @@ import java.util.Arrays;
 		 stack1Pointer++;
 		 return true;
 	 }
+	 /**
+	  * Performs push2 operation.
+	  *
+	  * @param value the value value
+	  * @return true if condition is met, false otherwise
+	  */
 	 public boolean push2(int value){
 		 if(stack2Pointer>stack2End || stack2Pointer<stack2Start)
 			 return false;
@@ -84,6 +86,11 @@ import java.util.Arrays;
 		 stack2Pointer++;
 		 return true;
 	 }
+	 /**
+	  * Performs pop1 operation.
+	  *
+	  * @return the computed integer result
+	  */
 	 public int pop1(){
 		 if(stack1Pointer>stack1End)
 			 stack1Pointer=stack1End;
@@ -92,6 +99,11 @@ import java.util.Arrays;
 		 stack1Pointer=stack1Pointer-1;
 		 return stackArray[stack1Pointer+1];
 	 }
+	 /**
+	  * Performs pop2 operation.
+	  *
+	  * @return the computed integer result
+	  */
 	 public int pop2(){
 		 if(stack2Pointer>stack2End)
 			 stack2Pointer=stack2End;
@@ -100,9 +112,19 @@ import java.util.Arrays;
 		 stack2Pointer=stack2Pointer-1;
 		 return stackArray[stack2Pointer+1];
 	 }
+	 /**
+	  * Performs stack1String operation.
+	  *
+	  * @return the resulting string
+	  */
 	 public String stack1String(){
 		 return Arrays.toString(Arrays.copyOfRange(stackArray, stack1Start,stack1End+1));
 	 }
+	 /**
+	  * Performs stack2String operation.
+	  *
+	  * @return the resulting string
+	  */
 	 public String stack2String(){
 		 return Arrays.toString(Arrays.copyOfRange(stackArray, stack2Start,stack2End+1));
 	 }
@@ -111,6 +133,12 @@ import java.util.Arrays;
 	 int array[]=new int[10];
 	 int stack1Start=0,stack1End=0,stack2Start=array.length-1,stack2End=array.length-1;
 
+	 /**
+	  * Performs push1 operation.
+	  *
+	  * @param value the value value
+	  * @return true if condition is met, false otherwise
+	  */
 	 public boolean push1(int value){
 		 if((stack1End)>stack2End)
 			 return false;
@@ -120,7 +148,12 @@ import java.util.Arrays;
 		 return true;	
 	 }
 
-
+	 /**
+	  * Performs push2 operation.
+	  *
+	  * @param value the value value
+	  * @return true if condition is met, false otherwise
+	  */
 	 public boolean push2(int value){
 		 if((stack2End)<stack1End)
 			 return false;
@@ -129,6 +162,11 @@ import java.util.Arrays;
 		 stack2End--;
 		 return true;	
 	 }
+	 /**
+	  * Performs pop1 operation.
+	  *
+	  * @return the computed integer result
+	  */
 	 public int pop1(){
 		 if(stack1End<stack1Start)
 		 {
@@ -139,6 +177,11 @@ import java.util.Arrays;
 		 return array[stack1End+1];
 		 
 	 }
+	 /**
+	  * Performs pop2 operation.
+	  *
+	  * @return the computed integer result
+	  */
 	 public int pop2(){
 		 if(stack2End>stack2Start)
 		 {
@@ -148,6 +191,10 @@ import java.util.Arrays;
 		 stack2End++;
 		 return array[stack2End-1];
 	 }
+	 /**
+	  * Performs stackString operation.
+	  *
+	  */
 	 public void stackString(){
 		 System.out.println(Arrays.toString(array));
 	 }

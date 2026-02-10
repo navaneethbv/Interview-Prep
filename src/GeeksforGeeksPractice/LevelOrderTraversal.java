@@ -3,7 +3,18 @@ package GeeksforGeeksPractice;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * Implementation of Level Order Traversal algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LevelOrderTraversal {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -15,6 +26,11 @@ public class LevelOrderTraversal {
 		levelOrderTraversal(tn);
 		//1/2/3/5/4/6/7/
 	}
+	/**
+	 * Performs levelOrderTraversal operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	public static void levelOrderTraversal(TreeNode tn)
 	{	
 		Queue<TreeNode> q=new LinkedList<TreeNode>();
@@ -33,12 +49,14 @@ public class LevelOrderTraversal {
 		}
 	}
 	
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
-
 
 }

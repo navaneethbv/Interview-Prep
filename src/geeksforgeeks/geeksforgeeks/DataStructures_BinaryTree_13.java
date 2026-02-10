@@ -2,15 +2,22 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/diameter-of-a-binary-tree/
  * Diameter of a Binary Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_13 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_13 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,50);
@@ -25,11 +32,25 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 System.out.println(getDiameter(binaryTree1));
 	 }
 
+	 /**
+	  * Retrieves diameter from the data structure.
+	  *
+	  * @param binaryTree1 the binaryTree1 parameter
+	  * @return the computed integer result
+	  */
 	 private static int getDiameter(_01DataStructures_BinaryTree_00 binaryTree1) {
+		 // Recursively process left and right subtrees
 		 return getDiameter(binaryTree1.rootNode);
 	 }
 
+	 /**
+	  * Retrieves diameter from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int getDiameter(Node node) {
+		 // Check for null/base case
 		 if(node==null)
 			 return 0;
 		 else{
@@ -44,7 +65,14 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 }
 	 }
 
+	 /**
+	  * Performs height operation.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int height(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 int leftHeight=height(node.left);
@@ -54,6 +82,5 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		 else
 			 return 0;
 	 }
-
 
  }

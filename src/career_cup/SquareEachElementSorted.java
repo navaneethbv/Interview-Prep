@@ -7,8 +7,19 @@ import java.util.Scanner;
 /*
  * Link: http://codereview.stackexchange.com/questions/75819/efficiently-squaring-each-element-in-a-sorted-array-keeping-it-sorted
  */
+/**
+ * Implementation of Square Each Element Sorted algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SquareEachElementSorted {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		String inputStringArray[]="-6,-5,-4,-3,-2,-1,3,5,7".split(",");//scanner.nextLine().split(",");
@@ -22,6 +33,12 @@ public class SquareEachElementSorted {
 		System.out.println(Arrays.toString(outputSortedArray));
 	}
 
+	/**
+	 * Performs squareSorted operation.
+	 *
+	 * @param inputSortedArray the array to process
+	 * @return the resulting array
+	 */
 	private static int[] squareSorted(int[] inputSortedArray) {
 		int sum=inputSortedArray[0],index=0;
 		if(sum>=0)
@@ -33,6 +50,13 @@ public class SquareEachElementSorted {
 		return  doMerge(index,inputSortedArray);
 	}
 
+	/**
+	 * Performs doMerge operation.
+	 *
+	 * @param index the index parameter
+	 * @param inputSortedArray the array to process
+	 * @return the resulting array
+	 */
 	private static int[] doMerge(int index, int[] inputSortedArray) {
 		int startIndex=0,endIndex=inputSortedArray.length-1;
 		int leftIndex=index-1;
@@ -71,6 +95,12 @@ public class SquareEachElementSorted {
 		return outputArray;
 	}
 
+	/**
+	 * Performs doSearch operation.
+	 *
+	 * @param inputSortedArray the array to process
+	 * @return the computed integer result
+	 */
 	private static int doSearch(int[] inputSortedArray) {//change to binary search
 		for (int i = 1; i < inputSortedArray.length; i++) {
 			if(inputSortedArray[i-1]<0 && inputSortedArray[i]>=0)

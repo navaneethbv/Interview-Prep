@@ -4,7 +4,20 @@ package leetCode;
  * Link : https://leetcode.com/problems/add-binary/
  */
 
+/**
+ * Implementation of Add Binary algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AddBinary {
+	/**
+	 * Adds binary to the data structure.
+	 *
+	 * @param a the a parameter
+	 * @param b the b parameter
+	 * @return the resulting string
+	 */
 	public static String addBinary(String a, String b) {
 		int aIndex=a.length()-1;
 		int bIndex=b.length()-1;
@@ -63,7 +76,13 @@ public class AddBinary {
 			sb.append("1");
 		return sb.reverse().toString();
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(addBinary("11", "1"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

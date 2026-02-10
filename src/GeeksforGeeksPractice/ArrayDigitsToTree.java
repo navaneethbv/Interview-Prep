@@ -3,10 +3,21 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://www.geeksforgeeks.org/find-all-possible-interpretations/
  */
+/**
+ * Implementation of Array Digits To Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayDigitsToTree {
 	private static final String[] alphabet = {"", "a", "b", "c", "d", "e",
 			"f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r",
 			"s", "t", "u", "v", "w", "x", "v", "z"};
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		// aacd(1,1,3,4) amd(1,13,4) kcd(11,3,4)
 		int[] arr = {1, 1, 3, 4};
@@ -36,23 +47,20 @@ public class ArrayDigitsToTree {
 		int[] arr7 = {1, 2, 2, 1};
 		printAllInterpretations(arr7);
 
-
-
-
-
 	}
 
-
-
-
+	/**
+	 * Performs printAllInterpretations operation.
+	 *
+	 * @param arr the array to process
+	 */
 	private static void printAllInterpretations(int[] arr) {
 
-
 	}
 
-
-
-
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;
@@ -60,6 +68,5 @@ public class ArrayDigitsToTree {
 			this.value=value;
 		}		
 	}
-
 
 }

@@ -6,8 +6,19 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/the-grid-search
  */
+/**
+ * Implementation of Grid Search algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GridSearch {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param ards[] the ards[] parameter
+	 */
 	public static void main(String ards[])
 	{
 		String[] inputMatrix = null,testMatrix = null;
@@ -23,7 +34,15 @@ public class GridSearch {
 		}
 	}
 
+	/**
+	 * Performs checkTestInInput operation.
+	 *
+	 * @param inputMatrix the array to process
+	 * @param testMatrix the array to process
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkTestInInput(String[] inputMatrix, String[] testMatrix) {
+		// Iterate through all elements
 		for (int i = 0; i <=(inputMatrix.length-testMatrix.length); i++) {
 			int prevIndex=inputMatrix[i].indexOf(testMatrix[0],0);
 			
@@ -31,6 +50,7 @@ public class GridSearch {
 			{	
 				int counter=0;
 				int k=i;
+				// Inner loop to check combinations
 				for (int j = 0; j < testMatrix.length; j++) {
 					if(inputMatrix[k].substring(prevIndex,prevIndex+testMatrix[0].length()).contentEquals(testMatrix[j]))
 					{
@@ -50,6 +70,14 @@ public class GridSearch {
 		return false;
 	}
 
+	/**
+	 * Performs extractMatrix operation.
+	 *
+	 * @param inputMatrix the array to process
+	 * @param rowCols the array to process
+	 * @param scanner the scanner parameter
+	 * @return the resulting array
+	 */
 	private static String[] extractMatrix(String[] inputMatrix, String[] rowCols,Scanner scanner) {
 		inputMatrix=new String[Integer.parseInt(rowCols[0])];
 		for (int i = 0; i < Integer.parseInt(rowCols[0]); i++) {

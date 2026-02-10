@@ -1,7 +1,18 @@
 package eBayPrep;
 
+/**
+ * Implementation of Count And Say algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CountAndSay {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(countAndSay(1));
 		System.out.println(countAndSay(2));
@@ -10,6 +21,12 @@ public class CountAndSay {
 		System.out.println(countAndSay(5));
 	}
 
+	/**
+	 * Counts the number of and say.
+	 *
+	 * @param n the size or count parameter
+	 * @return the resulting string
+	 */
 	public static String countAndSay(int n) {
 		String value="1";
 		while(n!=1)

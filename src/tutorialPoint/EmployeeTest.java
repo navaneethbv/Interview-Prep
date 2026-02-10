@@ -1,7 +1,18 @@
 package tutorialPoint;
 
+/**
+ * Implementation of Employee Test algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class EmployeeTest{
 
+   /**
+    * Main method to test the functionality of the class with various test cases.
+    *
+    * @param args[] the args[] parameter
+    */
    public static void main(String args[]){
       /* Create two objects using constructor */
       Employee empOne = new Employee("James Smith");

@@ -4,12 +4,22 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
 import java.util.Stack;
 
-
 /*
  * http://www.geeksforgeeks.org/print-ancestors-of-a-given-binary-tree-node-without-recursion/
  * Print ancestors of a given binary tree node without recursion
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_44 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_44 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -30,7 +40,14 @@ import java.util.Stack;
 		 printAncestors(binaryTree1.rootNode,8);
 	 }
 
+	 /**
+	  * Performs printAncestors operation.
+	  *
+	  * @param node the tree node to process
+	  * @param i the i parameter
+	  */
 	 private static void printAncestors(Node node, int i) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
 		 Stack<Node> stack=new Stack<Node>();
@@ -41,8 +58,10 @@ import java.util.Stack;
 				 stack.push(node);
 				 node=node.left;
 			 }
+			 // Check for null/base case
 			 if(node!=null && node.data==i)
 				 break;
+			 // Check for null/base case
 			 if(stack.peek().right==null)
 			 {
 				 node=stack.pop();

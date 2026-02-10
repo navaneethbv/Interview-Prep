@@ -19,19 +19,45 @@ class Student{
 		this.fname = fname;
 		this.cgpa = cgpa;
 	}
+	/**
+	 * Retrieves token from the data structure.
+	 *
+	 * @return the computed integer result
+	 */
 	public int getToken() {
 		return token;
 	}
+	/**
+	 * Retrieves fname from the data structure.
+	 *
+	 * @return the resulting string
+	 */
 	public String getFname() {
 		return fname;
 	}
+	/**
+	 * Retrieves cgpa from the data structure.
+	 *
+	 * @return the double result
+	 */
 	public double getCgpa() {
 		return cgpa;
 	}
 }
 
+/**
+ * Implementation of Serve The Students algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ServeTheStudents {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int totalEvents = Integer.parseInt(scanner.nextLine());
@@ -65,6 +91,13 @@ public class ServeTheStudents {
 class StudentComparator implements Comparator<Student>{
 
 	@Override
+	/**
+	 * Performs compare operation.
+	 *
+	 * @param o1 the o1 parameter
+	 * @param o2 the o2 parameter
+	 * @return the computed integer result
+	 */
 	public int compare(Student o1, Student o2) {
 		if(o1.getCgpa()>o2.getCgpa())
 			return -1;
@@ -73,6 +106,7 @@ class StudentComparator implements Comparator<Student>{
 		else {
 			if(!o1.getFname().contentEquals(o2.getFname()))
 			{
+				// Recursively process left and right subtrees
 				return o1.getFname().compareTo(o2.getFname())>0?1:-1;
 			}
 			else{

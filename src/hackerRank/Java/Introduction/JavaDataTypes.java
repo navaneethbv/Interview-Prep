@@ -6,8 +6,19 @@ import java.util.Scanner;
  * Link:https://www.hackerrank.com/challenges/java-datatypes
  */
 
+/**
+ * Implementation of Java Data Types algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class JavaDataTypes {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param []argh the []argh parameter
+	 */
 	public static void main(String []argh)
 	{
 		Scanner sc = new Scanner(System.in);

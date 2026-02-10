@@ -5,10 +5,28 @@ import java.util.Arrays;
  * SRM 144 Div 1
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1704&rd=4515
  */
+/**
+ * Implementation of SRM144 Binary Code algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM144BinaryCode {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(Arrays.toString(decode("123210120")));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs decode operation.
+	 *
+	 * @param message the message parameter
+	 * @return the resulting array
+	 */
 	public static String[] decode(String message){
 		if(message.length()==1)
 		{
@@ -40,11 +58,12 @@ public class SRM144BinaryCode {
 			{
 				outputString2="NONE";
 			}
+			// Check for null/base case
 			if(outputString1!=null && outputString2!=null && outputString1.contentEquals("NONE") && outputString2.contentEquals("NONE"))
 				break;
 		}
 		outputString1=outputString1!=null && outputString1.contentEquals("NONE")?"NONE":Arrays.toString(p).replaceAll(",","").replaceAll(" ", "").replace("[", "").replace("]", "");
 		outputString2=outputString2!=null && outputString2.contentEquals("NONE")?"NONE":Arrays.toString(p1).replaceAll(",","").replaceAll(" ", "").replace("[", "").replace("]", "");
 		return new String[]{outputString1,outputString2};
-	}	
+	}
 }

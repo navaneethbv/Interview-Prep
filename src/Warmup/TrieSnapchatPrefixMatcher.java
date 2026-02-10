@@ -16,24 +16,43 @@ class TrieNode {
 		children = new HashMap<>();
 		ended = false;
 	}
+	/**
+	 * Retrieves children from the data structure.
+	 *
+	 * @return the HashMap<Character,TrieNode> result
+	 */
 	public HashMap<Character,TrieNode> getChildren() 
 	{ 
 		return children; 
 	}
+	/**
+	 * Retrieves char value from the data structure.
+	 *
+	 * @return the char result
+	 */
 	public char getCharValue()						 
 	{
 		return charValue;	
 	}
+	/**
+	 * Sets ended in the data structure.
+	 *
+	 * @param val the val parameter
+	 */
 	public void setEnded(boolean val)			
 	{
 		ended = val;	
 	}
+	/**
+	 * Performs ended operation.
+	 *
+	 * @return true if condition is met, false otherwise
+	 */
 	public boolean ended()						 
 	{
 		return ended; 
 	}
 }
-
 
 class Trie {
 	private TrieNode root;
@@ -42,10 +61,16 @@ class Trie {
 		System.out.println(this.root.getCharValue());
 	} 
 
+	/**
+	 * Performs insertWord operation.
+	 *
+	 * @param newWord the newWord parameter
+	 */
 	public void insertWord(String newWord) {
 
 		int length = newWord.length();
 		TrieNode crawlerNode = root;
+		// Iterate through all elements
 		for( int i = 0; i < length; i++)
 		{
 			HashMap<Character,TrieNode> child = crawlerNode.getChildren();
@@ -62,6 +87,12 @@ class Trie {
 		crawlerNode.setEnded(true);
 	}
 
+	/**
+	 * Retrieves prefix match from the data structure.
+	 *
+	 * @param inputString the inputString parameter
+	 * @return the resulting string
+	 */
 	public String getPrefixMatch(String inputString) {
 		String resultantString = ""; 
 		int stringLength = inputString.length();  
@@ -85,10 +116,20 @@ class Trie {
 		else return resultantString;
 	}
 
-
 }
 
+/**
+ * Implementation of Trie Snapchat Prefix Matcher algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TrieSnapchatPrefixMatcher {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Trie dict = new Trie();
 		//String[] str=new String[]{"chat","ever","snapchat","snap","salesperson","per","person","sales","son","whatsoever","what","so"};
@@ -274,7 +315,6 @@ public class TrieSnapchatPrefixMatcher {
 				"aaababbbaaaabbbaaabbbaab",
 				"aaababbbbaabbbab"};
 		
-		
 		HashMap<Integer, String> pointerMap=new HashMap<>();
 		for (int i = 0; i < str.length; i++) {
 			pointerMap.put(i, str[i]);
@@ -327,9 +367,20 @@ public class TrieSnapchatPrefixMatcher {
 		}
 		System.out.println(Arrays.toString(outputArray));
 	}
+	/**
+	 * Inner class compareStringLength for supporting operations.
+	 */
 	public static class compareStringLength implements Comparator<String> {
+		/**
+		 * Performs compare operation.
+		 *
+		 * @param s1 the s1 parameter
+		 * @param s2 the s2 parameter
+		 * @return the computed integer result
+		 */
 		public int compare(String s1, String s2) {
 			int diff = s1.length() - s2.length();
+			// Recursively process left and right subtrees
 			return diff != 0? diff: s1.compareTo(s2);
 		}
 	}

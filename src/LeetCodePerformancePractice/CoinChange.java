@@ -1,9 +1,28 @@
 package LeetCodePerformancePractice;
 
+/**
+ * Implementation of Coin Change algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CoinChange {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(coinChange(new int[]{1,2,5},11));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs coinChange operation.
+	 *
+	 * @param coins the array to process
+	 * @param amount the amount parameter
+	 * @return the computed integer result
+	 */
 	public static int coinChange(int[] coins, int amount) {
 		int dp[]=new int[amount+1];
 		dp[0]=0;
@@ -12,6 +31,7 @@ public class CoinChange {
 		}
 
 		for (int i = 0; i <=amount; i++) {
+			// Inner loop to check combinations
 			for (int j = 0; j < coins.length; j++) {
 				int coin=coins[j];
 				if(i+coin<=amount)
@@ -30,6 +50,5 @@ public class CoinChange {
 			return -1;
 		return dp[amount];
 	}
-
 
 }

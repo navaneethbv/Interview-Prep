@@ -1,6 +1,17 @@
 package GeeksforGeeksPractice;
 
+/**
+ * Implementation of Trees Are Identical algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TreesAreIdentical {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -19,6 +30,9 @@ public class TreesAreIdentical {
 		System.out.println(isIdentical(tn,tn1));//returns false
 	}
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
@@ -26,6 +40,13 @@ public class TreesAreIdentical {
 		TreeNode(int x) { val = x; }
 	}
 
+	/**
+	 * Checks if identical.
+	 *
+	 * @param tn the tree node to process
+	 * @param tn1 the tn1 parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	public static boolean isIdentical(TreeNode tn,TreeNode tn1)
 	{	
 		if(tn!=null || tn1!=null)

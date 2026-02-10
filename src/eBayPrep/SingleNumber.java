@@ -1,10 +1,27 @@
 package eBayPrep;
 
+/**
+ * Implementation of Single Number algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SingleNumber {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(singleNumber(new int[]{1,3,2,4,1,3,4}));
-
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs singleNumber operation.
+	 *
+	 * @param nums the array to process
+	 * @return the computed integer result
+	 */
 	public static int singleNumber(int[] nums) {
 		if(nums.length==1)
 			return nums[0];

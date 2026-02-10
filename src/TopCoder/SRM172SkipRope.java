@@ -7,9 +7,18 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1968&rd=4665
  */
 
-
-
+/**
+ * Implementation of SRM172 Skip Rope algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM172SkipRope {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(partners(new int[]{102, 99, 104},100)));
 		System.out.println(Arrays.toString(partners(new int[]{102, 97, 104},100)));
@@ -18,10 +27,18 @@ public class SRM172SkipRope {
 		System.out.println(Arrays.toString(partners(new int[]{134, 79, 164, 86, 131, 78, 99, 150, 105, 163, 150, 110, 90, 137, 127, 130, 121, 
 				93, 97, 131, 170, 137, 171, 153, 137, 138, 92, 103, 149, 110, 156},82)));
 	}
+	/**
+	 * Performs partners operation.
+	 *
+	 * @param candidates the array to process
+	 * @param height the height parameter
+	 * @return the resulting array
+	 */
 	public static int[] partners(int[] candidates, int height){
 		int diff=Integer.MAX_VALUE;
 		int firstIndex=-1,secondIndex=-1;
 		Arrays.sort(candidates);
+		// Iterate through all elements
 		for (int i = 0; i < candidates.length; i++) {
 			int newDiff=candidates[i]-height;
 			newDiff=Math.abs(newDiff);
@@ -32,6 +49,7 @@ public class SRM172SkipRope {
 			}
 		}
 		diff=Integer.MAX_VALUE;
+		// Iterate through all elements
 		for (int i = 0; i < candidates.length; i++) {
 			if(i!=firstIndex){
 				int newDiff=candidates[i]-height;

@@ -3,14 +3,31 @@ package yelpInterview;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Implementation of Array Majority Element algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayMajorityElement {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int inputArray[] = {3,3,4,2,4,4,2,4,4};
-		System.out.println(findMajorityElement(inputArray));
+
 	}
 
+	/**
+	 * Finds majority element in the data structure.
+	 *
+	 * @param inputArray the array to process
+	 * @return the resulting string
+	 */
 	private static String findMajorityElement(int[] inputArray) {
 		HashMap<Integer, Integer> elementCount=new HashMap<>();
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			if(elementCount.containsKey(inputArray[i]))
 			{
@@ -27,8 +44,6 @@ public class ArrayMajorityElement {
 		}
 		return "NONE";
 	}
-
-
 
 }
 

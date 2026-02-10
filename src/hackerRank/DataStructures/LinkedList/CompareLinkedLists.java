@@ -4,6 +4,12 @@ package hackerRank.DataStructures.LinkedList;
  * Link:https://www.hackerrank.com/challenges/compare-two-linked-lists
  */
 
+/**
+ * Implementation of Compare Linked Lists algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class CompareLinkedLists {
 
 	int CompareLists(Node headA, Node headB) {

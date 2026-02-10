@@ -7,6 +7,12 @@ import java.util.TreeMap;
  * Link:https://www.hackerrank.com/challenges/tree-top-view
  */
 
+/**
+ * Implementation of Tree Top View algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class TreeTopView {
 	class Node {
 		int data;

@@ -5,16 +5,23 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-16/
  * Given 2 sorted arrays of size m and n+m(with n elements) , merge
  * them into the latter..
  */;
+/**
+ * Implementation of Amazon Interview_15_03 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_15_03 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 int m=Integer.parseInt(scanner.nextLine());
@@ -31,6 +38,13 @@ import java.util.Scanner;
 		 System.out.println(Arrays.toString(outputArray));
 	 }
 
+	/**
+	 * Performs sortArrays operation.
+	 *
+	 * @param inputArrayM the array to process
+	 * @param inputArrayN the array to process
+	 * @return the resulting array
+	 */
 	private static int[] sortArrays(int[] inputArrayM, int[] inputArrayN) {
 		int mCounter=0,nCounter=0,mainCounter=0;
 		int []outputArray=new int[inputArrayM.length+inputArrayN.length];
@@ -60,7 +74,14 @@ import java.util.Scanner;
 		return outputArray;
 	}
 
+	/**
+	 * Performs buildArray operation.
+	 *
+	 * @param inputArray the array to process
+	 * @return the resulting array
+	 */
 	private static int[] buildArray(int[] inputArray) {
+		// Iterate through all elements
 		for (int i = 0; i < inputArray.length; i++) {
 			inputArray[i]=new Random().nextInt(inputArray.length*3);
 		}

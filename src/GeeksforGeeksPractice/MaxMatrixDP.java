@@ -3,7 +3,18 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
  */
+/**
+ * Implementation of Max Matrix DP algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaxMatrixDP {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int mat[][] =  {{0, 1, 1, 0, 1}, 
 				{1, 1, 0, 1, 0}, 
@@ -14,10 +25,17 @@ public class MaxMatrixDP {
 		printMaxSubSquare(mat);
 	}
 
+	/**
+	 * Performs printMaxSubSquare operation.
+	 *
+	 * @param mat the array to process
+	 */
 	private static void printMaxSubSquare(int[][] mat) {
 		int s[][]=new int[mat.length][mat[0].length];
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			for (int j = 0; j < s[0].length; j++) {
+				// Check for null/base case
 				if(i==0||j==0)
 					s[i][j]=mat[i][j];
 				else if(mat[i][j]==1){
@@ -29,6 +47,7 @@ public class MaxMatrixDP {
 		}
 		
 		int max=Integer.MIN_VALUE,max_i=0,max_j=0;
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			for (int j = 0; j < s[0].length; j++) {
 				if(s[i][j]>max)
@@ -47,16 +66,6 @@ public class MaxMatrixDP {
 			System.out.println();
 		}
 		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
-
-
 
 }

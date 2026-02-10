@@ -7,9 +7,18 @@ import java.util.Arrays;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1800&rd=4610
  */
 
-
-
+/**
+ * Implementation of SRM161 Card Count algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM161CardCount {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args)  {
 		System.out.println(Arrays.toString(dealHands(6,"012345012345012345")));
 		System.out.println(Arrays.toString(dealHands(4,"111122223333")));
@@ -19,6 +28,13 @@ public class SRM161CardCount {
 		System.out.println(Arrays.toString(dealHands(19,"405432699259465009801237421388432461095898946221")));
 		System.out.println(Arrays.toString(dealHands(21, "3439434422834490897438978957869323202")));
 	}
+	/**
+	 * Performs dealHands operation.
+	 *
+	 * @param numPlayers the numPlayers parameter
+	 * @param deck the deck parameter
+	 * @return the resulting array
+	 */
 	public static String[] dealHands(int numPlayers, String deck){
 		String[] outputArray=new String[numPlayers];
 		Arrays.fill(outputArray, "");

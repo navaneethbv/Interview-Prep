@@ -10,9 +10,18 @@ import java.util.concurrent.TimeUnit;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1790&rd=4590
  */
 
-
-
+/**
+ * Implementation of SRM157 Salary algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM157Salary {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws ParseException {
 		System.out.println(howMuch(new String[]{"08:00:00","13:00:00","19:27:32"}, new String[]{"12:00:00","17:00:00","20:48:10"},1000 ));
 		System.out.println(howMuch(new String[]{"01:05:47","16:48:12"},new String[]{"09:27:30","21:17:59"},2000));
@@ -20,12 +29,21 @@ public class SRM157Salary {
 		System.out.println(howMuch(new String[]{"10:00:00"}, new String[]{"18:00:00"},10000));
 		System.out.println(howMuch(new String[]{"22:19:46"}, new String[]{"23:12:46"},5320 ));
 	}
+	/**
+	 * Performs howMuch operation.
+	 *
+	 * @param arrival the array to process
+	 * @param departure the array to process
+	 * @param wage the wage parameter
+	 * @return the computed integer result
+	 */
 	public static int howMuch(String[] arrival, String[] departure, int wage) throws ParseException{
 		double value=0;
 		SimpleDateFormat s=new SimpleDateFormat("HH:mm:ss");
 		Date beforeTime=s.parse("06:00:00");
 		Date afterTime=s.parse("18:00:00");
 		TimeUnit timeUnit=TimeUnit.MINUTES;
+		// Iterate through all elements
 		for (int i = 0; i < departure.length; i++) {
 			Date date1=s.parse(arrival[i]);
 			Date date2=s.parse(departure[i]);

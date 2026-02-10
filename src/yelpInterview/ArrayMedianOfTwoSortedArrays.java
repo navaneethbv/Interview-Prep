@@ -2,13 +2,29 @@ package yelpInterview;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Array Median Of Two Sorted Arrays algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ArrayMedianOfTwoSortedArrays {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
-		int arr1[] = {1, 12, 15, 26, 38};
-		int arr2[] = {2, 13, 17, 30, 45};
-		System.out.println(findMedian(arr1,arr2));
+
 	}
 
+	/**
+	 * Finds median in the data structure.
+	 *
+	 * @param arr1 the array to process
+	 * @param arr2 the array to process
+	 * @return the computed integer result
+	 */
 	private static int findMedian(int[] arr1, int[] arr2) {
 
 		if(arr1.length==1)
@@ -25,18 +41,15 @@ public class ArrayMedianOfTwoSortedArrays {
 			return median1;
 		else if(median1>median2)
 		{	if(arr1.length%2!=0)
+			// Recursively process left and right subtrees
 			return findMedian(Arrays.copyOf(arr1, arr1.length/2), Arrays.copyOfRange(arr2, arr2.length/2,arr2.length));
 		return findMedian(Arrays.copyOf(arr1, (arr1.length/2)-1), Arrays.copyOfRange(arr2, (arr2.length/2)-1,arr2.length));
 		}else{
 			if(arr1.length%2!=0)
+				// Recursively process left and right subtrees
 				return findMedian(Arrays.copyOf(arr1, arr1.length/2), Arrays.copyOfRange(arr2, arr2.length/2,arr2.length));
 			return findMedian(Arrays.copyOf(arr2, (arr2.length/2)-1), Arrays.copyOfRange(arr1, (arr1.length/2)-1,arr1.length));
 		}
 	}
-
-
-
-
-
 
 }

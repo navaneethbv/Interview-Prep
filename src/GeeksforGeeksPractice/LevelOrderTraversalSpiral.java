@@ -1,12 +1,26 @@
 package GeeksforGeeksPractice;
 
+/**
+ * Implementation of Level Order Traversal Spiral algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LevelOrderTraversalSpiral {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -21,6 +35,11 @@ public class LevelOrderTraversalSpiral {
 		//4/5/6/7/
 	}
 	
+	/**
+	 * Performs levelOrderTraversalSpiral operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	public static void levelOrderTraversalSpiral(TreeNode tn)
 	{
 		int height=getHeight(tn);
@@ -35,7 +54,15 @@ public class LevelOrderTraversalSpiral {
 		}
 	}
 
+	/**
+	 * Retrieves nodes from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @param flag the flag parameter
+	 * @param i the i parameter
+	 */
 	private static void getNodes(TreeNode tn, boolean flag, int i) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			if(i==1){
@@ -54,9 +81,17 @@ public class LevelOrderTraversalSpiral {
 		
 	}
 
+	/**
+	 * Retrieves height from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the computed integer result
+	 */
 	private static int getHeight(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
+			// Recursively process left and right subtrees
 			return 1+Math.max(getHeight(tn.left),getHeight(tn.right));
 		}
 		return 0;

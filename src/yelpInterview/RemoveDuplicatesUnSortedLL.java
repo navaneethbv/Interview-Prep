@@ -3,7 +3,16 @@ package yelpInterview;
 import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * Implementation of Remove Duplicates Un Sorted LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveDuplicatesUnSortedLL {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node next;
@@ -12,6 +21,11 @@ public class RemoveDuplicatesUnSortedLL {
 		}
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=new Node(12);
 		n.next=new Node(11);
@@ -26,6 +40,12 @@ public class RemoveDuplicatesUnSortedLL {
 		print(n);
 	}
 
+	/**
+	 * Removes duplicates from the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node removeDuplicates(Node n) {
 		Node outputNode=n;
 		Set<Integer> set=new TreeSet<>();
@@ -33,6 +53,7 @@ public class RemoveDuplicatesUnSortedLL {
 		{
 			if(set.contains(n.value))
 			{
+				// Check for null/base case
 				if(n.next!=null){
 					n.value=n.next.value;
 					n.next=n.next.next;
@@ -49,14 +70,11 @@ public class RemoveDuplicatesUnSortedLL {
 		return outputNode;
 	}
 
-
-
-
-
-
-
-
-
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null)
 		{
@@ -66,9 +84,4 @@ public class RemoveDuplicatesUnSortedLL {
 	}
 
 }
-
-
-
-
-
 

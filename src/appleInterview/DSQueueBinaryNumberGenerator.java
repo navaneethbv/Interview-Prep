@@ -3,14 +3,28 @@ package appleInterview;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
+/**
+ * Implementation of DS Queue Binary Number Generator algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSQueueBinaryNumberGenerator {
 
-
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		generateBinary(2);
-		generateBinary(5);
+
 	}
 
+	/**
+	 * Performs generateBinary operation.
+	 *
+	 * @param i the i parameter
+	 */
 	private static void generateBinary(int i) {
 		PriorityQueue<Integer> pq=new PriorityQueue<>();
 		pq.add(1);

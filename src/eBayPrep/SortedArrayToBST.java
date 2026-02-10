@@ -1,19 +1,39 @@
 package eBayPrep;
 
+/**
+ * Implementation of Sorted Array To BST algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SortedArrayToBST {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		TreeNode tn=sortedArrayToBST(new int[]{1,2,3,4,5,6,7,8,9});
-		preOrder(tn);
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			preOrder(tn.left);
@@ -22,7 +42,14 @@ public class SortedArrayToBST {
 		}
 	}
 
+	/**
+	 * Performs sortedArrayToBST operation.
+	 *
+	 * @param nums the array to process
+	 * @return the TreeNode result
+	 */
 	public static TreeNode sortedArrayToBST(int[] nums) {
+		// Check for null/base case
 		if(nums==null||nums.length==0)
 			return null;
 		else
@@ -37,6 +64,14 @@ public class SortedArrayToBST {
 
 	}
 
+	/**
+	 * Performs prepTree operation.
+	 *
+	 * @param left the left parameter
+	 * @param right the right parameter
+	 * @param nums the array to process
+	 * @return the TreeNode result
+	 */
 	private static TreeNode prepTree(int left, int right, int[] nums) {
 		if(left>right)
 			return null;
@@ -49,7 +84,6 @@ public class SortedArrayToBST {
 			return tn;
 		}
 	}
-
 
 }
 

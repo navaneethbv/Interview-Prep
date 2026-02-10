@@ -2,8 +2,19 @@ package yelpInterview;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Matrix Rotate Matrix Elements algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MatrixRotateMatrixElements {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		int mat[][]={ 
 				{1,  2,  3,  4},
@@ -24,6 +35,12 @@ public class MatrixRotateMatrixElements {
 		printMatrix(mat);
 	}
 
+	/**
+	 * Rotates the matrix.
+	 *
+	 * @param mat the array to process
+	 * @return the resulting array
+	 */
 	private static int[][] rotateMatrix(int[][] mat) {
 		int row=0,col=0,rowEnd=mat.length,colEnd=mat[0].length;
 
@@ -69,22 +86,20 @@ public class MatrixRotateMatrixElements {
 
 		}
 
-
-
-
-
 		return mat;
 	}
 
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param mat the array to process
+	 */
 	private static void printMatrix(int[][] mat) {
+		// Iterate through all elements
 		for (int i = 0; i < mat.length; i++) {
 			System.out.println(Arrays.toString(mat[i]));
 		}	
 		System.out.println();
 	}
-
-
-
-
 
 }

@@ -3,7 +3,18 @@ package GeeksforGeeksPractice;
 /*
  * Link : http://www.geeksforgeeks.org/given-a-binary-tree-how-do-you-remove-all-the-half-nodes/
  */
+/**
+ * Implementation of Remove All Half Nodes algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RemoveAllHalfNodes {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(2);
 		tn.left=new TreeNode(7);
@@ -19,15 +30,22 @@ public class RemoveAllHalfNodes {
 	}
 	
 
-
-
+	/**
+	 * Removes all half nodes from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return the TreeNode result
+	 */
 	private static TreeNode removeAllHalfNodes(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			tn.left=removeAllHalfNodes(tn.left);
 			tn.right=removeAllHalfNodes(tn.right);
+			// Check if node is a leaf (no children)
 			if(tn.left==null && tn.right==null)
 				return tn;
+			// Check for null/base case
 			if(tn.left==null)
 			{
 				TreeNode temp=tn.right;
@@ -35,6 +53,7 @@ public class RemoveAllHalfNodes {
 				return temp;
 			}
 			
+			// Check for null/base case
 			if(tn.right==null)
 			{
 				TreeNode temp=tn.left;
@@ -45,7 +64,13 @@ public class RemoveAllHalfNodes {
 		return tn;
 	}
 
+	/**
+	 * Performs preOrder operation.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void preOrder(TreeNode tn) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			System.out.print(tn.value+"->");
@@ -54,9 +79,9 @@ public class RemoveAllHalfNodes {
 		}		
 	}
 
-
-
-
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;
@@ -64,6 +89,5 @@ public class RemoveAllHalfNodes {
 			this.value=value;
 		}		
 	}
-
 
 }

@@ -3,9 +3,20 @@ package Warmup;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/**
+ * Implementation of squirrel And Nut algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class squirrelAndNut {
 	static int noOfNuts;
 	static int totalSteps;
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) throws Exception {
 
 		BufferedReader scanner = new BufferedReader(new InputStreamReader(
@@ -40,7 +51,6 @@ public class squirrelAndNut {
 			totalSteps+=getNutWithMindistance();
 			totalSteps+=getTreeDistance();
 			
-			
 		}
 		System.out.println(totalSteps);
 		//		for (int i = 0; i < mat.length; i++) {
@@ -52,15 +62,23 @@ public class squirrelAndNut {
 		//			}
 		//		}
 
-
 	}
+	/**
+	 * Retrieves nut with mindistance from the data structure.
+	 *
+	 * @return the computed integer result
+	 */
 	public static int getNutWithMindistance(){
 
 		noOfNuts--;
 		return 0;
 	}
+	/**
+	 * Retrieves tree distance from the data structure.
+	 *
+	 * @return the computed integer result
+	 */
 	public static int getTreeDistance(){
-		
 		
 		return 0;
 	}

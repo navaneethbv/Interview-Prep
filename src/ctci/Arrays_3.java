@@ -3,9 +3,19 @@ package ctci;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*Implementation of CTCI 1.4*/
+/**
+ * Implementation of Arrays_3 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Arrays_3 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		String inputString=scanner.nextLine();
@@ -14,6 +24,13 @@ public class Arrays_3 {
 		System.out.println(replaceString(inputString,trueLength));
 	}
 
+	/**
+	 * Performs replaceString operation.
+	 *
+	 * @param inputString the inputString parameter
+	 * @param trueLength the trueLength parameter
+	 * @return the resulting string
+	 */
 	public static String replaceString(String inputString, int trueLength) {
 		char[] inputArray=inputString.toCharArray();
 		int noOfSpaces=0;

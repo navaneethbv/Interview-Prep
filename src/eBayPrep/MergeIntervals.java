@@ -6,8 +6,17 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * Implementation of Merge Intervals algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MergeIntervals {
 
+	/**
+	 * Inner class Interval for supporting operations.
+	 */
 	public static class Interval {
 		int start;
 		int end;
@@ -15,9 +24,12 @@ public class MergeIntervals {
 		Interval(int s, int e) { start = s; end = e; }
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-
-
 
 		ArrayList<Interval> aList=new ArrayList<>();
 		aList.add(new Interval(1, 4));
@@ -31,6 +43,12 @@ public class MergeIntervals {
 	}
 
 	@SuppressWarnings({ "unchecked", "rawtypes" })
+	/**
+	 * Performs merge operation.
+	 *
+	 * @param intervals the intervals parameter
+	 * @return the list of results
+	 */
 	public static List<Interval> merge(List<Interval> intervals) {
 		Stack<Interval> stack=new Stack<>();
 		List<Interval> outputList=new ArrayList<>();
@@ -44,7 +62,6 @@ public class MergeIntervals {
 					return a.end-b.end;
 			}
 		});
-
 
 		for (int i = 0; i < intervals.size(); i++) {
 			Interval currInterval=intervals.get(i);

@@ -2,15 +2,32 @@ package appleInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of DS Stack Infix To Postfix algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSStackInfixToPostfix {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		String infix="a+b*(c^d-e)^(f+g*h)-i";
-		System.out.println(convertToPostfix(infix));
+
 	}
 
+	/**
+	 * Performs convertToPostfix operation.
+	 *
+	 * @param infix the infix parameter
+	 * @return the resulting string
+	 */
 	private static String convertToPostfix(String infix) {
 		StringBuilder output=new StringBuilder("");
 		Stack<Character> stack=new Stack<>();
+		// Iterate through all elements
 		for (int i = 0; i < infix.length(); i++) {
 			char c=infix.charAt(i);
 			switch(c)
@@ -37,6 +54,13 @@ public class DSStackInfixToPostfix {
 		return output.toString();
 	}
 
+	/**
+	 * Performs handleStack operation.
+	 *
+	 * @param output the output parameter
+	 * @param stack the stack parameter
+	 * @param c the c parameter
+	 */
 	private static void handleStack(StringBuilder output, Stack<Character> stack, char c) {
 		if(!stack.isEmpty())
 		{	
@@ -57,6 +81,13 @@ public class DSStackInfixToPostfix {
 		}
 	}
 
+	/**
+	 * Performs checkPrec operation.
+	 *
+	 * @param c the c parameter
+	 * @param peek the peek parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkPrec(char c, Character peek) {
 		return (c>peek);
 	}

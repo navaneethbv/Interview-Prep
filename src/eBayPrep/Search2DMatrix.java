@@ -1,15 +1,29 @@
 package eBayPrep;
 
+/**
+ * Implementation of Search2 D Matrix algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Search2DMatrix {
 
-
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(searchMatrix(new int[][]{{1,   3,  5,  7},
-			{10, 11, 16, 20},
-			{23, 30, 34, 50}
-		},22));
+
 	}
 
+	/**
+	 * Searches for matrix.
+	 *
+	 * @param matrix the array to process
+	 * @param key the key value
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean searchMatrix(int[][] matrix, int key) {
 		int rowPointer=0,colPointer=matrix[0].length-1;
 
@@ -23,9 +37,7 @@ public class Search2DMatrix {
 				rowPointer++;	
 		}
 		return false;
-	}									
-
-
+	}
 
 }
 

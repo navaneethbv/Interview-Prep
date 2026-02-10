@@ -6,7 +6,18 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/check-given-binary-tree-follows-height-property-red-black-tree/
  */
+/**
+ * Implementation of RB Tree Height Balance algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class RBTreeHeightBalance {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		TreeNode tn=new TreeNode(12);
 		tn.right=new TreeNode(14);
@@ -36,12 +47,20 @@ public class RBTreeHeightBalance {
 
 	}
 	static int path[];
+	/**
+	 * Performs checkBalanceAlternate operation.
+	 *
+	 * @param tn the tree node to process
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkBalanceAlternate(TreeNode tn) {
 		//check for maxh<=2minh
+		// Check for null/base case
 		if(tn!=null){
 			path=new int[10];
 			boolean b=getPathBalance(tn);
 			if(b)
+				// Recursively process left and right subtrees
 				return checkBalanceAlternate(tn.left) && checkBalanceAlternate(tn.right);
 			else
 				return false;
@@ -49,6 +68,12 @@ public class RBTreeHeightBalance {
 		return true;
 	}
 	static ArrayList<Integer> list=new ArrayList<>();
+	/**
+	 * Retrieves path balance from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean getPathBalance(TreeNode tn) {
 		path=new int[10];
 		getPath(tn,path,0);
@@ -63,11 +88,20 @@ public class RBTreeHeightBalance {
 		return max<=2*min;
 	}
 
+	/**
+	 * Retrieves path from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @param path the array to process
+	 * @param pathLen the pathLen parameter
+	 */
 	private static void getPath(TreeNode tn, int[] path, int pathLen) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			path[pathLen]=tn.value;
 			pathLen++;
+			// Check if node is a leaf (no children)
 			if(tn.left==null && tn.right==null)
 			{
 				System.out.println(Arrays.toString(Arrays.copyOfRange(path, 0, pathLen)));
@@ -78,7 +112,16 @@ public class RBTreeHeightBalance {
 		}
 	}
 	static int maxh,minh;
+	/**
+	 * Performs checkBalance operation.
+	 *
+	 * @param tn the tree node to process
+	 * @param maxh the maxh parameter
+	 * @param minh the minh parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkBalance(TreeNode tn,int maxh,int minh) {
+		// Check for null/base case
 		if(tn!=null)
 		{
 			int lmaxh = 0,lminh = 0,rmaxh = 0,rminh = 0;
@@ -96,7 +139,9 @@ public class RBTreeHeightBalance {
 		return true;
 	}
 
-
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class TreeNode{
 		TreeNode left,right;
 		int value;
@@ -104,6 +149,5 @@ public class RBTreeHeightBalance {
 			this.value=value;
 		}		
 	}
-
 
 }

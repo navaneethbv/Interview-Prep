@@ -10,6 +10,12 @@ import java.util.TreeMap;
  * Description:This Class is used to test the wickimeter image against the photonbomb and
  * 			   starship images and list the top 10 possible targets based on the confidence level.
  */
+/**
+ * Implementation of Wicki Meter algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class WickiMeter {
 	/**
 	 * This is the main method which makes use of WickiMeterImageGrid,PhotonBombImageGrid and StarShipImageGrid classes,

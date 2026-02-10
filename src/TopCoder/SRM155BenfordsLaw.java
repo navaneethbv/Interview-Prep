@@ -5,9 +5,18 @@ package TopCoder;
  * Link:https://community.topcoder.com/stat?c=problem_statement&pm=1348&rd=4580
  */
 
-
-
+/**
+ * Implementation of SRM155 Benfords Law algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM155BenfordsLaw {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(questionableDigit(new int[]{ 5236,7290,200,1907,3336,9182,17,4209,8746,7932,
 				6375,909,2189,3977,2389,2500,1239,3448,6380,4812 },1 ));
@@ -17,9 +26,17 @@ public class SRM155BenfordsLaw {
 		System.out.println(questionableDigit(new int[]{ 987,234,1234,234873487,876,234562,17,
 				7575734,5555,4210,678234,3999,8123 },3 ));
 	}
+	/**
+	 * Performs questionableDigit operation.
+	 *
+	 * @param transactions the array to process
+	 * @param threshold the threshold parameter
+	 * @return the computed integer result
+	 */
 	public static int questionableDigit(int[] transactions, int threshold){
 		int []actual=new int[10];
 		double expected[]=new double[10];
+		// Iterate through all elements
 		for (int i = 0; i < transactions.length; i++) {
 			String str=transactions[i]+"";
 			actual[Integer.parseInt(str.charAt(0)+"")]++;

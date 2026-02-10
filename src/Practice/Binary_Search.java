@@ -2,6 +2,12 @@ package Practice;
 
 import java.util.Scanner;
 
+/**
+ * Implementation of Binary_ Search algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class Binary_Search {
 	// Returns index of x if it is present in arr[l..r], else
     // return -1
@@ -30,6 +36,11 @@ public class Binary_Search {
     }
  
     // Driver method to test above
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args[] the args[] parameter
+     */
     public static void main(String args[])
     {
         Binary_Search ob = new Binary_Search();

@@ -2,8 +2,17 @@ package appleInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of DSLL Reverse LL Group Sub Size algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSLLReverseLLGroupSubSize {
 	static Node head;
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node next;
 		int value;
@@ -11,6 +20,11 @@ public class DSLLReverseLLGroupSubSize {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node n1=new Node(1);
 		n1.next=new Node(2);
@@ -27,13 +41,20 @@ public class DSLLReverseLLGroupSubSize {
 		print(n1);
 	}
 
-
+	/**
+	 * Performs reverseLLSize operation.
+	 *
+	 * @param n1 the n1 parameter
+	 * @param i the i parameter
+	 */
 	private static void reverseLLSize(Node n1, int i) {
 		while(n1!=null)
 		{
 			Stack<Integer> elemStack=new Stack<Integer>();
 			Node temp=n1;
+			// Inner loop to check combinations
 			for (int j = 0; j < i; j++) {
+				// Check for null/base case
 				if(n1!=null)
 				{
 					elemStack.push(n1.value);
@@ -47,8 +68,11 @@ public class DSLLReverseLLGroupSubSize {
 		}
 	}
 
-
-
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null){
 			System.out.print(n.value+"/");

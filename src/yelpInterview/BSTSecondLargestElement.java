@@ -1,6 +1,15 @@
 package yelpInterview;
 
+/**
+ * Implementation of BST Second Largest Element algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BSTSecondLargestElement{
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		int value;
 		Node left,right;
@@ -8,6 +17,11 @@ public class BSTSecondLargestElement{
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param a[] the a[] parameter
+	 */
 	public static void main(String a[]){
 		Node n=insert(null,10);
 		insert(n,5);
@@ -18,16 +32,14 @@ public class BSTSecondLargestElement{
 		findSecondLargestElement(n);
 	}
 
-
-
-
-
-
-
-
-
 	static int c=0;
+	/**
+	 * Finds second largest element in the data structure.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void findSecondLargestElement(Node n) {
+		// Check for null/base case
 		if(n!=null){
 			findSecondLargestElement(n.left);
 			if(c==2)
@@ -37,16 +49,13 @@ public class BSTSecondLargestElement{
 		}
 	}
 
-
-
-
-
-
-
-
-
-
+	/**
+	 * Performs inOrderTraversal operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void inOrderTraversal(Node n) {
+		// Check for null/base case
 		if(n!=null)
 		{
 			inOrderTraversal(n.left);
@@ -55,7 +64,15 @@ public class BSTSecondLargestElement{
 		}
 	}
 
+	/**
+	 * Performs insert operation.
+	 *
+	 * @param n the size or count parameter
+	 * @param value the value value
+	 * @return the Node result
+	 */
 	private static Node insert(Node n, int value) {
+		// Check for null/base case
 		if(n==null)
 			return new Node(value);
 		if(n.value>value)

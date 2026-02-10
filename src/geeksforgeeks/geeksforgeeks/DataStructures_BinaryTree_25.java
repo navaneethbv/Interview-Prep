@@ -2,12 +2,22 @@ package geeksforgeeks;
 
 import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 
-
 /*
  * http://www.geeksforgeeks.org/print-ancestors-of-a-given-node-in-binary-tree/
  * Print Ancestors of a given node in Binary Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_25 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_25 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,1);
@@ -25,7 +35,15 @@ import geeksforgeeks._01DataStructures_BinaryTree_00.Node;
 		getAncestors(binaryTree1.rootNode,data);
 	}
 
+	/**
+	 * Retrieves ancestors from the data structure.
+	 *
+	 * @param node the tree node to process
+	 * @param data the data parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean getAncestors(Node node, int data) {
+		// Check for null/base case
 		if(node==null)
 			return false;
 		if(node.data==data)

@@ -8,8 +8,19 @@ import java.util.TreeSet;
 /*
  * Link:https://www.hackerrank.com/challenges/manasa-and-stones
  */
+/**
+ * Implementation of Manasa And Stones algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ManasaAndStones {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param ards[] the ards[] parameter
+	 */
 	public static void main(String ards[])
 	{
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));

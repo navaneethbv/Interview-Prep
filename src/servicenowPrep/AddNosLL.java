@@ -1,7 +1,16 @@
 package servicenowPrep;
 
+/**
+ * Implementation of Add Nos LL algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class AddNosLL {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class ListNode{
 		int value;
 		public ListNode(int value) {
@@ -10,6 +19,11 @@ public class AddNosLL {
 		ListNode next;
 
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln = new ListNode(7);
         ln.next = new ListNode(5);
@@ -24,6 +38,13 @@ public class AddNosLL {
         	System.out.println(ln.value);ln=ln.next;
         }
 	}
+	/**
+	 * Adds nos to the data structure.
+	 *
+	 * @param ln the ln parameter
+	 * @param ln1 the ln1 parameter
+	 * @return the list of results
+	 */
 	private static ListNode addNos(ListNode ln, ListNode ln1) {
 		int carry=0;
 		while(ln!=null && ln1!=null)

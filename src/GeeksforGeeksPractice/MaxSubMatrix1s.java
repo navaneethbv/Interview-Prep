@@ -5,8 +5,19 @@ import java.util.Arrays;
 /*
  * Link : http://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/
  */
+/**
+ * Implementation of Max Sub Matrix1s algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaxSubMatrix1s {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int mat[][] =  {{0, 1, 1, 0, 1}, 
 						{1, 1, 0, 1, 0}, 
@@ -17,13 +28,20 @@ public class MaxSubMatrix1s {
 		printMaxSubMatrix(mat);
 	}
 
+	/**
+	 * Performs printMaxSubMatrix operation.
+	 *
+	 * @param m the array to process
+	 */
 	private static void printMaxSubMatrix(int[][] m) {
 		int s[][]=new int[m.length][m[0].length];
 		//copy first row
 		//copy first column
 		//others copy min
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			for (int j = 0; j < s[0].length; j++) {
+				// Check for null/base case
 				if(i==0||j==0)
 				{
 					s[i][j]=m[i][j];
@@ -42,6 +60,7 @@ public class MaxSubMatrix1s {
 		//find max element
 		int max=Integer.MIN_VALUE;
 		int max_i=0,max_j=0;
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			for (int j = 0; j < s[0].length; j++) {
 				if(s[i][j]>max)
@@ -65,19 +84,20 @@ public class MaxSubMatrix1s {
 		   System.out.println();
 		  }  
 		
-		
-		
-		
-		
 		//printMatrix(s);
 	}
 
+	/**
+	 * Performs printMatrix operation.
+	 *
+	 * @param s the array to process
+	 */
 	private static void printMatrix(int[][] s) {
+		// Iterate through all elements
 		for (int i = 0; i < s.length; i++) {
 			System.out.println(Arrays.toString(s[i]));
 		}
 		
 	}
-
 
 }

@@ -10,22 +10,39 @@ import java.util.Map.Entry;
 /*
  * Link: http://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/
  */
+/**
+ * Implementation of Union Intersection Array algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class UnionIntersectionArray {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int arr1[] = {1, 3, 4, 5, 7};
-		int arr2[] = {2, 3, 5, 6};
-		findUnionIntersection(arr1,arr2);
+
 	}
 
+	/**
+	 * Finds union intersection in the data structure.
+	 *
+	 * @param arr1 the array to process
+	 * @param arr2 the array to process
+	 */
 	private static void findUnionIntersection(int[] arr1, int[] arr2) {
 		Map<Integer,Integer> elementMap=new HashMap<>();
 		
+		// Iterate through all elements
 		for (int i = 0; i < arr1.length; i++) {
 			if(elementMap.containsKey(arr1[i]))
 				elementMap.put(arr1[i],elementMap.get(arr1[i])+1);
 			else
 				elementMap.put(arr1[i],1);
 		}
+		// Iterate through all elements
 		for (int i = 0; i < arr2.length; i++) {
 			if(elementMap.containsKey(arr2[i]))
 				elementMap.put(arr2[i],elementMap.get(arr2[i])+1);

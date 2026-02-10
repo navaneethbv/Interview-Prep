@@ -6,11 +6,25 @@ import java.util.HashMap;
  * Link : https://leetcode.com/problems/intersection-of-two-linked-lists/
  */
 
+/**
+ * Implementation of Intersection Linked Lists algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class IntersectionLinkedLists {
+	/**
+	 * Retrieves intersection node from the data structure.
+	 *
+	 * @param headA the headA parameter
+	 * @param headB the headB parameter
+	 * @return the list of results
+	 */
 	public static  ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 		ListNode nodeA=headA;
 		ListNode nodeB=headB;
 		int countA=0,countB=0;
+		// Check for null/base case
 		if(headA==null || headB==null)
 			return null;
 		while(nodeA!=null){
@@ -48,6 +62,13 @@ public class IntersectionLinkedLists {
 		}
 		return null;
 	}
+	/**
+	 * Retrieves intersection node extra space from the data structure.
+	 *
+	 * @param headA the headA parameter
+	 * @param headB the headB parameter
+	 * @return the list of results
+	 */
 	public  static ListNode getIntersectionNodeExtraSpace(ListNode headA, ListNode headB) {
 		HashMap<Integer, Integer> listMap=new HashMap<>();
 		while(headA!=null)
@@ -66,6 +87,9 @@ public class IntersectionLinkedLists {
 		}
 		return null;
 	}
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public  static class ListNode {
 		int val;
 		ListNode next;
@@ -74,6 +98,11 @@ public class IntersectionLinkedLists {
 			next = null;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 
 		ListNode ln=new ListNode(3);

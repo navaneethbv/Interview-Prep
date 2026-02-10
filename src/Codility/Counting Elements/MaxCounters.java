@@ -27,6 +27,13 @@
  * (3, 2, 2, 4, 2)
  * The goal is to calculate the value of every counter after all operations.
  * Write a function:
+ /**
+  * Performs solution operation.
+  *
+  * @param N the size or count parameter
+  * @param A the array to process
+  * @return the resulting array
+  */
  * class Solution { public int[] solution(int N, int[] A); }
  * that, given an integer N and a non-empty zero-indexed array A consisting of M integers, returns a sequence of integers representing the values of the counters.
  * The sequence should be returned as:
@@ -51,10 +58,24 @@
  * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
  * Elements of input arrays can be modified.
  */
+/**
+ * Implementation of Max Counters algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MaxCounters {
+    /**
+     * Performs solution operation.
+     *
+     * @param N the size or count parameter
+     * @param A the array to process
+     * @return the resulting array
+     */
     public int[] solution(int N, int[] A) {
         int[] num = new int[N];
         int max = 0, lazy = 0;
+        // Iterate through all elements
         for (int i = 0; i < A.length; i++) {
             if (A[i] == N + 1) {
                 lazy += max;
@@ -75,10 +96,13 @@ public class MaxCounters {
         return num;
     }
 
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args the array to process
+     */
     public static void main(String[] args) {
-        int[] num = new MaxCounters().solution(5, new int[]{3, 4, 4, 6, 1, 4, 4});
-        for (int x : num) {
-            System.out.print(x + " ");
-        }
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
     }
 }

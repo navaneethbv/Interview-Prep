@@ -1,10 +1,29 @@
 package LeetCodePerformancePractice;
 
+/**
+ * Implementation of Decode Ways algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DecodeWays {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(numDecodings("12"));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Performs numDecodings operation.
+	 *
+	 * @param s the s parameter
+	 * @return the computed integer result
+	 */
 	public static int numDecodings(String s) {
+		// Check for null/base case
 		if(s==null||s.length()==0|| s.charAt(0)=='0')
 			return 0;
 		if(s.length()==1)

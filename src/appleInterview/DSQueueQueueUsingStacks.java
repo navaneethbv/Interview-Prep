@@ -2,10 +2,21 @@ package appleInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of DS Queue Queue Using Stacks algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSQueueQueueUsingStacks {
 	static Stack<Integer> stack1=new Stack<>();
 	static Stack<Integer> stack2=new Stack<>();
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		enqueue(10);
 		enqueue(20);
@@ -17,6 +28,11 @@ public class DSQueueQueueUsingStacks {
 		System.out.println(dequeue());		
 	}
 
+	/**
+	 * Performs dequeue operation.
+	 *
+	 * @return the computed integer result
+	 */
 	private static int dequeue() {
 		while(!stack1.isEmpty()){
 			stack2.push(stack1.pop());
@@ -28,6 +44,11 @@ public class DSQueueQueueUsingStacks {
 		return value;
 	}
 
+	/**
+	 * Performs enqueue operation.
+	 *
+	 * @param i the i parameter
+	 */
 	private static void enqueue(int i) {
 		stack1.push(i);
 	}

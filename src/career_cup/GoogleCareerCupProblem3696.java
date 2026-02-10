@@ -7,20 +7,36 @@ import java.util.Arrays;
  * 1. 2 huge files A and B are in sorted order. Make a combined file C which contains the total sorted order. 
  * 2. Extrapolate this to 1000s of sorted files containing millions of entries. Generate the combined sorted file as output
  */
+/**
+ * Implementation of Google Career Cup Problem3696 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem3696 {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int inputArray1[]=new int[]{ 1,3,5,7,9,10,23,25 };
-		int inputArray2[]=new int[]{ 2,4,6,100 };
-		System.out.println(Arrays.toString(sortArray(inputArray1,inputArray2)));	
 
 	}
+	/**
+	 * Performs sortArray operation.
+	 *
+	 * @param inputArray1 the array to process
+	 * @param inputArray2 the array to process
+	 * @return the resulting array
+	 */
 	private static int[] sortArray(int[] inputArray1,int[] inputArray2) {
 		int outputArray[]=new int[inputArray1.length+inputArray2.length];
 		//use heap to get min element,use a pointer to the arary to pickout the next element and put that to heap
 		//also a counter for output element index
 		//Merge sort used here
 		int index1=0,index2=0;
+		// Iterate through all elements
 		for (int i = 0; i < outputArray.length; i++) {
 			if(index1<inputArray1.length && index2<inputArray2.length){
 				if(inputArray1[index1]<inputArray2[index2])
@@ -47,6 +63,5 @@ public class GoogleCareerCupProblem3696 {
 		}
 		return outputArray;
 	}
-
 
 }

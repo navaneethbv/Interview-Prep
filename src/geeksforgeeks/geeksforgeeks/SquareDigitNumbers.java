@@ -2,7 +2,19 @@ package geeksforgeeks;
 
 //Paste me into the FileEdit configuration dialog
 
+/**
+ * Implementation of Square Digit Numbers algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SquareDigitNumbers {
+	/**
+	 * Retrieves number from the data structure.
+	 *
+	 * @param n the size or count parameter
+	 * @return the computed integer result
+	 */
 	public int getNumber(int n) {
 		int square[] = { 0, 1, 4, 9 };
 		int result = 0;
@@ -16,6 +28,11 @@ public class SquareDigitNumbers {
 	}
 
 	// BEGIN CUT HERE
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		if (args.length == 0) {
 			SquareDigitNumbersHarness.run_test(-1);
@@ -29,6 +46,11 @@ public class SquareDigitNumbers {
 
 //BEGIN CUT HERE
 class SquareDigitNumbersHarness {
+	/**
+	 * Performs run_test operation.
+	 *
+	 * @param casenum the casenum parameter
+	 */
 	public static void run_test(int casenum) {
 		if (casenum != -1) {
 			if (runTestCase(casenum) == -1)
@@ -48,6 +70,7 @@ class SquareDigitNumbersHarness {
 			++total;
 		}
 
+		// Check for null/base case
 		if (total == 0) {
 			System.err.println("No test cases run.");
 		} else if (correct < total) {
@@ -57,14 +80,35 @@ class SquareDigitNumbersHarness {
 		}
 	}
 
+	/**
+	 * Performs compareOutput operation.
+	 *
+	 * @param expected the expected parameter
+	 * @param result the result parameter
+	 * @return true if condition is met, false otherwise
+	 */
 	static boolean compareOutput(int expected, int result) {
 		return expected == result;
 	}
 
+	/**
+	 * Performs formatResult operation.
+	 *
+	 * @param res the res parameter
+	 * @return the resulting string
+	 */
 	static String formatResult(int res) {
 		return String.format("%d", res);
 	}
 
+	/**
+	 * Performs verifyCase operation.
+	 *
+	 * @param casenum the casenum parameter
+	 * @param expected the expected parameter
+	 * @param received the received parameter
+	 * @return the computed integer result
+	 */
 	static int verifyCase(int casenum, int expected, int received) {
 		System.err.print("Example " + casenum + "... ");
 		if (compareOutput(expected, received)) {
@@ -78,6 +122,12 @@ class SquareDigitNumbersHarness {
 		}
 	}
 
+	/**
+	 * Performs runTestCase operation.
+	 *
+	 * @param casenum__ the casenum__ parameter
+	 * @return the computed integer result
+	 */
 	static int runTestCase(int casenum__) {
 		switch (casenum__) {
 		case 0: {

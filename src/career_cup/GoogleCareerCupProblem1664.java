@@ -9,8 +9,19 @@ import java.util.Scanner;
  * Main Link:  http://www.careercup.com/page?pid=google-interview-questions
  * Problem Link:  http://www.careercup.com/question?id=5200686994161664
  */
+/**
+ * Implementation of Google Career Cup Problem1664 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem1664 {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		String inputString=scanner.nextLine();
@@ -22,27 +33,42 @@ public class GoogleCareerCupProblem1664 {
 		bestAlgo(inputStringArray,min,max);//early Termination
 	}
 
+	/**
+	 * Performs bestAlgo operation.
+	 *
+	 * @param inputStringArray the array to process
+	 * @param min the min parameter
+	 * @param max the max parameter
+	 */
 	private static void bestAlgo(String[] inputStringArray, Integer min, Integer max) {
 		Arrays.sort(inputStringArray);
 		ArrayList<Integer> elementList=new ArrayList<Integer>();
 		int cumulativeArray[]=new int[inputStringArray.length];
 		int sum=0;
+		// Iterate through all elements
 		for (int i = 0; i < inputStringArray.length; i++) {
 			sum+=Integer.parseInt(inputStringArray[i]);
 			elementList.add(sum);
 			cumulativeArray[i]=sum;
 		}
 		Arrays.sort(cumulativeArray);
+		// Iterate through all elements
 		for (int i = 0; i < cumulativeArray.length; i++) {
 				
 		}
 		
-		
-		
 
 	}
 
+	/**
+	 * Performs naiveAlgo operation.
+	 *
+	 * @param inputStringArray the array to process
+	 * @param min the min parameter
+	 * @param max the max parameter
+	 */
 	private static void naiveAlgo(String[] inputStringArray, Integer min, Integer max) {
+		// Iterate through all elements
 		for (int i = 0; i < inputStringArray.length; i++) {
 			int sum=Integer.parseInt(inputStringArray[i]);
 			if(sum>=min && sum<=max)

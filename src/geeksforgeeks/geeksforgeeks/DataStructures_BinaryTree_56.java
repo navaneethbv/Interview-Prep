@@ -9,10 +9,21 @@ import java.util.Arrays;
  * http://www.geeksforgeeks.org/check-given-binary-tree-follows-height-property-red-black-tree/
  * Check if a given Binary Tree is height balanced like a Red-Black Tree
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_56 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_56 {
 	 static int path[];
 	 static ArrayList<Integer> heightList=new ArrayList<Integer>();
 	 static boolean[] visited;
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,40);
@@ -44,8 +55,15 @@ import java.util.Arrays;
 		 return true;
 	 }
 
-
+	 /**
+	  * Performs checkBalance operation.
+	  *
+	  * @param node the tree node to process
+	  * @param path the array to process
+	  * @param pathLen the pathLen parameter
+	  */
 	 private static void checkBalance(Node node, int[] path,int pathLen) {
+		 // Check for null/base case
 		 if(node==null)
 			 return;
 		 else
@@ -53,6 +71,7 @@ import java.util.Arrays;
 
 			 path[pathLen]=node.data;
 			 pathLen++;
+			 // Check if node is a leaf (no children)
 			 if(node.left==null && node.right==null )
 			 {
 				 heightList.add(pathLen);
@@ -62,7 +81,14 @@ import java.util.Arrays;
 		 }
 
 	 }
+	 /**
+	  * Retrieves height from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int getHeight(Node node) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 int leftHeight=getHeight(node.left);

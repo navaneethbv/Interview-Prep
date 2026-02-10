@@ -4,7 +4,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
+/**
+ * Implementation of Vertical Sum In Tree algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class VerticalSumInTree {
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class TreeNode {
 		int val;
 		TreeNode left;
@@ -12,6 +21,11 @@ public class VerticalSumInTree {
 		TreeNode next;
 		TreeNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args[] the args[] parameter
+	 */
 	public static void main(String args[]){
 		TreeNode tn=new TreeNode(1);
 		tn.left=new TreeNode(2);
@@ -25,13 +39,25 @@ public class VerticalSumInTree {
 	}
 	static HashMap<Integer, Integer> elementMap=new HashMap<>();
 	static int max=0,min=0;
+	/**
+	 * Retrieves vertical sum from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 */
 	private static void getVerticalSum(TreeNode tn) {
 		getSum(tn,0);
 		for (int i = min; i <=max; i++) {
 			System.out.println(elementMap.get(i));
 		}
 	}
+	/**
+	 * Retrieves sum from the data structure.
+	 *
+	 * @param tn the tree node to process
+	 * @param i the i parameter
+	 */
 	private static void getSum(TreeNode tn, int i) {
+		// Check for null/base case
 		if(tn!=null)
 		{	
 			if(i>max)

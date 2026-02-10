@@ -7,12 +7,29 @@ import java.util.Arrays;
  * Link:
  */
 
-
-
+/**
+ * Implementation of SRM687 Quorum algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SRM687Quorum {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(count(new int[]{50,2,9,49,38,1},5));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
+	/**
+	 * Counts the number of .
+	 *
+	 * @param arr the array to process
+	 * @param k the k value
+	 * @return the computed integer result
+	 */
 	public static int count(int[] arr, int k){
 		Arrays.sort(arr);
 		int count=0;

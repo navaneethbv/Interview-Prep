@@ -1,7 +1,18 @@
 package eBayPrep;
 
+/**
+ * Implementation of Longest Sub String WO Repeat algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LongestSubStringWORepeat {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		System.out.println(lengthOfLongestSubstring("abcabcbb"));
 		System.out.println(lengthOfLongestSubstring("bbbbb"));
@@ -10,9 +21,16 @@ public class LongestSubStringWORepeat {
 		System.out.println(lengthOfLongestSubstring("aab"));
 		
 	}
+	/**
+	 * Performs lengthOfLongestSubstring operation.
+	 *
+	 * @param s the s parameter
+	 * @return the computed integer result
+	 */
 	public static int lengthOfLongestSubstring(String s) {
 		int maxLength=0;
 		StringBuilder sb=new StringBuilder();
+		// Iterate through all elements
 		for (int i = 0; i < s.length(); i++) {
 			char c=s.charAt(i);
 			if(sb.toString().contains(c+""))

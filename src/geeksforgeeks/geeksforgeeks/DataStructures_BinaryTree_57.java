@@ -9,11 +9,22 @@ import java.util.Arrays;
  * http://www.geeksforgeeks.org/print-nodes-distance-k-given-node-binary-tree/
  * Print all nodes at distance k from a given node
  */;
+/**
+ * Implementation of Data Structures_ Binary Tree_57 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class DataStructures_BinaryTree_57 {
 	 static int path[];
 	 static ArrayList<int[]> mainPathList=new ArrayList<int[]>();
 	 static ArrayList<int[]> pathListDown=new ArrayList<int[]>();
 	 
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 _01DataStructures_BinaryTree_00 binaryTree1=new _01DataStructures_BinaryTree_00();
 		 binaryTree1.insert(null,null,20);
@@ -37,14 +48,30 @@ import java.util.Arrays;
 			 System.out.println(Arrays.toString(pathListDown.get(i)));
 		 }
 	 }
+	 /**
+	  * Performs printNodesDown operation.
+	  *
+	  * @param n the size or count parameter
+	  * @param i the i parameter
+	  * @param j the j parameter
+	  */
 	 private static void printNodesDown(Node n, int i, int j) {
 		 path=new int[getHeight(n)];
 		 getRootLeafPathDown(n,path,0);
 	 }
+	 /**
+	  * Retrieves root leaf path down from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param path the array to process
+	  * @param pathLen the pathLen parameter
+	  */
 	 private static void getRootLeafPathDown(Node node, int[] path, int pathLen) {
+		 // Check for null/base case
 		 if(node!=null){
 			 path[pathLen]=node.data;
 			 pathLen++;
+			 // Check if node is a leaf (no children)
 			 if(node.left==null && node.right==null){
 				 pathListDown.add(Arrays.copyOfRange(path, 0, pathLen));
 			 }
@@ -53,6 +80,13 @@ import java.util.Arrays;
 		 }
 
 	 }
+	 /**
+	  * Performs printNodes operation.
+	  *
+	  * @param node the tree node to process
+	  * @param nodeData the nodeData parameter
+	  * @param distance the distance parameter
+	  */
 	 private static void printNodes(Node node, int nodeData, int distance) {
 		 //get root to leaf paths for all nodes
 		 path=new int[getHeight(node)];
@@ -61,10 +95,19 @@ import java.util.Arrays;
 			 System.out.println(Arrays.toString(mainPathList.get(i)));
 		 }
 	 }
+	 /**
+	  * Retrieves root leaf path from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param path the array to process
+	  * @param pathLen the pathLen parameter
+	  */
 	 private static void getRootLeafPath(Node node, int[] path, int pathLen) {
+		 // Check for null/base case
 		 if(node!=null){
 			 path[pathLen]=node.data;
 			 pathLen++;
+			 // Check if node is a leaf (no children)
 			 if(node.left==null && node.right==null){
 				 mainPathList.add(Arrays.copyOfRange(path, 0, pathLen));
 			 }
@@ -72,7 +115,14 @@ import java.util.Arrays;
 			 getRootLeafPath(node.right, path, pathLen);
 		 }
 	 }
+	 /**
+	  * Retrieves height from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @return the computed integer result
+	  */
 	 private static int getHeight(Node node) {
+		 // Check for null/base case
 		 if(node!=null){
 			 int leftHeight=getHeight(node.left);
 			 int rightHeight=getHeight(node.right);
@@ -80,16 +130,26 @@ import java.util.Arrays;
 		 }
 		 return 0;
 	 }
+	 /**
+	  * Retrieves node from the data structure.
+	  *
+	  * @param node the tree node to process
+	  * @param nodeData the nodeData parameter
+	  * @return the Node result
+	  */
 	 private static Node getNode(Node node,int nodeData) {
+		 // Check for null/base case
 		 if(node!=null)
 		 {
 			 if(node.data==nodeData)
 				 return node;
 			 else{
 				 Node n=getNode(node.left,nodeData);
+				 // Check for null/base case
 				 if(n!=null)
 					 return n;
 				 else
+					 // Recursively process left and right subtrees
 					 return getNode(node.right,nodeData);
 			 }
 		 }

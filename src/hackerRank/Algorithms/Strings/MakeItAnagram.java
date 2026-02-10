@@ -6,7 +6,18 @@ import java.util.Scanner;
 /*
  * Link:https://www.hackerrank.com/challenges/make-it-anagram
  */
+/**
+ * Implementation of Make It Anagram algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MakeItAnagram {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		String inputString1=scanner.nextLine();
@@ -43,6 +54,12 @@ public class MakeItAnagram {
 		System.out.println(noOfDeletions);
 	}
 
+	/**
+	 * Performs sortString operation.
+	 *
+	 * @param inputString the inputString parameter
+	 * @return the resulting string
+	 */
 	private static String sortString(String inputString) {
 		char[] stringArray=inputString.toCharArray();
 		Arrays.sort(stringArray);

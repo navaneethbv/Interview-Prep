@@ -2,13 +2,27 @@ package LeetCodePractice;
 
 import java.util.Stack;
 
+/**
+ * Implementation of Reorder List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ReorderList {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		ListNode ln=new ListNode(1);
 		ln.next=new ListNode(2);
@@ -16,6 +30,11 @@ public class ReorderList {
 		ln.next.next.next=new ListNode(4);
 		reorderList(ln);
 	}
+	/**
+	 * Performs reorderList operation.
+	 *
+	 * @param ln the ln parameter
+	 */
 	public static void reorderList(ListNode ln) {
 		Stack<ListNode> stack=new Stack<>();
 		ListNode headPointer=ln;
@@ -44,9 +63,11 @@ public class ReorderList {
 				ln1.next=null;
 			counter++;
 			ln=ln.next;
+			// Check for null/base case
 			if(ln!=null)
 				ln=ln.next;	
 		}
+		// Check for null/base case
 		if(ln!=null)
 		{
 			ln.next=null;

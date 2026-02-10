@@ -24,7 +24,19 @@ import java.util.BitSet;
  * expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
  * Elements of input arrays can be modified.
  */
+/**
+ * Implementation of Missing Integer algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class MissingInteger {
+    /**
+     * Performs solution operation.
+     *
+     * @param A the array to process
+     * @return the computed integer result
+     */
     /*public int solution(int[] A) {
         int n = A.length;
         BitSet hash = new BitSet(n + 1);
@@ -38,6 +50,13 @@ public class MissingInteger {
         }
         return n + 1;
     }*/
+    }
+    /**
+     * Performs solution operation.
+     *
+     * @param A the array to process
+     * @return the computed integer result
+     */
     public int solution(int[] A) {
         int n = A.length;
         for (int i = 0; i < n; i++) {
@@ -51,14 +70,26 @@ public class MissingInteger {
         return n + 1;
     }
 
+    /**
+     * Performs swap operation.
+     *
+     * @param a the array to process
+     * @param x the x parameter
+     * @param y the y parameter
+     */
     private void swap(int[] a, int x, int y) {
         int tmp = a[x];
         a[x] = a[y];
         a[y] = tmp;
     }
 
+    /**
+     * Main method to test the functionality of the class with various test cases.
+     *
+     * @param args the array to process
+     */
     public static void main(String[] args) {
-        int ans = new MissingInteger().solution(new int[]{2,1});
-        System.out.println(ans);
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
     }
 }

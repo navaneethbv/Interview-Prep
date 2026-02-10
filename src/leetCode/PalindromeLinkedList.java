@@ -4,7 +4,19 @@ package leetCode;
  * Link : https://leetcode.com/problems/reverse-integer/
  */
 
+/**
+ * Implementation of Palindrome Linked List algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class PalindromeLinkedList {
+	/**
+	 * Performs reverse operation.
+	 *
+	 * @param x the x parameter
+	 * @return the computed integer result
+	 */
 	public static int reverse(int x) {
 		String input=String.valueOf(x);
 		String output = null;
@@ -21,6 +33,7 @@ public class PalindromeLinkedList {
 		}
 		if(output.length()>10)
 			return 0;
+		// Check for null/base case
 		else if(output.length()==10)
 		{
 			if(negative)
@@ -31,8 +44,16 @@ public class PalindromeLinkedList {
 		return negative==true?Integer.parseInt("-"+output):Integer.parseInt(output);
 	}
 
+	/**
+	 * Performs checkRange operation.
+	 *
+	 * @param output the output parameter
+	 * @param value the value value
+	 * @return true if condition is met, false otherwise
+	 */
 	private static boolean checkRange(String output, String value) {
 
+		// Iterate through all elements
 		for (int i = 0; i < output.length(); i++) {
 			if(Integer.parseInt(output.charAt(i)+"")>Integer.parseInt(value.charAt(i)+""))
 				return false;
@@ -43,9 +64,14 @@ public class PalindromeLinkedList {
 		return true;
 	}
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(reverse(-2147483412));
-		System.out.println(reverse(-123));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
 }

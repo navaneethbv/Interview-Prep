@@ -2,8 +2,17 @@ package appleInterview;
 
 import java.util.Stack;
 
+/**
+ * Implementation of DSLL Reverse LL Iterative algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class DSLLReverseLLIterative {
 
+	/**
+	 * Inner class representing a node in the data structure.
+	 */
 	static class Node{
 		Node next;
 		int value;
@@ -11,6 +20,11 @@ public class DSLLReverseLLIterative {
 			this.value=value;
 		}
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Node n=new Node(1);
 		n.next=new Node(2);
@@ -25,6 +39,12 @@ public class DSLLReverseLLIterative {
 
 	}
 
+	/**
+	 * Performs reverseIterativeExtraSpace operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node reverseIterativeExtraSpace(Node n) {
 		Stack<Integer> valueStack=new Stack<Integer>();
 		Node temp=n;
@@ -41,6 +61,12 @@ public class DSLLReverseLLIterative {
 		return newHead;
 	}
 
+	/**
+	 * Performs reverseIterative operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the Node result
+	 */
 	private static Node reverseIterative(Node n) {
 		Node prev=null;
 		Node current=n;
@@ -56,6 +82,11 @@ public class DSLLReverseLLIterative {
 		return prev;
 	}
 
+	/**
+	 * Performs print operation.
+	 *
+	 * @param n the size or count parameter
+	 */
 	private static void print(Node n) {
 		while(n!=null){
 			System.out.print(n.value+"/");

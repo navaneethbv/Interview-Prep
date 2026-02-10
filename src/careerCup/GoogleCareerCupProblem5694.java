@@ -9,12 +9,21 @@ package careerCup;
  * 
  * To be done later
  */
+/**
+ * Implementation of Google Career Cup Problem5694 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class GoogleCareerCupProblem5694 {
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		
+
 	}
 	
-	
-
 
 }

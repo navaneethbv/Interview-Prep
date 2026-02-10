@@ -1,14 +1,24 @@
 package hackerRank.WorldCodeSprint;
 
-
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
 /*
  * Link:https://www.hackerrank.com/contests/worldcodesprint/challenges/print-string
  */
+/**
+ * Implementation of Build A String algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class BuildAString {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param ards[] the ards[] parameter
+	 */
 	public static void main(String ards[])
 	{
 		Scanner scanner=new Scanner(new InputStreamReader(System.in));
@@ -59,6 +69,14 @@ public class BuildAString {
 		}
 	}
 
+	/**
+	 * Performs checkSubstring operation.
+	 *
+	 * @param mainString the mainString parameter
+	 * @param str the str parameter
+	 * @param length the length parameter
+	 * @return the computed integer result
+	 */
 	private static int checkSubstring(String mainString, String str, int length) {
 		String strn="";
 		for (int i = length; i < mainString.length(); i++) {

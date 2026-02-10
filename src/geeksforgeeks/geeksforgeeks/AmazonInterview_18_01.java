@@ -3,12 +3,22 @@ package geeksforgeeks;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-18/
  * Binary complement of a number.
  */;
+/**
+ * Implementation of Amazon Interview_18_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_18_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		 Scanner scanner=new Scanner(new InputStreamReader(System.in));
 		 int inputNumber=Integer.parseInt(scanner.nextLine());

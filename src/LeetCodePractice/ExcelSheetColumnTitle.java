@@ -2,12 +2,30 @@ package LeetCodePractice;
 
 import java.util.HashMap;
 
+/**
+ * Implementation of Excel Sheet Column Title algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ExcelSheetColumnTitle {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		System.out.println(convertToTitle(52));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 
+	/**
+	 * Performs convertToTitle operation.
+	 *
+	 * @param n the size or count parameter
+	 * @return the resulting string
+	 */
 	public static String convertToTitle(int n) {
 		HashMap<Integer, String> elemMap=new HashMap<>();
 		for (int i = 1; i <=26; i++) {

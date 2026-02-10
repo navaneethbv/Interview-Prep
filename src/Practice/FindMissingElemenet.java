@@ -2,8 +2,19 @@ package Practice;
 
 import java.util.Arrays;
 
+/**
+ * Implementation of Find Missing Elemenet algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class FindMissingElemenet {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		int[] array = {8,4,7,3,6,2,9,5,11};
 		if(isMissingNumber(array) != -1){
@@ -13,6 +24,12 @@ public class FindMissingElemenet {
 			System.out.println("There are no missing numbers in the array");
 	}
 	// Worst case is nlogn
+	/**
+	 * Checks if missing number.
+	 *
+	 * @param array the array to process
+	 * @return the computed integer result
+	 */
 	private static int isMissingNumber(int[] array) {
 		Arrays.sort(array);
 		for(int i=0;i<array.length;i++){

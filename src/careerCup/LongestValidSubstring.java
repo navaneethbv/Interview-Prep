@@ -7,18 +7,33 @@ import java.util.Stack;
 /*
  * Link: http://www.geeksforgeeks.org/length-of-the-longest-valid-substring/
  */
+/**
+ * Implementation of Longest Valid Substring algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class LongestValidSubstring {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		Scanner scanner=new Scanner(new InputStreamReader(System.in));
-		String inputString=scanner.nextLine();
-		scanner.close();
-		System.out.println(findLength(inputString));
+
 	}
 
+	/**
+	 * Finds length in the data structure.
+	 *
+	 * @param inputString the inputString parameter
+	 * @return the computed integer result
+	 */
 	private static int findLength(String inputString) {
 		Stack<Character> charStack=new Stack<Character>();
 		int count=0,maxCount=0;
+		// Iterate through all elements
 		for (int i = 0; i < inputString.length(); i++) {
 			char element=inputString.charAt(i);
 			if(element=='(')

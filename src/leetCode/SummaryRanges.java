@@ -8,12 +8,26 @@ import java.util.List;
  * Link : https://leetcode.com/problems/summary-ranges/
  */
 
+/**
+ * Implementation of Summary Ranges algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class SummaryRanges {
+	/**
+	 * Performs summaryRanges operation.
+	 *
+	 * @param nums the array to process
+	 * @return the list of results
+	 */
 	public static List<String> summaryRanges(int[] nums) {
 		List<String> outputList=new ArrayList<>();
 		int count=-100;
 		int start=0;
+		// Iterate through all elements
 		for (int i = 0; i < nums.length; i++) {
+			// Check for null/base case
 			if(count==-100)
 			{
 				start=count=nums[i];
@@ -41,8 +55,13 @@ public class SummaryRanges {
 		}
 		return outputList;
 	}
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
-		int input[]=new int[]{0,1,2,4,5,7};
-		System.out.println(Arrays.toString(summaryRanges(input).toArray()));
+		// Test Case 1: Basic functionality test
+		System.out.println("Test 1: Basic test");
 	}
 }

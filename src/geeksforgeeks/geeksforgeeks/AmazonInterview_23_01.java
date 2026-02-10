@@ -5,11 +5,6 @@ import java.util.Iterator;
 import java.util.Map.Entry;
 import java.util.Set;
 
-
-
-
-
-
 /*
  * http://www.geeksforgeeks.org/amazon-interview-set-23/
  * Given a file with many product name of an company.
@@ -18,7 +13,18 @@ import java.util.Set;
  * have to print laptop,notepad,desktop.
  * Pen and mobile should be remove due to duplicity. 
  */;
+/**
+ * Implementation of Amazon Interview_23_01 algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
  public class AmazonInterview_23_01 {
+	 /**
+	  * Main method to test the functionality of the class with various test cases.
+	  *
+	  * @param args the array to process
+	  */
 	 public static void main(String[] args) {
 		String inputArray[]={"mobile","laptop","notepad","desktop","pen","mobile","pen"};
 		HashMap<String,Integer> elementMap=new HashMap<String,Integer>();

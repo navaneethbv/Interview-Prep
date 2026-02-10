@@ -1,14 +1,24 @@
 package hackerRank.WeekOfCode19;
 
-
 import java.util.Scanner;
 import java.util.TreeSet;
 
 /*
  * Link:https://www.hackerrank.com/contests/w19/challenges/scalar-products
  */
+/**
+ * Implementation of Scalar Products algorithm/data structure.
+ * This class provides methods to solve related problems efficiently.
+ *
+ * @author Navaneeth Rao
+ */
 public class ScalarProducts {
 
+	/**
+	 * Main method to test the functionality of the class with various test cases.
+	 *
+	 * @param args the array to process
+	 */
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
 		String arr[]=scanner.nextLine().split(" ");
@@ -44,6 +54,9 @@ public class ScalarProducts {
 		}
 		System.out.println(ts.size());
 	}
+	/**
+	 * Inner class Pair for supporting operations.
+	 */
 	static class Pair{
 		long a,b;
 		public Pair(long a,long b) {
